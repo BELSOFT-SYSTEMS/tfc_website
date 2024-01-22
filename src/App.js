@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './components/pages/Homepage'; // Your landing page component
+import ContactPage from './components/pages/Contactpage';
+import Landing from './components/pages/Landing';
+
+{/*
+import './css/frontend.min.css';
+import './css/frontend.css';
+import './css/frontend-lite.min.css';
+import './css/header-footer.min.css';
+import './css/all.css';
+import './css/eael-9361.css';
+import './css/eael-19128.css';
+import './css/ecs-style.css';
+import './css/elementor-icons.min.css';
+import './css/featherlight.css';
+import './css/general.min.css';
+import './css/lity.min.css';
+import './css/mec-general-calendar.css';
+import './css/post-6.css';
+import './css/select2.min.css';
+import './css/slick-carousal.css';
+import './css/style.min.css';
+import './css/swiper.min.css';
+import './css/theme.min.css';
+import './css/tooltip.css';
+import './css/tooltipster-sideTip-shadow.min.css';
+import './css/widget-icon-list.min.css';
+import './css/widget-nav-menu.min.css';
+import './index.css';
+*/}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/landing" element={<Landing />} />
+      <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+  </Router>
   );
 }
 
