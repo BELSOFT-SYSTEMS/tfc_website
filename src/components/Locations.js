@@ -81,58 +81,54 @@ const Locations = () => {
           <span className="eael-tab-title title-after-icon">Ajax</span>
         </div>
         {/* Add content for Ajax tab here */}
-        <Container fluid>
-      <Row>
+    <div id="ajax-tab" className="clearfix eael-tab-content-item inactive" data-title-link="ajax-tab">
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={6} className="text-center">
+            <img
+              src="pastor-3.jpg"
+              alt=""
+              className="img-fluid"
+            />
+            <h2>Angela Mason</h2>
+            <h2>Site Pastor</h2>
+          </Col>
+          <Col xs={12} md={6}>
+          <Row>
         <Col>
-          <img
-            src="https://sanctuschurch.com/wp-content/uploads/2022/05/Ange.png"
-            alt=""
-            className="img-fluid"
-          />
-        </Col>
-        <Col>
-          <h2>Angela Mason</h2>
-          <h2>Site pastor</h2>
+          <ListGroup variant="flush">
+            <ListGroup.Item>
+              <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
+              Sunday services @ 9:00am & 11:00am
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
+              599 Bayly Street East, Ajax, Ontario
+            </ListGroup.Item>
+          </ListGroup>
         </Col>
       </Row>
-
       <Row>
         <Col>
-          <ul className="elementor-icon-list-items">
-            <li className="elementor-icon-list-item">
-              <span className="elementor-icon-list-icon">
-                <FontAwesomeIcon icon={farCalendarAlt} />
-              </span>
-              <span className="elementor-icon-list-text">
-                Sunday services @ 9:00am & 11:00am
-              </span>
-            </li>
-            <li className="elementor-icon-list-item">
-              <span className="elementor-icon-list-icon">
-                <FontAwesomeIcon icon={faMapMarkerAlt} />
-              </span>
-              <span className="elementor-icon-list-text">
-                599 Bayly Street East, Ajax, Ontario
-              </span>
-            </li>
-          </ul>
-        </Col>
-        <Col>
-          <p>
-            Filled with warm and inviting people, Ajax acts as our largest
+          <p>Filled with warm and inviting people, Ajax acts as our largest
             in-person site with live teaching, worship and many events that help
-            foster and build up our community.
-          </p>
+            foster and build up our community.   </p>
+        </Col>
+      </Row>
+      <Row>
+        <Col className="text-center">
           <Button
-            variant="link"
+            variant="primary"
             href="https://sanctuschurch.com/ajax/"
-            className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
           >
-            More information
+            More Information
           </Button>
         </Col>
       </Row>
-    </Container>
+          </Col>
+        </Row>
+      </Container>
+    </div>
       </Tab>
 
       <Tab eventKey="bowmanville" title="Bowmanville">
@@ -146,53 +142,55 @@ const Locations = () => {
           <span className="eael-tab-title title-after-icon">Bowmanville</span>
         </div>
         {/* Add content for Bowmanville tab here */}
-        <div className="clearfix eael-tab-content-item inactive" data-title-link="bowmanville-tab">
-        {/* Add Bowmanville tab content here */}
-        <div>
-          <img
-            loading="lazy"
-            decoding="async"
-            width="800"
-            height="800"
-            src="https://sanctuschurch.com/wp-content/uploads/2022/05/Hollie-Charlebois.png"
-            alt="Pastor Hollie Charlebois"
-          />
-        </div>
-        <div>
-          <h2>Hollie Charlebois</h2>
-          <p>Site Pastor</p>
-        </div>
-        <ul className="elementor-icon-list-items">
-          <li className="elementor-icon-list-item">
-            <span className="elementor-icon-list-icon">
-              <FontAwesomeIcon icon={faCalendarAlt} />
-            </span>
-            <span className="elementor-icon-list-text">Sunday service @ 10:30am</span>
-          </li>
-          <li className="elementor-icon-list-item">
-            <span className="elementor-icon-list-icon">
-              <FontAwesomeIcon icon={faMapMarkerAlt} />
-            </span>
-            <span className="elementor-icon-list-text">116 Church St, Bowmanville ON, L1C 1T2</span>
-          </li>
-        </ul>
-        <p>
-          Each week, with the help of volunteers, we provide an engaging worship experience
+    <div id="bowmanville-tab" className="clearfix eael-tab-content-item inactive" data-title-link="bowmanville-tab">
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={6} className="text-center">
+            <img
+              src="pastor-2.png"
+              alt=""
+              className="img-fluid"
+            />
+            <h2>Hollie Charlebois</h2>
+            <h2>Site Pastor</h2>
+          </Col>
+          <Col xs={12} md={6}>
+          <Row>
+        <Col>
+          <ListGroup variant="flush">
+            <ListGroup.Item>
+              <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
+              Sunday service @ 10:30am
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
+              116 Church St, Bowmanville ON, L1C 1T2
+            </ListGroup.Item>
+          </ListGroup>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <p>Each week, with the help of volunteers, we provide an engaging worship experience
           for our congregation, guests, and those interested in knowing more about Jesus.
           Services are currently offering teaching and worship through video in the building.
-          Services are currently operating at full capacity.
-        </p>
-        <div>
-          <a
-            className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+          Services are currently operating at full capacity.</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col className="text-center">
+          <Button
+            variant="primary"
             href="https://sanctuschurch.com/bowmanville/"
           >
-            <span className="elementor-button-content-wrapper">
-              <span className="elementor-button-text">More information</span>
-            </span>
-          </a>
-        </div>
-      </div>
+            More Information
+          </Button>
+        </Col>
+      </Row>
+          </Col>
+        </Row>
+      </Container>
+    </div>
       </Tab>
 
       <Tab eventKey="pickering" title="Pickering">
@@ -206,7 +204,7 @@ const Locations = () => {
           <span className="eael-tab-title title-after-icon">Pickering</span>
         </div>
         {/* Add content for Pickering tab here */}
-        <Container className="eael-tab-content-item inactive" data-title-link="pickering-tab">
+        {/*<Container className="eael-tab-content-item inactive" data-title-link="pickering-tab">
       <Row>
         <Col xs={12} md={6}>
           <Image
@@ -251,7 +249,55 @@ const Locations = () => {
           </Button>
         </Col>
       </Row>
-    </Container>
+    </Container>*/}
+    <div id="pickering-tab" className="clearfix eael-tab-content-item inactive" data-title-link="pickering-tab">
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={6} className="text-center">
+            <img
+              src="pastor2.png"
+              alt=""
+              className="img-fluid"
+            />
+            <h2>Lucas Prado</h2>
+            <h2>Site Pastor</h2>
+          </Col>
+          <Col xs={12} md={6}>
+          <Row>
+        <Col>
+          <ListGroup variant="flush">
+            <ListGroup.Item>
+              <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
+              Sunday service @ 10:30am
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
+              St. Mary Catholic Secondary School 1918 Whites Rd N, Pickering, ON L1V 1R9
+            </ListGroup.Item>
+          </ListGroup>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <p>
+            A close-knit community, our Pickering site is filled with lively, friendly, and welcoming people who love God and have a special passion for people on their journey to Jesus.
+          </p>
+        </Col>
+      </Row>
+      <Row>
+        <Col className="text-center">
+          <Button
+            variant="primary"
+            href="https://sanctuschurch.com/pickering/"
+          >
+            More Information
+          </Button>
+        </Col>
+      </Row>
+          </Col>
+        </Row>
+      </Container>
+    </div>
       </Tab>
 
       <Tab eventKey="port-perry" title="Port Perry">
@@ -265,12 +311,12 @@ const Locations = () => {
           <span className="eael-tab-title title-after-icon">Port Perry</span>
         </div>
         {/* Add content for Port Perry tab here */}
-        <div id="port-perry-tab" className="clearfix eael-tab-content-item inactive" data-title-link="port-perry-tab">
+    <div id="port-perry-tab" className="clearfix eael-tab-content-item inactive" data-title-link="port-perry-tab">
       <Container fluid>
         <Row className="justify-content-center">
           <Col xs={12} md={6} className="text-center">
             <img
-              src="https://sanctuschurch.com/wp-content/uploads/2022/05/Joel-Penney.png"
+              src="next.png"
               alt=""
               className="img-fluid"
             />
@@ -278,29 +324,37 @@ const Locations = () => {
             <h2>Site Pastor</h2>
           </Col>
           <Col xs={12} md={6}>
-            <ul className="elementor-icon-list-items">
-              <li className="elementor-icon-list-item">
-                <span className="elementor-icon-list-icon">
-                  <FontAwesomeIcon icon={farCalendarAlt} />
-                </span>
-                <span className="elementor-icon-list-text">Sunday service @ 10:30am</span>
-              </li>
-              <li className="elementor-icon-list-item">
-                <span className="elementor-icon-list-icon">
-                  <FontAwesomeIcon icon={faMapMarkerAlt} />
-                </span>
-                <span className="elementor-icon-list-text">14480 Old Simcoe Rd, Port Perry, ON, L9L 1C5</span>
-              </li>
-            </ul>
-            <p>
+          <Row>
+        <Col>
+          <ListGroup variant="flush">
+            <ListGroup.Item>
+              <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
+              Sunday service @ 10:30am
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
+              14480 Old Simcoe Rd, Port Perry, ON, L9L 1C5
+            </ListGroup.Item>
+          </ListGroup>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <p>
               Often described as family, our Port Perry site is a smaller woven community with a special focus on one-on-one relationships that ultimately help members grow in their relationship with God. Port Perry welcomes new visitors with open arms and has a special way of making them feel at home right away.
             </p>
-            <Button
-              href="https://sanctuschurch.com/port-perry/"
-              className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
-            >
-              More Information
-            </Button>
+        </Col>
+      </Row>
+      <Row>
+        <Col className="text-center">
+          <Button
+            variant="primary"
+            href="https://sanctuschurch.com/port-perry/"
+          >
+            More Information
+          </Button>
+        </Col>
+      </Row>
           </Col>
         </Row>
       </Container>
@@ -318,69 +372,59 @@ const Locations = () => {
           <span className="eael-tab-title title-after-icon">Online</span>
         </div>
         {/* Add content for Online tab here */}
-        <Container className="eael-tab-content-item inactive">
-      <Row>
+    <div id="online-tab" className="clearfix eael-tab-content-item inactive" data-title-link="online-tab">
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={6} className="text-center">
+            <img
+              src="pastor-2.jpg"
+              alt=""
+              className="img-fluid"
+            />
+            <h2>Brandon Lawryshyn</h2>
+            <h2>Site Pastor</h2>
+          </Col>
+          <Col xs={12} md={6}>
+          <Row>
         <Col>
-          <img
-            loading="lazy"
-            decoding="async"
-            width="800"
-            height="800"
-            src="https://sanctuschurch.com/wp-content/uploads/2022/05/Brandon.png"
-            alt=""
-          />
-        </Col>
-        <Col>
-          <h2>Brandon Lawryshyn</h2>
-          <h2>Site Pastor</h2>
+          <ListGroup variant="flush">
+            <ListGroup.Item>
+              <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
+              Sunday service @ 9:00am, 10:30am, & on-demand
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
+              Wednesday Service @ 7:30PM
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
+              Online
+            </ListGroup.Item>
+          </ListGroup>
         </Col>
       </Row>
       <Row>
         <Col>
-          <ul className="elementor-icon-list-items">
-            <li className="elementor-icon-list-item">
-              <span className="elementor-icon-list-icon">
-                <FontAwesomeIcon icon={farCalendarAlt} />
-              </span>
-              <span className="elementor-icon-list-text">
-                Sunday service @ 9:00am, 10:30am, & on-demand
-              </span>
-            </li>
-            <li className="elementor-icon-list-item">
-              <span className="elementor-icon-list-icon">
-                <FontAwesomeIcon icon={farCalendarAlt} />
-              </span>
-              <span className="elementor-icon-list-text">
-                Wednesday Service @ 7:30PM
-              </span>
-            </li>
-            <li className="elementor-icon-list-item">
-              <span className="elementor-icon-list-icon">
-                <FontAwesomeIcon icon={faMapMarkerAlt} />
-              </span>
-              <span className="elementor-icon-list-text">Online</span>
-            </li>
-          </ul>
-        </Col>
-        <Col>
-          <p>
-            <span style={{ fontWeight: 400 }}>
-              Filled with a community that has bloomed over the past three
+          <p>Filled with a community that has bloomed over the past three
               years, our online site now acts as our largest site. Engage in
               worship and teaching from our speakers each week with people from
-              across the nation.
-            </span>
-          </p>
+              across the nation.</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col className="text-center">
           <Button
             variant="primary"
-            className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
             href="https://sanctuschurch.com/online/"
           >
             More Information
           </Button>
         </Col>
       </Row>
-    </Container>
+          </Col>
+        </Row>
+      </Container>
+    </div>
       </Tab>
     </Tabs>
   

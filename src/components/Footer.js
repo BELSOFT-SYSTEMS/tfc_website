@@ -11,14 +11,57 @@ function Footer() {
   return (
     <footer style={{ backgroundColor: '#012101', padding: '20px 0', color: 'white' }}>
     <Container className="elementor-container elementor-column-gap-default">
+      {/* Container for the "Explore Your" and "Next Steps @ Sanctus" section */}
+      <Container>
+        <Row>
+          <Col md={6} className="elementor-column elementor-col-50 elementor-top-column elementor-element">
+            {/* ... (your "Explore Your" and "Next Steps @ Sanctus" section code) ... */}
+            <div className="elementor-widget-wrap elementor-element-populated">
+              <div className="elementor-element elementor-element-ac707ff elementor-invisible elementor-widget elementor-widget-text-editor">
+                <div className="elementor-widget-container">
+                  <p>Explore Your</p>
+                </div>
+              </div>
+              <div className="elementor-element elementor-element-ab3ddf3 animated-slow elementor-invisible elementor-widget elementor-widget-heading">
+                <div className="elementor-widget-container">
+                  <h2 className="elementor-heading-title elementor-size-default">Next Steps @ Sanctus</h2>
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col md={6} className="elementor-column elementor-col-50 elementor-top-column elementor-element">
+            {/* ... (your social media icons and form code) ... */}
+            <div className="elementor-widget-wrap elementor-element-populated">
+              <div className="elementor-element elementor-element-b082f66 elementor-hidden-mobile elementor-widget elementor-widget-spacer">
+                <div className="elementor-widget-container">
+                  <div className="elementor-spacer">
+                    <div className="elementor-spacer-inner"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="elementor-element elementor-element-e1500c7 elementor-view-default elementor-widget elementor-widget-icon">
+                <div className="elementor-widget-container">
+                  <div className="elementor-icon-wrapper">
+                    <a className="elementor-icon elementor-animation-grow" href="https://sanctuschurch.com/next-steps/">
+                      <FontAwesomeIcon icon={faArrowAltCircleRight} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
 
+
+      <Container style={{ display: 'flex' , justifyContent: 'space-between' }}>
       {/* Container for the "Get In Touch" heading and contact information */}
       <Container style={{ textAlign: 'left' }}>
         <Row>
           <Col md={6}>
             <div className="elementor-element elementor-element-0e0ec13 elementor-widget elementor-widget-heading">
               <div className="elementor-widget-container">
-                <h2 className="elementor-heading-title elementor-size-default">Get In Touch</h2>
+                <h2 className="elementor-heading-title elementor-size-default" style={{fontSize:'25px'}}>Get In Touch</h2>
               </div>
             </div>
           </Col>
@@ -42,10 +85,6 @@ function Footer() {
           </div>
           </Col>
         </Row>
-      </Container>
-  
-      {/* Container for the social media icons */}
-      <Container>
         <Row>
           <Col md={6}>
             <div className="elementor-social-icons-wrapper elementor-grid">
@@ -72,11 +111,15 @@ function Footer() {
         </Row>
       </Container>
   
+      {/* Container for the social media icons */}
+      
+      
+  
       {/* Container for the "Subscribe to receive updates" section */}
       <Container style={{ textAlign: 'left' }}>
         <Row>
           <Col>
-            <h2>Subscribe to receive updates from Sanctus</h2>
+            <h2 style={{fontSize:'25px'}}>Subscribe to receive updates from The Father's Church</h2>
           </Col>
         </Row>
         <Row className="justify-content-start">
@@ -90,11 +133,11 @@ function Footer() {
         <input type="hidden" name="queried_id" value="19128" />
 
         <Form.Group controlId="formEmail" style={{ marginTop: '10px' }}>
-          <Form.Control type="email" name="form_fields[name]" placeholder="Email" style={{ maxWidth: '250px' }} />
+          <Form.Control type="email" name="form_fields[name]" placeholder="Email" style={{ maxWidth: '350px' }} />
         </Form.Group>
 
         <Form.Group controlId="formName" style={{ marginTop: '10px' }}>
-          <Form.Control type="text" name="form_fields[field_a7d8490]" placeholder="Name" style={{ maxWidth: '250px' }} />
+          <Form.Control type="text" name="form_fields[field_a7d8490]" placeholder="Name" style={{ maxWidth: '350px' }} />
         </Form.Group>
 
         <div className="e-form__buttons" style={{ marginTop: '10px' }}>
@@ -113,9 +156,10 @@ function Footer() {
 </Row>
         <Row>
         <Col md={12}>
-          <p style={{ color: 'white' }}>© 2022 All rights Reserved. Design by Our Creative Factory</p>
+          <p style={{ color: 'white' }}>© 2024 All rights Reserved. Design by Our Creative Factory</p>
         </Col>
       </Row>
+      </Container>
       </Container>
   
       
