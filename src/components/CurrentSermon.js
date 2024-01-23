@@ -69,6 +69,7 @@ function CurrentSermon() {
                     <div className="elementor-button-wrapper">
                       <Button
                         className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+                        variant="success"
                         href="https://sanctuschurch.com/sermons/"
                       >
                         <span className="elementor-button-content-wrapper">

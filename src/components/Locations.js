@@ -118,7 +118,7 @@ const Locations = () => {
       <Row>
         <Col className="text-center">
           <Button
-            variant="primary"
+            variant="success"
             href="https://sanctuschurch.com/ajax/"
           >
             More Information
@@ -180,7 +180,7 @@ const Locations = () => {
       <Row>
         <Col className="text-center">
           <Button
-            variant="primary"
+            variant="success"
             href="https://sanctuschurch.com/bowmanville/"
           >
             More Information
@@ -204,52 +204,6 @@ const Locations = () => {
           <span className="eael-tab-title title-after-icon">Pickering</span>
         </div>
         {/* Add content for Pickering tab here */}
-        {/*<Container className="eael-tab-content-item inactive" data-title-link="pickering-tab">
-      <Row>
-        <Col xs={12} md={6}>
-          <Image
-            src="https://sanctuschurch.com/wp-content/uploads/2022/05/Lucas-Prado.png"
-            alt="Pastor Lucas Prado"
-            fluid
-          />
-        </Col>
-        <Col xs={12} md={6}>
-          <h2>Lucas Prado</h2>
-          <h2>Site Pastor</h2>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <ListGroup variant="flush">
-            <ListGroup.Item>
-              <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
-              Sunday service @ 10:30am
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
-              St. Mary Catholic Secondary School 1918 Whites Rd N, Pickering, ON L1V 1R9
-            </ListGroup.Item>
-          </ListGroup>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <p>
-            A close-knit community, our Pickering site is filled with lively, friendly, and welcoming people who love God and have a special passion for people on their journey to Jesus.
-          </p>
-        </Col>
-      </Row>
-      <Row>
-        <Col className="text-center">
-          <Button
-            variant="primary"
-            href="https://sanctuschurch.com/pickering/"
-          >
-            More Information
-          </Button>
-        </Col>
-      </Row>
-    </Container>*/}
     <div id="pickering-tab" className="clearfix eael-tab-content-item inactive" data-title-link="pickering-tab">
       <Container fluid>
         <Row className="justify-content-center">
@@ -287,7 +241,7 @@ const Locations = () => {
       <Row>
         <Col className="text-center">
           <Button
-            variant="primary"
+            variant="success"
             href="https://sanctuschurch.com/pickering/"
           >
             More Information
@@ -414,7 +368,7 @@ const Locations = () => {
       <Row>
         <Col className="text-center">
           <Button
-            variant="primary"
+            variant="success"
             href="https://sanctuschurch.com/online/"
           >
             More Information

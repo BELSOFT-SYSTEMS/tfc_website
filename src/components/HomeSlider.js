@@ -201,6 +201,7 @@ const HomeSlider = () => {
                   <div className="elementor-button-wrapper">
                     <Button
                       className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+                      variant="success"
                       href="https://sanctuschurch.com/sundays-sanctus/"
                     >
                       <span className="elementor-button-content-wrapper">
