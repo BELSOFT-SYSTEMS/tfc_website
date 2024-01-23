@@ -12,7 +12,7 @@ function Homepage() {
     <div>
       <Header />
       <HomeSlider />
-      < CurrentSermon />
+      <CurrentSermon />
       <Locations />
       <Upcomingevents />
       <Footer />

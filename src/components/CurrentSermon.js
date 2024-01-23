@@ -1,19 +1,28 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
-function CurrentSermon() {
-  return (
-    <div>
-      <section
-        data-particle_enable="false"
-        data-particle-mobile-disabled="false"
-        className="elementor-section elementor-top-section elementor-element elementor-element-0181fdd elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
-        data-id="0181fdd"
-        data-element_type="section"
-        data-settings='{"background_background":"classic","background_motion_fx_motion_fx_scrolling":"yes","background_motion_fx_translateX_effect":"yes","background_motion_fx_translateX_speed":{"unit":"px","size":4,"sizes":[]},"background_motion_fx_translateX_affectedRange":{"unit":"%","size":"","sizes":{"start":0,"end":100}},"background_motion_fx_devices":["desktop","tablet","mobile"]}'
-      >
-        <div className="elementor-background-overlay"></div>
-        <Container>
+const CurrentSermon = () => {
+  const backgroundImageUrl = 'CSs.jpg'; // Replace with your image URL
+
+  const containerStyle = {
+    backgroundImage: `url(${backgroundImageUrl})`,
+    backgroundSize: '100%', // Adjust as needed
+    backgroundPosition: 'center center', // Adjust as needed
+    backgroundRepeat: 'no-repeat', // Adjust as needed
+    width: '100vw', // Set the width to 100% of the viewport width
+    height: '100vh', // Set the desired height
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: 'white', // Set text color
+    margin: 0, // Reset margin
+    padding: 0, // Reset padding
+  };
+
+ return (
+    
+        <Container style={containerStyle}>
           <Row>
             <Col md={6} className="elementor-hidden-mobile">
               {/* Empty column as per the original structure */}
@@ -28,7 +37,7 @@ function CurrentSermon() {
                   data-widget_type="heading.default"
                 >
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">
+                    <h2 className="elementor-heading-title elementor-size-default" style={{fontSize:'45px'}}>
                       Current Sermon Series
                     </h2>
                   </div>
@@ -85,8 +94,6 @@ function CurrentSermon() {
             </Col>
           </Row>
         </Container>
-      </section>
-    </div>
   );
 }
 

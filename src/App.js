@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/pages/Homepage'; // Your landing page component
 import ContactPage from './components/pages/Contactpage';
 import Landing from './components/pages/Landing';
+import './index.css';
 
 {/*
 import './css/frontend.min.css';
@@ -30,7 +31,7 @@ import './css/tooltip.css';
 import './css/tooltipster-sideTip-shadow.min.css';
 import './css/widget-icon-list.min.css';
 import './css/widget-nav-menu.min.css';
-import './index.css';
+
 */}
 
 function App() {
