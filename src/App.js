@@ -38,8 +38,8 @@ function App() {
   return (
     <Router>
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/landing" element={<Landing />} />
+      <Route path="/" element={<Landing />} />
+      <Route path="/home" element={<HomePage />} />
       <Route path="/contact" element={<ContactPage />} />
       </Routes>
   </Router>
