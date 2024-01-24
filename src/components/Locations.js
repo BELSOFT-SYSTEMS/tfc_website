@@ -33,7 +33,7 @@ const Locations = () => {
           aria-controls="ajax-tab"
           aria-expanded="false"
         >
-          <FontAwesomeIcon icon={faChurch} />
+          <FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04',  }} />
           <span className="eael-tab-title title-after-icon">Ajax</span>
         </div>
         {/* Add content for Ajax tab here */}
@@ -55,11 +55,11 @@ const Locations = () => {
         <Col>
           <ListGroup variant="flush">
             <ListGroup.Item style={{fontSize:'20px'}}>
-              <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#012101' }} className="mr-2" />
+              <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#d49c04',  }} className="mr-2" />
               Sunday services @ 9:00am & 11:00am
             </ListGroup.Item>
             <ListGroup.Item style={{fontSize:'20px'}}>
-              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#012101' }} className="mr-2" />
+              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#d49c04',  }} className="mr-2" />
               599 Bayly Street East, Ajax, Ontario
             </ListGroup.Item>
           </ListGroup>
@@ -76,6 +76,7 @@ const Locations = () => {
         <Col className="text-center">
           <Button
             variant="success"
+            style={{ backgroundColor: '#d49c04', color:'#000' }}
             href="https://sanctuschurch.com/ajax/"
           >
             More Information
@@ -95,7 +96,7 @@ const Locations = () => {
           aria-controls="bowmanville-tab"
           aria-expanded="false"
         >
-          <FontAwesomeIcon icon={faChurch} />
+          <FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04',  }} />
           <span className="eael-tab-title title-after-icon">Bowmanville</span>
         </div>
         {/* Add content for Bowmanville tab here */}
@@ -116,12 +117,12 @@ const Locations = () => {
           <Row>
         <Col>
           <ListGroup variant="flush">
-            <ListGroup.Item style={{fontSize:'30px'}}>
-              <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#012101' }} className="mr-2" />
+            <ListGroup.Item style={{fontSize:'20px'}}>
+              <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#d49c04',  }} className="mr-2" />
               Sunday service @ 10:30am
             </ListGroup.Item>
-            <ListGroup.Item style={{fontSize:'30px'}}>
-              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#012101' }} className="mr-2" />
+            <ListGroup.Item style={{fontSize:'20px'}}>
+              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#d49c04',  }} className="mr-2" />
               116 Church St, Bowmanville ON, L1C 1T2
             </ListGroup.Item>
           </ListGroup>
@@ -139,6 +140,7 @@ const Locations = () => {
         <Col className="text-center">
           <Button
             variant="success"
+            style={{ backgroundColor: '#d49c04', color:'#000' }}
             href="https://sanctuschurch.com/bowmanville/"
           >
             More Information
@@ -158,7 +160,7 @@ const Locations = () => {
           aria-controls="pickering-tab"
           aria-expanded="false"
         >
-          <FontAwesomeIcon icon={faChurch} />
+          <FontAwesomeIcon icon={faChurch}  style={{ color: '#d49c04',  }}/>
           <span className="eael-tab-title title-after-icon">Pickering</span>
         </div>
         {/* Add content for Pickering tab here */}
@@ -180,11 +182,11 @@ const Locations = () => {
         <Col>
           <ListGroup variant="flush">
             <ListGroup.Item style={{fontSize:'20px'}}>
-              <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#012101' }} className="mr-2" />
+              <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#d49c04',  }} className="mr-2" />
               Sunday service @ 10:30am
             </ListGroup.Item>
             <ListGroup.Item style={{fontSize:'20px'}}>
-              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#012101' }} className="mr-2" />
+              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#d49c04',  }} className="mr-2" />
               St. Mary Catholic Secondary School 1918 Whites Rd N, Pickering, ON L1V 1R9
             </ListGroup.Item>
           </ListGroup>
@@ -201,6 +203,7 @@ const Locations = () => {
         <Col className="text-center">
           <Button
             variant="success"
+            style={{ backgroundColor: '#d49c04', color:'#000' }}
             href="https://sanctuschurch.com/pickering/"
           >
             More Information
@@ -220,7 +223,7 @@ const Locations = () => {
           aria-controls="port-perry-tab"
           aria-expanded="false"
         >
-          <FontAwesomeIcon icon={faChurch} />
+          <FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04',  }} />
           <span className="eael-tab-title title-after-icon">Port Perry</span>
         </div>
         {/* Add content for Port Perry tab here */}
@@ -242,11 +245,11 @@ const Locations = () => {
         <Col>
           <ListGroup variant="flush">
             <ListGroup.Item style={{fontSize:'20px'}}>
-              <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#012101' }} className="mr-2" />
+              <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#d49c04',  }} className="mr-2" />
               Sunday service @ 10:30am
             </ListGroup.Item>
             <ListGroup.Item style={{fontSize:'20px'}}>
-              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#012101' }} className="mr-2" />
+              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#d49c04',  }} className="mr-2" />
               14480 Old Simcoe Rd, Port Perry, ON, L9L 1C5
             </ListGroup.Item>
           </ListGroup>
@@ -263,6 +266,7 @@ const Locations = () => {
         <Col className="text-center">
           <Button
             variant="primary"
+            style={{ backgroundColor: '#d49c04', color:'#000' }}
             href="https://sanctuschurch.com/port-perry/"
           >
             More Information
@@ -282,7 +286,7 @@ const Locations = () => {
           aria-controls="online-tab"
           aria-expanded="false"
         >
-          <FontAwesomeIcon icon={faChurch} />
+          <FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04',  }} />
           <span className="eael-tab-title title-after-icon">Online</span>
         </div>
         {/* Add content for Online tab here */}
@@ -304,15 +308,15 @@ const Locations = () => {
         <Col>
           <ListGroup variant="flush">
             <ListGroup.Item style={{fontSize:'20px'}}>
-              <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#012101' }} className="mr-2" />
+              <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#d49c04',  }} className="mr-2" />
               Sunday service @ 9:00am, 10:30am, & on-demand
             </ListGroup.Item>
             <ListGroup.Item style={{fontSize:'20px'}}>
-              <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#012101' }} className="mr-2" />
+              <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#d49c04',  }} className="mr-2" />
               Wednesday Service @ 7:30PM
             </ListGroup.Item>
             <ListGroup.Item style={{fontSize:'20px'}}>
-              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#012101' }} className="mr-2" />
+              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#d49c04',  }} className="mr-2" />
               Online
             </ListGroup.Item>
           </ListGroup>
@@ -330,6 +334,7 @@ const Locations = () => {
         <Col className="text-center">
           <Button
             variant="success"
+            style={{ backgroundColor: '#d49c04', color:'#000' }}
             href="https://sanctuschurch.com/online/"
           >
             More Information

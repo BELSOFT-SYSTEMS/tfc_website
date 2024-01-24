@@ -2,6 +2,30 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 const HomeSlider = () => {
+
+  const backgroundImageUrl = 'background-img1.jpg'; // Replace with your image URL
+
+  const containerStyle = {
+    backgroundImage: `url(${backgroundImageUrl})`,
+    backgroundSize: 'cover', // Adjust as needed
+    backgroundPosition: 'center center', // Adjust as needed
+    backgroundRepeat: 'no-repeat', // Adjust as needed
+    width: '100%', // Set the width to 100% of the viewport width
+    height: '100vh', // Set the desired height
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: 'white', // Set text color
+    margin: 0, // Reset margin
+    padding: 0, // Reset padding
+    overflow: 'hidden',
+    boxSizing:'border-box',
+  };
+
+  const aspectRatio = 'calc(1438 / 2560 * 100%)'; // Calculate the aspect ratio
+
+
   return (
     <>
       {/* Section 1 */}
@@ -54,14 +78,28 @@ const HomeSlider = () => {
                       }
                     `}
                   </style>
-                  <h1 className="elementor-heading-title elementor-size-default">
+                  <h1 className="elementor-heading-title elementor-size-default" style={{fontSize: '100px', fontWeight:'bold',fontFamily:'Sans-serif', justifyContent:'center', textAlign:'left', marginTop:'30px', marginBottom:'20px'}}>
                     You Belong Here.
                   </h1>
-                  <div className="elementor-element elementor-element-b939dcd elementor-widget elementor-widget-image">
-                    <div className="elementor-widget-container">
-                      {/* Add your image or other content here */}
-                    </div>
-                  </div>
+                  <div className="hero-banner" style={{ position: 'relative', paddingBottom: aspectRatio }}>
+      <Container className="image-container">
+        <img
+          src="slider1.jpg"
+          alt="Hero Banner"
+          className="img-fluid rounded"
+          style={{
+            position: 'absolute',
+            top: '40%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: '50%',
+            height: '60%',
+            objectFit: 'cover',
+            borderRadius: '40px',
+          }}
+        />
+      </Container>
+    </div>
                 </div>
               </div>
             </Col>
@@ -71,137 +109,32 @@ const HomeSlider = () => {
 
       {/* Section 2 */}
       <section className="your-section-class">
-        <Container fluid>
+        <Container fluid style={containerStyle} >
           <Row>
             <Col md={6}>
               <div
-                className="elementor-element elementor-element-39a940e elementor-widget elementor-widget-spacer"
-                data-id="39a940e"
-                data-element_type="widget"
-                data-widget_type="spacer.default"
-              >
-                <div className="elementor-widget-container">
-                  <style>
-                    {`
-                      /*! elementor - v3.18.0 - 20-12-2023 */
-                      .elementor-column .elementor-spacer-inner {
-                        height: var(--spacer-size);
-                      }
-                      .e-con {
-                        --container-widget-width: 100%;
-                      }
-                      .e-con-inner > .elementor-widget-spacer,
-                      .e-con > .elementor-widget-spacer {
-                        width: var(--container-widget-width, var(--spacer-size));
-                        --align-self: var(--container-widget-align-self, initial);
-                        --flex-shrink: 0;
-                      }
-                      .e-con-inner > .elementor-widget-spacer > .elementor-widget-container,
-                      .e-con > .elementor-widget-spacer > .elementor-widget-container {
-                        height: 100%;
-                        width: 100%;
-                      }
-                      .e-con-inner > .elementor-widget-spacer > .elementor-widget-container > .elementor-spacer,
-                      .e-con > .elementor-widget-spacer > .elementor-widget-container > .elementor-spacer {
-                        height: 100%;
-                      }
-                      .e-con-inner > .elementor-widget-spacer > .elementor-widget-container > .elementor-spacer > .elementor-spacer-inner,
-                      .e-con > .elementor-widget-spacer > .elementor-widget-container > .elementor-spacer > .elementor-spacer-inner {
-                        height: var(--container-widget-height, var(--spacer-size));
-                      }
-                      .e-con-inner > .elementor-widget-spacer.elementor-widget-empty,
-                      .e-con > .elementor-widget-spacer.elementor-widget-empty {
-                        position: relative;
-                        min-height: 22px;
-                        min-width: 22px;
-                      }
-                      .e-con-inner > .elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon,
-                      .e-con > .elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon {
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
-                        padding: 0;
-                        width: 22px;
-                        height: 22px;
-                      }
-                    `}
-                  </style>
-                  <div className="elementor-spacer">
-                    <div className="elementor-spacer-inner"></div>
-                  </div>
-                </div>
-              </div>
-              <div
                 className="elementor-element elementor-element-52ff6ed elementor-invisible elementor-widget elementor-widget-heading"
-                data-id="52ff6ed"
-                data-element_type="widget"
-                data-settings='{"_animation":"fadeInLeft"}'
-                data-widget_type="heading.default"
               >
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">
-                    Sundays @ <br />Sanctus
+                  <h2 className="elementor-heading-title elementor-size-default" style={{fontSize: '80px', fontWeight:'bold',fontFamily:'Sans-serif', justifyContent:'center', textAlign:'left', marginTop:'30px', color:'#000', marginBottom:'20px'}}>
+                    Sundays @ <br />TFC
                   </h2>
                 </div>
               </div>
-              <div
-                className="elementor-element elementor-element-70f18ad elementor-invisible elementor-widget elementor-widget-text-editor"
-                data-id="70f18ad"
-                data-element_type="widget"
-                data-settings='{"_animation":"fadeInLeft"}'
-                data-widget_type="text-editor.default"
-              >
+              <div className="elementor-element elementor-element-70f18ad elementor-invisible elementor-widget elementor-widget-text-editor">
                 <div className="elementor-widget-container">
-                  <style>
-                    {`
-                      /*! elementor - v3.18.0 - 20-12-2023 */
-                      .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
-                        background-color: #69727d;
-                        color: #fff;
-                      }
-                      .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
-                        color: #69727d;
-                        border: 3px solid;
-                        background-color: transparent;
-                      }
-                      .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
-                        margin-top: 8px;
-                      }
-                      .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
-                        width: 1em;
-                        height: 1em;
-                      }
-                      .elementor-widget-text-editor .elementor-drop-cap {
-                        float: left;
-                        text-align: center;
-                        line-height: 1;
-                        font-size: 50px;
-                      }
-                      .elementor-widget-text-editor .elementor-drop-cap-letter {
-                        display: inline-block;
-                      }
-                    `}
-                  </style>
-                  <p>
-                    Welcome to Sanctus Church. Our mission is to glorify God by enabling people of all ages to become fully devoted followers of Jesus Christ. Join us on Sundays to experience engaging teaching, dynamic worship, and intimate prayer. No matter what your age, stage of life, or background, you are welcome here!
+                  <p style={{color:'#000'}}>
+                    Welcome to The Fathers Church. Our mission is to glorify God by enabling people of all ages to become fully devoted followers of Jesus Christ. Join us on Sundays to experience engaging teaching, dynamic worship, and intimate prayer. No matter what your age, stage of life, or background, you are welcome here!
                   </p>
                 </div>
               </div>
-              <div
-                className="elementor-element elementor-element-72f4e51 elementor-mobile-align-center elementor-invisible elementor-widget elementor-widget-button"
-                data-id="72f4e51"
-                data-element_type="widget"
-                data-settings='{"_animation":"fadeInLeft"}'
-                data-widget_type="button.default"
-              >
+              <div className="elementor-element elementor-element-72f4e51 elementor-mobile-align-center elementor-invisible elementor-widget elementor-widget-button">
                 <div className="elementor-widget-container">
                   <div className="elementor-button-wrapper">
                     <Button
                       className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
                       variant="success"
+                      style={{backgroundColor: '#d49c04', color: '#000',}}
                       href="https://sanctuschurch.com/sundays-sanctus/"
                     >
                       <span className="elementor-button-content-wrapper">
@@ -212,6 +145,15 @@ const HomeSlider = () => {
                 </div>
               </div>
             </Col>
+            <Col md={6}>
+            {/* Your image goes here */}
+            <img
+              src="sundays1.png"
+              alt="Opposite"
+              className="img-fluid"
+              style={{ borderRadius: '10px', margin: '20px 0', }} // Add styles as needed
+            />
+          </Col>
           </Row>
         </Container>
       </section>

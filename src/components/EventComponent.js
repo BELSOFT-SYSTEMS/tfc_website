@@ -9,10 +9,11 @@ const EventComponent = ({ title, description, imageUrl, buttonText }) => {
       <Card.Body>
         <Card.Header>{title}</Card.Header>
         <Card.Text>{description}</Card.Text>
-        <Button variant="success" style={{justifyContent:'center', alignContent:'center', marginLeft:'40px', marginTop:'20px', marginBottom:'20px'}}>{buttonText}</Button>
+        <Button variant="success" style={{justifyContent:'center', backgroundColor: '#d49c04', color: '#000', alignContent:'center', marginLeft:'40px', marginTop:'20px', marginBottom:'20px'}}>{buttonText}</Button>
       </Card.Body>
     </Card>
   );
 };
+
 
 export default EventComponent;

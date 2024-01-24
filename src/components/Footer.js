@@ -24,7 +24,7 @@ function Footer() {
               </div>
               <div className="elementor-element elementor-element-ab3ddf3 animated-slow elementor-invisible elementor-widget elementor-widget-heading">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Next Steps @ Sanctus</h2>
+                  <h2 className="elementor-heading-title elementor-size-default">Next Steps @ TFC</h2>
                 </div>
               </div>
             </div>
@@ -43,7 +43,7 @@ function Footer() {
                 <div className="elementor-widget-container">
                   <div className="elementor-icon-wrapper">
                     <a className="elementor-icon elementor-animation-grow" href="https://sanctuschurch.com/next-steps/">
-                      <FontAwesomeIcon icon={faArrowAltCircleRight} />
+                      <FontAwesomeIcon icon={faArrowAltCircleRight} style={{ color: '#d49c04',  }} />
                     </a>
                   </div>
                 </div>
@@ -71,15 +71,15 @@ function Footer() {
       {/* Apply custom styles for the list */}
       <div style={{ listStyleType: 'none', paddingLeft: '0' }}>
           <Col md={4} className="elementor-icon-list-item">
-            <FontAwesomeIcon icon={faPhone} className="elementor-icon-list-icon" />
+            <FontAwesomeIcon icon={faPhone} className="elementor-icon-list-icon" style={{ color: '#d49c04',  }}/>
             <span className="elementor-icon-list-text">(905) 686-4450</span>
           </Col>
           <Col md={4} className="elementor-icon-list-item">
-            <FontAwesomeIcon icon={farEnvelopeOpen} className="elementor-icon-list-icon" />
-            <span className="elementor-icon-list-text">hello@sanctuschurch.com</span>
+            <FontAwesomeIcon icon={farEnvelopeOpen} className="elementor-icon-list-icon" style={{ color: '#d49c04',  }} />
+            <span className="elementor-icon-list-text">hello@TheFathersChurch.com</span>
           </Col>
           <Col md={4} className="elementor-icon-list-item">
-            <FontAwesomeIcon icon={faMapPin} className="elementor-icon-list-icon" />
+            <FontAwesomeIcon icon={faMapPin} className="elementor-icon-list-icon" style={{ color: '#d49c04',  }} />
             <span className="elementor-icon-list-text">Main Office 599 Bayly St East Ajax, ON L1Z 1L4</span>
           </Col>
           </div>
@@ -88,22 +88,22 @@ function Footer() {
         <Row>
           <Col md={6}>
             <div className="elementor-social-icons-wrapper elementor-grid">
-              <span className="elementor-grid-item" style={{ marginLeft: '10px' }}>
+              <span className="elementor-grid-item" style={{ marginLeft: '10px',}}>
                 <a className="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-animation-grow" href="https://www.facebook.com/sanctuschurch19/" target="_blank" rel="noopener noreferrer">
                   {/*<span className="elementor-screen-only">Facebook</span>*/}
-                  <FontAwesomeIcon icon={faFacebook} size='x4' />
+                  <FontAwesomeIcon icon={faFacebook} size='x4' style={{ color: '#d49c04',  }} />
                 </a>
               </span>
-              <span className="elementor-grid-item" style={{ marginLeft: '10px' }}>
+              <span className="elementor-grid-item" style={{ marginLeft: '10px', }}>
                 <a className="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-grow" href="https://www.instagram.com/sanctuschurch" target="_blank" rel="noopener noreferrer">
                   {/*<span className="elementor-screen-only">Instagram</span>*/}
-                  <FontAwesomeIcon icon={faInstagram} size='x4' />
+                  <FontAwesomeIcon icon={faInstagram} size='x4' style={{ color: '#d49c04',  }} />
                 </a>
               </span>
-              <span className="elementor-grid-item" style={{ marginLeft: '10px' }}>
+              <span className="elementor-grid-item" style={{ marginLeft: '10px', }}>
                 <a className="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-animation-grow" href="https://www.youtube.com/sanctuschurch" target="_blank" rel="noopener noreferrer">
                   {/*<span className="elementor-screen-only">Youtube</span>*/}
-                  <FontAwesomeIcon icon={faYoutube} size='lg' />
+                  <FontAwesomeIcon icon={faYoutube} size='lg'style={{ color: '#d49c04',  }} />
                 </a>
               </span>
             </div>
@@ -141,7 +141,7 @@ function Footer() {
         </Form.Group>
 
         <div className="e-form__buttons" style={{ marginTop: '10px' }}>
-          <Button type="submit" className="elementor-button elementor-size-sm elementor-animation-grow">
+          <Button type="submit" className="elementor-button elementor-size-sm elementor-animation-grow" style={{backgroundColor: '#d49c04', color: '#000',}}>
             <span>
               <span className="elementor-button-icon">
                 <FontAwesomeIcon icon={faEnvelope} />

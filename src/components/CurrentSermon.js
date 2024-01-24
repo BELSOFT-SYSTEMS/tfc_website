@@ -6,10 +6,10 @@ const CurrentSermon = () => {
 
   const containerStyle = {
     backgroundImage: `url(${backgroundImageUrl})`,
-    backgroundSize: '100%', // Adjust as needed
+    backgroundSize: 'cover', // Adjust as needed
     backgroundPosition: 'center center', // Adjust as needed
     backgroundRepeat: 'no-repeat', // Adjust as needed
-    width: '100vw', // Set the width to 100% of the viewport width
+    width: '100%', // Set the width to 100% of the viewport width
     height: '100vh', // Set the desired height
     display: 'flex',
     flexDirection: 'column',
@@ -18,11 +18,13 @@ const CurrentSermon = () => {
     color: 'white', // Set text color
     margin: 0, // Reset margin
     padding: 0, // Reset padding
+    overflow: 'hidden',
+    boxSizing:'border-box',
   };
 
  return (
     
-        <Container style={containerStyle}>
+        <Container  fluid style={containerStyle}>
           <Row>
             <Col md={6} className="elementor-hidden-mobile">
               {/* Empty column as per the original structure */}
@@ -37,7 +39,7 @@ const CurrentSermon = () => {
                   data-widget_type="heading.default"
                 >
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default" style={{fontSize:'45px'}}>
+                    <h2 className="elementor-heading-title elementor-size-default" style={{fontSize:'65px', fontWeight:'bold',}}>
                       Current Sermon Series
                     </h2>
                   </div>
@@ -77,6 +79,7 @@ const CurrentSermon = () => {
                   <div className="elementor-widget-container">
                     <div className="elementor-button-wrapper">
                       <Button
+                      style={{ backgroundColor: '#d49c04', color:'#000' }}
                         className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
                         variant="success"
                         href="https://sanctuschurch.com/sermons/"

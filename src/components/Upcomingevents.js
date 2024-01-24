@@ -35,7 +35,7 @@ const Upcomingevents = () => {
     />
   </Container>
   <Container style={{justifyContent:'center', textAlign:'center',marginTop:'20px', marginBottom:'20px'}}>
-  <Button variant="success">View all Events</Button>
+  <Button variant="success" style={{backgroundColor: '#d49c04', color: '#000',}}>View all Events</Button>
   </Container>
   </Container>
   )
