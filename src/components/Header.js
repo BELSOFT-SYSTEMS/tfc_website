@@ -23,6 +23,8 @@ const Header = () => {
   const menuStyle = {
     display: 'flex',
     gap: '20px',
+    justifyContent: 'space-between',
+    marginLeft:'60px',
   };
 
   const handleMouseEnter = (index) => {
@@ -73,9 +75,9 @@ const menuItems = [
       items: [
         { label: 'About Us', link: '/about' },
         { label: 'Sundays @ TFC', link: '/sundays' },
-        { label: 'Staff', link: '/staff' },
+        /*{ label: 'Staff', link: '/staff' },
         { label: 'Our Board & Governance', link: '/governance' },
-        { label: 'Jobs @ TFC', link: '/jobs' },
+        { label: 'Jobs @ TFC', link: '/jobs' },*/
         { label: 'Contact Us', link: '/contact' },
         /* ... other dropdown items */
       ],
@@ -83,7 +85,7 @@ const menuItems = [
     {
       label: 'Our Ministries',
       items: [
-        { label: 'How We Do Ministry', link: '/how-we-do' },
+        /*{ label: 'How We Do Ministry', link: '/how-we-do' },*/
         { label: 'Lightbearers', link: '/lightbearers' },
         { label: 'The Ambassadors', link: '/ambassadors' },
         { label: 'Freedom Fellowship', link: '/freedom-fellowship' },
@@ -91,7 +93,7 @@ const menuItems = [
         { label: 'The Queens', link: '/the-queens' },
         { label: 'Evangelism', link: '/evangelism' },
         { label: 'Prayer Ministry', link: '/prayer-ministry' },
-        { label: 'Care Ministry', link: '/care-ministry' },
+        /*{ label: 'Care Ministry', link: '/care-ministry' },*/
         /* Add more ministry items as needed */
       ],
     },
@@ -106,11 +108,11 @@ const menuItems = [
     {
       label: 'Joyforce',
       items: [
-        { label: 'Voice of One', link: '/voice-of-one' },
+        /*{ label: 'Voice of One', link: '/voice-of-one' },
         { label: 'Ushering', link: '/ushering' },
         { label: 'Welcome Unit', link: '/welcome-unit' },
         { label: 'Media', link: '/media' },
-        { label: 'Sanctuary', link: '/sanctuary' },
+        { label: 'Sanctuary', link: '/sanctuary' },*/
         { label: 'JoyForce Academy', link: '/joyforce-academy' },
       ],
     },
@@ -118,16 +120,16 @@ const menuItems = [
       label: 'Media',
       items: [
         { label: 'Sermons', link: '/sermons' },
-        { label: 'Worship', link: '/worship' },
+        /*{ label: 'Worship', link: '/worship' },
         { label: 'Publications', link: '/publications' },
-        { label: 'Testimonies', link: '/testimonies' },
+        { label: 'Testimonies', link: '/testimonies' },*/
       ],
     },
     {
       label: 'What’s Next?',
       items: [
         { label: 'Next Steps', link: '/next-steps' },
-        { label: 'Get Connected', link: '/get-connected' },
+        /*{ label: 'Get Connected', link: '/get-connected' },*/
         { label: 'Baptism', link: '/baptism' },
         { label: "Believer's Foundation", link: '/believers-foundation' },
         { label: 'Marriage Course', link: '/marriage-course' },
@@ -146,7 +148,7 @@ const menuItems = [
       label: 'Give',
       items: [
         { label: 'Ways To Give', link: '/ways-to-give' },
-        { label: 'Vision Fund', link: '/vision-fund' },
+        /*{ label: 'Vision Fund', link: '/vision-fund' },*/
         /* Add more top-level menu items as needed */
       ],
     },
@@ -158,7 +160,7 @@ const menuItems = [
           <img src="tfcLogo.png" alt="Logo" style={{ maxWidth: '100%', maxHeight: '100%' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-light-example" />
-        <Navbar.Collapse id="navbar-light-example">
+        <Navbar.Collapse id="navbar-light-example"  style={{ marginLeft: '60px' }}>
           <Nav className="me-auto justify-content-end" style={menuStyle}>
             {menuItems.map((menuItem, index) =>
               menuItem.items ? (
