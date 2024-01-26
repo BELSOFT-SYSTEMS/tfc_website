@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 
-function Contactpage() {
+function Sermons () {
   return (
     <div>
       <Header />
@@ -12,4 +12,4 @@ function Contactpage() {
   )
 }
 
-export default Contactpage
+export default Sermons
