@@ -6,6 +6,30 @@ import HomePage from './components/pages/Homepage'; // Your landing page compone
 import ContactPage from './components/pages/Contactpage';
 import Landing from './components/pages/Landing';
 import Aboutus from './components/pages/Aboutus';
+import Ambassadors from './components/pages/Ambassadors';
+import Lightbearers from './components/pages/Lightbearer';
+import Sundays from './components/pages/Sundays';
+import Freedomfellowship from './components/pages/Freedomfellowship';
+import Governors from './components/pages/Governors';
+import Queens from './components/pages/Queens';
+import Evangelism from './components/pages/Evangelism';
+import Prayerministry from './components/pages/Prayerministry';
+import Eden from './components/pages/Eden';
+import Mpape from './components/pages/Mpape';
+import Enugu from './components/pages/Enugu';
+import Joyforceacademy from './components/pages/Joyforceacademy';
+import Sermons from './components/pages/Sermons';
+import Nextsteps from './components/pages/Nextsteps';
+import Believerfoundation from './components/pages/Believerfoundation';
+import Baptism from './components/pages/Baptism';
+import Marriagecourse from './components/pages/Marriagecourse';
+import Prayerrequest from './components/pages/Prayerrequest';
+import Counseling from './components/pages/Counseling';
+import Eventcalendar from './components/pages/Eventcalendar';
+import Summercamp from './components/pages/Summercamp';
+import Waystogive from './components/pages/Waystogive';
+
+
 import './index.css';
 
 {/*
@@ -43,6 +67,28 @@ function App() {
       <Route path="/home" element={<HomePage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/about" element={<Aboutus />} />
+      <Route path="/ambassadors" element={<Ambassadors />} />
+      <Route path="/lightbearers" element={<Lightbearers />} />
+      <Route path="/freedom-fellowship" element={<Freedomfellowship />} />
+      <Route path="/sundays" element={<Sundays />} />
+      <Route path="/the-governors" element={<Governors />} />
+      <Route path="/the-queens" element={<Queens />} />
+      <Route path="/evangelism" element={<Evangelism />} />
+      <Route path="/prayer-ministry" element={<Prayerministry />} />
+      <Route path="/eden" element={<Eden />} />
+      <Route path="/mpape" element={<Mpape />} />
+      <Route path="/enugu" element={<Enugu />} />
+      <Route path="/joyforce-academy" element={<Joyforceacademy />} />
+      <Route path="/sermons" element={<Sermons />} />
+      <Route path="/next-steps" element={<Nextsteps />} />
+      <Route path="/believers-foundation" element={<Believerfoundation />} />
+      <Route path="/baptism" element={<Baptism />} />
+      <Route path="/Marriage-course" element={<Marriagecourse />} />
+      <Route path="/Prayer-request" element={<Prayerrequest />} />
+      <Route path="/counseling" element={<Counseling />} />
+      <Route path="/event-calendar" element={<Eventcalendar />} />
+      <Route path="/summer-camps" element={<Summercamp />} />
+      <Route path="/ways-to-give" element={<Waystogive />} />
       </Routes>
   </Router>
   );
