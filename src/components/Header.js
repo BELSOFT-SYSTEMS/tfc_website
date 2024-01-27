@@ -69,7 +69,7 @@ const Header = () => {
   };
 
 const menuItems = [
-    { label: 'Home', link: '/' },
+    { label: 'Home', link: '/home' },
     {
       label: 'About',
       items: [
