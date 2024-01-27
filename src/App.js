@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/pages/Homepage'; // Your landing page component
 import ContactPage from './components/pages/Contactpage';
 import Landing from './components/pages/Landing';
+import Aboutus from './components/pages/Aboutus';
 import './index.css';
 
 {/*
@@ -41,6 +42,7 @@ function App() {
       <Route path="/" element={<Landing />} />
       <Route path="/home" element={<HomePage />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/about" element={<Aboutus />} />
       </Routes>
   </Router>
   );

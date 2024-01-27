@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Tab, Tabs,  Container, Row, Col, Button,  ListGroup, } from 'react-bootstrap';
+import { Tab, Tabs,  Container, Row, Col, ButtonGroup, Button,  ListGroup, } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faChurch,  faCalendarAlt, faMapMarkerAlt  } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,7 +7,7 @@ import {  faChurch,  faCalendarAlt, faMapMarkerAlt  } from '@fortawesome/free-so
 
 
 const Locations = () => {
-  const [activeKey, setActiveKey] = useState('ajax');
+  const [activeKey, setActiveKey] = useState('eden');
 
   const handleSelect = (key) => {
     setActiveKey(key);
@@ -20,27 +20,21 @@ const Locations = () => {
         <h2 style={{fontSize:'55px'}}> Our Locations</h2>
         <p style={{fontSize:'20px'}}>Join us at our sites across Abuja</p>
         </Container>
-      <Tabs
-      id="locations-tabs"
-      activeKey={activeKey}
-      onSelect={handleSelect}
-      className="eael-tabs-nav"
-    >
-      <Tab eventKey="eden" title="Eden">
-        <div
-          className={`inactive eael-tab-item-trigger`}
-          role="tab"
-          aria-controls="eden-tab"
-          aria-expanded="false"
-        >
-          <FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04',  }} />
-          <span className="eael-tab-title title-after-icon">Eden</span>
-        </div>
-        {/* Add content for Ajax tab here */}
-    <div id="eden-tab" className="clearfix eael-tab-content-item inactive" data-title-link="eden-tab">
-      <Container fluid>
-        <Row className="justify-content-center">
-          <Col xs={12} md={6} className="text-center">
+
+<ButtonGroup size="lg" style={{ justifyContent: 'center', display: 'flex', textAlign: 'center', marginBottom: '20px', gap: '15px', padding: '10px'}}>
+        <Button variant="outline-success" onClick={() => handleSelect('eden')} active={activeKey === 'eden'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04',  }} />Eden</Button>
+        <Button variant="outline-success" onClick={() => handleSelect('mpape')} active={activeKey === 'mpape'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04',  }} />Mpape</Button>
+        <Button variant="outline-success" onClick={() => handleSelect('enugu')} active={activeKey === 'enugu'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04',  }} />Enugu</Button>
+        <Button variant="outline-success" onClick={() => handleSelect('online')} active={activeKey === 'online'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04',  }} />Online</Button>
+      </ButtonGroup>
+
+      <Tabs id="locations-tabs" activeKey={activeKey} onSelect={handleSelect} className="eael-tabs-nav">
+        <Tab eventKey="eden" /*title="Eden"*/>
+          {/* Content for Eden tab */}
+          {/* You can replace this with your actual content */}
+          <Container fluid>
+            <Row>
+            <Col xs={12} md={6} className="text-center">
             <img
               src="pastor-3.jpg"
               alt=""
@@ -84,26 +78,17 @@ const Locations = () => {
         </Col>
       </Row>
           </Col>
-        </Row>
-      </Container>
-    </div>
-      </Tab>
-
-      <Tab eventKey="mpape" title="Mpape">
-        <div
-          className={`inactive eael-tab-item-trigger`}
-          role="tab"
-          aria-controls="mpape-tab"
-          aria-expanded="false"
-        >
-          <FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04',  }} />
-          <span className="eael-tab-title title-after-icon">Mpape</span>
-        </div>
-        {/* Add content for Bowmanville tab here */}
-    <div id="mpape-tab" className="clearfix eael-tab-content-item inactive" data-title-link="mpape-tab">
-      <Container fluid>
-        <Row className="justify-content-center">
-          <Col xs={12} md={6} className="text-center">
+            </Row>
+          </Container>
+        </Tab>
+        {/* Add more tabs here with similar structure */}
+      
+        <Tab eventKey="mpape" /*title="Eden"*/>
+          {/* Content for Eden tab */}
+          {/* You can replace this with your actual content */}
+          <Container fluid>
+            <Row>
+            <Col xs={12} md={6} className="text-center">
             <img
               src="pastor-2.png"
               alt=""
@@ -148,26 +133,16 @@ const Locations = () => {
         </Col>
       </Row>
           </Col>
-        </Row>
-      </Container>
-    </div>
-      </Tab>
-
-      <Tab eventKey="enugu" title="Enugu">
-        <div
-          className={`inactive eael-tab-item-trigger`}
-          role="tab"
-          aria-controls="enugu-tab"
-          aria-expanded="false"
-        >
-          <FontAwesomeIcon icon={faChurch}  style={{ color: '#d49c04',  }}/>
-          <span className="eael-tab-title title-after-icon">Enugu</span>
-        </div>
-        {/* Add content for Pickering tab here */}
-    <div id="enugu-tab" className="clearfix eael-tab-content-item inactive" data-title-link="enugu-tab">
-      <Container fluid>
-        <Row className="justify-content-center">
-          <Col xs={12} md={6} className="text-center">
+            </Row>
+          </Container>
+        </Tab>
+        {/* Add more tabs here with similar structure */}
+        <Tab eventKey="enugu" /*title="Eden"*/>
+          {/* Content for Eden tab */}
+          {/* You can replace this with your actual content */}
+          <Container fluid>
+            <Row>
+            <Col xs={12} md={6} className="text-center">
             <img
               src="pastor2.png"
               alt=""
@@ -211,26 +186,16 @@ const Locations = () => {
         </Col>
       </Row>
           </Col>
-        </Row>
-      </Container>
-    </div>
-      </Tab>
-
-      <Tab eventKey="online" title="Online">
-        <div
-          className={`inactive eael-tab-item-trigger`}
-          role="tab"
-          aria-controls="online-tab"
-          aria-expanded="false"
-        >
-          <FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04',  }} />
-          <span className="eael-tab-title title-after-icon">Online</span>
-        </div>
-        {/* Add content for Online tab here */}
-    <div id="online-tab" className="clearfix eael-tab-content-item inactive" data-title-link="online-tab">
-      <Container fluid>
-        <Row className="justify-content-center">
-          <Col xs={12} md={6} className="text-center">
+            </Row>
+          </Container>
+        </Tab>
+        {/* Add more tabs here with similar structure */}
+        <Tab eventKey="online" /*title="Eden"*/>
+          {/* Content for Eden tab */}
+          {/* You can replace this with your actual content */}
+          <Container fluid>
+            <Row>
+            <Col xs={12} md={6} className="text-center">
             <img
               src="pastor-2.jpg"
               alt=""
@@ -279,11 +244,11 @@ const Locations = () => {
         </Col>
       </Row>
           </Col>
-        </Row>
-      </Container>
-    </div>
-      </Tab>
-    </Tabs>
+            </Row>
+          </Container>
+        </Tab>
+        {/* Add more tabs here with similar structure */}
+        </Tabs>
   
       
     </div>
