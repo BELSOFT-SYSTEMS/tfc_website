@@ -6,8 +6,12 @@ const Landing = () => {
   const navigate = useNavigate();
 
   const redirectToHomePage = () => {
+    console.log('Redirecting to home page');
     navigate('/home');
   };
+
+  console.log('Rendering Landing component');
+
 
   return (
     <Container fluid style={{ width: '100%', height: '100vh', position: 'relative',overflow: 'hidden'  }}>
@@ -58,13 +62,13 @@ const Landing = () => {
       <img src="tfcLogo.png" alt="Logo" style={{ position: 'absolute', top: '20px', left: '20px', width: '140px', height: '140px' }} />*/}
 
       {/* Home button at top right */}
-      <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', top: '30px', left: '20px', backgroundColor: '#d49c04', color: '#000', }}>Home</Button>
+      <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', top: '30px', left: '20px', backgroundColor: '#d49c04', color: '#000', zIndex: 1 }}>Home</Button>
 
       {/* Buttons at the bottom center */}
       <ButtonGroup style={{ position: 'absolute', bottom: '20px', left: '50%', transform: 'translateX(-50%)', gap:'25px' }}>
-        <Button variant="warning" style={{backgroundColor: '#d49c04', color: '#000',}}>MONTHLY BULLETIN </Button>
+        <Button variant="warning" style={{backgroundColor: '#d49c04', color: '#000',}}> MONTHLY BULLETIN </Button>
         <Button variant="warning" style={{backgroundColor: '#d49c04', color: '#000',}}>PRAYER REQUEST</Button>
-        <Button variant="warning" style={{backgroundColor: '#d49c04', color: '#000',}}>PLAN TO VISIT</Button>
+        <Button variant="warning"style={{backgroundColor: '#d49c04', color: '#000',}}>PLAN TO VISIT</Button>
       </ButtonGroup>
     </Container>
   );
