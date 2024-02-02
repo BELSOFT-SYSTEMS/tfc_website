@@ -18,7 +18,7 @@ const HomeSlider = () => {
               <div className="elementor-element elementor-element-ddb34a3 elementor-invisible elementor-widget elementor-widget-heading">
                 <div className="elementor-widget-container" style={{ marginLeft: '30px' }}>
                   <h1 className="elementor-heading-title elementor-size-default" style={{ fontSize: '80px', fontWeight: 'bold', fontFamily: 'Sans-serif', justifyContent: 'center', textAlign: 'left', marginTop: '30px', marginBottom: '20px' }}>
-                    There Is Room <br /> For Everyone.
+                    There Is Room For <br /> Everyone.
                   </h1>
                   <div className="hero-banner" style={{ position: 'relative', paddingBottom: aspectRatio }}>
                     <Container className="image-container">
