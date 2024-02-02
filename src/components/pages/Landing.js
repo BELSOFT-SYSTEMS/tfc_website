@@ -67,7 +67,7 @@ const Landing = () => {
       backgroundImage: `url(${backgroundImages[currentIndex]})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      transition: 'background-image 0.5s ease-in-out',
+      transition: 'background-image 1s cubic-bezier(0.25, 0.1, 0.25, 1)',
       width: '100vw',
       height: '100vh',
       position: 'absolute',
