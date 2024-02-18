@@ -15,9 +15,11 @@ const Believe = () => {
 
   return (
     <div>
-      <Container fluid style={{justifyContent:'center', textAlign:'center', marginTop:'30px', marginBottom:'30px', backgroundColor:'#000'}}>
-        <h2 style={{fontSize:'75px',color:'#fff'}}> WHAT WE BELIEVE</h2>
-        </Container>
+      <div style={{ backgroundColor: '#000', paddingTop: '40px', paddingBottom: '40px' }}>
+        <Container fluid style={{ justifyContent: 'center', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '75px', color: '#fff' }}> WHAT WE BELIEVE</h2>
+          </Container>
+          </div>
 
 <ButtonGroup size="lg" style={{ justifyContent: 'center', display: 'flex', textAlign: 'center', marginBottom: '20px', gap: '15px', padding: '10px'}}>
         <Button variant="outline-success" onClick={() => handleSelect('statement')} active={activeKey === 'statement'}>STATEMENT OF FAITH</Button>
@@ -30,72 +32,74 @@ const Believe = () => {
           {/* You can replace this with your actual content */}
           <Container fluid>
             <Row>
-          <Col xs={12} md={6}>
+          <Col >
           <Row>
         <Col>
+        <div style={{ textAlign: 'center' }}> 
           <ListGroup variant="flush">
-            <ListGroup.Item style={{fontSize:'20px'}}>
+            <ListGroup.Item style={{fontSize:'20px',textAlign: 'left'}}>
               <p> 
               1. We believe the Bible to be the Inspired Word of God and that is our standard for faith and conduct
               </p>
             </ListGroup.Item>
-            <ListGroup.Item style={{fontSize:'20px'}}>
+            <ListGroup.Item style={{fontSize:'20px',textAlign: 'left'}}>
             <p> 
             2. We believe that there is one God, eternally existing in three persons: Father, Son, and Holy Spirit.
             </p>
               </ListGroup.Item>
-              <ListGroup.Item style={{fontSize:'20px'}}>
+              <ListGroup.Item style={{fontSize:'20px',textAlign: 'left'}}>
               <p> 
               3. We believe that human nature is sinful and deserving of the punishment of God.​
             </p>
             </ListGroup.Item>
-            <ListGroup.Item style={{fontSize:'20px'}}>
+            <ListGroup.Item style={{fontSize:'20px',textAlign: 'left'}}>
             <p> 
             4. We believe that Jesus Christ was conceived by the Holy Spirit and born of the virgin Mary, and is true God and true man.
             </p>
               </ListGroup.Item>
-              <ListGroup.Item style={{fontSize:'20px'}}>
+              <ListGroup.Item style={{fontSize:'20px',textAlign: 'left'}}>
               <p> 
               5. We believe that the death of Jesus Christ was for our sins and that all who trust in Him and His death for us are forgiven their sins and granted eternal life.
             </p>
             </ListGroup.Item>
-            <ListGroup.Item style={{fontSize:'20px'}}>
+            <ListGroup.Item style={{fontSize:'20px',textAlign: 'left'}}>
             <p> 
             6. We believe in the resurrection of Jesus Christ,  His ascension into Heaven, and His ministry there as our High Priest.​
             </p>
               </ListGroup.Item>
-              <ListGroup.Item style={{fontSize:'20px'}}>
+              <ListGroup.Item style={{fontSize:'20px',textAlign: 'left'}}>
               <p> 
               7. We believe in the work of the Holy Spirit in convicting people of sin, the regeneration of those turning to Christ from sin, and His work of sanctification in the believer.​
             </p>
             </ListGroup.Item>
-            <ListGroup.Item style={{fontSize:'20px'}}>
+            <ListGroup.Item style={{fontSize:'20px',textAlign: 'left'}}>
             <p> 
               7. We believe in the work of the Holy Spirit in convicting people of sin, the regeneration of those turning to Christ from sin, and His work of sanctification in the believer.​
             </p>
               </ListGroup.Item>
-              <ListGroup.Item style={{fontSize:'20px'}}>
+              <ListGroup.Item style={{fontSize:'20px',textAlign: 'left'}}>
                 <p>
               8. We believe in the personal return of Jesus Christ.
               </p>
             </ListGroup.Item>
-            <ListGroup.Item style={{fontSize:'20px'}}>
+            <ListGroup.Item style={{fontSize:'20px',textAlign: 'left'}}>
               <p>
               9. We believe in the bodily resurrection of the just and the unjust, the everlasting joy of the saved and the everlasting punishment of the unsaved.​
               </p>
               </ListGroup.Item>
-              <ListGroup.Item style={{fontSize:'20px'}}>
+              <ListGroup.Item style={{fontSize:'20px',textAlign: 'left'}}>
                 <p>
                 10. We believe in the baptism, by immersion, of believers.​
                 </p>
               </ListGroup.Item>
           </ListGroup>
+          </div>
         </Col>
       </Row>
       <Row>
-        <Col className="text-center">
+        <Col className="text-center" style={{ textAlign: 'left' }}>
           <Button
-            variant="success"
+            variant="warning"
             style={{ backgroundColor: '#d49c04', color:'#000', marginBottom:'20px' }}
             href="#"
           >
@@ -114,12 +118,12 @@ const Believe = () => {
           {/* You can replace this with your actual content */}
           <Container fluid>
             <Row>
-          <Col xs={12} md={6}>
+          <Col >
       <Row>
-        <Col style={{fontSize:'15px'}}>
-          <p>I believe in God, the Father almighty, creator of heaven and earth. I believe in Jesus Christ, God’s only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried; he descended to the dead.<br />
-           On the third day he rose again; he ascended into heaven, he is seated at the right hand of the Father, and he will come to judge the living and the dead.<br/>
-           I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting.
+        <Col style={{fontSize:'20px',lineHeight: '2',textAlign:'center'}}>
+          <p>I believe in God, the Father almighty, creator of heaven and earth.<br/> I believe in Jesus Christ, God’s only Son, our Lord, who was conceived by the Holy Spirit, <br/> born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried; he descended to the dead.<br />
+           On the third day he rose again; he ascended into heaven,<br/> he is seated at the right hand of the Father, and he will come to judge the living and the dead.<br/>
+           I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body,<br/> and the life everlasting.
            <br />Amen.</p>
         </Col>
       </Row>
@@ -133,9 +137,9 @@ const Believe = () => {
           {/* You can replace this with your actual content */}
           <Container fluid>
             <Row>
-          <Col xs={12} md={6}>
+          <Col>
       <Row>
-        <Col style={{fontSize:'15px'}}>
+        <Col style={{fontSize:'20px',lineHeight: '2',textAlign:'center'}}>
           <p>We believe in one God, the Father Almighty, the maker of heaven and earth, of things visible and invisible.<br />
           And in one Lord Jesus Christ, the Son of God, the begotten of God the Father, the Only-begotten, that is of the essence of the Father.<br />
           God of God, Light of Light, true God of true God, begotten and not made; of the very same nature of the Father, by Whom all things came into being, in heaven and on earth, visible and invisible.<br />

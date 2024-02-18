@@ -36,14 +36,16 @@ const About = () => {
             <Col md={6} >
               <div style={{ marginLeft: '30px' }}>
                 <div className="elementor-element elementor-element-52ff6ed elementor-invisible elementor-widget elementor-widget-heading">
-                  <div className="elementor-widget-container" style={{justifyContent:'center',textAlign: 'left',}} >
-                    <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: '30px', fontWeight: 'bold', fontFamily: 'Sans-serif', justifyContent: 'center', textAlign: 'left', marginTop: '50px', color: '#000' }}>
+                <div className="elementor-widget-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'left', height: '100vh' }}>
+                  <div style={{ textAlign: 'center' }}>
+                    <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: '20px', fontFamily: 'Sans-serif', color: '#000' }}>
                       DISCOVER THE PRINCIPLES THAT GUIDE US
-                    </h2>
-                    <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: '100px', fontWeight: 'bold', fontFamily: 'Sans-serif', justifyContent: 'center', textAlign: 'left', marginTop: '50px', color: '#000' }}>
-                      About Us
-                    </h2>
-                  </div>
+                      </h2>
+                      <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: '100px', fontWeight: 'bold', fontFamily: 'Sans-serif', color: '#000' }}>
+                        About Us.
+                        </h2>
+                        </div>
+                        </div>
                 </div>
               </div>
             </Col>

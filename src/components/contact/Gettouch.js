@@ -1,17 +1,19 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faFacebook, faYoutube, } from '@fortawesome/free-brands-svg-icons';
 
-const Sunday = () => {
+const Gettouch = () => {
 
   const navigate = useNavigate();
-  
-  const backgroundImageUrl = 'background-img1.jpg'; // Replace with your image URL
 
-  const redirectToSundaysPage = () => {
-    console.log('Redirecting to sundays page');
-    navigate('/sundays');
+  const redirectToContactPage = () => {
+    console.log('Redirecting to contact page');
+    navigate('/contact');
   };
+
+  const backgroundImageUrl = 'background-img1.jpg'; // Replace with your image URL
 
   const containerStyle = {
     backgroundImage: `url(${backgroundImageUrl})`,
@@ -45,26 +47,31 @@ const Sunday = () => {
               <div style={{ marginLeft: '30px' }}>
                 <div className="elementor-element elementor-element-52ff6ed elementor-invisible elementor-widget elementor-widget-heading">
                   <div className="elementor-widget-container" style={{justifyContent:'center',textAlign: 'left',}} >
-                    <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: '80px', fontWeight: 'bold', fontFamily: 'Sans-serif', justifyContent: 'center', textAlign: 'left', marginTop: '50px', color: '#000' }}>
-                      Sundays @ <br />TFC
+                    <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: '120px', fontWeight: 'bolder', fontFamily: 'Sans-serif', justifyContent: 'center', textAlign: 'left', marginTop: '50px', color: '#000' }}>
+                      Get In <br />Touch
                     </h2>
                   </div>
                 </div>
                 <div className="elementor-element elementor-element-70f18ad elementor-invisible elementor-widget elementor-widget-text-editor">
                   <div className="elementor-widget-container">
-                    <p style={{ color: '#000' }}>
-                      Welcome to The Fathers Church. Our mission is to glorify God by enabling people of all ages to become fully devoted followers of Jesus Christ. Join us on Sundays to experience engaging teaching, dynamic worship, and intimate prayer. No matter what your age, stage of life, or background, you are welcome here!
-                    </p>
+                    <p style={{ fontFamily: 'Sans-serif', fontSize:'30px', color: '#000' }}>
+                    HOW CAN WE HELP YOU?
+                     </p>
                   </div>
                 </div>
                 <div className="elementor-element elementor-element-72f4e51 elementor-mobile-align-center elementor-invisible elementor-widget elementor-widget-button">
                   <div className="elementor-widget-container">
-                    <div className="elementor-button-wrapper">
+                    <div style={{display: 'flex', marginRight: '20px' }}>
+                  <FontAwesomeIcon icon={faFacebook} size='2x' style={{ color: '#d49c04',  }} />
+                  <FontAwesomeIcon icon={faInstagram} size='2x' style={{ color: '#d49c04',  marginLeft: '10px'  }} />
+                  <FontAwesomeIcon icon={faYoutube} size='2x'style={{ color: '#d49c04',  marginLeft: '10px' }} />
+                  </div>
+                    <div className="elementor-button-wrapper" style={{paddingTop:'10px'}}>
                       <Button
                         className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
-                        variant="success"
+                        variant="warning"
                         style={{ backgroundColor: '#d49c04', color: '#000' }}
-                        onClick={redirectToSundaysPage}
+                        onClick={redirectToContactPage}
                       >
                         <span className="elementor-button-content-wrapper">
                           <span className="elementor-button-text">Plan your visit</span>
@@ -92,4 +99,4 @@ const Sunday = () => {
   );
 };
 
-export default Sunday;
+export default Gettouch;

@@ -63,17 +63,27 @@ const Landing = () => {
   }, [backgroundImages.length]); // Empty dependency array ensures this effect runs only once on component mount
 
     // Inline style object to set background image
-    const backgroundStyle = {
-      backgroundImage: `url(${backgroundImages[currentIndex]})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      transition: 'background-image 1s cubic-bezier(0.25, 0.1, 0.25, 1)',
-      width: '100vw',
-      height: '100vh',
-      position: 'absolute',
-      top: 0,
-      left: 0,
-    };
+  const backgroundStyle = {
+    backgroundImage: `url(${backgroundImages[currentIndex]})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    transition: 'background-image 1s cubic-bezier(0.25, 0.1, 0.25, 1)',
+    width: '100vw',
+    height: '100vh',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+  };
+
+  // Inline style object to animate background position
+  const transitionStyle = {
+    transitionTimingFunction: 'ease-in-out',
+    transitionDuration: '1s',
+  };
+
+  // Update backgroundStyle with the transition effect for background position
+  Object.assign(backgroundStyle, transitionStyle);
+
   
 
 
@@ -83,7 +93,7 @@ const Landing = () => {
 
       <header>
         {/* Home button at top right */}
-      <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', top: '30px', left: '20px', backgroundColor: '#d49c04', color: '#000', zIndex: 1 }}>Home</Button>
+      <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', top: '30px', right: '20px', backgroundColor: '#d49c04', color: '#000', zIndex: 1 }}>Home</Button>
 
       </header>
       {/* Slider */}{/*

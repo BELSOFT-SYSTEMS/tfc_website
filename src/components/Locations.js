@@ -15,7 +15,7 @@ const Locations = () => {
 
 
   return (
-    <div>
+    <div style={{paddingTop:'20px', paddingBottom:'40px'}}>
       <Container style={{justifyContent:'center', textAlign:'center', marginTop:'30px', marginBottom:'20px'}}>
         <h2 style={{fontSize:'55px'}}> Our Locations</h2>
         <p style={{fontSize:'20px'}}>Join us at our sites across Abuja</p>
