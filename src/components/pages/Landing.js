@@ -90,7 +90,7 @@ const Landing = () => {
 
       <header>
         {/* Home button at top right */}
-      <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', top: '30px', right: '20px', backgroundColor: '#d49c04', color: '#000', zIndex: 1 }}>Home</Button>
+      <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', top: '30px', right: '20px', backgroundColor: '#d49c04', color: '#000', zIndex: 10 }}>Home</Button>
 
       </header>
       {/* Slider */}
