@@ -1,9 +1,9 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col, } from 'react-bootstrap';
 
-const TFCsundays = () => {
+const TFCfreedom = () => {
 
-  const backgroundImageUrl = 'bg-lightbearer.jpeg'; // Replace with your image URL
+  const backgroundImageUrl = 'freedom-bg.jpg'; // Replace with your image URL
 
   const containerStyle = {
     position: 'relative',
@@ -28,8 +28,8 @@ const TFCsundays = () => {
   const overlayStyle = {
     position: 'absolute',
     top: 0,
-    left: '200px',
-    width: '60%', // Adjust to position the overlay to the left
+    left: '100px',
+    width: '80%', // Adjust to position the overlay to the left
     height: '100%',
     backgroundColor: 'rgba(255, 255, 255, 0.8)', // Adjust overlay color and opacity
     zIndex: 1,
@@ -40,6 +40,7 @@ const TFCsundays = () => {
     zIndex: 2, // Higher z-index than overlay
     textAlign: 'left',
     marginLeft: '20px',
+    paddingLeft:'90px',
   };
 
 
@@ -54,7 +55,7 @@ const TFCsundays = () => {
         {/* Text */}
         <div style={textStyle}>
           <h2 style={{ fontSize: '110px', fontWeight: 'bolder', fontFamily: 'Sans-serif', color: '#000' }}>
-          TFC <br/> Lightbearers.
+          TFC <br/> FREEDOM FELLOWSHIP.
           </h2>
         </div>
       </Container>
@@ -63,4 +64,4 @@ const TFCsundays = () => {
   );
 };
 
-export default TFCsundays;
+export default TFCfreedom;

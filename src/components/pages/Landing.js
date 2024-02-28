@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Container, ButtonGroup, Button, } from 'react-bootstrap';
+import { Container, Carousel ,ButtonGroup, Button, } from 'react-bootstrap';
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -37,10 +37,7 @@ const Landing = () => {
 
    // List of background images
    const backgroundImages = [
-    'landing1.jpg',
-    'landing5.jpg',
-    'landing3.jpg',
-    'worship.jpeg',
+    'pattern1.jpeg',
 
   ];
 
@@ -96,52 +93,56 @@ const Landing = () => {
       <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', top: '30px', right: '20px', backgroundColor: '#d49c04', color: '#000', zIndex: 1 }}>Home</Button>
 
       </header>
-      {/* Slider */}{/*
-      <Carousel  style={{ width: '100%', height: '100%',objectFit: 'contain' }}>
+      {/* Slider */}
+      <Carousel  >
         
-        <Carousel.Item style={{ height: '100%' }}> 
+        <Carousel.Item > 
           <img
             className="d-block w-100 h-100"
-            src="landing1.jpg"
+            src="worship-bg.png"
             alt="Second slide"
-            style={{ objectFit: 'contain', height: '100%' }}
+            style={{ objectFit: 'cover', height: '50%' }}
           />
           <Carousel.Caption>
-          <h1>Landing Page</h1>
           <p>Welcome to the THE FATHER'S CHURCH</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item style={{ height: '100%' }}>
+        <Carousel.Item >
           <img
             className="d-block w-100 h-100"
-            src="landing2.jpg"
+            src="slider1-bg.png"
             alt="Second slide"
-            style={{ objectFit: 'contain', height: '100%' }}
+            style={{ objectFit: 'cover', height: '50%' }}
           />
           <Carousel.Caption>
-          <h1>Landing Page</h1>
           <p>Welcome to the THE FATHER'S CHURCH</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item style={{ height: '100%' }}>
+        <Carousel.Item>
           <img
             className="d-block w-100 h-100"
-            src="landing3.jpg"
+            src="pastor-3-bg.png"
             alt="Third slide"
-            style={{ objectFit: 'contain', height: '100%' }}
+            style={{ objectFit: 'cover', height: '50%' }}
           />
           <Carousel.Caption>
-          <h1>Landing Page</h1>
+          <p>Welcome to the THE FATHER'S CHURCH</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100 h-100"
+            src="landing2-bg.png"
+            alt="Third slide"
+            style={{ objectFit: 'cover', height: '50%' }}
+          />
+          <Carousel.Caption>
           <p>Welcome to the THE FATHER'S CHURCH</p>
           </Carousel.Caption>
         </Carousel.Item>
         
-        {/* Add more Carousel.Item components for additional slides */}{/*
-      </Carousel>*/}
-
-      {/* Logo at top left 
-      <img src="tfcLogo.png" alt="Logo" style={{ position: 'absolute', top: '20px', left: '20px', width: '140px', height: '140px' }} />*/}
-
+        {/* Add more Carousel.Item components for additional slides */}
+      </Carousel>
       <footer>
 
       {/* Buttons at the bottom center */}

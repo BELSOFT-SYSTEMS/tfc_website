@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-const TFCsundays = () => {
+const TFCqueens = () => {
 
-  const backgroundImageUrl = 'bg-lightbearer.jpeg'; // Replace with your image URL
+  const backgroundImageUrl = 'governor-bg.jpg'; // Replace with your image URL
 
   const containerStyle = {
     position: 'relative',
@@ -54,7 +54,7 @@ const TFCsundays = () => {
         {/* Text */}
         <div style={textStyle}>
           <h2 style={{ fontSize: '110px', fontWeight: 'bolder', fontFamily: 'Sans-serif', color: '#000' }}>
-          TFC <br/> Lightbearers.
+          TFC <br/> Queens.
           </h2>
         </div>
       </Container>
@@ -63,4 +63,4 @@ const TFCsundays = () => {
   );
 };
 
-export default TFCsundays;
+export default TFCqueens;
