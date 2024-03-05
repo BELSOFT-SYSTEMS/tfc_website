@@ -156,7 +156,7 @@ const menuItems = [
   return (
 <Navbar variant="light" bg="light" expand="lg" style={headerStyle}>
       <Container style={headerStyle} fluid>
-        <Navbar.Brand style={logoStyle} href="#home">
+        <Navbar.Brand style={logoStyle} href="/home">
           <img src="tfcLogo.png" alt="Logo" style={{ maxWidth: '100%', maxHeight: '100%' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-light-example" />

@@ -6,7 +6,7 @@ import { Tab, Tabs,  Container, Row, Col, ButtonGroup, Button,  ListGroup, } fro
 
 
 const Believe = () => {
-  const [activeKey, setActiveKey] = useState('eden');
+  const [activeKey, setActiveKey] = useState('statement');
 
   const handleSelect = (key) => {
     setActiveKey(key);
@@ -15,9 +15,9 @@ const Believe = () => {
 
   return (
     <div>
-      <div style={{ backgroundColor: '#000', paddingTop: '40px', paddingBottom: '40px' }}>
+      <div style={{ color: '#000',backgroundColor: '#fff', paddingTop: '40px', paddingBottom: '40px' }}>
         <Container fluid style={{ justifyContent: 'center', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '75px', color: '#fff' }}> WHAT WE BELIEVE</h2>
+          <h2 style={{ fontSize: '105px', color: '#000', fontWeight:'bolder' }}> WHAT WE BELIEVE</h2>
           </Container>
           </div>
 

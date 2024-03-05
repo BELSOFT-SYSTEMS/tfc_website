@@ -62,9 +62,9 @@ const Gettouch = () => {
                 <div className="elementor-element elementor-element-72f4e51 elementor-mobile-align-center elementor-invisible elementor-widget elementor-widget-button">
                   <div className="elementor-widget-container">
                     <div style={{display: 'flex', marginRight: '20px' }}>
-                  <FontAwesomeIcon icon={faFacebook} size='2x' style={{ color: '#d49c04',  }} />
-                  <FontAwesomeIcon icon={faInstagram} size='2x' style={{ color: '#d49c04',  marginLeft: '10px'  }} />
-                  <FontAwesomeIcon icon={faYoutube} size='2x'style={{ color: '#d49c04',  marginLeft: '10px' }} />
+                  <FontAwesomeIcon icon={faFacebook} size='3x' style={{ color: '#d49c04',  }} />
+                  <FontAwesomeIcon icon={faInstagram} size='3x' style={{ color: '#d49c04',  marginLeft: '10px'  }} />
+                  <FontAwesomeIcon icon={faYoutube} size='3x'style={{ color: '#d49c04',  marginLeft: '10px' }} />
                   </div>
                     <div className="elementor-button-wrapper" style={{paddingTop:'10px'}}>
                       <Button
@@ -74,7 +74,7 @@ const Gettouch = () => {
                         onClick={redirectToContactPage}
                       >
                         <span className="elementor-button-content-wrapper">
-                          <span className="elementor-button-text">Plan your visit</span>
+                          <span className="elementor-button-text" style={{paddingLeft:'20px',paddingRight:'20px'}}>Plan your visit</span>
                         </span>
                       </Button>
                     </div>

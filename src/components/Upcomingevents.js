@@ -17,7 +17,7 @@ const Upcomingevents = () => {
     <Container style={{ display: 'flex', justifyContent: 'space-between' }}>
     <EventComponent
       title="Biblical Finance Course"
-      description="Learn how to be a good steward of your finances with Biblical principles and teachings"
+      description="Learn how to be a good steward of your finances with Biblical principles and teachings from times 7:00 – 9:00pm!"
       imageUrl="event1.jpg"
       buttonText="Find Out More"
     />
@@ -35,7 +35,7 @@ const Upcomingevents = () => {
     />
   </Container>
   <Container style={{justifyContent:'center', textAlign:'center',marginTop:'20px', marginBottom:'20px'}}>
-  <Button variant="success" style={{backgroundColor: '#d49c04', color: '#000',}}>View all Events</Button>
+  <Button variant="warning" style={{backgroundColor: '#d49c04', color: '#000',}}>View all Events</Button>
   </Container>
   </Container>
   )
