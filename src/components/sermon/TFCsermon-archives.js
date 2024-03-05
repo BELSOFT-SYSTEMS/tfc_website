@@ -23,10 +23,10 @@ const TFCsermonarchives = () => {
     <div style={{justifyContent:'space-between', display:'flex',paddingTop:'30px'}}>
     <SermonComponent
       title="Firm Faith"
-      imageUrl="firmsermon.png"
+      imageUrl="Firmsermon.png"
     />
     <SermonComponent
-      title="The book of Actsg"
+      title="The book of Acts"
       imageUrl="actsermon.jpg"
     />
     <SermonComponent
