@@ -12,11 +12,11 @@ const Expectation = () => {
 
       {/* Section 1 */}
       <section className="your-section-class">
-      <Container fluid >
-        <h1 style={{fontFamily:'Montserrat,Sans-serif', fontSize:'60px', textAlign:'center', fontWeight:'bolder'}}>What To Expect At All Locations</h1>
-        <h3 style={{fontFamily:'Montserrat,Sans-serif', fontSize:'25px', textAlign:'center'}}>Join us on Sundays at any of our five locations for teaching, worship, and community</h3>
-        <div style={{marginLeft:'60px', paddingLeft:'60px'}}>
-        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+      <Container  fluid style={{ paddingLeft: '60px', paddingRight: '60px', display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
+        <h1 style={{ fontFamily: 'Montserrat,Sans-serif', fontSize: '60px', textAlign: 'center', fontWeight: 'bolder', marginBottom: '30px' }}>What To Expect At All Locations</h1>
+        <h3 style={{ fontFamily: 'Montserrat,Sans-serif', fontSize: '25px', textAlign: 'center', marginBottom: '50px' }}>Join us on Sundays at any of our five locations for teaching, worship, and community</h3>
+        <div style={{marginLeft:'60px', paddingLeft:'40px', paddingRight:'70px'}}>
+        <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '30px' }}>
         <div style={{ display: 'flex', marginRight: '20px', marginTop:'50px', marginBottom:'50px',alignItems:'center', justifyContent: 'center' }}>
         <img src="icons/smile.webp" alt="Icon" style={{ width: '98px', height: '98px', marginRight: '20px' }} />
           <div>
@@ -32,7 +32,7 @@ const Expectation = () => {
             </div>
             </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '30px' }}>
         <div style={{ display: 'flex', marginRight: '20px', marginTop:'50px', marginBottom:'50px',alignItems:'center', justifyContent: 'center' }}>
         <img src="icons/clock.webp" alt="Icon" style={{ width: '98px', height: '98px', marginRight: '20px' }} />
         <div>
@@ -40,7 +40,7 @@ const Expectation = () => {
           <p style={{fontFamily:'Sans-serif', fontSize:'20px', fontWeight:'40', lineHeight:'20px'}}>Services typically last 75 minutes</p>
           </div>
           </div>
-          <div style={{ display: 'flex', marginLeft: '20px', marginTop:'50px', marginBottom:'50px',alignItems:'center', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', marginLeft: '100px', marginTop:'50px', marginBottom:'50px',alignItems:'center', justifyContent: 'center' }}>
           <img src="icons/music.webp" alt="Icon" style={{ width: '98px', height: '98px', marginRight: '20px' }} />
           <div>
             <h2 style={{fontSize:'40px'}}>MUSIC</h2>
@@ -48,7 +48,7 @@ const Expectation = () => {
             </div>
             </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '30px' }}>
         <div style={{ display: 'flex', marginRight: '20px', marginTop:'50px', marginBottom:'50px',alignItems:'center', justifyContent: 'center' }}>
         <img src="icons/teaching.webp" alt="Icon" style={{ width: '98px', height: '98px', marginRight: '20px' }} />
         <div>

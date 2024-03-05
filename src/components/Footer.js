@@ -91,19 +91,19 @@ function Footer() {
               <span  style={{ marginLeft: '10px',}}>
                 <a href='https://www.facebook.com/' target="_blank" rel="noopener noreferrer">
                   {/*<span className="elementor-screen-only">Facebook</span>*/}
-                  <FontAwesomeIcon icon={faFacebook} size='2x' style={{ color: '#d49c04',  }} />
+                  <FontAwesomeIcon icon={faFacebook} size='3x' style={{ color: '#d49c04',  }} />
                 </a>
               </span>
               <span className="elementor-grid-item" style={{ marginLeft: '10px', }}>
                 <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer">
                   {/*<span className="elementor-screen-only">Instagram</span>*/}
-                  <FontAwesomeIcon icon={faInstagram} size='2x' style={{ color: '#d49c04',  }} />
+                  <FontAwesomeIcon icon={faInstagram} size='3x' style={{ color: '#d49c04',  }} />
                 </a>
               </span>
               <span className="elementor-grid-item" style={{ marginLeft: '10px', }}>
                 <a  href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
                   {/*<span className="elementor-screen-only">Youtube</span>*/}
-                  <FontAwesomeIcon icon={faYoutube} size='2x'style={{ color: '#d49c04',  }} />
+                  <FontAwesomeIcon icon={faYoutube} size='3x'style={{ color: '#d49c04',  }} />
                 </a>
               </span>
             </div>
@@ -146,7 +146,7 @@ function Footer() {
               <span className="elementor-button-icon">
                 <FontAwesomeIcon icon={faEnvelope} />
               </span>
-              <span className="elementor-button-text">Send</span>
+              <span className="elementor-button-text" style={{paddingLeft:'10px'}}>Send</span>
             </span>
           </Button>
         </div>
@@ -156,7 +156,7 @@ function Footer() {
 </Row>
         <Row>
         <Col md={12}>
-          <p style={{ color: 'white' }}>© 2024 All rights Reserved. Design by Belsoft Technologies</p>
+          <p style={{ color: 'white' }}>© 2024 All rights Reserved. Design by Creative Media</p>
         </Col>
       </Row>
       </Container>
