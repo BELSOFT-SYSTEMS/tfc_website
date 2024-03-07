@@ -37,7 +37,13 @@ const Landing = () => {
 
    // List of background images
    const backgroundImages = [
-    'pattern1.jpeg',
+    'bg-1.png',
+    'bg-2.jpg',
+    'bg-3.jpg',
+    'bg-4.jpg',
+    'bg-5.jpg',
+    'bg-6.jpg',
+    'bg-7.jpg',
 
   ];
 
@@ -81,11 +87,14 @@ const Landing = () => {
   // Update backgroundStyle with the transition effect for background position
   Object.assign(backgroundStyle, transitionStyle);
 
-  
+  const buttonStyle = {
+    
+  };
 
 
 
   return (
+    
     <Container fluid style={backgroundStyle}>
 
       <header>
@@ -99,8 +108,8 @@ const Landing = () => {
         <Carousel.Item > 
           <img
             className="d-block w-100 h-100"
-            src="worship-bg.png"
-            alt="Second slide"
+            src=""
+            alt="First slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
           <Carousel.Caption>
@@ -110,7 +119,7 @@ const Landing = () => {
         <Carousel.Item >
           <img
             className="d-block w-100 h-100"
-            src="slider1-bg.png"
+            src=""
             alt="Second slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -121,7 +130,7 @@ const Landing = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 h-100"
-            src="pastor-3-bg.png"
+            src=""
             alt="Third slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -132,8 +141,41 @@ const Landing = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 h-100"
-            src="landing2-bg.png"
-            alt="Third slide"
+            src=""
+            alt="Fourth slide"
+            style={{ objectFit: 'cover', height: '50%' }}
+          />
+          <Carousel.Caption>
+          <p>Welcome to the THE FATHER'S CHURCH</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100 h-100"
+            src=""
+            alt="Fifth slide"
+            style={{ objectFit: 'cover', height: '50%' }}
+          />
+          <Carousel.Caption>
+          <p>Welcome to the THE FATHER'S CHURCH</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100 h-100"
+            src=""
+            alt="Sixth slide"
+            style={{ objectFit: 'cover', height: '50%' }}
+          />
+          <Carousel.Caption>
+          <p>Welcome to the THE FATHER'S CHURCH</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100 h-100"
+            src=""
+            alt="Seventh slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
           <Carousel.Caption>
@@ -147,7 +189,7 @@ const Landing = () => {
 
       {/* Buttons at the bottom center */}
       <ButtonGroup style={{ position: 'absolute', bottom: '20px', left: '50%', transform: 'translateX(-50%)', gap:'25px',zIndex:'0' }}>
-        <Button variant="warning" onClick={downloadTheMonthlyBulletin} style={{backgroundColor: '#d49c04', color: '#000',}}> MONTHLY BULLETIN </Button>
+        <Button variant="warning" onClick={downloadTheMonthlyBulletin} style={{backgroundColor: '#a72942', color: '#000',}}> MONTHLY BULLETIN </Button>
         <Button variant="warning" onClick={redirectToPrayerRequest} style={{backgroundColor: '#d49c04', color: '#000',}}>PRAYER REQUEST</Button>
         <Button variant="warning" onClick={redirectToSundays} style={{backgroundColor: '#d49c04', color: '#000',}}>PLAN TO VISIT</Button>
       </ButtonGroup>
