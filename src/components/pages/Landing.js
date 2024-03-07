@@ -37,7 +37,7 @@ const Landing = () => {
 
    // List of background images
    const backgroundImages = [
-    'bg-1.png',
+    'bg-1.jpg',
     'bg-2.jpg',
     'bg-3.jpg',
     'bg-4.jpg',
