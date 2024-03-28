@@ -1,0 +1,34 @@
+.Sermon{
+    padding: 100px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper > input{
+    width: 30%;
+    height: 50px;
+    border: transparent;
+    background-color: rgba(190, 187, 187, 0.411);
+    border-radius: 5px;
+    padding: 0 20px;
+    margin-right: 20px;
+}
+.tab{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 100px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-block: 10px;
+  
+}
+.tab >a{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+}
