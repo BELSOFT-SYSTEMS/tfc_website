@@ -20,7 +20,7 @@ import Enugu from './components/pages/Enugu';
 import Joyforceacademy from './components/pages/Joyforceacademy';
 import Sermons from './components/pages/Sermons';
 import Nextsteps from './components/pages/Nextsteps';
-import Believerfoundation from './components/pages/Believerfoundation';
+import Believerfoundation from './components/pages/believersfoundation';
 import Baptism from './components/pages/Baptism';
 import Marriagecourse from './components/pages/Marriagecourse';
 import Prayerrequest from './components/pages/Prayerrequest';

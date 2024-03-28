@@ -1,19 +1,19 @@
 import React from 'react';
-import { Believerfoundationcontent }  from '../believersfoundation/believersfoundation';
+import { Beliverfoundationcontent } from '../believersfoundation/believersfoundation';
 import Header from '../Header';
 import Footer from '../Footer';
 
 
-function believersfoundation() {
+function Believersfoundation() {
   return (
     <div>
       <Header />
-      <Believerfoundationcontent />
+      <Beliverfoundationcontent />
 
       <Footer />
-      
+
     </div>
   )
 }
 
-export default believersfoundation
+export default Believersfoundation
