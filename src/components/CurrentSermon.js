@@ -82,7 +82,7 @@ const CurrentSermon = () => {
                       style={{ backgroundColor: '#d49c04', color:'#000' }}
                         className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
                         variant="success"
-                        href="https://sanctuschurch.com/sermons/"
+                        href="/sermons"
                       >
                         <span className="elementor-button-content-wrapper">
                           <span className="elementor-button-text">
