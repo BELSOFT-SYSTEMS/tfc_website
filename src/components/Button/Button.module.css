@@ -1,0 +1,31 @@
+.baptismButton {
+
+    height: 50px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #f56618;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.baptismButton:hover {
+    background-color: #f56618;
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+
+    .baptismButton {
+        width: 100%;
+        margin-top: 20px;
+        font-size: .7rem;
+    }
+}

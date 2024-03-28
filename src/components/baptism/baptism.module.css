@@ -1,3 +1,8 @@
+.baptism {
+    display: flex;
+    flex-direction: column;
+}
+
 .Hero {
     width: 100%;
     padding: 100px;
@@ -87,8 +92,16 @@ h4 {
     width: 30%;
 }
 
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 50%;
+}
+
 .baptismButton {
-   
+
     height: 50px;
     align-self: flex-end;
     display: flex;
@@ -105,10 +118,12 @@ h4 {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .baptismButton:hover {
     background-color: #f56618;
     transform: scale(1.1);
 }
+
 
 @media (max-width: 768px) {
     .Hero {
@@ -168,7 +183,15 @@ h4 {
     .pointText>h4 {
         font-size: 1.2rem;
     }
-    .baptismButton{
+
+    .button {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .baptismButton {
+        width: 40%;
+        font-size: .7rem;
         align-self: center;
     }
 }

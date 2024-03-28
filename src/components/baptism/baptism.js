@@ -1,5 +1,6 @@
 import React from 'react';
 import Style from './baptism.module.css';
+import { Button } from '../Button/Button';
 
 const BaptismPoint = ({ title, content, img }) => {
     return (
@@ -56,7 +57,11 @@ export const Baptismcontent = () => {
                         img='/baptisms/baptism-icon4.jpeg'
                     />
                 </div>
-                    <a href="/baptism-form" className={Style.baptismButton}>I WANT TO DEDICATE MY CHILD</a>
+                <div className={Style.button}>
+
+                    <Button >I WANT TO BE BAPTIZED</Button>
+                    <Button>I WANT TO DEDICATE MY CHILD</Button>
+                </div>
             </div>
         </div>
     );
