@@ -1,4 +1,3 @@
-
 .Hero {
     width: 100%;
     padding: 100px;
@@ -31,25 +30,27 @@
 .Hero>img {
     width: 40%;
 }
-.baptisminfo{
+
+.baptisminfo {
     padding: 100px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.baptisminfo > h1 {
+h1 {
     font-size: 4rem;
     font-weight: 700;
     color: #000;
 }
-.baptisminfo > h4 {
+
+h4 {
     font-size: 1.5rem;
     font-weight: 600;
     color: #000;
 }
 
-.Points{
+.Points {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -57,7 +58,7 @@
     flex-wrap: wrap;
 }
 
-.baptismPoint{
+.baptismPoint {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -65,21 +66,48 @@
     width: 32rem;
 
 }
-.baptismPoint > .pointText{
+
+.baptismPoint>.pointText {
     width: 70%;
 }
-.pointText>h1{
+
+.pointText>h1 {
     font-size: 1rem;
     font-weight: 700;
     color: #000;
 }
-.pointText>h4{
+
+.pointText>h4 {
     font-size: 1.5rem;
     font-weight: 600;
     color: #000;
 }
-.baptismPoint > img{
+
+.baptismPoint>img {
     width: 30%;
+}
+
+.baptismButton {
+   
+    height: 50px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #f56618;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.baptismButton:hover {
+    background-color: #f56618;
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -108,29 +136,39 @@
 
     .baptisminfo {
         padding: 20px;
-       text-align: center;
+        text-align: center;
     }
-    .baptisminfo > h1 {
+
+    .baptisminfo>h1 {
         font-size: 2rem;
     }
-    .baptisminfo > h4 {
+
+    .baptisminfo>h4 {
         font-size: 1rem;
     }
-    .baptismPoint{
+
+    .baptismPoint {
         width: 100%;
         flex-direction: column;
         text-align: center;
     }
-    .baptismPoint > img{
+
+    .baptismPoint>img {
         width: 40%;
     }
-    .baptismPoint > .pointText{
+
+    .baptismPoint>.pointText {
         width: 100%;
     }
-    .pointText>h1{
+
+    .pointText>h1 {
         font-size: 1rem;
     }
-    .pointText>h4{
+
+    .pointText>h4 {
         font-size: 1.2rem;
+    }
+    .baptismButton{
+        align-self: center;
     }
 }

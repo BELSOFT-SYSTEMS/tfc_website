@@ -56,7 +56,7 @@ export const Baptismcontent = () => {
                         img='/baptisms/baptism-icon4.jpeg'
                     />
                 </div>
-
+                    <a href="/baptism-form" className={Style.baptismButton}>I WANT TO DEDICATE MY CHILD</a>
             </div>
         </div>
     );
