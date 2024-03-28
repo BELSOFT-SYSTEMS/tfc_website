@@ -15,7 +15,7 @@ function Footer() {
 {/* <Container>
         <Row>
           <Col md={6} className="elementor-column elementor-col-50 elementor-top-column elementor-element">
-            {/* ... (your "Explore Your" and "Next Steps @ Sanctus" section code) ... */}
+            {/* ... (your "Explore Your" and "Next Steps @ Sanctus" section code) ... 
             <div className="elementor-widget-wrap elementor-element-populated">
               <div className="elementor-element elementor-element-ac707ff elementor-invisible elementor-widget elementor-widget-text-editor">
                 <div className="elementor-widget-container">
@@ -30,7 +30,7 @@ function Footer() {
             </div>
           </Col>
           <Col md={6} className="elementor-column elementor-col-50 elementor-top-column elementor-element">
-            {/* ... (your social media icons and form code) ... */}
+            {/* ... (your social media icons and form code) ... 
             <div className="elementor-widget-wrap elementor-element-populated">
               <div className="elementor-element elementor-element-b082f66 elementor-hidden-mobile elementor-widget elementor-widget-spacer">
                 <div className="elementor-widget-container">

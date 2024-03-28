@@ -9,7 +9,7 @@
     padding: 20px;
     background-color: #f56618;
     color: #fff;
-    font-size: 1rem;
+    font-size: .7rem;
     font-weight: 700;
     border: none;
     border-radius: 5px;
@@ -21,6 +21,7 @@
     background-color: #f56618;
     transform: scale(1.1);
 }
+
 @media (max-width: 768px) {
 
     .baptismButton {
