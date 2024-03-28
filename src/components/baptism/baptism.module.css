@@ -1,0 +1,136 @@
+
+.Hero {
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/public/baptism-bg.jpeg');
+    background-size: cover;
+}
+
+
+.Herotext {
+    width: 60%;
+}
+
+.Herotext>h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    color: #000;
+
+}
+
+.Herotext>h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.Hero>img {
+    width: 40%;
+}
+.baptisminfo{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.baptisminfo > h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000;
+}
+.baptisminfo > h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.Points{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.baptismPoint{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 32rem;
+
+}
+.baptismPoint > .pointText{
+    width: 70%;
+}
+.pointText>h1{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+}
+.pointText>h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+.baptismPoint > img{
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .Hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .Herotext {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Herotext>h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .Herotext>h4 {
+        font-size: 1.2rem;
+    }
+
+    .Hero>img {
+        width: 100%;
+    }
+
+    .baptisminfo {
+        padding: 20px;
+       text-align: center;
+    }
+    .baptisminfo > h1 {
+        font-size: 2rem;
+    }
+    .baptisminfo > h4 {
+        font-size: 1rem;
+    }
+    .baptismPoint{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .baptismPoint > img{
+        width: 40%;
+    }
+    .baptismPoint > .pointText{
+        width: 100%;
+    }
+    .pointText>h1{
+        font-size: 1rem;
+    }
+    .pointText>h4{
+        font-size: 1.2rem;
+    }
+}
