@@ -133,7 +133,7 @@ const menuItems = [
         { label: 'Baptism', link: '/baptism' },
         { label: "Believer's Foundation", link: '/believers-foundation' },
         { label: 'Marriage Course', link: '#' },
-        { label: 'Prayer Request', link: '/prayer-request' },
+       /* { label: 'Prayer Request', link: '/prayer-request' },*/
         { label: 'Counseling', link: '/counseling' },
       ],
     },
