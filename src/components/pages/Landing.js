@@ -36,38 +36,38 @@ const Landing = () => {
 
 
    // List of background images
-   const backgroundImages = [
-    'bg-1.jpg',
-    'bg-2.jpg',
-    'bg-3.jpg',
-    'bg-4.jpg',
-    'bg-5.jpg',
-    'bg-6.jpg',
-    'bg-7.jpg',
+  //  const backgroundImages = [
+  //   'bg-1.jpg',
+  //   'bg-2.jpg',
+  //   'bg-3.jpg',
+  //   'bg-4.jpg',
+  //   'bg-5.jpg',
+  //   'bg-6.jpg',
+  //   'bg-7.jpg',
 
-  ];
+  // ];
 
   
   // State to track the current background image index
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
   // Effect to change background image
-  useEffect(() => {
+  // useEffect(() => {
     // Function to loop through the images
-    const changeBackground = () => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    };
+    // const changeBackground = () => {
+      // setCurrentIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+    // };
 
     // Change background image every 5 seconds
-    const interval = setInterval(changeBackground, 10000);
+    // const interval = setInterval(changeBackground, 10000);
 
     // Clear interval on component unmount
-    return () => clearInterval(interval);
-  }, [backgroundImages.length]); // Empty dependency array ensures this effect runs only once on component mount
+    // return () => clearInterval(interval);
+  // }, [backgroundImages.length]); // Empty dependency array ensures this effect runs only once on component mount
 
     // Inline style object to set background image
   const backgroundStyle = {
-    backgroundImage: `url(${backgroundImages[currentIndex]})`,
+    // backgroundImage: `url(${backgroundImages[currentIndex]})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     transition: 'background-image 1s cubic-bezier(0.25, 0.1, 0.25, 1)',
@@ -79,17 +79,17 @@ const Landing = () => {
   };
 
   // Inline style object to animate background position
-  const transitionStyle = {
-    transitionTimingFunction: 'ease-in-out',
-    transitionDuration: '1s',
-  };
+  // const transitionStyle = {
+  //   transitionTimingFunction: 'ease-in-out',
+  //   transitionDuration: '1s',
+  // };
 
   // Update backgroundStyle with the transition effect for background position
-  Object.assign(backgroundStyle, transitionStyle);
+  // Object.assign(backgroundStyle, transitionStyle);
 
-  const buttonStyle = {
+  // const buttonStyle = {
     
-  };
+  // };
 
 
 
@@ -108,7 +108,7 @@ const Landing = () => {
         <Carousel.Item > 
           <img
             className="d-block w-100 h-100"
-            src=""
+            src="/public/bg-1.jpg"
             alt="First slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -119,7 +119,7 @@ const Landing = () => {
         <Carousel.Item >
           <img
             className="d-block w-100 h-100"
-            src=""
+            src="/public/bg-2.jpg"
             alt="Second slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -130,7 +130,7 @@ const Landing = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 h-100"
-            src=""
+            src="/public/bg-3.jpg"
             alt="Third slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -141,7 +141,7 @@ const Landing = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 h-100"
-            src=""
+            src="/public/bg-4.jpg"
             alt="Fourth slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -152,7 +152,7 @@ const Landing = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 h-100"
-            src=""
+            src="/public/bg-5.jpg"
             alt="Fifth slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -163,7 +163,7 @@ const Landing = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 h-100"
-            src=""
+            src="/public/bg-6.jpg"
             alt="Sixth slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -174,7 +174,7 @@ const Landing = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 h-100"
-            src=""
+            src="/public/bg-7.jpg"
             alt="Seventh slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
