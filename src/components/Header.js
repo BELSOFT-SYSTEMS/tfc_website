@@ -128,11 +128,11 @@ const menuItems = [
     {
       label: 'What’s Next?',
       items: [
-        { label: 'Next Steps', link: '/next-steps' },
+        /*{ label: 'Next Steps', link: '/next-steps' },*/
         /*{ label: 'Get Connected', link: '/get-connected' },*/
         { label: 'Baptism', link: '/baptism' },
         { label: "Believer's Foundation", link: '/believers-foundation' },
-        { label: 'Marriage Course', link: '/marriage-course' },
+        { label: 'Marriage Course', link: '#' },
         { label: 'Prayer Request', link: '/prayer-request' },
         { label: 'Counseling', link: '/counseling' },
       ],
