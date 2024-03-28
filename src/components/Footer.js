@@ -12,7 +12,7 @@ function Footer() {
     <footer style={{ backgroundColor: '#012101', padding: '20px 0', color: 'white' }}>
     <Container className="elementor-container elementor-column-gap-default">
       {/* Container for the "Explore Your" and "Next Steps @ Sanctus" section */}
-      <Container>
+{/* <Container>
         <Row>
           <Col md={6} className="elementor-column elementor-col-50 elementor-top-column elementor-element">
             {/* ... (your "Explore Your" and "Next Steps @ Sanctus" section code) ... */}
@@ -51,7 +51,7 @@ function Footer() {
             </div>
           </Col>
         </Row>
-      </Container>
+      </Container>*/}
 
 
       <Container style={{ display: 'flex' , justifyContent: 'space-between' }}>
