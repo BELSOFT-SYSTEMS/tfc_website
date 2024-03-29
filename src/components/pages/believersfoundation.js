@@ -9,7 +9,6 @@ function Believersfoundation() {
     <div>
       <Header />
       <Beliverfoundationcontent />
-
       <Footer />
 
     </div>
