@@ -32,3 +32,91 @@
     color: #000;
     text-decoration: none;
 }
+
+.recentPoint>img {
+    width: 30%;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 50%;
+}
+
+
+@media (max-width:900px) {
+    .button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .Herotext {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Herotext>h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .Herotext>h4 {
+        font-size: 1.2rem;
+    }
+
+    .Hero>img {
+        width: 100%;
+    }
+
+    .recentinfo {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .recentinfo>h1 {
+        font-size: 2rem;
+    }
+
+    .recentinfo>h4 {
+        font-size: 1rem;
+    }
+
+    .recentPoint {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .recentPoint>img {
+        width: 40%;
+    }
+
+    .recentPoint>.pointText {
+        width: 100%;
+    }
+
+    .pointText>h1 {
+        font-size: 1rem;
+    }
+
+    .pointText>h4 {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        width: 100%;
+        padding: 0 20px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+}
