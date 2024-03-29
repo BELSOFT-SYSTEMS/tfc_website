@@ -28,6 +28,7 @@ import Counseling from './components/pages/Counseling';
 import Eventcalendar from './components/pages/Eventcalendar';
 import Summercamp from './components/pages/Summercamp';
 import Waystogive from './components/pages/Waystogive';
+import {RecentContent} from './components/sermon/Recent';
 
 
 import './index.css';
@@ -80,7 +81,7 @@ function App() {
         <Route path="/enugu" element={<Enugu />} />
         <Route path="/joyforce-academy" element={<Joyforceacademy />} />
         <Route path="/sermons" element={<Sermons />} >
-          <Route path='recent' element={<Recent />} />
+          <Route path='recent' element={<RecentContent />} />
           <Route path='topic' element={<h1>Topic</h1>} />
           <Route path='speaker' element={<h1>speaker</h1>} />
           <Route path='scripture' element={<h1>scripture</h1>} />
