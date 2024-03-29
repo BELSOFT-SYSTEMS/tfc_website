@@ -80,7 +80,7 @@ function App() {
         <Route path="/enugu" element={<Enugu />} />
         <Route path="/joyforce-academy" element={<Joyforceacademy />} />
         <Route path="/sermons" element={<Sermons />} >
-          <Route path='recent' element={<h1>recent</h1>} />
+          <Route path='recent' element={<Recent />} />
           <Route path='topic' element={<h1>Topic</h1>} />
           <Route path='speaker' element={<h1>speaker</h1>} />
           <Route path='scripture' element={<h1>scripture</h1>} />
