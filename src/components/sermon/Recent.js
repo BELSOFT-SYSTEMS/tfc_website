@@ -4,7 +4,7 @@ import Style from './sermon.module.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const Recent = ({ title, content, img }) => {
+const RecentPost = ({ title, content, img }) => {
     return (
         <Col className={Style.recentPoint}>
             <img src={img} alt={title} />
@@ -17,13 +17,44 @@ const Recent = ({ title, content, img }) => {
 }
 export const RecentContent = () => {
     return(
-        <Container>
+        <Container className={Style.Container}>
             <Row>
-                <Recent
-                    title="Firm Faith"
+                <RecentPost
+                    content="Firm Faith"
+                    img='/recent/image.jpg'
                 />
+                <RecentPost
+                    content="Mary God's indwelling"
+                    img='/recent/image.jpg'
+                />
+                <RecentPost
+                    content="The book of Acts
+                    "
+                    img='/recent/image.jpg'
+                />
+
+                
                     
                 
+            </Row>
+            <Row>
+                <RecentPost
+                    content="Firm Faith"
+                    img='/recent/image.jpg'
+                />
+                <RecentPost
+                    content="Mary God's indwelling"
+                    img='/recent/image.jpg'
+                />
+                <RecentPost
+                    content="The book of Acts
+                    "
+                    img='/recent/image.jpg'
+                />
+
+
+
+
             </Row>
         </Container>
     )
