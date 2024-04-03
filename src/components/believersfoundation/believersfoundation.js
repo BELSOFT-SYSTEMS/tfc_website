@@ -21,7 +21,7 @@ export const Beliverfoundationcontent = () => {
         <div className={Style.baptism}>
             <div className={Style.Hero}>
                 <div className={Style.Herotext}>
-                    <h1>Get Baptized.</h1>
+                    <h1>BELIEVERS <br/> FOUNDATION</h1>
                     <h4>AN OUTWARD SYMBOL OF AN INWARD DECISION</h4>
                 </div>
                 <img src='' className={Style.Heroimg} />
