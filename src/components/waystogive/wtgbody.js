@@ -21,19 +21,16 @@ function WtgBody() {
       </div>
 
       <div className=" container d-grid gap-4 d-md-flex justify-content-md-evenly my-3 ">
-        <a class="btn btn-success readmore btn-lg" href="#" role="button">
-          AJAX
+        <a class="btn btn-warning readmore btn-lg" href="#" role="button">
+          EDEN
         </a>
-        <a class="btn btn-success readmore btn-lg" href="#" role="button">
-          BOWMANVILLE
+        <a class="btn btn-warning readmore btn-lg" href="#" role="button">
+          MPAPE
         </a>
-        <a class="btn btn-success readmore btn-lg" href="#" role="button">
-          PICKERING
+        <a class="btn btn-warning readmore btn-lg" href="#" role="button">
+          ENUGU
         </a>
-        <a class="btn btn-success readmore btn-lg" href="#" role="button">
-          PORT PERRY
-        </a>
-        <a class="btn btn-success readmore btn-lg" href="#" role="button">
+        <a class="btn btn-warning readmore btn-lg" href="#" role="button">
           ONLINE
         </a>
       </div>
@@ -77,7 +74,7 @@ function WtgBody() {
               style={{ height: "254.398px", width: "247.844px" }}
             />
             <h3>TEXT-TO-GIVE</h3>
-            <p className="text-center">Text "SANCTUS" To 77977</p>
+            <p className="text-center">Text "THE-FATHERS-CHURCH" To 77977</p>
           </div>
           <div class="col-sm">
             <img
@@ -96,7 +93,7 @@ function WtgBody() {
             />
             <h3>E-TRANSFER</h3>
             <p className="text-center">
-              Email offering@sanctuschurch.com; be sure to specify your full
+              Email offering@TheFathersChurch.com; be sure to specify your full
               name and email address in the comment field.
             </p>
           </div>
@@ -109,7 +106,7 @@ function WtgBody() {
             tax receipt at tax time.
           </p>
           <br />
-          <a class="btn btn-lg btn-success readmore" href="#" role="button">
+          <a class="btn btn-lg btn-warning readmore" href="#" role="button">
             READ MORE ON TITHING
           </a>
         </div>
@@ -123,7 +120,7 @@ function WtgBody() {
               VISION FUND
             </button> */}
             <button
-              className={`btn btn-success readmore btn-lg col-6 ${
+              className={`btn btn-warning readmore btn-lg col-6 ${
                 selectedFund === "general" ? "active" : ""
               }`}
               type="button"
@@ -132,7 +129,7 @@ function WtgBody() {
               GENERAL FUND
             </button>
             <button
-              className={`btn btn-success readmore btn-lg col-6 ${
+              className={`btn btn-warning readmore btn-lg col-6 ${
                 selectedFund === "vision" ? "active" : ""
               }`}
               type="button"
@@ -177,13 +174,13 @@ function WtgBody() {
                 <p>
                 <p>
                   Gifts to the Vision Fund carry major projects necessary to
-                  help reach Sanctus’ vision to be a regional church of 10,000
+                  help reach The Father Church's vision to be a regional church of 10,000
                   meeting the physical, emotional, and spiritual needs of people
                   in Jesus’ name.
                   </p>
                   <p>
                    Projects will be added to the Vision Fund as
-                  Sanctus Church’s needs evolve and change. The Vision Fund can
+                  The Father Church needs evolve and change. The Vision Fund can
                   accept one-time gifts, recurring gifts, and pledges.
                 </p>
                 </p>
