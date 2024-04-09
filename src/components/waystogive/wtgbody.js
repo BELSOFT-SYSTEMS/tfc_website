@@ -22,16 +22,16 @@ function WtgBody() {
 
       <div className=" container d-grid gap-4 d-md-flex justify-content-md-evenly my-3 ">
         <a class="btn btn-warning readmore btn-lg" href="#" role="button">
-          EDEN
+          TITHE/OFFERING
         </a>
         <a class="btn btn-warning readmore btn-lg" href="#" role="button">
-          MPAPE
+         WELFARE
         </a>
         <a class="btn btn-warning readmore btn-lg" href="#" role="button">
-          ENUGU
+          CHURCH PROJECTS
         </a>
         <a class="btn btn-warning readmore btn-lg" href="#" role="button">
-          ONLINE
+          TRANSPORTATION
         </a>
       </div>
       <div class="container text-center justify-content-md-center">
