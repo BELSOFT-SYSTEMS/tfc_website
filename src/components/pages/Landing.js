@@ -108,7 +108,7 @@ const Landing = () => {
         <Carousel.Item > 
           <img
             className="d-block w-100 h-100"
-            src="/public/bg-1.jpg"
+            src="bg-1.jpg"
             alt="First slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -119,7 +119,7 @@ const Landing = () => {
         <Carousel.Item >
           <img
             className="d-block w-100 h-100"
-            src="/public/bg-2.jpg"
+            src="bg-2.jpg"
             alt="Second slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -130,7 +130,7 @@ const Landing = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 h-100"
-            src="/public/bg-3.jpg"
+            src="bg-3.jpg"
             alt="Third slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -141,7 +141,7 @@ const Landing = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 h-100"
-            src="/public/bg-4.jpg"
+            src="bg-4.jpg"
             alt="Fourth slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -152,7 +152,7 @@ const Landing = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 h-100"
-            src="/public/bg-5.jpg"
+            src="bg-5.jpg"
             alt="Fifth slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -163,7 +163,7 @@ const Landing = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 h-100"
-            src="/public/bg-6.jpg"
+            src="bg-6.jpg"
             alt="Sixth slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -174,7 +174,7 @@ const Landing = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 h-100"
-            src="/public/bg-7.jpg"
+            src="bg-7.jpg"
             alt="Seventh slide"
             style={{ objectFit: 'cover', height: '50%' }}
           />
@@ -189,7 +189,7 @@ const Landing = () => {
 
       {/* Buttons at the bottom center */}
       <ButtonGroup style={{ position: 'absolute', bottom: '20px', left: '50%', transform: 'translateX(-50%)', gap:'25px',zIndex:'0' }}>
-        <Button variant="warning" onClick={downloadTheMonthlyBulletin} style={{backgroundColor: '#a72942', color: '#000',}}> MONTHLY BULLETIN </Button>
+        <Button variant="danger" onClick={downloadTheMonthlyBulletin} style={{backgroundColor: '#a72942', color: '#000',}}> MONTHLY BULLETIN </Button>
         <Button variant="warning" onClick={redirectToPrayerRequest} style={{backgroundColor: '#d49c04', color: '#000',}}>PRAYER REQUEST</Button>
         <Button variant="warning" onClick={redirectToSundays} style={{backgroundColor: '#d49c04', color: '#000',}}>PLAN TO VISIT</Button>
       </ButtonGroup>

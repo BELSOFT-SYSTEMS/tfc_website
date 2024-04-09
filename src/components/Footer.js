@@ -58,9 +58,9 @@ function Footer() {
       <Container style={{ textAlign: 'left' }}>
         <Row>
           <Col md={6}>
-            <div className="elementor-element elementor-element-0e0ec13 elementor-widget elementor-widget-heading">
-              <div className="elementor-widget-container">
-                <h2 className="elementor-heading-title elementor-size-default" style={{fontSize:'25px'}}>Get In Touch</h2>
+            <div  style={{maxWidth:'290px' }}>
+              <div>
+                <h2 style={{fontSize:'35px'}}>Get In Touch</h2>
               </div>
             </div>
           </Col>
