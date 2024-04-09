@@ -59,7 +59,7 @@ function Footer() {
         <Row>
           <Col md={6}>
             <div className="elementor-element elementor-element-0e0ec13 elementor-widget elementor-widget-heading">
-              <div className="elementor-widget-container">
+              <div className="elementor-widget-container" style={{width:'90px' }}>
                 <h2 className="elementor-heading-title elementor-size-default" style={{fontSize:'45px'}}>Get In Touch</h2>
               </div>
             </div>
