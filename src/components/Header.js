@@ -134,7 +134,7 @@ const menuItems = [
         { label: "Believer's Foundation", link: '/believers-foundation' },
         { label: 'Marriage Course', link: '#' },
        /* { label: 'Prayer Request', link: '/prayer-request' },*/
-        { label: 'Counseling', link: '/counseling' },
+        { label: 'Counseling', link: '#' },
       ],
     },
     {
