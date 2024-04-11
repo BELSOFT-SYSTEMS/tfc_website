@@ -6,7 +6,7 @@ function Waystogive() {
   return (
     <div>
       <Header />
-      <WaystogiveBody/>
+      <WaystogiveBody />
       <Footer />
     </div>
   )
