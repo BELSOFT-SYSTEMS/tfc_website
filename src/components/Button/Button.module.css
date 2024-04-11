@@ -1,5 +1,4 @@
 .baptismButton {
-
     height: 50px;
     align-self: flex-end;
     display: flex;
@@ -9,7 +8,7 @@
     padding: 20px;
     background-color: #f56618;
     color: #fff;
-    font-size: .7rem;
+    font-size: .9rem;
     font-weight: 700;
     border: none;
     border-radius: 5px;
