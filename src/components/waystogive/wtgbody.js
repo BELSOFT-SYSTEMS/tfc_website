@@ -3,10 +3,15 @@ import "./wtgbody.css";
 import { Button } from "react-bootstrap";
 // import First from "../../../public/wtg/B3058396-1EC0-4915-A8EE-48A563579A49-1.png";
 function WtgBody() {
-  const [selectedFund, setSelectedFund] = useState("general");
+  const [selectedFundSwitch, setSelectedFundSwitch] = useState("tithe-offering");
+  const [selectedFundSwitch1, setSelectedFundSwitch1] = useState("general");
 
-  const handleFundButtonClick = (fundType) => {
-    setSelectedFund(fundType);
+  const handleFundButtonClickSwitch = (fund) => {
+    setSelectedFundSwitch(fund);
+  };
+
+  const handleFundButtonClickSwitch1 = (fund) => {
+    setSelectedFundSwitch1(fund);
   };
 
   return (
@@ -28,47 +33,47 @@ function WtgBody() {
           <div class="d-grid gap-2 d-md-flex justify-content-md-evenly ">
           <button
               className={`btn btn-warning readmore btn-lg col-6 ${
-                selectedFund === "tithe-offering" ? "active" : ""
+                selectedFundSwitch === "tithe-offering" ? "active" : ""
               }`}
               type="button"
-              onClick={() => handleFundButtonClick("tithe-offering")}
+              onClick={() => handleFundButtonClickSwitch("tithe-offering")}
             >
               TITHE/OFFERING
           </button>
 
           <button
               className={`btn btn-warning readmore btn-lg col-6 ${
-                selectedFund === "welfare" ? "active" : ""
+                selectedFundSwitch === "welfare" ? "active" : ""
               }`}
               type="button"
-              onClick={() => handleFundButtonClick("welfare")}
+              onClick={() => handleFundButtonClickSwitch("welfare")}
             >
               WELFARE
           </button>
 
           <button
               className={`btn btn-warning readmore btn-lg col-6 ${
-                selectedFund === "church-projects" ? "active" : ""
+                selectedFundSwitch === "church-projects" ? "active" : ""
               }`}
               type="button"
-              onClick={() => handleFundButtonClick("church-projects")}
+              onClick={() => handleFundButtonClickSwitch("church-projects")}
             >
               CHURCH PROJECTS
           </button>
 
           <button
               className={`btn btn-warning readmore btn-lg col-6 ${
-                selectedFund === "transportation" ? "active" : ""
+                selectedFundSwitch === "transportation" ? "active" : ""
               }`}
               type="button"
-              onClick={() => handleFundButtonClick("transportation")}
+              onClick={() => handleFundButtonClickSwitch("transportation")}
             >
               TRANSPORTATION
           </button>
           </div>
 
           <div >
-              {selectedFund === "tithe-offering" && (
+              {selectedFundSwitch === "tithe-offering" && (
                 <p>
                   <p>
                     Tithe & Offerings : Gifts to the General Fund go directly to meet the
@@ -83,7 +88,7 @@ function WtgBody() {
                   </p>
                 </p>
               )}
-              {selectedFund === "welfare" && (
+              {selectedFundSwitch === "welfare" && (
                 <p>
                 <p>
                   Welfare : Gifts to the Vision Fund carry major projects necessary to
@@ -98,7 +103,7 @@ function WtgBody() {
                 </p>
                 </p>
               )}
-              {selectedFund === "church-projects" && (
+              {selectedFundSwitch === "church-projects" && (
                 <p>
                   <p>
                     Church Projects : Gifts to the General Fund go directly to meet the
@@ -113,7 +118,7 @@ function WtgBody() {
                   </p>
                 </p>
               )}
-              {selectedFund === "transportation" && (
+              {selectedFundSwitch === "transportation" && (
                 <p>
                 <p>
                   Transportation : Gifts to the Vision Fund carry major projects necessary to
@@ -132,7 +137,6 @@ function WtgBody() {
 
         </div>
       </div>
-
 
       <div class="container text-center justify-content-md-center">
 
@@ -214,49 +218,29 @@ function WtgBody() {
         <div className="switch1">
           <h2>Funds</h2>
           <div class="d-grid gap-2 d-md-flex justify-content-md-evenly ">
-            {/* <button class="btn btn-primary col-6" type="button">
-              GENERAL FUND
-            </button>
-            <button class="btn btn-primary col-6" type="button">
-              VISION FUND
-            </button> */}
+            
             <button
               className={`btn btn-warning readmore btn-lg col-6 ${
-                selectedFund === "general" ? "active" : ""
+                selectedFundSwitch1 === "general" ? "active" : ""
               }`}
               type="button"
-              onClick={() => handleFundButtonClick("general")}
+              onClick={() => handleFundButtonClickSwitch1("general")}
             >
               GENERAL FUND
             </button>
             <button
               className={`btn btn-warning readmore btn-lg col-6 ${
-                selectedFund === "vision" ? "active" : ""
+                selectedFundSwitch1 === "vision" ? "active" : ""
               }`}
               type="button"
-              onClick={() => handleFundButtonClick("vision")}
+              onClick={() => handleFundButtonClickSwitch1("vision")}
             >
               VISION FUND
             </button>
           </div>
-          {/* <p>
-            Gifts to the General Fund go directly to meet the organizational and
-            congregational needs. It includes things like congregational care,
-            utilities, salaries, and commitments to our Local/Global Partners.
-            If giving is higher than our budgeted giving, we are able to do more
-            care, ministry, and bless our Local and Global Partners. It accepts
-            one time gifts and recurring gifts.
-          </p>
-          <p>
-            Gifts to the Vision Fund carry major projects necessary to help
-            reach Sanctus’ vision to be a regional church of 10,000 meeting the
-            physical, emotional, and spiritual needs of people in Jesus’ name.
-            Projects will be added to the Vision Fund as Sanctus Church’s needs
-            evolve and change. The Vision Fund can accept one time gifts,
-            recurring gifts, and pledges.
-          </p> */}
+
             <div >
-              {selectedFund === "general" && (
+              {selectedFundSwitch1 === "general" && (
                 <p>
                   <p>
                     Gifts to the General Fund go directly to meet the
@@ -271,7 +255,7 @@ function WtgBody() {
                   </p>
                 </p>
               )}
-              {selectedFund === "vision" && (
+              {selectedFundSwitch1 === "vision" && (
                 <p>
                 <p>
                   Gifts to the Vision Fund carry major projects necessary to
