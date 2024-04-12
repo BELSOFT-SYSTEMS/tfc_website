@@ -6,7 +6,7 @@ import { Button } from '../Button/Button';
 
 const Beliverfoundation = ({ title, content, img }) => {
     return (
-        <div className={Style.Beliverfoundation}>
+        <div className={Style.baptismPoint}>
             <img src={img} alt={title} />
             <div className={Style.pointText}>
                 <h1>{title}</h1>
