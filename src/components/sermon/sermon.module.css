@@ -1,42 +1,39 @@
-.baptism {
-    display: flex;
-    flex-direction: column;
-}
-
-.Hero {
-    width: 100%;
+.Sermon{
     padding: 100px;
+}
+.wrapper{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    background-image: url('/public/baptism-bg.jpeg');
-    background-size: cover;
+    justify-content: space-between;
 }
-
-
-.Herotext {
+.wrapper > input{
+    width: 30%;
+    height: 50px;
+    border: transparent;
+    background-color: rgba(190, 187, 187, 0.411);
+    border-radius: 5px;
+    padding: 0 20px;
+    margin-right: 20px;
+}
+.tab{
+    display: flex;
     width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 100px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-block: 10px;
+  
 }
-
-.Herotext>h1 {
-    font-size: 7rem;
-    font-weight: 700;
+.tab >a{
+    font-size: 20px;
+    font-weight: 400;
     color: #000;
-
+    text-decoration: none;
 }
 
-.Herotext>h4 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #000;
-}
-
-.Hero>img {
-    width: 40%;
-}
-
-.baptisminfo {
+.recentinfo {
     padding: 100px;
     display: flex;
     flex-direction: column;
@@ -62,17 +59,30 @@ h4 {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.baptismPoint {
+.Container{
+    max-width: 1140px;
+}
+.recentPoint {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 32rem;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    /* align-items: center; */
+    /* justify-content: space-between; */
 
 }
+.topicPoint {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    /* align-items: center; */
+    justify-content:space-between;
 
-.baptismPoint>.pointText {
+}
+.recentPoint>.pointText {
     width: 70%;
 }
 
@@ -81,15 +91,17 @@ h4 {
     font-weight: 700;
     color: #000;
 }
-
+.pointText > p{
+    font-weight: 700;
+}
 .pointText>h4 {
     font-size: 1.5rem;
     font-weight: 600;
     color: #000;
 }
 
-.baptismPoint>img {
-    width: 30%;
+.recentPoint>img {
+    width: 100%;
 }
 
 .button {
@@ -102,7 +114,7 @@ h4 {
 
 
 @media (max-width:900px) {
-    .button{
+    .button {
         width: 100%;
     }
 }
@@ -128,33 +140,33 @@ h4 {
     }
 
     .Hero>img {
-        width: 60%;
+        width: 100%;
     }
 
-    .baptisminfo {
+    .recentinfo {
         padding: 20px;
         text-align: center;
     }
 
-    .baptisminfo>h1 {
+    .recentinfo>h1 {
         font-size: 2rem;
     }
 
-    .baptisminfo>h4 {
+    .recentinfo>h4 {
         font-size: 1rem;
     }
 
-    .baptismPoint {
+    .recentPoint {
         width: 100%;
         flex-direction: column;
         text-align: center;
     }
 
-    .baptismPoint>img {
+    .recentPoint>img {
         width: 40%;
     }
 
-    .baptismPoint>.pointText {
+    .recentPoint>.pointText {
         width: 100%;
     }
 
@@ -173,5 +185,5 @@ h4 {
         justify-content: space-between;
     }
 
- 
+
 }

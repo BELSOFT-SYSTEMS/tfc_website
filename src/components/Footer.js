@@ -13,10 +13,7 @@ function Footer() {
     <Container className="elementor-container elementor-column-gap-default">
       {/* Container for the "Explore Your" and "Next Steps @ Sanctus" section */}
 {/* <Container>
-        <Row>
-          <Col md={6} className="elementor-column elementor-col-50 elementor-top-column elementor-element">
-             ... (your "Explore Your" and "Next Steps @ Sanctus" section code) ... 
-            <div className="elementor-widget-wrap elementor-element-populated">
+        
               <div className="elementor-element elementor-element-ac707ff elementor-invisible elementor-widget elementor-widget-text-editor">
                 <div className="elementor-widget-container">
                   <p>Explore Your</p>
@@ -28,10 +25,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-          </Col>
-          <Col md={6} className="elementor-column elementor-col-50 elementor-top-column elementor-element">
-             ... (your social media icons and form code) ... 
-            <div className="elementor-widget-wrap elementor-element-populated">
+        
               <div className="elementor-element elementor-element-b082f66 elementor-hidden-mobile elementor-widget elementor-widget-spacer">
                 <div className="elementor-widget-container">
                   <div className="elementor-spacer">
@@ -59,7 +53,10 @@ function Footer() {
       <Container style={{ textAlign: 'left' }}>
         <Row>
           <Col md={6}>
+
             <div className="elementor-element elementor-element-0e0ec13 elementor-widget elementor-widget-heading">
+
+            
               <div className="elementor-widget-container" style={{width:'190px' }}>
                 <h2 className="elementor-heading-title elementor-size-default" style={{fontSize:'45px'}}>Get In Touch</h2>
               </div>
@@ -119,7 +116,7 @@ function Footer() {
       <Container style={{ textAlign: 'left' }}>
         <Row>
           <Col>
-            <h2 style={{fontSize:'25px'}}>Subscribe to receive updates from The Father's Church</h2>
+            <h2 style={{fontSize:'25px'}}>Subscribe to receive updates from <br/>The Father's Church</h2>
           </Col>
         </Row>
         <Row className="justify-content-start">

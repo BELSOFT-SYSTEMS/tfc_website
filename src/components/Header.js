@@ -74,7 +74,7 @@ const menuItems = [
       label: 'About',
       items: [
         { label: 'About Us', link: '/about' },
-        { label: 'Sundays @ TFC', link: '/sundays' },
+        /*{ label: 'Sundays @ TFC', link: '/sundays' },*/
         /*{ label: 'Staff', link: '/staff' },
         { label: 'Our Board & Governance', link: '/governance' },
         { label: 'Jobs @ TFC', link: '/jobs' },*/
@@ -134,7 +134,7 @@ const menuItems = [
         { label: "Believer's Foundation", link: '/believers-foundation' },
         { label: 'Marriage Course', link: '#' },
        /* { label: 'Prayer Request', link: '/prayer-request' },*/
-        { label: 'Counseling', link: '/counseling' },
+        { label: 'Counseling', link: '#' },
       ],
     },
     {

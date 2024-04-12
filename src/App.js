@@ -20,7 +20,7 @@ import Enugu from './components/pages/Enugu';
 import Joyforceacademy from './components/pages/Joyforceacademy';
 import Sermons from './components/pages/Sermons';
 import Nextsteps from './components/pages/Nextsteps';
-import Believerfoundation from './components/pages/Believerfoundation';
+import Believerfoundation from './components/pages/believersfoundation';
 import Baptism from './components/pages/Baptism';
 import Marriagecourse from './components/pages/Marriagecourse';
 import Prayerrequest from './components/pages/Prayerrequest';
@@ -28,6 +28,8 @@ import Counseling from './components/pages/Counseling';
 import Eventcalendar from './components/pages/Eventcalendar';
 import Summercamp from './components/pages/Summercamp';
 import Waystogive from './components/pages/Waystogive';
+import {RecentContent} from './components/sermon/Recent';
+import { TopicContent } from './components/sermon/Topic';
 
 
 import './index.css';
@@ -62,35 +64,40 @@ import './css/widget-nav-menu.min.css';
 function App() {
   return (
     <Router>
-    <Routes>
-      <Route path="/" element={<Landing />} />
-      <Route path="/home" element={<HomePage />} />
-      <Route path="/contact" element={<ContactPage />} />
-      <Route path="/about" element={<Aboutus />} />
-      <Route path="/ambassadors" element={<Ambassadors />} />
-      <Route path="/lightbearers" element={<Lightbearers />} />
-      <Route path="/freedom-fellowship" element={<Freedomfellowship />} />
-      <Route path="/sundays" element={<Sundays />} />
-      <Route path="/the-governors" element={<Governors />} />
-      <Route path="/the-queens" element={<Queens />} />
-      <Route path="/evangelism" element={<Evangelism />} />
-      <Route path="/prayer-ministry" element={<Prayerministry />} />
-      <Route path="/eden" element={<Eden />} />
-      <Route path="/mpape" element={<Mpape />} />
-      <Route path="/enugu" element={<Enugu />} />
-      <Route path="/joyforce-academy" element={<Joyforceacademy />} />
-      <Route path="/sermons" element={<Sermons />} />
-      <Route path="/next-steps" element={<Nextsteps />} />
-      <Route path="/believers-foundation" element={<Believerfoundation />} />
-      <Route path="/baptism" element={<Baptism />} />
-      <Route path="/Marriage-course" element={<Marriagecourse />} />
-      <Route path="/Prayer-request" element={<Prayerrequest />} />
-      <Route path="/counseling" element={<Counseling />} />
-      <Route path="/event-calendar" element={<Eventcalendar />} />
-      <Route path="/summer-camps" element={<Summercamp />} />
-      <Route path="/ways-to-give" element={<Waystogive />} />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/about" element={<Aboutus />} />
+        <Route path="/ambassadors" element={<Ambassadors />} />
+        <Route path="/lightbearers" element={<Lightbearers />} />
+        <Route path="/freedom-fellowship" element={<Freedomfellowship />} />
+        <Route path="/sundays" element={<Sundays />} />
+        <Route path="/the-governors" element={<Governors />} />
+        <Route path="/the-queens" element={<Queens />} />
+        <Route path="/evangelism" element={<Evangelism />} />
+        <Route path="/prayer-ministry" element={<Prayerministry />} />
+        <Route path="/eden" element={<Eden />} />
+        <Route path="/mpape" element={<Mpape />} />
+        <Route path="/enugu" element={<Enugu />} />
+        <Route path="/joyforce-academy" element={<Joyforceacademy />} />
+        <Route path="/sermons" element={<Sermons />} >
+          <Route path='recent' element={<RecentContent />} />
+          <Route path='topic' element={<TopicContent />} />
+          <Route path='speaker' element={<h1>speaker</h1>} />
+          <Route path='scripture' element={<h1>scripture</h1>} />
+        </Route>
+        <Route path="/next-steps" element={<Nextsteps />} />
+        <Route path="/believers-foundation" element={<Believerfoundation />} />
+        <Route path="/baptism" element={<Baptism />} />
+        <Route path="/Marriage-course" element={<Marriagecourse />} />
+        <Route path="/Prayer-request" element={<Prayerrequest />} />
+        <Route path="/counseling" element={<Counseling />} />
+        <Route path="/event-calendar" element={<Eventcalendar />} />
+        <Route path="/summer-camps" element={<Summercamp />} />
+        <Route path="/ways-to-give" element={<Waystogive />} />
       </Routes>
-  </Router>
+    </Router>
   );
 }
 

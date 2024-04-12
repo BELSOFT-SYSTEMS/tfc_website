@@ -4,6 +4,7 @@ import Footer from '../Footer';
 import TFCsermon from '../sermon/TFCsermon';
 import Sermonseries from '../sermon/Sermon-series';
 import Sermonarchive from '../sermon/TFCsermon-archives';
+// import {RecentContent} from '../sermon/Recent';
 
 function Sermons () {
   return (
@@ -12,6 +13,7 @@ function Sermons () {
       <TFCsermon />
       <Sermonseries />
       <Sermonarchive />
+      {/* <RecentContent />s */}
       <Footer />
       
     </div>
