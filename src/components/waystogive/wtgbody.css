@@ -1,0 +1,128 @@
+h1{
+    color: var(--e-global-color-text);
+    font-family: Coolvetica, Sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+h4{
+    color: var(--e-global-color-text);
+    font-family: Jost, Sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    display: flex; 
+  }
+  
+ul li {
+    margin-right: 32px; 
+    display: flex; 
+    align-items: center; 
+  }
+  
+ul li::before {
+    content: "•"; 
+    margin-right: 6px; 
+  }
+  
+p:first-child{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+p{
+    color: var(--e-global-color-text);
+    font-family: Montserrat, Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    
+}
+h2{
+    color: var(--e-global-color-text);
+    font-family: Coolvetica, Sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.readmore {
+    height: 50px;
+    width: 20%;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #f56618;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.readmore:hover {
+    background-color: #f56618;
+    transform: scale(1.1);
+}
+.switch{
+    margin-top: 32px;
+    height: 320px;
+}
+
+.switch1{
+    margin-top: 16px;
+    margin-bottom: 84px;
+    height: 320px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    h4 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    ul {
+        display: block;
+    }
+
+    /* ul li {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    ul li::before {
+        content: "•";
+        margin-right: 6px;
+    } */
+
+    .readmore {
+        width: 50%;
+        margin-top: 20px;
+        font-size: .8rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .switch{
+        margin-top: 32px;
+        height: 320px;
+    }
+    
+    .switch1{
+        margin-top: 320px;
+        margin-bottom: 84px;
+        height: 512px;
+    }
+}
