@@ -15,7 +15,7 @@ function Footer() {
 {/* <Container>
         <Row>
           <Col md={6} className="elementor-column elementor-col-50 elementor-top-column elementor-element">
-            {/* ... (your "Explore Your" and "Next Steps @ Sanctus" section code) ... */}
+             ... (your "Explore Your" and "Next Steps @ Sanctus" section code) ... 
             <div className="elementor-widget-wrap elementor-element-populated">
               <div className="elementor-element elementor-element-ac707ff elementor-invisible elementor-widget elementor-widget-text-editor">
                 <div className="elementor-widget-container">
@@ -30,7 +30,7 @@ function Footer() {
             </div>
           </Col>
           <Col md={6} className="elementor-column elementor-col-50 elementor-top-column elementor-element">
-            {/* ... (your social media icons and form code) ... */}
+             ... (your social media icons and form code) ... 
             <div className="elementor-widget-wrap elementor-element-populated">
               <div className="elementor-element elementor-element-b082f66 elementor-hidden-mobile elementor-widget elementor-widget-spacer">
                 <div className="elementor-widget-container">
@@ -51,7 +51,7 @@ function Footer() {
             </div>
           </Col>
         </Row>
-      </Container>*/}
+      </Container> */}
 
 
       <Container style={{ display: 'flex' , justifyContent: 'space-between' }}>
@@ -60,8 +60,8 @@ function Footer() {
         <Row>
           <Col md={6}>
             <div className="elementor-element elementor-element-0e0ec13 elementor-widget elementor-widget-heading">
-              <div className="elementor-widget-container">
-                <h2 className="elementor-heading-title elementor-size-default" style={{fontSize:'25px'}}>Get In Touch</h2>
+              <div className="elementor-widget-container" style={{width:'190px' }}>
+                <h2 className="elementor-heading-title elementor-size-default" style={{fontSize:'45px'}}>Get In Touch</h2>
               </div>
             </div>
           </Col>
