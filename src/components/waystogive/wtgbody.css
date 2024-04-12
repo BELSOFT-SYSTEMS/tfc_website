@@ -32,10 +32,35 @@ h2{
     text-transform: capitalize;
 }
 .readmore {
-    background-color: rgb(212, 156, 4); 
-    color: rgb(0, 0, 0);
+    height: 50px;
+    width: 20%;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #f56618;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.readmore:hover {
+    background-color: #f56618;
+    transform: scale(1.1);
 }
 .switch{
-    
-    height: 350px;
+    margin-top: 32px;
+    height: 320px;
+}
+
+.switch1{
+    margin-top: 16px;
+    margin-bottom: 84px;
+    height: 320px;
 }
