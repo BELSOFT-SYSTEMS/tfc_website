@@ -15,9 +15,11 @@ function WtgBody() {
         <h1>Ways To Give</h1>
         <h4>GIVING GENEROUSLY AS TOGETHER WE ENGAGE IN MISSION</h4>
         <p>
-          Set up your one-time or recurring gifts quickly and easily by 1)
-          choosing the site you call home and 2) choosing the Fund you want to
-          direct your gift to.
+          Set up your one-time or recurring gifts quickly and easily by
+          <ul>
+            <li>Choosing the site you call home</li>
+            <li>Choosing the fund you want to direct your gift to.</li>
+          </ul> 
         </p>
       </div>
 
