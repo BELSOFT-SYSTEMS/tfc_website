@@ -1,0 +1,24 @@
+.image-scroll-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-scroll {
+  display: flex;
+  animation: scrollAnimation 20s linear infinite;
+}
+
+.scroll-image {
+  width: 350px; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
+  margin-right: 60px; /* Adjust spacing between images */
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
