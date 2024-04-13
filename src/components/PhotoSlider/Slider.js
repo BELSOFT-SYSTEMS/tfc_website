@@ -16,6 +16,8 @@ import slide_image_5 from './joy/joy5.jpeg';
 import slide_image_6 from './joy/joy6.jpeg';
 import slide_image_7 from './joy/joy3.jpeg';
 
+import './slider.css';
+
 function Slider() {
   return (
     <div className="container">
