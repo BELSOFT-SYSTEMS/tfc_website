@@ -4,14 +4,14 @@ import Footer from '../Footer';
 import TFCjoyforce from '../joyforce/TFC-joyforce';
 import TFCjoyforceevents from '../joyforce/TFCjoyforce-events';
 import Knowusbetter from '../joyforce/Knowusbetter';
-import Slider from '../PhotoSlider/slider';
+import Ourvalues from '../joyforce/Ourvalues';
 
 function Joyforceacademy() {
   return (
     <div>
       <Header />
       <TFCjoyforce />
-      <Slider />
+      <Ourvalues />
       <Knowusbetter />
       <TFCjoyforceevents />
       <Footer />

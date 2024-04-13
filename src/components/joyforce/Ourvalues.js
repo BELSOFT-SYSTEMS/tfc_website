@@ -1,64 +1,85 @@
-import React, { useState, useEffect } from 'react';
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+
+import slide_image_1 from './joy/joy1.jpeg';
+import slide_image_2 from './joy/joy2.jpeg';
+import slide_image_3 from './joy/joy3.jpeg';
+import slide_image_4 from './joy/joy4.jpeg';
+import slide_image_5 from './joy/joy5.jpeg';
+import slide_image_6 from './joy/joy6.jpeg';
+import slide_image_7 from './joy/joy3.jpeg';
+
+// import './slider.css';
 import './ImageScroll.css'; // Import CSS file for styling
 
 function ImageScroll() {
-  const [open, setOpen] = useState(false);
-  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-
-  const images = [
-    'joy/joy1.jpeg',
-    'joy/joy2.jpeg',
-    'joy/joy3.jpg',
-    'joy/joy4.jpg',
-    'joy/joy5.jpg',
-    'joy/joy6.jpg',
-    // Add more image URLs here
-  ];
-
-  const toggleOpen = () => {
-    setOpen(!open);
-    // Toggle body overflow
-    document.body.classList.toggle('lightbox-open');
-  };
-
-  const handleImageClick = (index) => {
-    setSelectedImageIndex(index);
-    toggleOpen();
-  };
-
-  useEffect(() => {
-    // Cleanup function to remove the added class when component unmounts
-    return () => {
-      document.body.classList.remove('lightbox-open');
-    };
-  }, []);
-
+  
   return (
-    <div className="image-scroll-container">
-      <div className="image-scroll">
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Image ${index}`}
-            className="scroll-image"
-            onClick={() => handleImageClick(index)}
-          />
-        ))}
-      </div>
-      <Lightbox
-        open={open}
-        onClose={toggleOpen}
-        slides={images.map(image => ({
-          src: image,
-          alt: 'Image',
-        }))}
-        currentIndex={selectedImageIndex}
-      />
+    <div className="container">
+      <h1 className="heading">Flower Gallery</h1>
+      <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+        }}
+        pagination={{ el: '.swiper-pagination', clickable: true }}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          clickable: true,
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="swiper_container"
+      >
+        <SwiperSlide>
+          <img src={slide_image_1} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_2} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_3} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_4} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_5} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_6} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_7} alt="slide_image" />
+        </SwiperSlide>
+
+        <div className="slider-controler">
+          <div className="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <div className="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div className="swiper-pagination"></div>
+        </div>
+      </Swiper>
     </div>
   );
 }
+
 
 export default ImageScroll;
