@@ -9,9 +9,9 @@
 }
 
 .scroll-image {
-  width: 350px; /* Adjust as needed */
+  width: 300px; /* Adjust as needed */
   height: auto; /* Adjust as needed */
-  margin-right: 60px; /* Adjust spacing between images */
+  margin-right: 80px; /* Adjust spacing between images */
 }
 
 @keyframes scrollAnimation {
