@@ -8,13 +8,13 @@ import 'swiper/css/navigation';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
-import slide_image_1 from '../../../public/joy/joy1.jpeg';
-import slide_image_2 from '../../../public/joy/joy2.jpeg';
-import slide_image_3 from '../../../public/joy/joy3.jpeg';
-import slide_image_4 from '../../../public/joy/joy4.jpeg';
-import slide_image_5 from '../../../public/joy/joy5.jpeg';
-import slide_image_6 from '../../../public/joy/joy6.jpeg';
-import slide_image_7 from '../../../public/joy/joy3.jpeg';
+import slide_image_1 from './joy/joy1.jpeg';
+import slide_image_2 from './joy/joy2.jpeg';
+import slide_image_3 from './joy/joy3.jpeg';
+import slide_image_4 from './joy/joy4.jpeg';
+import slide_image_5 from './joy/joy5.jpeg';
+import slide_image_6 from './joy/joy6.jpeg';
+import slide_image_7 from './joy/joy3.jpeg';
 
 function Slider() {
   return (
