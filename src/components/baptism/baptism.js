@@ -58,7 +58,7 @@ export const Baptismcontent = () => {
                     />
                 </div>
                 <div className={Style.button}>
-                    <Button >I WANT TO BE BAPTIZED</Button>
+                    <Button>I WANT TO BE BAPTIZED</Button>
                     <Button>I WANT TO DEDICATE MY CHILD</Button>
                 </div>
             </div>

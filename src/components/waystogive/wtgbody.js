@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import "./wtgbody.css";
+import { Button } from "react-bootstrap";
 // import First from "../../../public/wtg/B3058396-1EC0-4915-A8EE-48A563579A49-1.png";
 function WtgBody() {
-  const [selectedFund, setSelectedFund] = useState("general");
+  const [selectedFundSwitch, setSelectedFundSwitch] = useState("tithe-offering");
+  const [selectedFundSwitch1, setSelectedFundSwitch1] = useState("general");
 
-  const handleFundButtonClick = (fund) => {
-    setSelectedFund(fund);
+  const handleFundButtonClickSwitch = (fund) => {
+    setSelectedFundSwitch(fund);
+  };
+
+  const handleFundButtonClickSwitch1 = (fund) => {
+    setSelectedFundSwitch1(fund);
   };
 
   return (
@@ -14,28 +20,127 @@ function WtgBody() {
         <h1>Ways To Give</h1>
         <h4>GIVING GENEROUSLY AS TOGETHER WE ENGAGE IN MISSION</h4>
         <p>
-          Set up your one-time or recurring gifts quickly and easily by 1)
-          choosing the site you call home and 2) choosing the Fund you want to
-          direct your gift to.
+          Set up your one-time or recurring gifts quickly and easily by
+          <ul>
+            <li>Choosing the site you call home</li>
+            <li>Choosing the fund you want to direct your gift to.</li>
+          </ul> 
         </p>
       </div>
 
-      <div className=" container d-grid gap-4 d-md-flex justify-content-md-evenly my-3 ">
-        <a class="btn btn-warning readmore btn-lg" href="#" role="button">
-          TITHE/OFFERING
-        </a>
-        <a class="btn btn-warning readmore btn-lg" href="#" role="button">
-         WELFARE
-        </a>
-        <a class="btn btn-warning readmore btn-lg" href="#" role="button">
-          CHURCH PROJECTS
-        </a>
-        <a class="btn btn-warning readmore btn-lg" href="#" role="button">
-          TRANSPORTATION
-        </a>
-      </div>
       <div class="container text-center justify-content-md-center">
-        <div class="row">
+        <div className="switch">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-evenly ">
+          <button
+              className={`btn btn-warning readmore btn-lg col-6 ${
+                selectedFundSwitch === "tithe-offering" ? "active" : ""
+              }`}
+              type="button"
+              onClick={() => handleFundButtonClickSwitch("tithe-offering")}
+            >
+              TITHE/OFFERING
+          </button>
+
+          <button
+              className={`btn btn-warning readmore btn-lg col-6 ${
+                selectedFundSwitch === "welfare" ? "active" : ""
+              }`}
+              type="button"
+              onClick={() => handleFundButtonClickSwitch("welfare")}
+            >
+              WELFARE
+          </button>
+
+          <button
+              className={`btn btn-warning readmore btn-lg col-6 ${
+                selectedFundSwitch === "church-projects" ? "active" : ""
+              }`}
+              type="button"
+              onClick={() => handleFundButtonClickSwitch("church-projects")}
+            >
+              CHURCH PROJECTS
+          </button>
+
+          <button
+              className={`btn btn-warning readmore btn-lg col-6 ${
+                selectedFundSwitch === "transportation" ? "active" : ""
+              }`}
+              type="button"
+              onClick={() => handleFundButtonClickSwitch("transportation")}
+            >
+              TRANSPORTATION
+          </button>
+          </div>
+
+          <div >
+              {selectedFundSwitch === "tithe-offering" && (
+                <p>
+                  <p>
+                    Tithe & Offerings : Gifts to the General Fund go directly to meet the
+                    organizational and congregational needs. It includes things
+                    like congregational care, utilities, salaries, and
+                    commitments to our Local/Global Partners.
+                  </p>
+                  <p>
+                    If giving is higher than our budgeted giving, we are able to
+                    do more care, ministry, and bless our Local and Global
+                    Partners. It accepts one-time gifts and recurring gifts.
+                  </p>
+                </p>
+              )}
+              {selectedFundSwitch === "welfare" && (
+                <p>
+                <p>
+                  Welfare : Gifts to the Vision Fund carry major projects necessary to
+                  help reach The Father Church's vision to be a regional church of 10,000
+                  meeting the physical, emotional, and spiritual needs of people
+                  in Jesus’ name.
+                  </p>
+                  <p>
+                   Projects will be added to the Vision Fund as
+                  The Father Church needs evolve and change. The Vision Fund can
+                  accept one-time gifts, recurring gifts, and pledges.
+                </p>
+                </p>
+              )}
+              {selectedFundSwitch === "church-projects" && (
+                <p>
+                  <p>
+                    Church Projects : Gifts to the General Fund go directly to meet the
+                    organizational and congregational needs. It includes things
+                    like congregational care, utilities, salaries, and
+                    commitments to our Local/Global Partners.
+                  </p>
+                  <p>
+                    If giving is higher than our budgeted giving, we are able to
+                    do more care, ministry, and bless our Local and Global
+                    Partners. It accepts one-time gifts and recurring gifts.
+                  </p>
+                </p>
+              )}
+              {selectedFundSwitch === "transportation" && (
+                <p>
+                <p>
+                  Transportation : Gifts to the Vision Fund carry major projects necessary to
+                  help reach The Father Church's vision to be a regional church of 10,000
+                  meeting the physical, emotional, and spiritual needs of people
+                  in Jesus’ name.
+                  </p>
+                  <p>
+                   Projects will be added to the Vision Fund as
+                  The Father Church needs evolve and change. The Vision Fund can
+                  accept one-time gifts, recurring gifts, and pledges.
+                </p>
+                </p>
+              )}
+            </div>
+
+        </div>
+      </div>
+
+      <div class="container text-center justify-content-md-center">
+
+        {/* <div class="row">
           <div class="col-sm-4">
             <img
               src="/wtg/cash.png"
@@ -97,9 +202,8 @@ function WtgBody() {
               name and email address in the comment field.
             </p>
           </div>
-        </div>
-
-        <div className=" justify-content-md-center my-3 ">
+        </div> */}
+        {/* <div className=" justify-content-md-center my-3 ">
           <p className="text-center">
             Your Pushpay account helps you to view, track, and manage your
             giving. Donations of $20 or more annually will receive an emailed
@@ -109,10 +213,11 @@ function WtgBody() {
           <a class="btn btn-lg btn-warning readmore" href="#" role="button">
             READ MORE ON TITHING
           </a>
-        </div>
-        <div className="switch">
+        </div> */}
+        
+        <div className="switch1">
           <h2>Funds</h2>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-center classctr  " >
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center ">
             {/* <button class="btn btn-primary col-6" type="button">
               GENERAL FUND
             </button>
@@ -121,41 +226,26 @@ function WtgBody() {
             </button> */}
             <button
               className={`btn btn-warning readmore btn-lg col-6 ${
-                selectedFund === "general" ? "active" : ""
+                selectedFundSwitch1 === "general" ? "active" : ""
               }`}
               type="button"
-              onClick={() => handleFundButtonClick("general")}
+              onClick={() => handleFundButtonClickSwitch1("general")}
             >
               GENERAL FUND
             </button>
             <button
               className={`btn btn-warning readmore btn-lg col-6 ${
-                selectedFund === "vision" ? "active" : ""
+                selectedFundSwitch1 === "vision" ? "active" : ""
               }`}
               type="button"
-              onClick={() => handleFundButtonClick("vision")}
+              onClick={() => handleFundButtonClickSwitch1("vision")}
             >
               VISION FUND
             </button>
           </div>
-          {/* <p>
-            Gifts to the General Fund go directly to meet the organizational and
-            congregational needs. It includes things like congregational care,
-            utilities, salaries, and commitments to our Local/Global Partners.
-            If giving is higher than our budgeted giving, we are able to do more
-            care, ministry, and bless our Local and Global Partners. It accepts
-            one time gifts and recurring gifts.
-          </p>
-          <p>
-            Gifts to the Vision Fund carry major projects necessary to help
-            reach Sanctus’ vision to be a regional church of 10,000 meeting the
-            physical, emotional, and spiritual needs of people in Jesus’ name.
-            Projects will be added to the Vision Fund as Sanctus Church’s needs
-            evolve and change. The Vision Fund can accept one time gifts,
-            recurring gifts, and pledges.
-          </p> */}
+
             <div >
-              {selectedFund === "general" && (
+              {selectedFundSwitch1 === "general" && (
                 <p>
                   <p>
                     Gifts to the General Fund go directly to meet the
@@ -170,7 +260,7 @@ function WtgBody() {
                   </p>
                 </p>
               )}
-              {selectedFund === "vision" && (
+              {selectedFundSwitch1 === "vision" && (
                 <p>
                 <p>
                   Gifts to the Vision Fund carry major projects necessary to

@@ -5,16 +5,14 @@ h1 {
     font-weight: 700;
     text-transform: capitalize;
 }
-
-h6 {
+h6{
     color: var(--e-global-color-text);
     font-family: Jost, Sans-serif;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 500;
     text-transform: uppercase;
 }
-
-p:first-child {
+p:first-child{
     margin-top: 40px;
     margin-bottom: 30px;
 }
@@ -36,11 +34,30 @@ h2 {
 }
 
 .readmore {
-    background-color: rgb(212, 156, 4); 
-    color: rgb(0, 0, 0);
+    height: 50px;
+    width: 20%;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #f56618;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.switch {
+.readmore:hover {
+    background-color: #f56618;
+    transform: scale(1.1);
+}
+.switch{
+    
     height: 350px;
 }
 
