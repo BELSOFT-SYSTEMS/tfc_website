@@ -119,7 +119,7 @@ const menuItems = [
     {
       label: 'Media',
       items: [
-        { label: 'Sermons', link: '/sermons' },
+        { label: 'Sermons', link: '/sermons/recent' },
         /*{ label: 'Worship', link: '/worship' },
         { label: 'Publications', link: '/publications' },
         { label: 'Testimonies', link: '/testimonies' },*/

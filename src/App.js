@@ -30,7 +30,7 @@ import Summercamp from './components/pages/Summercamp';
 import Waystogive from './components/pages/Waystogive';
 import {RecentContent} from './components/sermon/Recent';
 import { TopicContent } from './components/sermon/Topic';
-
+import { Speaker } from './components/sermon/Speaker';
 
 import './index.css';
 
@@ -84,8 +84,8 @@ function App() {
         <Route path="/sermons" element={<Sermons />} >
           <Route path='recent' element={<RecentContent />} />
           <Route path='topic' element={<TopicContent />} />
-          <Route path='speaker' element={<h1>speaker</h1>} />
-          <Route path='scripture' element={<h1>scripture</h1>} />
+          <Route path='speaker' element={<Speaker/>} />
+          <Route path='scripture' element={<Speaker/>} />
         </Route>
         <Route path="/next-steps" element={<Nextsteps />} />
         <Route path="/believers-foundation" element={<Believerfoundation />} />

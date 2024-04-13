@@ -1,0 +1,41 @@
+.topic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Align vertically */
+    justify-content: space-between;
+    height: 50px;
+    border-top: 1px solid rgba(14, 14, 14, 0.276);
+    border-bottom: 1px solid rgba(14, 14, 14, 0.276);
+    text-align: center;
+}
+
+.topic:hover {
+    background-color: rgba(94, 94, 94, 0.078);
+}
+.topic p {
+    margin: 0;
+}
+
+.point {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Align vertically */
+    justify-content: space-between;
+    height: 100%;
+    width: 60px;
+    text-align: center;
+
+}
+
+.point > p {
+    background-color: rgb(216, 214, 214);
+    border-radius: 50%;
+    padding: 3px 8px; /* Adjust padding as needed */
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+

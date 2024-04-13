@@ -217,8 +217,13 @@ function WtgBody() {
         
         <div className="switch1">
           <h2>Funds</h2>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-evenly ">
-            
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center ">
+            {/* <button class="btn btn-primary col-6" type="button">
+              GENERAL FUND
+            </button>
+            <button class="btn btn-primary col-6" type="button">
+              VISION FUND
+            </button> */}
             <button
               className={`btn btn-warning readmore btn-lg col-6 ${
                 selectedFundSwitch1 === "general" ? "active" : ""

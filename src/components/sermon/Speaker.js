@@ -1,13 +1,8 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Style from './sermon.module.css';
-import Row from 'react-bootstrap/Row';
-
-import { TopicPost } from '../TopicPost/Topic';
-export const TopicContent = () => {
+import { TopicPost } from "../TopicPost/Topic"
+export const Speaker = () => {
     return (
-        <div className={Style.Container}>
-                <TopicPost
+        <div>
+            <TopicPost
                     title="Title"
                     content={1}                    img='/recent/image.jpg'
                 />
@@ -35,8 +30,6 @@ export const TopicContent = () => {
 
 
 
-
-          
         </div>
     )
 }

@@ -47,7 +47,7 @@ const TFCsermon = () => {
 
       {/* Section 1 */}
       <section className="your-section-class">
-      <Container fluid style={containerStyle}>
+      <Container fluid style={containerStyle} >
       <Row>
         {/* Overlay */}
         <div style={overlayStyle}></div>

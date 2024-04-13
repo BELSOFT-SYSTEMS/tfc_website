@@ -1,13 +1,16 @@
-.Sermon{
+.Sermon {
     padding: 100px;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
-.wrapper > input{
+
+.wrapper>input {
     width: 30%;
     height: 50px;
     border: transparent;
@@ -16,20 +19,24 @@
     padding: 0 20px;
     margin-right: 20px;
 }
-.tab{
+
+.tab {
     display: flex;
     width: 60%;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 100px;
     border-bottom: 1px solid #e0e0e0;
-    padding-block: 10px;
-  
+    padding-bottom: 25px;
+
+
 }
-.tab >a{
+
+.tab>a {
     font-size: 20px;
     font-weight: 400;
     color: #000;
+    height: 100%;
     text-decoration: none;
 }
 
@@ -59,9 +66,11 @@ h4 {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.Container{
+
+.Container {
     max-width: 1140px;
 }
+
 .recentPoint {
     display: flex;
     flex-direction: column;
@@ -72,6 +81,7 @@ h4 {
     /* justify-content: space-between; */
 
 }
+
 .topicPoint {
     display: flex;
     flex-direction: column;
@@ -79,9 +89,15 @@ h4 {
     padding: 10px 10px;
     border-radius: 50%;
     /* align-items: center; */
-    justify-content:space-between;
+    justify-content: space-between;
 
 }
+
+
+.topic p {
+    margin: 0;
+}
+
 .recentPoint>.pointText {
     width: 70%;
 }
@@ -91,9 +107,11 @@ h4 {
     font-weight: 700;
     color: #000;
 }
-.pointText > p{
+
+.pointText>p {
     font-weight: 700;
 }
+
 .pointText>h4 {
     font-size: 1.5rem;
     font-weight: 600;
