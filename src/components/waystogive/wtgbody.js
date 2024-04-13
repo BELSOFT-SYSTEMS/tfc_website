@@ -112,7 +112,7 @@ function WtgBody() {
         </div>
         <div className="switch">
           <h2>Funds</h2>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-center ">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center classctr  " >
             {/* <button class="btn btn-primary col-6" type="button">
               GENERAL FUND
             </button>

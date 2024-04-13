@@ -1,41 +1,78 @@
-h1{
+h1 {
     color: var(--e-global-color-text);
     font-family: Coolvetica, Sans-serif;
     font-size: 140px;
     font-weight: 700;
     text-transform: capitalize;
 }
-h6{
+
+h6 {
     color: var(--e-global-color-text);
     font-family: Jost, Sans-serif;
     font-size: 30px;
     font-weight: 500;
     text-transform: uppercase;
 }
-p:first-child{
+
+p:first-child {
     margin-top: 40px;
     margin-bottom: 30px;
 }
-p{
+
+p {
     color: var(--e-global-color-text);
     font-family: Montserrat, Sans-serif;
     font-size: 18px;
     font-weight: 400;
     text-align: justify;
-    
 }
-h2{
+
+h2 {
     color: var(--e-global-color-text);
     font-family: Coolvetica, Sans-serif;
     font-size: 60px;
     font-weight: 700;
     text-transform: capitalize;
 }
+
 .readmore {
     background-color: rgb(212, 156, 4); 
     color: rgb(0, 0, 0);
 }
-.switch{
-    
+
+.switch {
     height: 350px;
+}
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 70px; /* Adjust font size for smaller screens */
+    }
+    
+    h2 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+    .classctr{
+        place-items: center;
+    }
+    
+    .switch {
+        height: auto; /* Allow height to adjust dynamically */
+    }
+}
+
+/* Media query for screens between 768px and 1023px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 100px; /* Adjust font size for medium screens */
+    }
+    
+    h2 {
+        font-size: 50px; /* Adjust font size for medium screens */
+    }
+    
+    .switch {
+        height: 300px; /* Adjust height for medium screens */
+    }
 }
