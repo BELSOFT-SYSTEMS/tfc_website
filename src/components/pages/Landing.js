@@ -92,13 +92,15 @@ const Landing = () => {
 
       <header>
         {/* Home button at top right */}
-      <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', backgroundColor: '#d49c04', color: '#000' }}>Home</Button>
+      <div style={{ display: 'flex', justifyContent: 'end'}}>
+          <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', backgroundColor: '#d49c04', color: '#000', zIndex: '10' }}>Home</Button>
+      </div>
 
       </header>
       {/* Slider */}
       <Carousel  style={{ width: '100vw', height: '100vh', position: 'relative' }}>
         
-        <Carousel.Item > 
+        <Carousel.Item style={{ height: '100vh' }}> 
           <img
             className="d-block w-100 h-100"
             src="bg-1.jpg"
@@ -109,7 +111,7 @@ const Landing = () => {
           <p>Welcome to the THE FATHER'S CHURCH</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item >
+        <Carousel.Item style={{ height: '100vh' }}>
           <img
             className="d-block w-100 h-100"
             src="bg-2.jpg"
@@ -119,8 +121,8 @@ const Landing = () => {
           <Carousel.Caption>
           <p>Welcome to the THE FATHER'S CHURCH</p>
           </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
+        </Carousel.Item >
+        <Carousel.Item style={{ height: '100vh' }}>
           <img
             className="d-block w-100 h-100"
             src="bg-3.jpg"
@@ -131,7 +133,7 @@ const Landing = () => {
           <p>Welcome to the THE FATHER'S CHURCH</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item style={{ height: '100vh' }}>
           <img
             className="d-block w-100 h-100"
             src="bg-4.jpg"
@@ -142,7 +144,7 @@ const Landing = () => {
           <p>Welcome to the THE FATHER'S CHURCH</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item style={{ height: '100vh' }}>
           <img
             className="d-block w-100 h-100"
             src="bg-5.jpg"
@@ -153,7 +155,7 @@ const Landing = () => {
           <p>Welcome to the THE FATHER'S CHURCH</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item style={{ height: '100vh' }}>
           <img
             className="d-block w-100 h-100"
             src="bg-6.jpg"
@@ -164,7 +166,7 @@ const Landing = () => {
           <p>Welcome to the THE FATHER'S CHURCH</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item style={{ height: '100vh' }}>
           <img
             className="d-block w-100 h-100"
             src="bg-7.jpg"
@@ -180,8 +182,8 @@ const Landing = () => {
       </Carousel>
       <footer>
 
-     <div style={{ display: 'flex', flexDirection:'column' , position: 'absolute', bottom: '20%'  }}>
-          <ButtonGroup style={{ gap: '25px' }}>
+     <div style={{ display: 'flex', flexDirection:'column' , position: 'absolute', bottom: '10%', alignItems: 'center', justifyContent: 'space-evenly'  }}>
+          <ButtonGroup style={{ gap: '25px', display: 'flex', flexDirection: 'row', alignContent: 'center' }}>
             <Button variant="danger" onClick={downloadTheMonthlyBulletin} style={{ backgroundColor: '#a72942', color: '#000', }}> MONTHLY BULLETIN </Button>
             <Button variant="warning" onClick={redirectToPrayerRequest} style={{ backgroundColor: '#d49c04', color: '#000', }}>PRAYER REQUEST</Button>
             <Button variant="warning" onClick={redirectToSundays} style={{ backgroundColor: '#d49c04', color: '#000', }}>PLAN TO VISIT</Button>
