@@ -68,14 +68,7 @@ const Landing = () => {
     // Inline style object to set background image
   const backgroundStyle = {
     // backgroundImage: `url(${backgroundImages[currentIndex]})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    transition: 'background-image 1s cubic-bezier(0.25, 0.1, 0.25, 1)',
-    width: '100vw',
-    height: '100vh',
-    position: 'absolute',
-    top: 0,
-    left: 0,
+    
   };
 
   // Inline style object to animate background position
@@ -99,18 +92,18 @@ const Landing = () => {
 
       <header>
         {/* Home button at top right */}
-      <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'relative', top: '30px', right: '20px', backgroundColor: '#d49c04', color: '#000', zIndex: 10 }}>Home</Button>
+      <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', backgroundColor: '#d49c04', color: '#000' }}>Home</Button>
 
       </header>
       {/* Slider */}
-      <Carousel  >
+      <Carousel  style={{ width: '100vw', height: '100vh', position: 'relative' }}>
         
         <Carousel.Item > 
           <img
             className="d-block w-100 h-100"
             src="bg-1.jpg"
             alt="First slide"
-            style={{ objectFit: 'cover', height: '50%' }}
+            style={{ objectFit: 'cover', height: '100%' }}
           />
           <Carousel.Caption>
           <p>Welcome to the THE FATHER'S CHURCH</p>
@@ -121,7 +114,7 @@ const Landing = () => {
             className="d-block w-100 h-100"
             src="bg-2.jpg"
             alt="Second slide"
-            style={{ objectFit: 'cover', height: '50%' }}
+            style={{ objectFit: 'cover', height: '100%' }}
           />
           <Carousel.Caption>
           <p>Welcome to the THE FATHER'S CHURCH</p>
@@ -132,7 +125,7 @@ const Landing = () => {
             className="d-block w-100 h-100"
             src="bg-3.jpg"
             alt="Third slide"
-            style={{ objectFit: 'cover', height: '50%' }}
+            style={{ objectFit: 'cover', height: '100%' }}
           />
           <Carousel.Caption>
           <p>Welcome to the THE FATHER'S CHURCH</p>
@@ -143,7 +136,7 @@ const Landing = () => {
             className="d-block w-100 h-100"
             src="bg-4.jpg"
             alt="Fourth slide"
-            style={{ objectFit: 'cover', height: '50%' }}
+            style={{ objectFit: 'cover', height: '100%' }}
           />
           <Carousel.Caption>
           <p>Welcome to the THE FATHER'S CHURCH</p>
@@ -154,7 +147,7 @@ const Landing = () => {
             className="d-block w-100 h-100"
             src="bg-5.jpg"
             alt="Fifth slide"
-            style={{ objectFit: 'cover', height: '50%' }}
+            style={{ objectFit: 'cover', height: '100%' }}
           />
           <Carousel.Caption>
           <p>Welcome to the THE FATHER'S CHURCH</p>
@@ -165,7 +158,7 @@ const Landing = () => {
             className="d-block w-100 h-100"
             src="bg-6.jpg"
             alt="Sixth slide"
-            style={{ objectFit: 'cover', height: '50%' }}
+            style={{ objectFit: 'cover', height: '100%' }}
           />
           <Carousel.Caption>
           <p>Welcome to the THE FATHER'S CHURCH</p>
@@ -176,7 +169,7 @@ const Landing = () => {
             className="d-block w-100 h-100"
             src="bg-7.jpg"
             alt="Seventh slide"
-            style={{ objectFit: 'cover', height: '50%' }}
+            style={{ objectFit: 'cover', height: '100%' }}
           />
           <Carousel.Caption>
           <p>Welcome to the THE FATHER'S CHURCH</p>
@@ -187,7 +180,7 @@ const Landing = () => {
       </Carousel>
       <footer>
 
-     <div style={{ display: 'flex', backgroundColor: 'Red', flexDirection:'column'  }}>
+     <div style={{ display: 'flex', flexDirection:'column' , position: 'absolute', bottom: '20%'  }}>
           <ButtonGroup style={{ gap: '25px' }}>
             <Button variant="danger" onClick={downloadTheMonthlyBulletin} style={{ backgroundColor: '#a72942', color: '#000', }}> MONTHLY BULLETIN </Button>
             <Button variant="warning" onClick={redirectToPrayerRequest} style={{ backgroundColor: '#d49c04', color: '#000', }}>PRAYER REQUEST</Button>
