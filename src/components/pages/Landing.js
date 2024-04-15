@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Container, Carousel ,ButtonGroup,  } from 'react-bootstrap';
-import { Button } from '../Button/Button';
+import { Container, Carousel ,ButtonGroup, Button, } from 'react-bootstrap';
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -96,11 +95,11 @@ const Landing = () => {
 
   return (
     
-    <Container fluid style={backgroundStyle}>
+    <div fluid style={backgroundStyle}>
 
       <header>
         {/* Home button at top right */}
-      <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', top: '30px', right: '20px', backgroundColor: '#d49c04', color: '#000', zIndex: 10 }}>Home</Button>
+      <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'relative', top: '30px', right: '20px', backgroundColor: '#d49c04', color: '#000', zIndex: 10 }}>Home</Button>
 
       </header>
       {/* Slider */}
@@ -188,14 +187,17 @@ const Landing = () => {
       </Carousel>
       <footer>
 
-      {/* Buttons at the bottom center */}
-      <ButtonGroup style={{ position: 'absolute', bottom: '20px', left: '50%', transform: 'translateX(-50%)', gap:'25px',zIndex:'0' }}>
-        <Button variant="danger" onClick={downloadTheMonthlyBulletin} style={{backgroundColor: '#a72942', color: '#000',}}> MONTHLY BULLETIN </Button>
-        <Button variant="warning" onClick={redirectToPrayerRequest} style={{backgroundColor: '#d49c04', color: '#000',}}>PRAYER REQUEST</Button>
-        <Button variant="warning" onClick={redirectToSundays} style={{backgroundColor: '#d49c04', color: '#000',}}>PLAN TO VISIT</Button>
-      </ButtonGroup>
+     <div style={{ display: 'flex', backgroundColor: 'Red', flexDirection:'column'  }}>
+          <ButtonGroup style={{ gap: '25px' }}>
+            <Button variant="danger" onClick={downloadTheMonthlyBulletin} style={{ backgroundColor: '#a72942', color: '#000', }}> MONTHLY BULLETIN </Button>
+            <Button variant="warning" onClick={redirectToPrayerRequest} style={{ backgroundColor: '#d49c04', color: '#000', }}>PRAYER REQUEST</Button>
+            <Button variant="warning" onClick={redirectToSundays} style={{ backgroundColor: '#d49c04', color: '#000', }}>PLAN TO VISIT</Button>
+          </ButtonGroup>
+      
+      </div> {/* Buttons at the bottom center */}
+      
       </footer>
-    </Container>
+    </div>
   );
 };
 
