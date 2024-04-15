@@ -93,7 +93,7 @@ const Landing = () => {
       <header>
         {/* Home button at top right */}
       <div style={{ display: 'flex', justifyContent: 'end'}}>
-          <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', backgroundColor: '#d49c04', color: '#000', zIndex: '10' }}>Home</Button>
+          <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', backgroundColor: '#d49c04', color: '#000', zIndex: '10', right: '10px', top: '10px' }}>Home</Button>
       </div>
 
       </header>
@@ -182,7 +182,7 @@ const Landing = () => {
       </Carousel>
       <footer>
 
-     <div style={{ display: 'flex', flexDirection:'column' , position: 'absolute', bottom: '10%', alignItems: 'center', justifyContent: 'space-evenly'  }}>
+     <div style={{ width: '100%', display: 'flex', flexDirection:'column' , position: 'absolute', bottom: '3%' , alignItems: 'center', justifyContent: 'space-evenly'  }}>
           <ButtonGroup style={{ gap: '25px', display: 'flex', flexDirection: 'row', alignContent: 'center' }}>
             <Button variant="danger" onClick={downloadTheMonthlyBulletin} style={{ backgroundColor: '#a72942', color: '#000', }}> MONTHLY BULLETIN </Button>
             <Button variant="warning" onClick={redirectToPrayerRequest} style={{ backgroundColor: '#d49c04', color: '#000', }}>PRAYER REQUEST</Button>
