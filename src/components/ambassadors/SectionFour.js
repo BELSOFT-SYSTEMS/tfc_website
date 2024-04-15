@@ -13,26 +13,29 @@ const SectionFour = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <EventComponent
-                    title="Biblical Finance Course"
-                    description="Learn how to be a good steward of your finances with Biblical principles and teachings"
-                    imageUrl="event1.jpg"
-                    buttonText="Find Out More"
-                />
-                <EventComponent
-                    title="The Father Church Youth Service"
-                    description="TFC youth, grades 6 &#8211; 12 are invited to join us on Thursday nights from 7:00 &#8211; 9:00pm!"
-                    imageUrl="event2.jpg"
-                    buttonText="Find Out More"
-                />
-                <EventComponent
-                    title="The Father Church Youth Night"
-                    description="All youth in grades 6 - 12 are invited to Port Perry Youth meeting weekly on Thursdays from 7 - 9:00 pm."
-                    imageUrl="event3.jpeg"
-                    buttonText="Find Out More"
-                />
-            </Container>
+            <Container style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
+  <EventComponent
+    title="Pickering Kids Easter Presentation"
+    date="MAR 31 2024"
+    description="Our kids will be putting on a special Easter presentation for the congregation!"
+    imageUrl="ams-events1.jpeg"
+    buttonText="Find Out More"
+  />
+  <EventComponent
+    title="Sanctus Summer Camps: Multi Sports Camp (Ages 6-12)"
+    date="JUL 08 - 12 2024"
+    description="This Sanctus Summer Camp is for kids ages 6-12 and is filled with fun multi-sports and engaging, deep-diving teaching!"
+    imageUrl="ams-events2.jpeg"
+    buttonText="Find Out More"
+  />
+  <EventComponent
+    title="Sanctus Summer Camps: Multi Sports Camp (Ages 6-12)"
+    date="JUL 09 - 12 2024"
+    description="This Sanctus Summer Camp is for kids ages 6-12 and is filled with fun multi-sports and engaging, deep-diving teaching!"
+    imageUrl="ams-events3.jpeg"
+    buttonText="Find Out More"
+  />
+</Container>
             <Container style={{ justifyContent: 'center', textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
                 <Button variant="success" style={{ backgroundColor: '#d49c04', color: '#000', }}>View all Events</Button>
             </Container>

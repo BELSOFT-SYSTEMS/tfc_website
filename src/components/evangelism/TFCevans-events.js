@@ -14,7 +14,7 @@ const TFCevansevents = () => {
           </Col>
         </Row>
     </Container>
-    <Container style={{ display: 'flex', justifyContent: 'space-between' }}>
+    <Container style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
     <EventComponent
       title="Pickering Kids Easter Presentation"
       date="MAR 31 2024"
