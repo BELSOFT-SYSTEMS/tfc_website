@@ -9,7 +9,7 @@ import { faInstagram, faFacebook, faYoutube, } from '@fortawesome/free-brands-sv
 
 function Footer() {
   return (
-    <footer style={{ backgroundColor: '#012101', paddingTop:'40px', color: 'white' }}>
+    <footer style={{ backgroundColor: '#051f04', paddingTop:'40px', color: 'white' }}>
     <Container>
       {/* Use Bootstrap grid classes for responsive behavior */}
       <Row>

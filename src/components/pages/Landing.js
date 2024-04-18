@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Container, Carousel ,ButtonGroup, Button, } from 'react-bootstrap';
+import { Container, Carousel ,ButtonGroup,  } from 'react-bootstrap';
+import { Button } from '../Button/Button';
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -35,65 +36,17 @@ const Landing = () => {
 
 
 
-   // List of background images
-  //  const backgroundImages = [
-  //   'bg-1.jpg',
-  //   'bg-2.jpg',
-  //   'bg-3.jpg',
-  //   'bg-4.jpg',
-  //   'bg-5.jpg',
-  //   'bg-6.jpg',
-  //   'bg-7.jpg',
-
-  // ];
-
-  
-  // State to track the current background image index
-  // const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Effect to change background image
-  // useEffect(() => {
-    // Function to loop through the images
-    // const changeBackground = () => {
-      // setCurrentIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    // };
-
-    // Change background image every 5 seconds
-    // const interval = setInterval(changeBackground, 10000);
-
-    // Clear interval on component unmount
-    // return () => clearInterval(interval);
-  // }, [backgroundImages.length]); // Empty dependency array ensures this effect runs only once on component mount
-
-    // Inline style object to set background image
-  const backgroundStyle = {
-    // backgroundImage: `url(${backgroundImages[currentIndex]})`,
-    
-  };
-
-  // Inline style object to animate background position
-  // const transitionStyle = {
-  //   transitionTimingFunction: 'ease-in-out',
-  //   transitionDuration: '1s',
-  // };
-
-  // Update backgroundStyle with the transition effect for background position
-  // Object.assign(backgroundStyle, transitionStyle);
-
-  // const buttonStyle = {
-    
-  // };
 
 
 
   return (
     
-    <div fluid style={backgroundStyle}>
+    <div fluid >
 
       <header>
         {/* Home button at top right */}
       <div style={{ display: 'flex', justifyContent: 'end'}}>
-          <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', backgroundColor: '#d49c04', color: '#000', zIndex: '10', right: '10px', top: '10px' }}>Home</Button>
+          <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', backgroundColor: '#d49c04', color: '#fff', zIndex: '10', right: '10px', top: '10px', maxWidth: '150px' }}>Home</Button>
       </div>
 
       </header>
@@ -107,9 +60,7 @@ const Landing = () => {
             alt="First slide"
             style={{ objectFit: 'cover', height: '100%' }}
           />
-          <Carousel.Caption>
-          <p>Welcome to the THE FATHER'S CHURCH</p>
-          </Carousel.Caption>
+          
         </Carousel.Item>
         <Carousel.Item style={{ height: '100vh' }}>
           <img
@@ -118,9 +69,7 @@ const Landing = () => {
             alt="Second slide"
             style={{ objectFit: 'cover', height: '100%' }}
           />
-          <Carousel.Caption>
-          <p>Welcome to the THE FATHER'S CHURCH</p>
-          </Carousel.Caption>
+          
         </Carousel.Item >
         <Carousel.Item style={{ height: '100vh' }}>
           <img
@@ -129,9 +78,7 @@ const Landing = () => {
             alt="Third slide"
             style={{ objectFit: 'cover', height: '100%' }}
           />
-          <Carousel.Caption>
-          <p>Welcome to the THE FATHER'S CHURCH</p>
-          </Carousel.Caption>
+          
         </Carousel.Item>
         <Carousel.Item style={{ height: '100vh' }}>
           <img
@@ -140,9 +87,7 @@ const Landing = () => {
             alt="Fourth slide"
             style={{ objectFit: 'cover', height: '100%' }}
           />
-          <Carousel.Caption>
-          <p>Welcome to the THE FATHER'S CHURCH</p>
-          </Carousel.Caption>
+          
         </Carousel.Item>
         <Carousel.Item style={{ height: '100vh' }}>
           <img
@@ -151,9 +96,7 @@ const Landing = () => {
             alt="Fifth slide"
             style={{ objectFit: 'cover', height: '100%' }}
           />
-          <Carousel.Caption>
-          <p>Welcome to the THE FATHER'S CHURCH</p>
-          </Carousel.Caption>
+         
         </Carousel.Item>
         <Carousel.Item style={{ height: '100vh' }}>
           <img
@@ -162,9 +105,7 @@ const Landing = () => {
             alt="Sixth slide"
             style={{ objectFit: 'cover', height: '100%' }}
           />
-          <Carousel.Caption>
-          <p>Welcome to the THE FATHER'S CHURCH</p>
-          </Carousel.Caption>
+          
         </Carousel.Item>
         <Carousel.Item style={{ height: '100vh' }}>
           <img
@@ -173,20 +114,18 @@ const Landing = () => {
             alt="Seventh slide"
             style={{ objectFit: 'cover', height: '100%' }}
           />
-          <Carousel.Caption>
-          <p>Welcome to the THE FATHER'S CHURCH</p>
-          </Carousel.Caption>
+          
         </Carousel.Item>
         
         {/* Add more Carousel.Item components for additional slides */}
       </Carousel>
       <footer>
 
-     <div style={{ width: '100%', display: 'flex', flexDirection:'column' , position: 'absolute', bottom: '3%' , alignItems: 'center', justifyContent: 'space-evenly'  }}>
+     <div style={{ width: '100%', display: 'flex', flexDirection:'column' , position: 'absolute', bottom: '8%' , alignItems: 'center', justifyContent: 'space-evenly'  }}>
           <ButtonGroup style={{ gap: '25px', display: 'flex', flexDirection: 'row', alignContent: 'center' }}>
-            <Button variant="danger" onClick={downloadTheMonthlyBulletin} style={{ backgroundColor: '#a72942', color: '#000', }}> MONTHLY BULLETIN </Button>
-            <Button variant="warning" onClick={redirectToPrayerRequest} style={{ backgroundColor: '#d49c04', color: '#000', }}>PRAYER REQUEST</Button>
-            <Button variant="warning" onClick={redirectToSundays} style={{ backgroundColor: '#d49c04', color: '#000', }}>PLAN TO VISIT</Button>
+            <Button variant="danger" onClick={downloadTheMonthlyBulletin} style={{ backgroundColor: '#a72942', color: '#fff', }}> MONTHLY BULLETIN </Button>
+            <Button variant="warning" onClick={redirectToPrayerRequest} style={{ backgroundColor: '#d49c04', color: '#fff', }}>PRAYER REQUEST</Button>
+            <Button variant="warning" onClick={redirectToSundays} style={{ backgroundColor: '#d49c04', color: '#fff', }}>PLAN TO VISIT</Button>
           </ButtonGroup>
       
       </div> {/* Buttons at the bottom center */}
