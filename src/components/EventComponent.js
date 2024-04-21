@@ -1,6 +1,7 @@
 // EventComponent.js
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card, } from 'react-bootstrap';
+import { Button } from './Button/Button';
 
 const EventComponent = ({ title, description, imageUrl, buttonText }) => {
   return (
