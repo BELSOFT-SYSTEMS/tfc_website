@@ -1,11 +1,12 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import EventComponent from './EventComponent';
+import { Button } from '../Button/Button';
+import { Container, Row, Col} from 'react-bootstrap';
+import EventComponent from '../EventComponent';
 
 
 const TFCfreedomevents = () => {
   return (
-    <Container>
+    <Container >
     <Container style={{justifyContent:'center', textAlign:'center', marginBottom:'30px', marginTop:'20px'}}>
       <Row>
           <Col>
@@ -37,8 +38,8 @@ const TFCfreedomevents = () => {
     buttonText="Find Out More"
   />
 </Container>
-  <Container style={{justifyContent:'center', textAlign:'center',marginTop:'20px', marginBottom:'20px', paddingBottom:'20px'}}>
-  <Button variant="warning" style={{backgroundColor: '#d49c04', color: '#000',}}>View all Events</Button>
+  <Container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', marginTop: '20px', marginBottom: '20px', paddingBottom: '20px' }}>
+  <Button variant="warning" style={{backgroundColor: '#d49c04', color: '#000', maxWidth:'200px'}}>View all Events</Button>
   </Container>
   </Container>
   )

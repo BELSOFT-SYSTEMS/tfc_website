@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Container, Row, Col, Button, Form } from 'react-bootstrap';
+import { Button } from '../Button/Button';
+import { Container, Row, Col,  Form } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobileScreen } from '@fortawesome/free-solid-svg-icons';
 
@@ -61,7 +62,7 @@ const Connect = () => {
                       <Form.Label>Needed Care</Form.Label>
                       <Form.Control as="textarea" rows={3} placeholder="Enter details about your needed care" name="neededCare" value={formData.neededCare} onChange={handleChange} size="sm" />
                     </Form.Group>
-                    <Button type="submit" variant="warning" style={{ backgroundColor: '#d49c04', color: '#000', marginTop: '20px' }}>
+                    <Button type="submit" variant="warning" style={{ maxWidth:'200px',backgroundColor: '#d49c04', color: '#000', marginTop: '20px', maxWidth:'200px' }}>
                       I NEED CARE FORM
                     </Button>
                   </Form>

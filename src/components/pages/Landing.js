@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Container, Carousel ,ButtonGroup,  } from 'react-bootstrap';
+import {  Carousel ,ButtonGroup,  } from 'react-bootstrap';
 import { Button } from '../Button/Button';
 
 const Landing = () => {

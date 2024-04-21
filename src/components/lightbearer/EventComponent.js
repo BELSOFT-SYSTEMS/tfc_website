@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Button } from '../Button/Button';
+import { Card} from 'react-bootstrap';
 
 const EventComponent = ({ title, date, description, imageUrl, buttonText }) => {
   return (
@@ -9,7 +10,7 @@ const EventComponent = ({ title, date, description, imageUrl, buttonText }) => {
       <Card.Body style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
-        <Button variant="warning" style={{ backgroundColor: '#d49c04', color: '#000', marginTop: '20px' }}>{buttonText}</Button>
+        <Button variant="warning" style={{ alignSelf: 'center', backgroundColor: '#d49c04', color: '#000', marginTop: 'auto', marginBottom: '20px' }}>{buttonText}</Button>
       </Card.Body>
     </Card>
   );

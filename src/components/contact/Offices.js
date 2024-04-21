@@ -17,7 +17,7 @@ const Offices = () => {
         <h1 style={{fontSize:'70px',justifyContent:'center', textAlign:'center', fontWeight:'bolder'}}>
           Our Offices
         </h1>
-      <Container fluid style={{ display: 'flex', justifyContent: 'space-around' }}>
+      <Container fluid style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
         <div style={{ flex: 1, marginRight: '20px', marginTop:'50px', marginBottom:'50px', paddingLeft:'30px' }}>
           <h2 style={{fontSize:'40px'}}>EDEN OFFICE</h2>
           <p style={{fontFamily:'Montserrat', fontSize:'15px', fontWeight:'40', lineHeight:'20px'}}>
