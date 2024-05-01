@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './home.css';
+import sliderImg from 'https://drive.google.com/file/d/1qucFykrd0DsMUYiHe1GwZ_gS-hsCWcXo/view?usp=drivesdk';
 
 // const HomeSlider = () => {
 
@@ -75,7 +76,7 @@ const HomeSlider = () => {
                   <div className="hero-banner" style={{ position: 'relative', paddingBottom: aspectRatio }}>
                     <Container className="image-container">
                       <img
-                        src="slider1.jpg"
+                        src={sliderImg}
                         alt="Hero Banner"
                         className="img-fluid rounded"
                         style={{
