@@ -69,7 +69,7 @@ const HomeSlider = () => {
             <Col>
               <div className="elementor-element elementor-element-ddb34a3 elementor-invisible elementor-widget elementor-widget-heading">
                 <div className="elementor-widget-container" style={{ marginLeft: '30px' }}>
-                  <h1 className="elementor-heading-title elementor-size-default" style={{ fontSize: fontSize, fontWeight: 'bold', fontFamily: 'Sans-serif', justifyContent: 'center', textAlign: 'left', marginTop: '30px', marginBottom: '20px', display:"flex",alignSelf:'center' }}>
+                  <h1 className="elementor-heading-title elementor-size-default" style={{ fontSize: fontSize, fontWeight: 'bold', fontFamily: 'Sans-serif', justifyContent: 'flex-start', textAlign: 'left', marginLeft: '140px',marginTop: '30px', marginBottom: '20px', display:"flex",alignSelf:'center' }}>
                     There Is Room For <br /> Everyone.
                   </h1>
                   <div className="hero-banner" style={{ position: 'relative', paddingBottom: aspectRatio }}>
