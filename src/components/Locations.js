@@ -20,13 +20,15 @@ const Locations = () => {
         <p style={{ fontSize: '20px', justifyContent: 'center', textAlign: 'center' }}>Join us at our sites across Abuja</p>
       </Container>
 
-      <ButtonGroup size="lg" style={{ justifyContent: 'center', 
-                                    display: 'flex', 
-                                    flexDirection: flexDirection, 
-                                    textAlign: 'center',
-                                    height: 40px,
-                                    marginBottom: '20px', 
-                                    gap: '15px' }}>
+      <ButtonGroup size="lg" style={{
+        justifyContent: 'center',
+        display: 'flex',
+        flexDirection: flexDirection,
+        textAlign: 'center',
+        height: '40px',
+        marginBottom: '20px',
+        gap: '15px'
+      }}>
         <Button variant="outline-success" onClick={() => handleSelect('eden')} active={activeKey === 'eden'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04' }} />Eden</Button>
         <Button variant="outline-success" onClick={() => handleSelect('mpape')} active={activeKey === 'mpape'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04' }} />Mpape</Button>
         <Button variant="outline-success" onClick={() => handleSelect('enugu')} active={activeKey === 'enugu'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04' }} />Enugu</Button>
@@ -71,7 +73,7 @@ const Locations = () => {
                   <Col className="text-center">
                     <Button
                       variant="success"
-                      style={{ backgroundColor: '#d49c04', color: '#fff', maxWidth:'200px' }}
+                      style={{ backgroundColor: '#d49c04', color: '#fff', maxWidth: '200px' }}
                       href="#"
                     >
                       More Information
