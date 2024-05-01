@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import './home.css';
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -25,7 +26,7 @@ const Header = () => {
     gap: '20px',
     justifyContent: 'space-between',
     marginLeft:'60px',
-    fontSize:'18px',
+    fontSize:'16px',
   };
 
   const handleMouseEnter = (index) => {
@@ -68,6 +69,7 @@ const Header = () => {
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
     zIndex: '1',
   };
+
 
 const menuItems = [
     { label: 'Home', link: '/home' },

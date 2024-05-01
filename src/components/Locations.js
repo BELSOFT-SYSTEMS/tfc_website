@@ -65,7 +65,7 @@ const Locations = () => {
                   <Col className="text-center">
                     <Button
                       variant="success"
-                      style={{ backgroundColor: '#d49c04', color: '#000' }}
+                      style={{ backgroundColor: '#d49c04', color: '#fff', maxWidth:'200px' }}
                       href="#"
                     >
                       More Information
