@@ -25,6 +25,7 @@ const Header = () => {
     gap: '20px',
     justifyContent: 'space-between',
     marginLeft:'60px',
+    fontSize:'24px',
   };
 
   const handleMouseEnter = (index) => {
