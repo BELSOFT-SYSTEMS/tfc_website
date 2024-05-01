@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import './home.css';
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -47,7 +48,7 @@ const Header = () => {
         onMouseLeave={handleMouseLeave}
       >
         {items.items.map((item, subIndex) => (
-          <NavDropdown.Item key={subIndex} href={item.link} style={navlinkStyle}>
+          <NavDropdown.Item key={subIndex} href={item.link}>
             {item.label}
           </NavDropdown.Item>
         ))}
@@ -69,9 +70,6 @@ const Header = () => {
     zIndex: '1',
   };
 
-const navlinkStyle = {
-  fontSize: '16px',
-};
 
 const menuItems = [
     { label: 'Home', link: '/home' },
@@ -171,7 +169,7 @@ const menuItems = [
               menuItem.items ? (
                 renderDropdown(index, menuItem)
               ) : (
-                <Nav.Link key={index} href={menuItem.link} style={navlinkStyle}>
+                <Nav.Link key={index} href={menuItem.link}>
                   {menuItem.label}
                 </Nav.Link>
               )
