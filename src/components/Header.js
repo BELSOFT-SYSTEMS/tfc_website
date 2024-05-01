@@ -70,7 +70,7 @@ const Header = () => {
   };
 
 const navlinkStyle = {
-  fontSize: '12px',
+  fontSize: '16px',
 };
 
 const menuItems = [
