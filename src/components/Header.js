@@ -25,7 +25,7 @@ const Header = () => {
     gap: '20px',
     justifyContent: 'space-between',
     marginLeft:'60px',
-    fontSize:'16.5px',
+    fontSize:'16px',
   };
 
   const handleMouseEnter = (index) => {
@@ -61,7 +61,7 @@ const Header = () => {
     top: '100%',
     left: '0',
     display: 'flex',
-    fontSize:'160px',
+    fontSize:'12px',
     flexDirection: 'column',
     alignItems: 'center', // Center-align items
     minWidth: '160px',
