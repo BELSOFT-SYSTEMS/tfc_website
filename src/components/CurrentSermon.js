@@ -45,7 +45,7 @@ const CurrentSermon = () => {
             >
               <div className="elementor-widget-container">
                 <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: fontSize, fontWeight: 'bold' }}>
-                  Current Sermon Series
+                  Our Sermon Series
                 </h2>
               </div>
             </div>
@@ -59,7 +59,7 @@ const CurrentSermon = () => {
               <div className="elementor-widget-container">
                 <p>
                   <span style={{ fontWeight: 400 }}>
-                    Come hear the teaching of God’s Word live in Ajax or via video across our locations. Each sermon, full of grace and truth, is culturally relevant to today’s ever-changing social, political, and religious climate.
+                    Come hear the teaching of God’s Word live in Eden or join us online across our locations. Each sermon, full of grace and truth, is culturally relevant to today’s ever-changing social, political, and religious climate.
                   </span>
                   <br />
                 </p>
@@ -78,9 +78,9 @@ const CurrentSermon = () => {
               data-widget_type="button.default"
             >
               <div className="elementor-widget-container">
-                <div className="elementor-button-wrapper"  >
+                <div className="elementor-button-wrapper"  style={{width:"100%", display:"flex",  flexDirection: "column"}} >
                   <Button
-                    style={{ backgroundColor: '#d49c04', color: '#000', maxWidth:'200px' }}
+                    style={{ backgroundColor: '#d49c04', color: '#fff', maxWidth:'200px' }}
                     className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
                     variant="success"
                     href="/sermons"
@@ -88,6 +88,18 @@ const CurrentSermon = () => {
                     <span className="elementor-button-content-wrapper">
                       <span className="elementor-button-text">
                         Watch now
+                      </span>
+                    </span>
+                  </Button>
+                  <Button
+                    style={{ backgroundColor: '#FF0000', color: '#fff', maxWidth:'200px' }}
+                    className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+                    variant="success"
+                    href="/sermons"
+                  >
+                    <span className="elementor-button-content-wrapper">
+                      <span className="elementor-button-text">
+                        Watch Live
                       </span>
                     </span>
                   </Button>

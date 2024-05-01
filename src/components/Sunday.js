@@ -47,7 +47,7 @@ const Sunday = () => {
                 <div className="elementor-element elementor-element-70f18ad elementor-invisible elementor-widget elementor-widget-text-editor">
                   <div className="elementor-widget-container" style={{ textAlign: 'center' }}>
                     <p style={{ color: '#000' }}>
-                      Welcome to The Fathers Church. Our mission is to glorify God by enabling people of all ages to become fully devoted followers of Jesus Christ. Join us on Sundays to experience engaging teaching, dynamic worship, and intimate prayer. No matter what your age, stage of life, or background, you are welcome here!
+                      Welcome to The Fathers Church. The Father's Church Is An Assembly Of Believers Committed To Revealing The Fatherhood Of Almighty God To This Generation Through Sound Biblical Teachings And Coresponding Moral Conduct.
                     </p>
                   </div>
                 </div>
