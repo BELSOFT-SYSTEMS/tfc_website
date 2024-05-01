@@ -61,7 +61,6 @@ const Header = () => {
     top: '100%',
     left: '0',
     display: 'flex',
-    fontSize:'12px',
     flexDirection: 'column',
     alignItems: 'center', // Center-align items
     minWidth: '160px',
@@ -69,6 +68,10 @@ const Header = () => {
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
     zIndex: '1',
   };
+
+const navlinkStyle = {
+  fontSize: '12px',
+};
 
 const menuItems = [
     { label: 'Home', link: '/home' },
@@ -168,7 +171,7 @@ const menuItems = [
               menuItem.items ? (
                 renderDropdown(index, menuItem)
               ) : (
-                <Nav.Link key={index} href={menuItem.link}>
+                <Nav.Link key={index} href={menuItem.link} style={navlinkStyle}>
                   {menuItem.label}
                 </Nav.Link>
               )
