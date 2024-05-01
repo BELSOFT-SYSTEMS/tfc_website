@@ -20,14 +20,14 @@
 }
 
 .Herotext>h1 {
-    font-size: 7rem;
+    font-size: 12rem;
     font-weight: 700;
     color: #000;
 
 }
 
 .Herotext>h4 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: #000;
 }
@@ -42,6 +42,11 @@
     flex-direction: column;
     gap: 20px;
 }
+.baptisminfo>h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    color: #000;
+}
 
 h1 {
     font-size: 4rem;
@@ -50,7 +55,7 @@ h1 {
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: #000;
 }
@@ -61,6 +66,7 @@ h4 {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 .baptismPoint {
@@ -69,6 +75,7 @@ h4 {
     align-items: center;
     justify-content: space-between;
     width: 32rem;
+    margin-top: 5rem;
 
 }
 
@@ -98,6 +105,7 @@ h4 {
     justify-content: space-between;
     align-self: center;
     width: 50%;
+    margin-top: 3rem;
 }
 
 
