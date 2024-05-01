@@ -47,7 +47,7 @@ const Header = () => {
         onMouseLeave={handleMouseLeave}
       >
         {items.items.map((item, subIndex) => (
-          <NavDropdown.Item key={subIndex} href={item.link}>
+          <NavDropdown.Item key={subIndex} href={item.link} style={navlinkStyle}>
             {item.label}
           </NavDropdown.Item>
         ))}
