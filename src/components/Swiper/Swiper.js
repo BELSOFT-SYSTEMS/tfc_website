@@ -57,7 +57,7 @@ export const Swipper = ({ items }) => {
 
     return (
         <div className="container">
-            <h1 className="heading">Flower Gallery</h1>
+            <h1 className="heading"> Gallery</h1>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
