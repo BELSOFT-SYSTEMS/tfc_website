@@ -77,8 +77,8 @@ const CurrentSermon = () => {
               data-settings='{"_animation":"fadeInRight"}'
               data-widget_type="button.default"
             >
-              <div className="elementor-widget-container">
-                <div className="elementor-button-wrapper"  style={{width:"100%", display:"flex",  flexDirection: "column"}} >
+              <div className="elementor-widget-container"  style={{width:"100%"}}>
+                <div className="elementor-button-wrapper" style={{width:"100%", display:"flex",  flexDirection: "row", gap:"20px",}}>
                   <Button
                     style={{ backgroundColor: '#d49c04', color: '#fff', maxWidth:'200px' }}
                     className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
