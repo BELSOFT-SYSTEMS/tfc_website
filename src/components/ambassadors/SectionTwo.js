@@ -1,63 +1,84 @@
-import React from 'react'
-import { Container } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeadphones, faVest, faHandsPraying, } from '@fortawesome/free-solid-svg-icons';
-import { faBell, faFaceLaugh, faHourglassHalf, } from '@fortawesome/free-regular-svg-icons';
+import React, { useState, useRef, useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import './ImageScroll.css';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-const SectionTwo = () => {
-    return (
-        <>
-            {/* Section 1 */}
-            <section className="your-section-class">
-                <Container fluid >
-                    <h1 style={{ fontFamily: 'Montserrat,Sans-serif', fontSize: '60px', textAlign: 'center', fontWeight: 'bolder' }}>What To Expect At All Locations</h1>
-                    <h3 style={{ fontFamily: 'Montserrat,Sans-serif', fontSize: '25px', textAlign: 'center' }}>Join us on Sundays at any of our five locations for teaching, worship, and community</h3>
-                    <div style={{ marginLeft: '60px', paddingLeft: '60px' }}>
-                        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-                            <div style={{ flex: 1, marginRight: '20px', marginTop: '50px', marginBottom: '50px' }}>
-                                <FontAwesomeIcon icon={faFaceLaugh} size='3x' />
-                                <div>
-                                    <h2 style={{ fontSize: '40px' }}>GUEST SERVICES</h2>
-                                    <p style={{ fontFamily: 'Sans-serif', fontSize: '20px', fontWeight: '40', lineHeight: '20px' }}>First-time visitor? Have a question? Located at the <br /> front door of all our locations, our guest services <br /> team would love to connect with you.</p>
-                                </div>
-                            </div>
-                            <div style={{ flex: 1, marginLeft: '20px', marginTop: '50px', marginBottom: '50px' }}>
-                                <FontAwesomeIcon icon={faVest} size='3x' />
-                                <div>
-                                    <h2 style={{ fontSize: '40px' }}>DRESS CODE</h2>
-                                    <p style={{ fontFamily: 'Sans-serif', fontSize: '20px', fontWeight: '40', lineHeight: '20px' }}>We take a "come as you are" approach. We have<br /> people in formal attire and others that are<br /> completely casual.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-                            <div style={{ flex: 1, marginRight: '20px', marginTop: '50px', marginBottom: '50px' }}>
-                                <FontAwesomeIcon icon={faBell} size='3x' />
-                                <h2 style={{ fontSize: '40px' }}>SERVICE LENGTH</h2>
-                                <p style={{ fontFamily: 'Sans-serif', fontSize: '20px', fontWeight: '40', lineHeight: '20px' }}>Services typically last 75 minutes</p>
-                            </div>
-                            <div style={{ flex: 1, marginLeft: '20px', marginTop: '50px', marginBottom: '50px' }}>
-                                <FontAwesomeIcon icon={faHeadphones} size='3x' />
-                                <h2 style={{ fontSize: '40px' }}>MUSIC</h2>
-                                <p style={{ fontFamily: 'Sans-serif', fontSize: '20px', fontWeight: '40', lineHeight: '20px' }}>We have rotating worship teams who help our<br /> congregation focus on Jesus through dynamic,<br /> modern worship music.</p>
-                            </div>
-                        </div>
-                        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-                            <div style={{ flex: 1, marginRight: '20px', marginTop: '50px', marginBottom: '50px' }}>
-                                <FontAwesomeIcon icon={faHourglassHalf} size='3x' />
-                                <h2 style={{ fontSize: '40px' }}>TEACHING</h2>
-                                <p style={{ fontFamily: 'Sans-serif', fontSize: '20px', fontWeight: '40', lineHeight: '20px' }}>Pastor Jon Thompson is our main speaker and<br /> holds a Masters of Theological Studies and a<br /> Doctorate of Missiology. He speaks to seekers, <br />skeptics, and believers with wit and boldness.</p>
-                            </div>
-                            <div style={{ flex: 1, marginLeft: '20px', marginTop: '50px', marginBottom: '50px' }}>
-                                <FontAwesomeIcon icon={faHandsPraying} size='3x' />
-                                <h2 style={{ fontSize: '40px' }}>PRAYER</h2>
-                                <p style={{ fontFamily: 'Sans-serif', fontSize: '20px', fontWeight: '40', lineHeight: '20px' }}>We have trusted teams to help you process what<br /> the Holy Spirit stirs in your heart after the service.</p>
-                            </div>
-                        </div>
-                    </div>
-                </Container>
-            </section>
-        </>
-    )
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
+function ImageScroll() {
+  const images = [
+    '/joy/joy1.jpeg',
+    '/joy/joy2.jpeg',
+    '/joy/joy3.jpg',
+    '/joy/joy4.jpg',
+    '/joy/joy5.jpg',
+    '/joy/joy6.jpg',
+  ];
+
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+  const swiperRef = useRef(null);
+
+  const toggleOpen = (state) => () => setOpen(state);
+
+  const handleImageClick = (index) => {
+    setIndex(index);
+    toggleOpen(true)();
+  };
+
+  useEffect(() => {
+    const swiper = swiperRef.current.swiper;
+    const intervalId = setInterval(() => {
+      if (swiper) {
+        swiper.slideNext();
+      }
+    }, 5000); // Slide every 5 seconds
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
+  return (
+    <div>
+      <Swiper
+        ref={swiperRef}
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        loop={true} // Enable loop mode
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <img src={image} alt="slide_image" onClick={() => handleImageClick(index)} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      {/*<Lightbox
+        open={open}
+        onClose={toggleOpen(false)}
+        index={index}
+        slides={images}
+        animation={{ fade: 0 }}
+        controller={{ closeOnPullDown: true, closeOnBackdropClick: true }}
+      />*/}
+    </div>
+  );
 }
 
-export default SectionTwo
+export default ImageScroll;

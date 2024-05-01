@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
+import { Button } from '../Button/Button';
 
 const EventComponent = ({ title, date, description, imageUrl, buttonText }) => {
   return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Button } from './Button/Button';
+import { Container, Row, Col, } from 'react-bootstrap';
 
 const Sunday = () => {
   const navigate = useNavigate();
@@ -56,7 +57,7 @@ const Sunday = () => {
                       <Button
                         className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
                         variant="success"
-                        style={{ backgroundColor: '#d49c04', color: '#000' }}
+                        style={{ backgroundColor: '#d49c04', color: '#000', maxWidth:'200px' }}
                         onClick={redirectToSundaysPage}
                       >
                         <span className="elementor-button-content-wrapper">

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Button } from './Button/Button';
+import { Container, Row, Col, } from 'react-bootstrap';
 import EventComponent from './EventComponent';
 
 const Upcomingevents = () => {
@@ -13,7 +14,7 @@ const Upcomingevents = () => {
           </Col>
         </Row>
       </Container>
-      <Container fluid style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' ,gap:30}}>
+      <Container fluid style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
         <EventComponent
           title="Biblical Finance Course"
           description="Learn how to be a good steward of your finances with Biblical principles and teachings from times 7:00 – 9:00pm!"
@@ -33,8 +34,8 @@ const Upcomingevents = () => {
           buttonText="Find Out More"
         />
       </Container>
-      <Container style={{ justifyContent: 'center', textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
-        <Button variant="warning" style={{ backgroundColor: '#d49c04', color: '#000' }}>View all Events</Button>
+      <Container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', marginTop: '20px', marginBottom: '20px', paddingBottom: '20px' }}>
+        <Button variant="warning" style={{ backgroundColor: '#d49c04', color: '#000', maxWidth:'200px' }}>View all Events</Button>
       </Container>
     </Container>
   );

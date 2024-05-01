@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Button } from '../Button/Button';
+import { Container, Row, Col,  } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faYoutube, } from '@fortawesome/free-brands-svg-icons';
 
@@ -70,7 +71,7 @@ const Gettouch = () => {
                       <Button
                         className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
                         variant="warning"
-                        style={{ backgroundColor: '#d49c04', color: '#000' }}
+                        style={{ backgroundColor: '#d49c04', color: '#000', maxWidth:'180px' }}
                         onClick={redirectToContactPage}
                       >
                         <span className="elementor-button-content-wrapper">

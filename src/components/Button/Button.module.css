@@ -6,7 +6,7 @@
     justify-content: center;
     text-decoration: none;
     padding: 20px;
-    background-color: #f56618;
+    background-color: #d49c04;
     color: #fff;
     font-size: .9rem;
     font-weight: 700;
@@ -17,7 +17,7 @@
 }
 
 .baptismButton:hover {
-    background-color: #f56618;
+    background-color: #d49c04;
     transform: scale(1.1);
 }
 
