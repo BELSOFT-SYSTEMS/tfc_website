@@ -14,10 +14,10 @@ const Locations = () => {
   };
 
   return (
-    <div style={{ paddingTop: '20px', paddingBottom: '40px' }}>
+    <div style={{ padding: '20px 96px', margin: '0 10rem' }}>
       <Container style={{ justifyContent: 'center', textAlign: 'center', marginTop: '30px', marginBottom: '20px' }}>
         <h2 style={{ fontSize: '55px' }}> Our Locations</h2>
-        <p style={{ fontSize: '20px' }}>Join us at our sites across Abuja</p>
+        <p style={{ fontSize: '20px', justifyContent: 'center', textAlign: 'center' }}>Join us at our sites across Abuja</p>
       </Container>
 
       <ButtonGroup size="lg" style={{ justifyContent: 'center', 
@@ -26,8 +26,7 @@ const Locations = () => {
                                     textAlign: 'center',
                                     height: 40px,
                                     marginBottom: '20px', 
-                                    gap: '15px', 
-                                    padding: '0 96px' }}>
+                                    gap: '15px'}}>
         <Button variant="outline-success" onClick={() => handleSelect('eden')} active={activeKey === 'eden'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04', fontSize: '16px' }} />Eden</Button>
         <Button variant="outline-success" onClick={() => handleSelect('mpape')} active={activeKey === 'mpape'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04', fontSize: '16px' }} />Mpape</Button>
         <Button variant="outline-success" onClick={() => handleSelect('enugu')} active={activeKey === 'enugu'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04', fontSize: '16px' }} />Enugu</Button>
