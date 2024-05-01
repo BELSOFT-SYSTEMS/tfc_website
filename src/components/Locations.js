@@ -26,11 +26,11 @@ const Locations = () => {
                                     textAlign: 'center',
                                     height: 40px,
                                     marginBottom: '20px', 
-                                    gap: '15px'}}>
-        <Button variant="outline-success" onClick={() => handleSelect('eden')} active={activeKey === 'eden'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04', fontSize: '16px' }} />Eden</Button>
-        <Button variant="outline-success" onClick={() => handleSelect('mpape')} active={activeKey === 'mpape'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04', fontSize: '16px' }} />Mpape</Button>
-        <Button variant="outline-success" onClick={() => handleSelect('enugu')} active={activeKey === 'enugu'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04', fontSize: '16px' }} />Enugu</Button>
-        <Button variant="outline-success" onClick={() => handleSelect('online')} active={activeKey === 'online'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04', fontSize: '16px' }} />Online</Button>
+                                    gap: '15px' }}>
+        <Button variant="outline-success" onClick={() => handleSelect('eden')} active={activeKey === 'eden'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04' }} />Eden</Button>
+        <Button variant="outline-success" onClick={() => handleSelect('mpape')} active={activeKey === 'mpape'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04' }} />Mpape</Button>
+        <Button variant="outline-success" onClick={() => handleSelect('enugu')} active={activeKey === 'enugu'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04' }} />Enugu</Button>
+        <Button variant="outline-success" onClick={() => handleSelect('online')} active={activeKey === 'online'}><FontAwesomeIcon icon={faChurch} style={{ color: '#d49c04' }} />Online</Button>
       </ButtonGroup>
 
       <Tabs id="locations-tabs" activeKey={activeKey} onSelect={handleSelect} className="eael-tabs-nav">
