@@ -9,10 +9,6 @@ import 'swiper/css/navigation';
 import './swiper.css';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
-
-
-
-
 export const Swipper = ({ items }) => {
     const [clickedImg, setClickedImg] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(null);
@@ -57,7 +53,7 @@ export const Swipper = ({ items }) => {
 
     return (
         <div className="container">
-            <h1 className="heading">Flower Gallery</h1>
+            <h1 className="heading">Gallery</h1>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
