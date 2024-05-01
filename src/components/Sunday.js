@@ -57,7 +57,7 @@ const Sunday = () => {
                       <Button
                         className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
                         variant="success"
-                        style={{ backgroundColor: '#d49c04', color: '#000', maxWidth:'200px' }}
+                        style={{ backgroundColor: '#d49c04', color: '#fff', maxWidth:'200px' }}
                         onClick={redirectToSundaysPage}
                       >
                         <span className="elementor-button-content-wrapper">
