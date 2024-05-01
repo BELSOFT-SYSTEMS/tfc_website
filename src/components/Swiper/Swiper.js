@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Modal from '../modal/modal';
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -13,6 +14,47 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 
 export const Swipper = ({ items }) => {
+    const [clickedImg, setClickedImg] = useState(null);
+    const [currentIndex, setCurrentIndex] = useState(null);
+
+    const handleClick = (item, index) => {
+        setCurrentIndex(index);
+        setClickedImg(item);
+    };
+    const handelRotationRight = () => {
+        const totalLength = items.length;
+        if (currentIndex + 1 >= totalLength) {
+            setCurrentIndex(0);
+            const newUrl = items[0];
+            setClickedImg(newUrl);
+            return;
+        }
+        const newIndex = currentIndex + 1;
+        const newUrl = items.filter((item) => {
+            return items.indexOf(item) === newIndex;
+        });
+        const newItem = newUrl[0];
+        setClickedImg(newItem);
+        setCurrentIndex(newIndex);
+    };
+
+    const handelRotationLeft = () => {
+        const totalLength = items.length;
+        if (currentIndex === 0) {
+            setCurrentIndex(totalLength - 1);
+            const newUrl = items[totalLength - 1];
+            setClickedImg(newUrl);
+            return;
+        }
+        const newIndex = currentIndex - 1;
+        const newUrl = items.filter((item) => {
+            return items.indexOf(item) === newIndex;
+        });
+        const newItem = newUrl[0];
+        setClickedImg(newItem);
+        setCurrentIndex(newIndex);
+    };
+
     return (
         <div className="container">
             <h1 className="heading">Flower Gallery</h1>
@@ -31,19 +73,21 @@ export const Swipper = ({ items }) => {
 
                 pagination={{ el: '.swiper-pagination', clickable: true }}
                 navigation={{
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
-                  clickable: true,
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                    clickable: true,
                 }}
                 modules={[EffectCoverflow, Pagination, Navigation]}
                 className="swiper_container"
-                
+
             >
                 {items.map((item, index) => (
                     <SwiperSlide key={index}>
-
-                        <img src={item} alt="" />
-
+                        <img
+                            src={item.url}
+                            onClick={() => handleClick(item, index)}
+                            alt=""
+                        />
                     </SwiperSlide>
                 ))
                 }
@@ -58,7 +102,18 @@ export const Swipper = ({ items }) => {
                 </div>
 
 
-            </Swiper>
+            </Swiper> <div>
+                {clickedImg && (
+                    <Modal
+                        clickedImg={clickedImg.url}
+                        description={clickedImg.description}
+                        handelRotationRight={handelRotationRight}
+                        setClickedImg={setClickedImg}
+                        handelRotationLeft={handelRotationLeft}
+                    />
+                )}
+            </div>
+
         </div>
     );
 }
