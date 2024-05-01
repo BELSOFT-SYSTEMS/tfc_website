@@ -61,10 +61,10 @@ const Header = () => {
     top: '100%',
     left: '0',
     display: 'flex',
+    fontSize:'160px',
     flexDirection: 'column',
     alignItems: 'center', // Center-align items
     minWidth: '160px',
-    fontSize: '16px',
     backgroundColor: '#fff',
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
     zIndex: '1',
