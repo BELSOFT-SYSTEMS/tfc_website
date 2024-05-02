@@ -7,7 +7,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './swiper.css';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 export const Swipper = ({ items }) => {
     const [clickedImg, setClickedImg] = useState(null);
@@ -66,6 +66,10 @@ export const Swipper = ({ items }) => {
                     depth: 100,
                     modifier: 2.5,
                 }}
+                autoplay={{
+                    delay: 3000, // Adjust the delay as needed (in milliseconds)
+                    disableOnInteraction: false, // Allow user interaction to pause autoplay
+                }}
 
                 pagination={{ el: '.swiper-pagination', clickable: true }}
                 navigation={{
@@ -73,7 +77,7 @@ export const Swipper = ({ items }) => {
                     prevEl: '.swiper-button-prev',
                     clickable: true,
                 }}
-                modules={[EffectCoverflow, Pagination, Navigation]}
+                modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
                 className="swiper_container"
 
             >
