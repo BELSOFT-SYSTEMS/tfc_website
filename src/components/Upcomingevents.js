@@ -24,16 +24,17 @@ const Upcomingevents = () => {
           
         />
         <EventComponent
-          title="Children's Day"
-          date="08 MAY 2024"
+          title="Lightbearers Celebrate Children's Day"
+          date="27 MAY 2024"
           description="TFC Lightbearers, grades 6 &#8211; 12 are invited to join us on this event"
           imageUrl="event2.jpg"
           buttonText="Find Out More"
         />
         <EventComponent
-          title="The Father Church Youth Night"
-          date="08 MAY 2024"
-          description="All youth in grades 6 - 12 are invited to Port Perry Youth meeting weekly on Thursdays from 7 - 9:00 pm."
+          title="Thanksgiving Service"
+          date="26 MAY 2024"
+          description="Let's pause...reflect, and give thanks to God for the countless blessings that enrich our lives each day! 
+          Every blessing is a testament to God's unfailing love and faithfulness. Join us This Sunday;"
           imageUrl="event3.jpeg"
           buttonText="Find Out More"
         />
