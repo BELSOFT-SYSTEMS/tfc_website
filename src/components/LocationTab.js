@@ -14,8 +14,8 @@ const LocationTab = ({ eventKey }) => {
                         className="img-fluid rounded-circle"
                         style={{ maxWidth: '250px', height: '250px', objectFit: 'cover' }}
                     />
-                    <h2 style={{ fontSize: '25px', textTransform: 'uppercase', letterSpacing: '-0.9px', marginTop: '20px', marginBottom: '5px' }}>Angela Mason</h2>
-                    <p style={{ fontSize: '18px', textAlign: 'center', textTransform: 'uppercase', fontWeight: '500' }}>Site Pastor</p>
+                    <h2 style={{ fontSize: '25px', textTransform: 'uppercase', letterSpacing: '-0.9px', marginTop: '20px', marginBottom: '5px' }}>Ikenna Okeke</h2>
+                    <p style={{ fontSize: '18px', textAlign: 'center', textTransform: 'uppercase', fontWeight: '500' }}>Senior Pastor</p>
                 </div>
                 <div xs={0} md={6} style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
                     <div >

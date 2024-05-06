@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from './Button/Button';
 import { Container, Row, Col, } from 'react-bootstrap';
+import SpecialDayButton from './Button/LiveButton';
 
 
 // var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -31,6 +32,7 @@ const CurrentSermon = () => {
 
   return (
     <Container fluid style={containerStyle}>
+      
       
             <div
               className="elementor-element elementor-element-642c1744 elementor-invisible elementor-widget elementor-widget-heading"
@@ -91,7 +93,7 @@ const CurrentSermon = () => {
                       </span>
                     </span>
                   </Button>
-                  <Button
+                  {/* <Button
                     style={{ backgroundColor: '#FF0000', color: '#fff', maxWidth:'200px' }}
                     className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
                     variant="success"
@@ -103,7 +105,8 @@ const CurrentSermon = () => {
                         Watch Live
                       </span>
                     </span>
-                  </Button>
+                  </Button> */}
+                  <SpecialDayButton />
                 </div>
               </div>
             </div>
