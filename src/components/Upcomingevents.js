@@ -5,7 +5,7 @@ import EventComponent from './EventComponent';
 
 const Upcomingevents = () => {
   return (
-    <Container fluid>
+    <Container fluid style={{margin:'0 2rem'}}>
       <Container style={{ justifyContent: 'center', textAlign: 'center', marginBottom: '30px', marginTop: '20px' }}>
         <Row>
           <Col>
@@ -24,9 +24,9 @@ const Upcomingevents = () => {
           
         />
         <EventComponent
-          title="The Father Church Youth Service"
+          title="Children's Day"
           date="08 MAY 2024"
-          description="TFC youth, grades 6 &#8211; 12 are invited to join us on Thursday nights from 7:00 &#8211; 9:00pm!"
+          description="TFC Lightbearers, grades 6 &#8211; 12 are invited to join us on this event"
           imageUrl="event2.jpg"
           buttonText="Find Out More"
         />

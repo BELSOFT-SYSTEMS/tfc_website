@@ -25,10 +25,10 @@ const SpecialDayButton = () => {
             (dayOfWeek ===3 || dayOfWeek === 0) &&
             currentTime >= 18 &&
             currentTime < 20) {
-          // Check if it's between 5 PM (17) and 7 PM (19) on wednesdays
+          // Check if it's between 6 PM (18) and 8 PM (20) on wednesdays
           setIsActive(true);
-        } else if (isFirstFriday && currentTime >= 18 && currentTime < 20) {
-          // Check if it's between 5 PM (17) and 7 PM (19) on the first Friday
+        } else if (isFirstFriday && currentTime >= 18 && currentTime < 21) {
+          // Check if it's between 6 PM (18) and 9 PM (21) on the first Friday
           setIsActive(true);
         } else {
           setIsActive(false);

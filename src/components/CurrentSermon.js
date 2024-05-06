@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button } from './Button/Button';
-import { Container, Row, Col, } from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 import SpecialDayButton from './Button/LiveButton';
+import { useNavigate } from 'react-router-dom';
 
 
 // var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -9,6 +10,14 @@ import SpecialDayButton from './Button/LiveButton';
 // var dayName = days[d.getDay()];
 
 const CurrentSermon = () => {
+
+  const navigate = useNavigate();
+
+  const redirectToSermonsPage = () => {
+    console.log('Redirecting to sermons page');
+    navigate('/Sermons');
+  };
+
   const backgroundImageUrl = 'pastor-1-1.png'; 
   // Replace with your image URL
   const windowWidth = window.innerWidth; // Get the window width
@@ -29,6 +38,7 @@ const CurrentSermon = () => {
     padding: '0 20px', // Add horizontal padding
     boxSizing: 'border-box',
   };
+
 
   return (
     <Container fluid style={containerStyle}>
@@ -86,6 +96,7 @@ const CurrentSermon = () => {
                     className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
                     variant="success"
                     href="/sermons"
+                    onClick={redirectToSermonsPage}
                   >
                     <span className="elementor-button-content-wrapper">
                       <span className="elementor-button-text">
