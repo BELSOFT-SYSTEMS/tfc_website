@@ -3,7 +3,9 @@ import { Button } from './Button/Button';
 import { Container, Row, Col, } from 'react-bootstrap';
 
 
-
+// var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+// var d = new Date(dateString);
+// var dayName = days[d.getDay()];
 
 const CurrentSermon = () => {
   const backgroundImageUrl = 'CSs.jpg'; 
@@ -13,8 +15,9 @@ const CurrentSermon = () => {
   // Calculate font size based on window width
   const fontSize = windowWidth < 768 ? '40px' : '65px';
   const containerStyle = {
-    backgroundImage: `url(${backgroundImageUrl})`,
-    backgroundSize: 'cover',
+    // backgroundImage: `url(${backgroundImageUrl})`,
+    // backgroundSize: '100px',
+    backgroundColor: "#000",
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
     width: '100%',
@@ -43,7 +46,9 @@ const CurrentSermon = () => {
               data-settings='{"_animation":"fadeInRight"}'
               data-widget_type="heading.default"
             >
+              
               <div className="elementor-widget-container">
+              <img src={backgroundImageUrl} alt='Senior Pastor' style={{ display:'flex',  width:"50%", height:"100%"}}/>
                 <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: fontSize, fontWeight: 'bold' }}>
                   Our Sermon Series
                 </h2>
@@ -87,7 +92,7 @@ const CurrentSermon = () => {
                   >
                     <span className="elementor-button-content-wrapper">
                       <span className="elementor-button-text">
-                        Watch now
+                        Watch Series
                       </span>
                     </span>
                   </Button>
@@ -96,6 +101,7 @@ const CurrentSermon = () => {
                     className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
                     variant="success"
                     href="/sermons"
+                    disabled={true}
                   >
                     <span className="elementor-button-content-wrapper">
                       <span className="elementor-button-text">
