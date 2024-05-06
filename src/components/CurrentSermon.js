@@ -8,7 +8,7 @@ import { Container, Row, Col, } from 'react-bootstrap';
 // var dayName = days[d.getDay()];
 
 const CurrentSermon = () => {
-  const backgroundImageUrl = 'CSs.jpg'; 
+  const backgroundImageUrl = 'pastor-1-1.png'; 
   // Replace with your image URL
   const windowWidth = window.innerWidth; // Get the window width
 
@@ -18,12 +18,10 @@ const CurrentSermon = () => {
     // backgroundImage: `url(${backgroundImageUrl})`,
     // backgroundSize: '100px',
     backgroundColor: "#000",
-    backgroundPosition: 'center center',
-    backgroundRepeat: 'no-repeat',
     width: '100%',
-    minHeight: '100vh',
+    height: '100vh',
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     color: 'white',
@@ -33,12 +31,7 @@ const CurrentSermon = () => {
 
   return (
     <Container fluid style={containerStyle}>
-      <Row>
-        <Col md={6} className="elementor-hidden-mobile">
-          {/* Empty column as per the original structure */}
-        </Col>
-        <Col md={6}>
-          <div className="elementor-widget-wrap elementor-element-populated">
+      
             <div
               className="elementor-element elementor-element-642c1744 elementor-invisible elementor-widget elementor-widget-heading"
               data-id="642c1744"
@@ -48,12 +41,11 @@ const CurrentSermon = () => {
             >
               
               <div className="elementor-widget-container">
-              <img src={backgroundImageUrl} alt='Senior Pastor' style={{ display:'flex',  width:"50%", height:"100%"}}/>
-                <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: fontSize, fontWeight: 'bold' }}>
-                  Our Sermon Series
-                </h2>
+              <img src={backgroundImageUrl} alt='Senior Pastor' style={{width:"48vw", height: '100vh', zIndex:'-1',}}/>
               </div>
             </div>
+
+            <div style={{margin: '0  2rem 5rem 5rem',}}>
             <div
               className="elementor-element elementor-element-0dd751a elementor-invisible elementor-widget elementor-widget-text-editor"
               data-id="0dd751a"
@@ -61,6 +53,9 @@ const CurrentSermon = () => {
               data-settings='{"_animation":"fadeInRight"}'
               data-widget_type="text-editor.default"
             >
+              <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: fontSize, fontWeight: 'bold' }}>
+                  Our Sermon Series
+                </h2>
               <div className="elementor-widget-container">
                 <p>
                   <span style={{ fontWeight: 400 }}>
@@ -112,9 +107,8 @@ const CurrentSermon = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </Col>
-      </Row>
+            </div>
+          
     </Container>
   );
 }
