@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState} from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,7 +14,15 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Button } from "./Button/Button";
 
+
 function Footer() {
+  const [isHovered, setIsHovered] = useState(false);
+  const handleMouseEnter = () => {
+  setIsHovered(true);
+};
+  const handleMouseLeave = () => {
+  setIsHovered(false);
+};
   return (
     <footer
       style={{ backgroundColor: "#051f04", paddingTop: "40px", color: "white" }}
@@ -31,7 +39,7 @@ function Footer() {
                 </h2>
               </div>
               <div style={{ listStyleType: "none", paddingLeft: "0" }}>
-                <Row style={{ marginTop: "3rem" }}>
+                <Row style={{ marginTop: "3.5rem" }}>
                   <Col>
                     <FontAwesomeIcon
                       icon={faPhone}
@@ -43,7 +51,7 @@ function Footer() {
                     </span>
                   </Col>
                 </Row>
-                <Row style={{ marginTop: "1rem" }}>
+                <Row style={{ marginTop: "2rem" }}>
                   <Col>
                     <FontAwesomeIcon
                       icon={farEnvelopeOpen}
@@ -55,7 +63,7 @@ function Footer() {
                     </span>
                   </Col>
                 </Row>
-                <Row style={{ marginTop: "1rem" }}>
+                <Row style={{ marginTop: "2rem" }}>
                   <Col>
                     <FontAwesomeIcon
                       icon={faMapPin}
@@ -75,11 +83,19 @@ function Footer() {
                     href="https://facebook.com/TheFathersChurch"
                     target="_blank"
                     rel="noopener noreferrer"
+                    
                   >
                     <FontAwesomeIcon
                       icon={faFacebook}
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
                       size="3x"
-                      style={{ color: "#d49c04" }}
+                      style={{ 
+                        color: isHovered ? '#d49c04' : "#edb61f", 
+                      transition:'all 0.3s ease', 
+                      transform: isHovered ? 'scale(1.1)' : 'none',
+                      
+                    }}
                     />
                   </a>
                 </span>
@@ -91,11 +107,19 @@ function Footer() {
                     href="https://www.instagram.com/thefatherschurch/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    
                   >
                     <FontAwesomeIcon
                       icon={faInstagram}
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
                       size="3x"
-                      style={{ color: "#d49c04" }}
+                      style={{ 
+                        color: isHovered ? '#d49c04' : "#edb61f", 
+                      transition:'all 0.3s ease', 
+                      transform: isHovered ? 'scale(1.1)' : 'none',
+                      
+                    }}
                     />
                   </a>
                 </span>
@@ -107,11 +131,19 @@ function Footer() {
                     href="https://www.youtube.com/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    
                   >
                     <FontAwesomeIcon
                       icon={faYoutube}
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
                       size="3x"
-                      style={{ color: "#d49c04" }}
+                      style={{ 
+                        color: isHovered ? '#d49c04' : "#edb61f", 
+                      transition:'all 0.3s ease', 
+                      transform: isHovered ? 'scale(1.1)' : 'none',
+                      
+                    }}
                     />
                   </a>
                 </span>
