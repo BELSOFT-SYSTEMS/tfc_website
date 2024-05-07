@@ -46,7 +46,7 @@ const Landing = () => {
       <header>
         {/* Home button at top right */}
       <div style={{ display: 'flex', justifyContent: 'end'}}>
-          <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', backgroundColor: '#d49c04', color: '#fff', zIndex: '10', right: '10px', top: '10px', maxWidth: '150px' }}>Home</Button>
+          <Button variant="warning" onClick={redirectToHomePage} style={{ position: 'absolute', backgroundColor: '#d49c04', color: '#fff', zIndex: '10', right: '20px', top: '10px', maxWidth: '150px', fontWeight:'600',  fontSize:'14px', height:'10px' }}>Home</Button>
       </div>
 
       </header>
@@ -123,9 +123,9 @@ const Landing = () => {
 
      <div style={{ width: '100%', display: 'flex', flexDirection:'column' , position: 'absolute', bottom: '8%' , alignItems: 'center', justifyContent: 'space-evenly'  }}>
           <ButtonGroup style={{ gap: '25px', display: 'flex', flexDirection: 'row', alignContent: 'center' }}>
-            <Button variant="danger" onClick={downloadTheMonthlyBulletin} style={{ backgroundColor: '#a72942', color: '#fff', }}> MONTHLY BULLETIN </Button>
-            <Button variant="warning" onClick={redirectToPrayerRequest} style={{ backgroundColor: '#d49c04', color: '#fff', }}>PRAYER REQUEST</Button>
-            <Button variant="warning" onClick={redirectToSundays} style={{ backgroundColor: '#d49c04', color: '#fff', }}>PLAN TO VISIT</Button>
+            <Button variant="danger" onClick={downloadTheMonthlyBulletin} style={{color: '#fff', fontWeight:'600',  fontSize:'14px'}}> MONTHLY BULLETIN </Button>
+            <Button variant="warning" onClick={redirectToPrayerRequest} style={{ color: '#fff', fontWeight:'600',  fontSize:'14px'}}>PRAYER REQUEST</Button>
+            <Button variant="warning" onClick={redirectToSundays} style={{ color: '#fff', fontWeight:'600',  fontSize:'14px'}}>PLAN TO VISIT</Button>
           </ButtonGroup>
       
       </div> {/* Buttons at the bottom center */}

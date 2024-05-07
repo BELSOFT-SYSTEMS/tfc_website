@@ -25,7 +25,7 @@ export const Baptismcontent = () => {
                 <img src='/baptisms/baptism1.png' className={Style.Heroimg} />
             </div>
             <div className={Style.baptisminfo}>
-                <h1>What Is Baptism</h1>
+                <h1>What Is Baptism?</h1>
                 <h4>BAPTISM IS A PUBLIC DEMONSTRATION OF YOUR FAITH IN JESUS CHRIST.</h4>
                 <div className={Style.Points}>
                     <BaptismPoint

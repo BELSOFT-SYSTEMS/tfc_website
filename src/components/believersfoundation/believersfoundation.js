@@ -27,8 +27,8 @@ export const Believersfoundationcontent = () => {
                 <img src='/baptisms/baptism1.png' className={Style.Heroimg} />
             </div>
             <div className={Style.believersfoundationinfo}>
-                <h1>What Is Baptism</h1>
-                <h4>BAPTISM IS A PUBLIC DEMONSTRATION OF YOUR FAITH IN JESUS CHRIST.</h4>
+                <h1>What we Do Here</h1>
+                <h4>So if anyone is in Christ, he is a new creation - 2 Corinthians 5:16–17.</h4>
                 <div className={Style.Points}>
                     <Believersfoundation
                         title="IT'S LIKE A WEDDING RING"
