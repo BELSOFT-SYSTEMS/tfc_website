@@ -17,7 +17,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background: var(--bg-2);
+
 }
 
 @media (min-width: 1440px) {
