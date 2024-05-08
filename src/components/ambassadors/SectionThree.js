@@ -1,66 +1,77 @@
-import React, { useState } from 'react';
-import {
-    Accordion,
-    AccordionItem,
-    AccordionHeader,
-    AccordionBody,
-    Container,
-    Row,
-    Col,
-    Button,
-} from 'react-bootstrap';
+import React from 'react';
+import { Container, Accordion } from 'react-bootstrap';
+import { Button } from '../Button/Button';
 
 const SectionThree = () => {
-    const [activeAccordion, setActiveAccordion] = useState(null);
 
-    const handleAccordionClick = (eventKey) => {
-        setActiveAccordion((prevActiveAccordion) =>
-            prevActiveAccordion === eventKey ? null : eventKey
-        );
-    };
 
-    return (
-        <Container style={{ marginBottom: '70px' }}>
-            <Container style={{ justifyContent: 'center', textAlign: 'center', marginBottom: '30px', marginTop: '20px' }}>
-                <Row>
-                    <Col>
-                        <h2 style={{ fontSize: '55px', fontWeight: 'bolder' }}>Sunday Morning's Ambassadorship</h2>
-                        <p style={{ fontSize: '20px' }}>Ambassadors programs take place simultaneously with our Sunday morning services. Depending on the size of the site, some programming may be separated out further by age.</p>
-                    </Col>
-                </Row>
-            </Container>
-            <Accordion activeKey={activeAccordion} onSelect={handleAccordionClick}>
-                <AccordionItem eventKey="1">
-                    <AccordionHeader>Biblical Finance Course</AccordionHeader>
-                    <AccordionBody>
-                        <p>
-                            Learn how to be a good steward of your finances with Biblical
-                            principles and teachings.
-                        </p>
-                    </AccordionBody>
-                </AccordionItem>
-                <AccordionItem eventKey="2">
-                    <AccordionHeader>The Father Church Youth Service</AccordionHeader>
-                    <AccordionBody>
-                        <p>
-                            TFC youth, grades 6 – 12 are invited to join us on Thursday nights
-                            from 7:00 – 9:00 pm!
-                        </p>
-                    </AccordionBody>
-                </AccordionItem>
-                <AccordionItem eventKey="3">
-                    <AccordionHeader>The Father Church Youth Night</AccordionHeader>
-                    <AccordionBody>
-                        <p>
-                            All youth in grades 6 - 12 are invited to Port Perry Youth meeting
-                            weekly on Thursdays from 7 - 9:00 pm.
-                        </p>
-                    </AccordionBody>
-                </AccordionItem>
+
+  return (
+    <>
+
+      {/* Section 1 */}
+      <section className="your-section-class" style={{ padding: '0 10rem' }}>
+        <Container fluid style={{ backgroundImage: 'url(gettoknow.jpeg)', paddingBottom: '40px' }} >
+          <h1 style={{ fontSize: '60px', justifyContent: 'center', fontWeight: 'bold', textAlign: 'center', paddingTop: '40px' }}>Who we are?</h1>
+          <p style={{ fontSize: '20px', justifyContent: 'center', fontWeight: '40', textAlign: 'center', paddingTop: '20px', paddingBottom: '40px' }}>Kids programs take place simultaneously with our Sunday morning services. Depending on the size of the site, some programming may be separated out further by age.</p>
+
+          <div style={{ paddingBottom: '30px' }}>
+            <Accordion defaultActiveKey="0" alwaysOpen style={{ paddingBottom: '20px' }}>
+              <Accordion.Item eventKey="0" style={{ paddingBottom: '5px', marginBottom: '20px' }}>
+                <Accordion.Header>NURSERY (3-18 MONTHS)</Accordion.Header>
+                <Accordion.Body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="1" style={{ paddingBottom: '5px', marginBottom: '20px' }}>
+                <Accordion.Header>TODDLERS & PRESCHOOL (19 MONTHS-4 YEARS)</Accordion.Header>
+                <Accordion.Body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="2" style={{ paddingBottom: '5px', marginBottom: '20px' }}>
+                <Accordion.Header>JK & SK (5-6 YEARS)</Accordion.Header>
+                <Accordion.Body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="4" style={{ paddingBottom: '5px', marginBottom: '20px' }}>
+                <Accordion.Header>GRADE 1-5 (7-11 YEARS)</Accordion.Header>
+                <Accordion.Body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum.
+                </Accordion.Body>
+              </Accordion.Item>
             </Accordion>
-
+          </div>
+          <Button style={{ margin: '0 auto 10px' }}>Register</Button>
         </Container>
-    )
-}
+      </section>
+    </>
+  );
+};
 
-export default SectionThree
+export default SectionThree;

@@ -15,7 +15,7 @@ const SectionOne = () => {
                     {/* Text */}
                     <div style={textStyle}>
                         <h2 style={{ fontSize: '90px', fontWeight: 'bolder', fontFamily: 'Sans-serif', color: '#000' }}>
-                            The ambassadors @ <br /> TFC
+                            The  <br /> ambassadors
                         </h2>
                     </div>
                 </Container>

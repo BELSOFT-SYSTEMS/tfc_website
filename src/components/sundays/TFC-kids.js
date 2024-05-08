@@ -50,7 +50,7 @@ const TFCkids = () => {
           title="The light bearers Academy"
           // date="27 MAY 2024"
           description="The light bearers Academy is the children’s arm of the father’s church its aim is to educate and equip our children with the word of God in line with the vision of the main church which is to reveal..."
-          imageUrl="event2.jpg"
+          imageUrl="lightbearers.jpeg"
           buttonText="Find Out More"
           onClick={redirectToLightbearersPage}
         />
@@ -67,7 +67,7 @@ const TFCkids = () => {
           // date="26 MAY 2024"
           description="Let's pause...reflect, and give thanks to God for the countless blessings that enrich our lives each day! 
           Every blessing is a testament to God's unfailing love and faithfulness. Join us This Sunday;"
-          imageUrl="event3.jpeg"
+          imageUrl="ambassadors.jpeg"
           buttonText="Find Out More"
           onClick={redirectToAmbassadorsPage}
         />

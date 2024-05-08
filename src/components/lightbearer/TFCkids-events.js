@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button} from '../Button/Button';
 import { Container, Row, Col, } from 'react-bootstrap';
-import EventComponent from './EventComponent';
+import EventComponent from '../EventComponent';
 
 
 const TFCkidsevents = () => {

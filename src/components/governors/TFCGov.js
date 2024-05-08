@@ -54,7 +54,7 @@ const TFCGov = () => {
         {/* Text */}
         <div style={textStyle}>
           <h2 style={{ fontSize: '110px', fontWeight: 'bolder', fontFamily: 'Sans-serif', color: '#000' }}>
-          TFC <br/> Governors.
+          TFC <br/> Governors <br/> Fellowship.
           </h2>
         </div>
       </Container>

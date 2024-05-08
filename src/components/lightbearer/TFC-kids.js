@@ -54,7 +54,7 @@ const TFCsundays = () => {
         {/* Text */}
         <div style={textStyle}>
           <h2 style={{ fontSize: '110px', fontWeight: 'bolder', fontFamily: 'Sans-serif', color: '#000' }}>
-          TFC <br/> Lightbearers.
+          TFC <br/> Lightbearers <br/> Academy.
           </h2>
         </div>
       </Container>

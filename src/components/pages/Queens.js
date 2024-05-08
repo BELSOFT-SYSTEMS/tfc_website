@@ -4,14 +4,45 @@ import Footer from '../Footer';
 import TFCqueens from '../queens/TFCqueens';
 import TFCqueensevents from '../queens/TFCqueens-events';
 import Knowusbetter from '../queens/Knowusbetter';
-import Ourvalues from '../queens/Ourvalues';
+// import Ourvalues from '../queens/Ourvalues';
+import { Swipper } from '../Swiper/Swiper'
+
+
+const items = [
+  {
+    url: '/joy/joy1.jpeg',
+    description: 'Description for image 1'
+  },
+  {
+    url: '/joy/joy2.jpeg',
+    description: 'Description for image 2'
+  },
+  {
+    url: '/joy/joy3.jpg',
+    description: 'Description for image 3'
+  },
+  {
+    url: '/joy/joy4.jpg',
+    description: 'Description for image 4'
+  },
+  {
+    url: '/joy/joy5.jpg',
+    description: 'Description for image 5'
+  },
+  {
+    url: '/joy/joy6.jpg',
+    description: 'Description for image 6'
+  }
+];
+
 
 function Queens() {
   return (
     <div>
       <Header />
       <TFCqueens />
-      <Ourvalues />
+      <Swipper items={items} />
+      {/* <Ourvalues /> */}
       <Knowusbetter />
       <TFCqueensevents />
       <Footer />

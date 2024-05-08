@@ -39,7 +39,7 @@ const TFCfreedomevents = () => {
   />
 </Container>
   <Container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', marginTop: '20px', marginBottom: '20px', paddingBottom: '20px' }}>
-  <Button variant="warning" style={{backgroundColor: '#d49c04', color: '#000', maxWidth:'200px'}}>View all Events</Button>
+  <Button variant="warning" style={{backgroundColor: '#d49c04', color: '#fff', maxWidth:'200px'}}>View all Events</Button>
   </Container>
   </Container>
   )

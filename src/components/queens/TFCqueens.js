@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 
 const TFCqueens = () => {
 
-  const backgroundImageUrl = 'governor-bg.jpg'; // Replace with your image URL
+  const backgroundImageUrl = 'bg-lightbearer.jpeg'; // Replace with your image URL
 
   const containerStyle = {
     position: 'relative',
@@ -54,7 +54,7 @@ const TFCqueens = () => {
         {/* Text */}
         <div style={textStyle}>
           <h2 style={{ fontSize: '110px', fontWeight: 'bolder', fontFamily: 'Sans-serif', color: '#000' }}>
-          TFC <br/> Queens.
+          TFC <br/> Queens <br/> Fellowship
           </h2>
         </div>
       </Container>
