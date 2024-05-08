@@ -6,7 +6,7 @@ import TFCsundays from '../sundays/TFC-sundays';
 import Locations from '../Locations';
 import Footer from '../Footer';
 import { Swipper } from '../Swiper/Swiper';
-import { data } from '../data/data';
+import { sundays_data } from '../data/GalleryData';
 
 
 
@@ -16,7 +16,7 @@ function Sundays() {
       <Header />
       <TFCsundays />
       <Expectation />
-      <Swipper items={data} />
+      <Swipper items={sundays_data} />
       <TFCkids />
       <Locations />
       <Footer />

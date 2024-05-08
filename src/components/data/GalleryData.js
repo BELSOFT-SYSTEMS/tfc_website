@@ -1,4 +1,4 @@
-export const data = [
+export const sundays_data = [
     {
       url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715175061/TFC/sundays/sundays-1_fgkxlt.jpg',
       description: 'Description for image 1'
