@@ -6,7 +6,7 @@ import TFCsundays from '../sundays/TFC-sundays';
 import Locations from '../Locations';
 import Footer from '../Footer';
 import { Swipper } from '../Swiper/Swiper';
-import { sundays_data } from '../data/GalleryData';
+import { sundays_data } from '../data/PhotoData';
 
 
 

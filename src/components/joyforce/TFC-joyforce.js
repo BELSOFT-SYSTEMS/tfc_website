@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 
 const TFCjoyforce = () => {
 
-  const backgroundImageUrl = 'bg-lightbearer.jpeg'; // Replace with your image URL
+  const backgroundImageUrl = 'joyforce-1.jpg'; // Replace with your image URL
 
   const containerStyle = {
     position: 'relative',

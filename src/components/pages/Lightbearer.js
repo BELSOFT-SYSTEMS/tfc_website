@@ -5,35 +5,9 @@ import TFCkids from '../lightbearer/TFC-kids';
 import Kidsevents from '../lightbearer/TFCkids-events';
 import Knowusbetter from '../lightbearer/Knowusbetter';
 import Ourvalues from '../lightbearer/Ourvalues';
-import { Swipper } from '../Swiper/Swiper'
+import { Swipper } from '../Swiper/Swiper';
+import { lightbearers_data } from '../data/PhotoData';
 
-
-const items = [
-  {
-    url: '/joy/joy1.jpeg',
-    description: 'Description for image 1'
-  },
-  {
-    url: '/joy/joy2.jpeg',
-    description: 'Description for image 2'
-  },
-  {
-    url: '/joy/joy3.jpg',
-    description: 'Description for image 3'
-  },
-  {
-    url: '/joy/joy4.jpg',
-    description: 'Description for image 4'
-  },
-  {
-    url: '/joy/joy5.jpg',
-    description: 'Description for image 5'
-  },
-  {
-    url: '/joy/joy6.jpg',
-    description: 'Description for image 6'
-  }
-];
 
 
 function Lightbearer() {
@@ -41,7 +15,7 @@ function Lightbearer() {
     <div>
       <Header />
       <TFCkids />
-      <Swipper items={items} />
+      <Swipper items={lightbearers_data} />
       {/* <Ourvalues /> */}
       <Knowusbetter />
       <Kidsevents />

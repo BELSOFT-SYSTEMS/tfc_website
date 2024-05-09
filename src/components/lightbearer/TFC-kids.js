@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 
 const TFCsundays = () => {
 
-  const backgroundImageUrl = 'bg-lightbearer.jpeg'; // Replace with your image URL
+  const backgroundImageUrl = 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715252933/TFC/lightbearers/DSC_6599_ouz9p3.jpg'; // Replace with your image URL
 
   const containerStyle = {
     position: 'relative',
