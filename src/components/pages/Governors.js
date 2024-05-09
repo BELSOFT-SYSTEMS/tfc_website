@@ -6,41 +6,16 @@ import TFCGovevents from '../governors/TFCGov-events';
 import Knowusbetter from '../governors/Knowusbetter';
 import Ourvalues from '../governors/Ourvalues';
 import { Swipper } from '../Swiper/Swiper'
+import { governors_data } from '../data/PhotoData';
 
 
-const items = [
-  {
-    url: '/joy/joy1.jpeg',
-    description: 'Description for image 1'
-  },
-  {
-    url: '/joy/joy2.jpeg',
-    description: 'Description for image 2'
-  },
-  {
-    url: '/joy/joy3.jpg',
-    description: 'Description for image 3'
-  },
-  {
-    url: '/joy/joy4.jpg',
-    description: 'Description for image 4'
-  },
-  {
-    url: '/joy/joy5.jpg',
-    description: 'Description for image 5'
-  },
-  {
-    url: '/joy/joy6.jpg',
-    description: 'Description for image 6'
-  }
-];
 
 function Governors() {
   return (
     <div>
       <Header />
       <TFCGov />
-      <Swipper items={items} />
+      <Swipper items={governors_data} />
       {/* <Ourvalues /> */}
       <Knowusbetter />
       <TFCGovevents />

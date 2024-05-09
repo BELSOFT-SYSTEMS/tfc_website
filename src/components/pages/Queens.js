@@ -6,34 +6,9 @@ import TFCqueensevents from '../queens/TFCqueens-events';
 import Knowusbetter from '../queens/Knowusbetter';
 // import Ourvalues from '../queens/Ourvalues';
 import { Swipper } from '../Swiper/Swiper'
+import { queens_data } from '../data/PhotoData';
 
 
-const items = [
-  {
-    url: '/joy/joy1.jpeg',
-    description: 'Description for image 1'
-  },
-  {
-    url: '/joy/joy2.jpeg',
-    description: 'Description for image 2'
-  },
-  {
-    url: '/joy/joy3.jpg',
-    description: 'Description for image 3'
-  },
-  {
-    url: '/joy/joy4.jpg',
-    description: 'Description for image 4'
-  },
-  {
-    url: '/joy/joy5.jpg',
-    description: 'Description for image 5'
-  },
-  {
-    url: '/joy/joy6.jpg',
-    description: 'Description for image 6'
-  }
-];
 
 
 function Queens() {
@@ -41,7 +16,7 @@ function Queens() {
     <div>
       <Header />
       <TFCqueens />
-      <Swipper items={items} />
+      <Swipper items={queens_data} />
       {/* <Ourvalues /> */}
       <Knowusbetter />
       <TFCqueensevents />

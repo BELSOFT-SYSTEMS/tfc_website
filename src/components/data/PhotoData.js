@@ -197,3 +197,111 @@ export const lightbearers_data = [
     }
   ];
 
+export const ambassadors_data = [
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-3_ln0foj.jpg',
+      description: 'Description for image 1'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-5_yfhrji.jpg',
+      description: 'Description for image 2'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-6_d7cnxv.jpg',
+      description: 'Description for image 3'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-2_zgt3zv.jpg',
+      description: 'Description for image 4'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-1_rtpjig.jpg',
+      description: 'Description for image 5'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-4_khb1et.jpg',
+      description: 'Description for image 6'
+    }
+  ];
+
+export const freedom_fellowship_data = [
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-3_ln0foj.jpg',
+      description: 'Description for image 1'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-5_yfhrji.jpg',
+      description: 'Description for image 2'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-6_d7cnxv.jpg',
+      description: 'Description for image 3'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-2_zgt3zv.jpg',
+      description: 'Description for image 4'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-1_rtpjig.jpg',
+      description: 'Description for image 5'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-4_khb1et.jpg',
+      description: 'Description for image 6'
+    }
+  ];
+
+export const queens_data = [
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-3_ln0foj.jpg',
+      description: 'Description for image 1'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-5_yfhrji.jpg',
+      description: 'Description for image 2'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-6_d7cnxv.jpg',
+      description: 'Description for image 3'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-2_zgt3zv.jpg',
+      description: 'Description for image 4'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-1_rtpjig.jpg',
+      description: 'Description for image 5'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-4_khb1et.jpg',
+      description: 'Description for image 6'
+    }
+  ];
+  
+export const governors_data = [
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-3_ln0foj.jpg',
+      description: 'Description for image 1'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-5_yfhrji.jpg',
+      description: 'Description for image 2'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-6_d7cnxv.jpg',
+      description: 'Description for image 3'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-2_zgt3zv.jpg',
+      description: 'Description for image 4'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-1_rtpjig.jpg',
+      description: 'Description for image 5'
+    },
+    {
+      url: 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715248400/TFC/lightbearers/light-4_khb1et.jpg',
+      description: 'Description for image 6'
+    }
+  ];
+
