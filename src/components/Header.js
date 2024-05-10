@@ -94,8 +94,8 @@ const menuItems = [
         { label: 'Freedom Fellowship', link: '/freedom-fellowship' },
         { label: 'The Governors', link: '/the-governors' },
         { label: 'The Queens', link: '/the-queens' },
-        { label: 'Evangelism', link: '/evangelism' },
-        { label: 'Prayer Ministry', link: '/prayer-ministry' },
+        { label: 'Evangelism', link: '' },
+        // { label: 'Prayer Ministry', link: '/prayer-ministry' },
         /*{ label: 'Care Ministry', link: '/care-ministry' },*/
         /* Add more ministry items as needed */
       ],

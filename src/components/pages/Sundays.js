@@ -5,6 +5,10 @@ import TFCkids from '../sundays/TFC-kids';
 import TFCsundays from '../sundays/TFC-sundays';
 import Locations from '../Locations';
 import Footer from '../Footer';
+import { Swipper } from '../Swiper/Swiper';
+import { sundays_data } from '../data/PhotoData';
+
+
 
 function Sundays() {
   return (
@@ -12,6 +16,7 @@ function Sundays() {
       <Header />
       <TFCsundays />
       <Expectation />
+      <Swipper items={sundays_data} />
       <TFCkids />
       <Locations />
       <Footer />

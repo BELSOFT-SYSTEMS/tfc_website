@@ -4,14 +4,20 @@ import Footer from '../Footer';
 import TFCqueens from '../queens/TFCqueens';
 import TFCqueensevents from '../queens/TFCqueens-events';
 import Knowusbetter from '../queens/Knowusbetter';
-import Ourvalues from '../queens/Ourvalues';
+// import Ourvalues from '../queens/Ourvalues';
+import { Swipper } from '../Swiper/Swiper'
+import { queens_data } from '../data/PhotoData';
+
+
+
 
 function Queens() {
   return (
     <div>
       <Header />
       <TFCqueens />
-      <Ourvalues />
+      <Swipper items={queens_data} />
+      {/* <Ourvalues /> */}
       <Knowusbetter />
       <TFCqueensevents />
       <Footer />

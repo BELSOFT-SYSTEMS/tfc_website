@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
 
-const backgroundImageUrl = 'background-img2.jpeg'; // Replace with your image URL
+const backgroundImageUrl = 'ambassadors-1.jpg'; // Replace with your image URL
 
 const SectionOne = () => {
     return (
@@ -15,7 +15,7 @@ const SectionOne = () => {
                     {/* Text */}
                     <div style={textStyle}>
                         <h2 style={{ fontSize: '90px', fontWeight: 'bolder', fontFamily: 'Sans-serif', color: '#000' }}>
-                            The ambassadors @ <br /> TFC
+                            The  <br /> ambassadors
                         </h2>
                     </div>
                 </Container>
@@ -25,22 +25,22 @@ const SectionOne = () => {
 
 const containerStyle = {
     position: 'relative',
-    backgroundImage: `url(${backgroundImageUrl})`,
-    backgroundSize: 'cover', // Adjust as needed
-    backgroundPosition: 'center center', // Adjust as needed
-    backgroundRepeat: 'no-repeat', // Adjust as needed
-    width: '100%', // Set the width to 100% of the viewport width
-    height: '100vh', // Set the desired height
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: 'white', // Set text color
-    margin: 0, // Reset margin
-    padding: 0, // Reset padding
-    overflow: 'hidden',
-    boxSizing: 'border-box',
-    marginBottom: '40px',
+  backgroundImage: `url(${backgroundImageUrl})`,
+  backgroundSize: 'cover', // Adjust as needed
+  backgroundPosition: 'center center', // Adjust as needed
+  backgroundRepeat: 'no-repeat', // Adjust as needed
+  width: '100%', // Set the width to 100% of the viewport width
+  height: '75vh', // Set the desired height
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  color: 'white', // Set text color
+  margin: 0, // Reset margin
+  padding: 0, // Reset padding
+  overflow: 'hidden',
+  boxSizing: 'border-box',
+  marginBottom: '7rem',
 };
 
 const overlayStyle = {

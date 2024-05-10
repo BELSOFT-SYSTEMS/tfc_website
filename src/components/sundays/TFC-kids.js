@@ -1,98 +1,103 @@
-import React, { useState, useEffect } from 'react';
-import { Container, Card, Button } from 'react-bootstrap';
+import React from 'react';
+import { Button } from "../Button/Button";
+import { Container, Row, Col } from "react-bootstrap";
+import Cards from "../Cards";
+import { useNavigate } from "react-router-dom";
 
 const TFCkids = () => {
-  const [showButton, setShowButton] = useState(false);
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const cards = document.querySelectorAll('.card');
-      cards.forEach((card) => {
-        const rect = card.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          setShowButton(true);
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
+  const redirectToQueensPage = () => {
+    console.log("Redirecting to queens page");
+    navigate("/Queens");
+  };
+  const redirectToLightbearersPage = () => {
+    console.log("Redirecting to lightbearers page");
+    navigate("/Lightbearer");
+  };
+  const redirectToAmbassadorsPage = () => {
+    console.log("Redirecting to ambassadors page");
+    navigate("/Ambassadors");
+  };
   return (
-    <>
-      <section className="your-section-class">
-        <Container fluid style={{ display: 'flex', justifyContent: 'space-around', paddingBottom:'30px', marginBottom:'30px'}}>
-          {/* Card 1 */}
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="ambassadors.jpeg" />
-            <Card.Body style={{backgroundColor:'#d49c04', color:'#fff'}}>
-              <Card.Title>Ambassadors.</Card.Title>
-              <Card.Text>
-                Sunday programming is available for children from 3 months to Grade 5. Our programming includes everything from digital check-in and parental paging codes, to age-specific teaching and music, activities and crafts!
-
-              </Card.Text>
-              <div
-                style={{
-                  transition: 'opacity 0.5s ease',
-                  opacity: showButton ? 1 : 0,
-                }}
-              >
-                {showButton && (
-                  <Button
-                    variant="warning"
-                    onClick={() => setShowButton(false)}
-                    style={{
-                      backgroundColor: '#fff',
-                      color: '#000',
-                      transform: `translateY(${showButton ? 0 : '20px'})`,
-                      transition: 'transform 0.5s ease',
-                    }}
-                  >
-                    Click Me
-                  </Button>
-                )}
-              </div>
-            </Card.Body>
-          </Card>
-          {/* Card 2 */}
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="lightbearers.jpeg" />
-            <Card.Body style={{backgroundColor:'#012101', color:'#fff'}}>
-              <Card.Title>Lightbearers.</Card.Title>
-              <Card.Text>
-                Sunday programming is available for youth from Grade 5 to Grade 8. Our programming includes everything from safe digital check-in, to hang out time, games, age-specific teaching, worship and connect groups.  
-
-              </Card.Text>
-              <div
-                style={{
-                  transition: 'opacity 0.5s ease',
-                  opacity: showButton ? 1 : 0,
-                }}
-              >
-                {showButton && (
-                  <Button
-                    variant="warning"
-                    onClick={() => setShowButton(false)}
-                    style={{
-                      backgroundColor: '#fff',
-                      color: '#000',
-                      transform: `translateY(${showButton ? 0 : '20px'})`,
-                      transition: 'transform 0.5s ease',
-                    }}
-                  >
-                    Click Me
-                  </Button>
-                )}
-              </div>
-            </Card.Body>
-          </Card>
-        </Container>
-      </section>
-    </>
+    <Container fluid style={{ margin: "0 2rem" }}>
+      <Container
+        style={{
+          justifyContent: "center",
+          textAlign: "center",
+          marginBottom: "30px",
+          marginTop: "20px",
+        }}
+      >
+        <Row>
+          <Col>
+            <h2 style={{ fontSize: "20px" }}>
+              There is room for you
+            </h2>
+            <h2 style={{ fontSize: "55px" }}>Join us This Sunday</h2>
+          </Col>
+        </Row>
+      </Container>
+      <Container
+        fluid
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+          gap: "20px",
+        }}
+      >
+        <Cards
+          title="The light bearers Academy"
+          // date="27 MAY 2024"
+          description="The light bearers Academy is the children’s arm of the father’s church its aim is to educate and equip our children with the word of God in line with the vision of the main church which is to reveal..."
+          imageUrl="lightbearers.jpeg"
+          buttonText="Find Out More"
+          onClick={redirectToLightbearersPage}
+        />
+        <Cards
+          title="The Father's Church Queens Fellowship"
+          // date="08 MAY 2024"
+          description="The Queens of The Father's Church are married women and mothers in The Father's Church. The Queens Fellowship is a fellowship of mothers and married women in the Father's Church to build each...  "
+          imageUrl="queens_event.jpeg"
+          buttonText="Find Out More"
+          onClick={redirectToQueensPage}
+        />
+        <Cards
+          title="The Ambassadors of the father's church"
+          // date="26 MAY 2024"
+          description="Let's pause...reflect, and give thanks to God for the countless blessings that enrich our lives each day! 
+          Every blessing is a testament to God's unfailing love and faithfulness. Join us This Sunday;"
+          imageUrl="ambassadors.jpeg"
+          buttonText="Find Out More"
+          onClick={redirectToAmbassadorsPage}
+        />
+      </Container>
+      <Container
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          marginTop: "20px",
+          marginBottom: "20px",
+          paddingBottom: "20px",
+        }}
+      >
+        {/* <Button
+          variant="warning"
+          href="/Eventcalendar"
+          onClick={redirectToEventsPage}
+          style={{
+            backgroundColor: "#d49c04",
+            color: "#fff",
+            maxWidth: "200px",
+          }}
+          
+        >
+          View all Events
+        </Button> */}
+      </Container>
+    </Container>
   );
 };
 

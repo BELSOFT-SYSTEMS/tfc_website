@@ -5,13 +5,19 @@ import SectionOne from '../ambassadors/SectionOne';
 import SectionTwo from '../ambassadors/SectionTwo';
 import SectionFour from '../ambassadors/SectionFour';
 import SectionThree from '../ambassadors/SectionThree';
+import { Swipper } from '../Swiper/Swiper'
+import { ambassadors_data } from '../data/PhotoData';
+
+
+
 
 function Ambassadors() {
   return (
     <div>
       <Header />
       <SectionOne />
-      <SectionTwo />
+      <Swipper items={ambassadors_data} />
+      {/* <SectionTwo /> */}
       <SectionThree />
       <SectionFour />
       <Footer />

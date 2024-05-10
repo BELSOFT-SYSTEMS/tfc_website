@@ -5,13 +5,18 @@ import TFCGov from '../governors/TFCGov';
 import TFCGovevents from '../governors/TFCGov-events';
 import Knowusbetter from '../governors/Knowusbetter';
 import Ourvalues from '../governors/Ourvalues';
+import { Swipper } from '../Swiper/Swiper'
+import { governors_data } from '../data/PhotoData';
+
+
 
 function Governors() {
   return (
     <div>
       <Header />
       <TFCGov />
-      <Ourvalues />
+      <Swipper items={governors_data} />
+      {/* <Ourvalues /> */}
       <Knowusbetter />
       <TFCGovevents />
       <Footer />

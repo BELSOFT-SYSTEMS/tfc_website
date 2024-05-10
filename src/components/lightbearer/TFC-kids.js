@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 
 const TFCsundays = () => {
 
-  const backgroundImageUrl = 'bg-lightbearer.jpeg'; // Replace with your image URL
+  const backgroundImageUrl = 'https://res.cloudinary.com/dbnrmhckx/image/upload/v1715252933/TFC/lightbearers/DSC_6599_ouz9p3.jpg'; // Replace with your image URL
 
   const containerStyle = {
     position: 'relative',
@@ -12,7 +12,7 @@ const TFCsundays = () => {
     backgroundPosition: 'center center', // Adjust as needed
     backgroundRepeat: 'no-repeat', // Adjust as needed
     width: '100%', // Set the width to 100% of the viewport width
-    height: '100vh', // Set the desired height
+    height: '75vh', // Set the desired height
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -21,8 +21,8 @@ const TFCsundays = () => {
     margin: 0, // Reset margin
     padding: 0, // Reset padding
     overflow: 'hidden',
-    boxSizing:'border-box',
-    marginBottom: '40px',
+    boxSizing: 'border-box',
+    marginBottom: '7rem',
   };
 
   const overlayStyle = {
@@ -53,8 +53,8 @@ const TFCsundays = () => {
         <div style={overlayStyle}></div>
         {/* Text */}
         <div style={textStyle}>
-          <h2 style={{ fontSize: '110px', fontWeight: 'bolder', fontFamily: 'Sans-serif', color: '#000' }}>
-          TFC <br/> Lightbearers.
+          <h2 style={{ fontSize: '110px', fontWeight: 'bolder', fontFamily: 'Sans-serif', color: '#000',  marginLeft:'-10rem' }}>
+          TFC <br/> Lightbearers <br/> Academy.
           </h2>
         </div>
       </Container>
