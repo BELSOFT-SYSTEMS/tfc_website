@@ -34,11 +34,11 @@ const Connect = () => {
     <>
       {/* Section 1 */}
       <section className="your-section-class">
-        <Container fluid style={{ display: 'flex', justifyContent: 'center' }}>
+        <Container fluid style={{ display: 'flex', justifyContent: 'center', minHeight: '455px', maxWeight: '1140px',  }}>
           <div style={{ flex: 1, marginTop: '50px', marginBottom: '50px' }}>
             <Row>
-              <h2 style={{ fontSize: '70px', fontWeight: 'bolder', paddingTop: '20px' }}>Need To Connect About Care?</h2>
-              <p style={{ fontFamily: 'Montserrat,Sans-serif', paddingTop: '20px', fontSize: '20px', fontWeight: '40', lineHeight: '20px' }}>
+              <h2 style={{ fontSize: '50px', fontWeight: '600' }}>Need To Connect About Care?</h2>
+              <p style={{ fontFamily: 'Montserrat,Sans-serif', paddingTop: '10px', fontSize: '20px', fontWeight: '500', lineHeight: '20px' }}>
                 FINANCIAL DIFFICULTY • FAMILY SITUATIONS • EMOTIONAL WELL-BEING • PRAYER • SPIRITUAL DYNAMICS • HOSPITAL VISITS
               </p>
               <Col xs={12} md={6}>
