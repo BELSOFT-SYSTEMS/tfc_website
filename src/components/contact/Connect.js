@@ -42,25 +42,30 @@ const Connect = () => {
                 FINANCIAL DIFFICULTY • FAMILY SITUATIONS • EMOTIONAL WELL-BEING • PRAYER • SPIRITUAL DYNAMICS • HOSPITAL VISITS
               </p>
               <Col xs={12} md={6}>
-                <p>
-                  <FontAwesomeIcon icon={faMobileScreen} size="6x" />
-                  <span style={{ fontSize: '20px' }}> (905) 686-4450 </span>
+                <p style={{ display: 'flex' }}>
+                  <img
+                    src="gettoknowphone.jpeg"
+                    alt="Phone"
+                    className="img-fluid"
+                    style={{ borderRadius: '10px', margin: '20px 0' }}
+                  />
+                  <span style={{ fontSize: '30px', fontWeight: '500' }}> (905) 686-4450 </span>
                 </p>
               </Col>
               <Col xs={12} md={6}>
-                <div style={{ paddingTop: '20px', paddingRight:'140px' }}>
+                <div style={{ paddingTop: '20px', paddingRight:'20px' }}>
                   <Form onSubmit={handleSubmit}>
                     <Form.Group controlId="formName">
-                      <Form.Label>Name</Form.Label>
-                      <Form.Control type="text" placeholder="Enter your name" name="name" value={formData.name} onChange={handleChange} size="sm" />
+                      <Form.Label style={{ fontSize: '20px', fontWeight: '500' }}>Name</Form.Label>
+                      <Form.Control type="text" placeholder="Enter your name" name="name" value={formData.name} onChange={handleChange} size="sm" style={{ fontSize: '15px', fontWeight: '300' }} />
                     </Form.Group>
                     <Form.Group controlId="formEmail">
-                      <Form.Label>Email address</Form.Label>
-                      <Form.Control type="email" placeholder="Enter your email" name="email" value={formData.email} onChange={handleChange} size="sm" />
+                      <Form.Label style={{ fontSize: '20px', fontWeight: '500' }}>Email address</Form.Label>
+                      <Form.Control type="email" placeholder="Enter your email" name="email" value={formData.email} onChange={handleChange} size="sm" style={{ fontSize: '15px', fontWeight: '300' }} />
                     </Form.Group>
                     <Form.Group controlId="formNeededCare">
-                      <Form.Label>Needed Care</Form.Label>
-                      <Form.Control as="textarea" rows={3} placeholder="Enter details about your needed care" name="neededCare" value={formData.neededCare} onChange={handleChange} size="sm" />
+                      <Form.Label style={{ fontSize: '20px', fontWeight: '500' }}>Needed Care</Form.Label>
+                      <Form.Control as="textarea" rows={10} placeholder="Enter details about your needed care" name="neededCare" value={formData.neededCare} onChange={handleChange} size="sm" style={{ fontSize: '15px', fontWeight: '300' }} />
                     </Form.Group>
                     <Button type="submit" variant="warning" style={{ maxWidth:'200px',backgroundColor: '#d49c04', color: '#000', marginTop: '20px', maxWidth:'200px' }}>
                       I NEED CARE FORM
