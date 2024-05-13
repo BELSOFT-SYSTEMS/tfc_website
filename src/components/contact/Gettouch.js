@@ -14,7 +14,7 @@ const Gettouch = () => {
     navigate('/contact');
   };
 
-  const backgroundImageUrl = 'background-img1.jpg'; // Replace with your image URL
+  const backgroundImageUrl = 'gettoknow2.jpeg'; // Replace with your image URL
 
   const containerStyle = {
     backgroundImage: `url(${backgroundImageUrl})`,
@@ -22,7 +22,7 @@ const Gettouch = () => {
     backgroundPosition: 'center center', // Adjust as needed
     backgroundRepeat: 'no-repeat', // Adjust as needed
     width: '100%', // Set the width to 100% of the viewport width
-    height: '100vh', // Set the desired height
+    // height: '100vh', // Set the desired height
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -45,17 +45,17 @@ const Gettouch = () => {
           <div style={{justifyContent:'center'}}>
           <Row >
             <Col md={6} >
-              <div style={{ marginLeft: '30px' }}>
+              <div style={{ marginLeft: '-30px' }}>
                 <div className="elementor-element elementor-element-52ff6ed elementor-invisible elementor-widget elementor-widget-heading">
                   <div className="elementor-widget-container" style={{justifyContent:'center',textAlign: 'left',}} >
-                    <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: '120px', fontWeight: 'bolder', fontFamily: 'Sans-serif', justifyContent: 'center', textAlign: 'left', marginTop: '50px', color: '#000' }}>
+                    <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: '130px', fontWeight: 'bolder', fontFamily: 'Sans-serif', justifyContent: 'center', textAlign: 'left', marginTop: '50px', color: '#000', marginBottom: '-20px', }}>
                       Get In <br />Touch
                     </h2>
                   </div>
                 </div>
                 <div className="elementor-element elementor-element-70f18ad elementor-invisible elementor-widget elementor-widget-text-editor">
                   <div className="elementor-widget-container">
-                    <p style={{ fontFamily: 'Sans-serif', fontSize:'30px', color: '#000' }}>
+                    <p style={{ fontFamily: 'Sans-serif', fontSize:'30px', fontWeight: '600', color: '#000' }}>
                     HOW CAN WE HELP YOU?
                      </p>
                   </div>
@@ -64,8 +64,8 @@ const Gettouch = () => {
                   <div className="elementor-widget-container">
                     <div style={{display: 'flex', marginRight: '20px' }}>
                   <FontAwesomeIcon icon={faFacebook} size='3x' style={{ color: '#d49c04',  }} />
-                  <FontAwesomeIcon icon={faInstagram} size='3x' style={{ color: '#d49c04',  marginLeft: '10px'  }} />
-                  <FontAwesomeIcon icon={faYoutube} size='3x'style={{ color: '#d49c04',  marginLeft: '10px' }} />
+                  <FontAwesomeIcon icon={faInstagram} size='3x' style={{ color: '#d49c04',  marginLeft: '20px'  }} />
+                  <FontAwesomeIcon icon={faYoutube} size='3x'style={{ color: '#d49c04',  marginLeft: '20px' }} />
                   </div>
                     <div className="elementor-button-wrapper" style={{paddingTop:'10px'}}>
                       <Button
@@ -75,7 +75,7 @@ const Gettouch = () => {
                         onClick={redirectToContactPage}
                       >
                         <span className="elementor-button-content-wrapper">
-                          <span className="elementor-button-text" style={{paddingLeft:'20px',paddingRight:'20px'}}>Plan your visit</span>
+                          <span className="elementor-button-text" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#d49c04', color: '#fff', height: '40px', textTransform: 'capitalize', fontSize: '16px', fontWeight: '600', border: 'none'}}>Plan your visit</span>
                         </span>
                       </Button>
                     </div>
@@ -86,7 +86,7 @@ const Gettouch = () => {
             <Col md={6}>
               {/* Your image goes here */}
               <img
-                src="sundays1.png"
+                src="gettoknow3.png"
                 alt="Opposite"
                 className="img-fluid"
                 style={{ borderRadius: '10px', margin: '20px 0' }}
