@@ -14,6 +14,7 @@ const Offices = () => {
 
       {/* Section 1 */}
       <section className="your-section-class">
+        <Container fluid style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', minHeight: '455px', maxWeight: '1140px', }}>
         <h1 style={{fontSize:'70px',justifyContent:'center', textAlign:'center', fontWeight:'bolder'}}>
           Our Offices
         </h1>
@@ -82,6 +83,7 @@ const Offices = () => {
              </p>
             </div>
 </Container>
+            </Container>
       </section>
     </>
   );
