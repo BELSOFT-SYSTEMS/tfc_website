@@ -16,8 +16,13 @@ const Gettouch = () => {
 
   const backgroundImageUrl = 'gettoknow2.jpeg'; // Replace with your image URL
 
-  const containerStyle = {
+  const containerbgStyle = {
     backgroundImage: `url(${backgroundImageUrl})`,
+    backgroundColor: '#fff',
+    opacity: '0.75',
+  };
+
+  const containerStyle = {
     backgroundSize: 'cover', // Adjust as needed
     backgroundPosition: 'center center', // Adjust as needed
     backgroundRepeat: 'no-repeat', // Adjust as needed
@@ -41,6 +46,7 @@ const Gettouch = () => {
 
       {/* Section 1 */}
       <section className="your-section-class">
+        <Container fluid style={containerbgStyle}>
         <Container fluid style={containerStyle}>
           <div style={{justifyContent:'center'}}>
           <Row >
@@ -94,6 +100,7 @@ const Gettouch = () => {
             </Col>
           </Row>
           </div>
+        </Container>
         </Container>
       </section>
     </>
