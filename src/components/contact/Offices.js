@@ -34,71 +34,71 @@ const backgroundImageUrl = 'gettoknow.jpeg'; // Replace with your image URL
 
       {/* Section 1 */}
       <section className="your-section-class">
-        <Container fluid style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', minHeight: '455px', maxWeight: '1140px', }}>
-        <h1 style={{fontSize:'70px',justifyContent:'center', textAlign:'center', fontWeight:'bolder'}}>
+        <Container fluid style={containerStyle}>
+        <h1 style={{fontSize:'55px',justifyContent:'center', textAlign:'center', fontWeight:'bolder'}}>
           Our Offices
         </h1>
-      <Container fluid style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
+      <Container fluid style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '10px' }}>
         <div style={{ flex: 1, marginRight: '20px', marginTop:'50px', marginBottom:'50px', paddingLeft:'30px' }}>
-          <h2 style={{fontSize:'40px'}}>EDEN OFFICE</h2>
-          <p style={{fontFamily:'Montserrat', fontSize:'15px', fontWeight:'40', lineHeight:'20px'}}>
+          <h2 style={{fontSize:'25px'}}>EDEN BRANCH</h2>
+          <p style={{fontFamily:'Montserrat', fontSize:'15px', fontWeight:'40', lineHeight:'30px'}}>
           <div style={{paddingTop:'5px'}}>
-          <FontAwesomeIcon icon={faMapPin}  style={{color:'#d49c04'}}/>
-          <span style={{paddingLeft:'10px'}}>599 Bayly Street East, Ajax, Ontario </span>
+          <FontAwesomeIcon icon={faMapPin}  style={{color:'#d49c04', fontSize:'18px'}} />
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>599 Bayly Street East, Ajax, Ontario </span>
           </div>
           <div style={{paddingTop:'5px'}}>
-          <FontAwesomeIcon icon={faCalendarDays} style={{color:'#d49c04'}} />
-          <span style={{paddingLeft:'10px'}}>Monday - Thursday : 10am - 3pm </span>
+          <FontAwesomeIcon icon={faCalendarDays} style={{color:'#d49c04', fontSize:'18px'}} />
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>Monday - Thursday : 10am - 3pm </span>
           </div>
           <div style={{paddingTop:'5px'}}>
-          <FontAwesomeIcon icon={faPhone} style={{color:'#d49c04'}}/>
-          <span style={{paddingLeft:'10px'}}>(905) 686-4450</span>
+          <FontAwesomeIcon icon={faPhone} style={{color:'#d49c04', fontSize:'18px'}} />
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>(905) 686-4450</span>
           </div>
           <div style={{paddingTop:'5px'}}>
-          <FontAwesomeIcon icon={faEnvelopeOpenText} style={{color:'#d49c04'}}/>
-          <span style={{paddingLeft:'10px'}}>hello@TheFathersChurch.com</span>
+          <FontAwesomeIcon icon={faEnvelopeOpenText} style={{color:'#d49c04', fontSize:'18px'}} />
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>hello@TheFathersChurch.com</span>
           </div>
              </p>
           </div>
           <div style={{ flex: 1, marginLeft: '20px', marginTop:'50px', marginBottom:'50px' }}>
-            <h2 style={{fontSize:'40px'}}>MPAPE OFFICE</h2>
-            <p style={{fontFamily:'Montserrat', fontSize:'15px', fontWeight:'40', lineHeight:'20px'}}>
+            <h2 style={{fontSize:'25px'}}>MPAPE BRANCH</h2>
+            <p style={{fontFamily:'Montserrat', fontSize:'15px', fontWeight:'40', lineHeight:'30px'}}>
           <div style={{paddingTop:'5px'}}>
-          <FontAwesomeIcon icon={faMapPin}  style={{color:'#d49c04'}}/>
-          <span style={{paddingLeft:'10px'}}>72 King Street West Bowmanville, Ontario L1C 1R4 </span>
+          <FontAwesomeIcon icon={faMapPin}  style={{color:'#d49c04', fontSize:'18px'}} />
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>599 Bayly Street East, Ajax, Ontario </span>
           </div>
           <div style={{paddingTop:'5px'}}>
-          <FontAwesomeIcon icon={faCalendarDays} style={{color:'#d49c04'}} />
-          <span style={{paddingLeft:'10px'}}>Tuesday - Wednesday: 9am - 5pm </span>
+          <FontAwesomeIcon icon={faCalendarDays} style={{color:'#d49c04', fontSize:'18px'}} />
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>Monday - Thursday : 10am - 3pm </span>
           </div>
           <div style={{paddingTop:'5px'}}>
-          <FontAwesomeIcon icon={faPhone} style={{color:'#d49c04'}}/>
-          <span style={{paddingLeft:'10px'}}>(905) 686-4450 x 6741</span>
+          <FontAwesomeIcon icon={faPhone} style={{color:'#d49c04', fontSize:'18px'}} />
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>(905) 686-4450</span>
           </div>
           <div style={{paddingTop:'5px'}}>
-          <FontAwesomeIcon icon={faEnvelopeOpenText} style={{color:'#d49c04'}}/>
-          <span style={{paddingLeft:'10px'}}>hello@TheFathersChurch.com</span>
+          <FontAwesomeIcon icon={faEnvelopeOpenText} style={{color:'#d49c04', fontSize:'18px'}} />
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>hello@TheFathersChurch.com</span>
           </div>
              </p>
             </div>
             <div style={{ flex: 1, marginLeft: '20px', marginTop:'50px', marginBottom:'50px' }}>
-            <h2 style={{fontSize:'40px'}}>ENUGU OFFICE</h2>
-            <p style={{fontFamily:'Montserrat', fontSize:'15px', fontWeight:'40', lineHeight:'20px'}}>
+            <h2 style={{fontSize:'25px'}}>ENUGU BRANCH</h2>
+            <p style={{fontFamily:'Montserrat', fontSize:'15px', fontWeight:'40', lineHeight:'30px'}}>
           <div style={{paddingTop:'5px'}}>
-          <FontAwesomeIcon icon={faMapPin}  style={{color:'#d49c04'}}/>
-          <span style={{paddingLeft:'10px', paddingTop:'20px'}}>14480 Old Simcoe Rd Port Perry, Ontario L9L 1C3 </span>
+          <FontAwesomeIcon icon={faMapPin}  style={{color:'#d49c04', fontSize:'18px'}} />
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>599 Bayly Street East, Ajax, Ontario </span>
           </div>
           <div style={{paddingTop:'5px'}}>
-          <FontAwesomeIcon icon={faCalendarDays} style={{color:'#d49c04'}} />
-          <span style={{paddingLeft:'10px', paddingTop:'20px'}}>Tuesday - Wednesday: 9am - 5pm </span>
+          <FontAwesomeIcon icon={faCalendarDays} style={{color:'#d49c04', fontSize:'18px'}} />
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>Monday - Thursday : 10am - 3pm </span>
           </div>
           <div style={{paddingTop:'5px'}}>
-          <FontAwesomeIcon icon={faPhone} style={{color:'#d49c04'}}/>
-          <span style={{paddingLeft:'10px', paddingTop:'20px'}}>(905) 686-4450 x 6670</span>
+          <FontAwesomeIcon icon={faPhone} style={{color:'#d49c04', fontSize:'18px'}} />
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>(905) 686-4450</span>
           </div>
           <div style={{paddingTop:'5px'}}>
-          <FontAwesomeIcon icon={faEnvelopeOpenText} style={{color:'#d49c04'}}/>
-          <span style={{paddingLeft:'10px', paddingTop:'20px'}}>hello@TheFathersChurch.com</span>
+          <FontAwesomeIcon icon={faEnvelopeOpenText} style={{color:'#d49c04', fontSize:'18px'}} />
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>hello@TheFathersChurch.com</span>
           </div>
              </p>
             </div>
