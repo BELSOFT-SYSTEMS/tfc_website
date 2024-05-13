@@ -7,7 +7,27 @@ import {  faBell,  faFaceLaugh,faHourglassHalf, } from '@fortawesome/free-regula
 
 const Offices = () => {
 
+const backgroundImageUrl = 'gettoknow.jpeg'; // Replace with your image URL
 
+  const containerStyle = {
+    backgroundImage: `url(${backgroundImageUrl})`,
+    backgroundSize: '41% auto', // Adjust as needed
+    backgroundPosition: 'center center', // Adjust as needed
+    backgroundRepeat: 'no-repeat', // Adjust as needed
+    backgroundColor: '#fff',
+    opacity: '0.73',
+    width: '100%', // Set the width to 100% of the viewport width
+    // height: '100vh', // Set the desired height
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 0, // Reset margin
+    padding: 0, // Reset padding
+    overflow: 'hidden',
+    boxSizing:'border-box',
+    marginBottom: '40px',
+  };
 
   return (
     <>
