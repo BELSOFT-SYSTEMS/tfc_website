@@ -46,7 +46,7 @@ const Gettouch = () => {
 
       {/* Section 1 */}
       <section className="your-section-class">
-        <Container fluid style={containerbgStyle}>
+        <div style={containerbgStyle}>
         <Container fluid style={containerStyle}>
           <div style={{justifyContent:'center'}}>
           <Row >
@@ -101,7 +101,7 @@ const Gettouch = () => {
           </Row>
           </div>
         </Container>
-        </Container>
+        </div>
       </section>
     </>
   );
