@@ -16,30 +16,36 @@ const Gettouch = () => {
 
   const backgroundImageUrl = 'gettoknow2.jpeg'; // Replace with your image URL
 
-  const containerbgStyle = {
-    backgroundImage: `url(${backgroundImageUrl})`,
-    backgroundColor: '#fff',
-    opacity: '0.75',
-  };
+const containerbgStyle = {
+  backgroundImage: `url(${backgroundImageUrl})`,
+  backgroundColor: '#fff',
+  opacity: '0.75', 
+  position: 'absolute', 
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100%',
+};
 
-  const containerStyle = {
-    backgroundSize: 'cover', // Adjust as needed
-    backgroundPosition: 'center center', // Adjust as needed
-    backgroundRepeat: 'no-repeat', // Adjust as needed
-    width: '100%', // Set the width to 100% of the viewport width
-    // height: '100vh', // Set the desired height
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: 'white', // Set text color
-    margin: 0, // Reset margin
-    padding: 0, // Reset padding
-    overflow: 'hidden',
-    boxSizing:'border-box',
-    marginBottom: '40px',
-  };
-
+const containerStyle = {
+  backgroundSize: 'cover', // Adjust as needed
+  backgroundPosition: 'center center', // Adjust as needed
+  backgroundRepeat: 'no-repeat', // Adjust as needed
+  position: 'relative', 
+  zIndex: 1, 
+  width: '100%', // Set the width to 100% of the viewport width
+  height: '100vh', // Set the desired height
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  color: 'white', // Set text color
+  margin: 0, // Reset margin
+  padding: 0, // Reset padding
+  overflow: 'hidden',
+  boxSizing:'border-box',
+  marginBottom: '40px',
+};
 
   return (
     <>
