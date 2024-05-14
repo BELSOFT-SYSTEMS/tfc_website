@@ -9,15 +9,15 @@ const Offices = () => {
 
 const backgroundImageUrl = 'gettoknow.jpeg'; // Replace with your image URL
 
-  const containerStyle = {
+  const containerbgStyle = {
     backgroundImage: `url(${backgroundImageUrl})`,
-    backgroundSize: '41% auto', // Adjust as needed
+    backgroundSize: '50% auto', // Adjust as needed
     backgroundPosition: 'center center', // Adjust as needed
     backgroundRepeat: 'no-repeat', // Adjust as needed
     backgroundColor: '#fff',
-    opacity: '0.73',
-    width: '100%', // Set the width to 100% of the viewport width
-    // height: '100vh', // Set the desired height
+    opacity: '0.3',
+    width: '1100px', // Set the width to 100% of the viewport width
+    height: '540px', 
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -26,15 +26,33 @@ const backgroundImageUrl = 'gettoknow.jpeg'; // Replace with your image URL
     padding: 0, // Reset padding
     overflow: 'hidden',
     boxSizing:'border-box',
-    marginBottom: '40px',
+    position: 'absolute',
+    zIndex: '0',
+  };
+
+  const containerStyle ={
+    width: '1100px', // Set the width to 100% of the viewport width
+    height: '540px', 
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 0, // Reset margin
+    padding: 0, // Reset padding
+    overflow: 'hidden',
+    boxSizing:'border-box',
+    // marginBottom: '40px',
+    position: 'relative',
+    zIndex: '1',
   };
 
   return (
     <>
 
       {/* Section 1 */}
-      <section className="your-section-class">
-        <Container fluid style={containerStyle}>
+      <section className="your-section-class" style={{ display: 'flex', justifyContent: 'center' }}>
+        <Container fluid style={containerbgStyle}></Container>
+          <Container fluid style={containerStyle}>
         <h1 style={{fontSize:'55px',justifyContent:'center', textAlign:'center', fontWeight:'bolder'}}>
           Our Offices
         </h1>
@@ -44,11 +62,11 @@ const backgroundImageUrl = 'gettoknow.jpeg'; // Replace with your image URL
           <p style={{fontFamily:'Montserrat', fontSize:'15px', fontWeight:'40', lineHeight:'30px'}}>
           <div style={{paddingTop:'5px'}}>
           <FontAwesomeIcon icon={faMapPin}  style={{color:'#d49c04', fontSize:'18px'}} />
-          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>599 Bayly Street East, Ajax, Ontario </span>
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}> Eden Centre Along Banex/Gwarinpa Bypass, Near NEXT Cash & Carry, Abuja. </span>
           </div>
           <div style={{paddingTop:'5px'}}>
           <FontAwesomeIcon icon={faCalendarDays} style={{color:'#d49c04', fontSize:'18px'}} />
-          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}>Monday - Thursday : 10am - 3pm </span>
+          <span style={{paddingLeft:'10px', fontSize: '16px', fontWeight: '400'}}> Sunday Services - 9:00am | Wednesdays - 6:00pm </span>
           </div>
           <div style={{paddingTop:'5px'}}>
           <FontAwesomeIcon icon={faPhone} style={{color:'#d49c04', fontSize:'18px'}} />
