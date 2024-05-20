@@ -68,7 +68,7 @@ const Gettouch = () => {
                 </div>
                 <div className="elementor-element elementor-element-70f18ad elementor-invisible elementor-widget elementor-widget-text-editor">
                   <div className="elementor-widget-container">
-                    <p style={{ fontFamily: 'Sans-serif', fontSize:'30px', fontWeight: '600', color: '#000' }}>
+                    <p style={{ fontFamily: 'Sans-serif', fontSize:'25px', fontWeight: '600', color: '#000' }}>
                     HOW CAN WE HELP YOU?
                      </p>
                   </div>
