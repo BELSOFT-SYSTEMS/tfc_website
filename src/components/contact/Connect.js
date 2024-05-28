@@ -34,33 +34,38 @@ const Connect = () => {
     <>
       {/* Section 1 */}
       <section className="your-section-class">
-        <Container fluid style={{ display: 'flex', justifyContent: 'center' }}>
+        <Container fluid style={{ display: 'flex', justifyContent: 'center', minHeight: '540px', maxWidth: '1100px'  }}>
           <div style={{ flex: 1, marginTop: '50px', marginBottom: '50px' }}>
             <Row>
-              <h2 style={{ fontSize: '70px', fontWeight: 'bolder', paddingTop: '20px' }}>Need To Connect About Care?</h2>
-              <p style={{ fontFamily: 'Montserrat,Sans-serif', paddingTop: '20px', fontSize: '20px', fontWeight: '40', lineHeight: '20px' }}>
+              <h2 style={{ fontSize: '50px', fontWeight: '600' }}>Need To Connect About Care?</h2>
+              <p style={{ fontFamily: 'Montserrat,Sans-serif', paddingTop: '10px', fontSize: '20px', fontWeight: '500', lineHeight: '20px' }}>
                 FINANCIAL DIFFICULTY • FAMILY SITUATIONS • EMOTIONAL WELL-BEING • PRAYER • SPIRITUAL DYNAMICS • HOSPITAL VISITS
               </p>
               <Col xs={12} md={6}>
-                <p>
-                  <FontAwesomeIcon icon={faMobileScreen} size="6x" />
-                  <span style={{ fontSize: '20px' }}> (905) 686-4450 </span>
+                <p style={{ display: 'flex' }}>
+                  <img
+                    src="gettoknowphone.jpeg"
+                    alt="Phone"
+                    className="img-fluid"
+                    style={{ width: '180px', height: 'auto', objectFit: 'cover', borderRadius: '10px' }}
+                  />
+                  <span style={{ display: 'flex', alignItems: 'center', fontSize: '30px', fontWeight: '600' }}> (905) 686-4450 </span>
                 </p>
               </Col>
               <Col xs={12} md={6}>
-                <div style={{ paddingTop: '20px', paddingRight:'140px' }}>
+                <div style={{ paddingTop: '20px', paddingRight:'20px' }}>
                   <Form onSubmit={handleSubmit}>
                     <Form.Group controlId="formName">
-                      <Form.Label>Name</Form.Label>
-                      <Form.Control type="text" placeholder="Enter your name" name="name" value={formData.name} onChange={handleChange} size="sm" />
+                      <Form.Label style={{ fontSize: '18px', fontWeight: '500', marginBottom: '0' }}>Name</Form.Label>
+                      <Form.Control type="text" placeholder="Enter your name" name="name" value={formData.name} onChange={handleChange} size="sm" style={{ fontSize: '15px', fontWeight: '300', border: 'none', borderRadius: '6px', margin: '8px 0', padding: '8px', background: '#d69f0638', color: '#000', boxShadow: '#86b3123b 0px .1px 8px' }} />
                     </Form.Group>
                     <Form.Group controlId="formEmail">
-                      <Form.Label>Email address</Form.Label>
-                      <Form.Control type="email" placeholder="Enter your email" name="email" value={formData.email} onChange={handleChange} size="sm" />
+                      <Form.Label style={{ fontSize: '18px', fontWeight: '500', marginBottom: '0' }}>Email address</Form.Label>
+                      <Form.Control type="email" placeholder="Enter your email" name="email" value={formData.email} onChange={handleChange} size="sm" style={{ fontSize: '15px', fontWeight: '300', border: 'none', borderRadius: '6px', margin: '8px 0', padding: '8px', background: '#d69f0638', color: '#000', boxShadow: '#86b3123b 0px .1px 8px' }} />
                     </Form.Group>
                     <Form.Group controlId="formNeededCare">
-                      <Form.Label>Needed Care</Form.Label>
-                      <Form.Control as="textarea" rows={3} placeholder="Enter details about your needed care" name="neededCare" value={formData.neededCare} onChange={handleChange} size="sm" />
+                      <Form.Label style={{ fontSize: '18px', fontWeight: '500', marginBottom: '0' }}>Needed Care</Form.Label>
+                      <Form.Control as="textarea" rows={10} placeholder="Enter details about your needed care" name="neededCare" value={formData.neededCare} onChange={handleChange} size="sm" style={{ fontSize: '15px', fontWeight: '300', border: 'none', borderRadius: '6px', margin: '8px 0', padding: '8px', background: '#d69f0638', color: '#000', boxShadow: '#86b3123b 0px .1px 8px' }} />
                     </Form.Group>
                     <Button type="submit" variant="warning" style={{ maxWidth:'200px',backgroundColor: '#d49c04', color: '#000', marginTop: '20px', maxWidth:'200px' }}>
                       I NEED CARE FORM

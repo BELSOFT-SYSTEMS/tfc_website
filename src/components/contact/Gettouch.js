@@ -14,68 +14,81 @@ const Gettouch = () => {
     navigate('/contact');
   };
 
-  const backgroundImageUrl = 'background-img1.jpg'; // Replace with your image URL
+  const backgroundImageUrl = 'gettoknow2.jpeg'; // Replace with your image URL
+
+  const containerbgStyle = {
+    backgroundImage: `url(${backgroundImageUrl})`,
+    width: '100%',
+    height: '540px',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundColor: '#fff',
+    opacity: '0.3',
+    position: 'absolute',
+    zIndex: '0',
+  };
 
   const containerStyle = {
-    backgroundImage: `url(${backgroundImageUrl})`,
     backgroundSize: 'cover', // Adjust as needed
     backgroundPosition: 'center center', // Adjust as needed
     backgroundRepeat: 'no-repeat', // Adjust as needed
-    width: '100%', // Set the width to 100% of the viewport width
-    height: '100vh', // Set the desired height
+    position: 'relative',
+    zIndex: '1',
+    width: '100%', 
+    maxHeight: '540px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    color: 'white', // Set text color
     margin: 0, // Reset margin
     padding: 0, // Reset padding
-    overflow: 'hidden',
+    // overflow: 'hidden',
     boxSizing:'border-box',
     marginBottom: '40px',
   };
-
 
   return (
     <>
 
       {/* Section 1 */}
       <section className="your-section-class">
+        <Container fluid style={containerbgStyle}></Container>
         <Container fluid style={containerStyle}>
           <div style={{justifyContent:'center'}}>
           <Row >
             <Col md={6} >
-              <div style={{ marginLeft: '30px' }}>
+              <div style={{ marginLeft: '-30px' }}>
                 <div className="elementor-element elementor-element-52ff6ed elementor-invisible elementor-widget elementor-widget-heading">
                   <div className="elementor-widget-container" style={{justifyContent:'center',textAlign: 'left',}} >
-                    <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: '120px', fontWeight: 'bolder', fontFamily: 'Sans-serif', justifyContent: 'center', textAlign: 'left', marginTop: '50px', color: '#000' }}>
+                    <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: '130px', fontWeight: 'bolder', fontFamily: 'Sans-serif', justifyContent: 'center', textAlign: 'left', marginTop: '85px', color: '#000', marginBottom: '-35px', }}>
                       Get In <br />Touch
                     </h2>
                   </div>
                 </div>
                 <div className="elementor-element elementor-element-70f18ad elementor-invisible elementor-widget elementor-widget-text-editor">
                   <div className="elementor-widget-container">
-                    <p style={{ fontFamily: 'Sans-serif', fontSize:'30px', color: '#000' }}>
+                    <p style={{ fontFamily: 'Sans-serif', fontSize:'25px', fontWeight: '600', color: '#000' }}>
                     HOW CAN WE HELP YOU?
                      </p>
                   </div>
                 </div>
                 <div className="elementor-element elementor-element-72f4e51 elementor-mobile-align-center elementor-invisible elementor-widget elementor-widget-button">
-                  <div className="elementor-widget-container">
-                    <div style={{display: 'flex', marginRight: '20px' }}>
-                  <FontAwesomeIcon icon={faFacebook} size='3x' style={{ color: '#d49c04',  }} />
-                  <FontAwesomeIcon icon={faInstagram} size='3x' style={{ color: '#d49c04',  marginLeft: '10px'  }} />
-                  <FontAwesomeIcon icon={faYoutube} size='3x'style={{ color: '#d49c04',  marginLeft: '10px' }} />
-                  </div>
-                    <div className="elementor-button-wrapper" style={{paddingTop:'10px'}}>
+                  <div className="elementor-widget-container" style={{display: 'flex', marginTop: '-15px' }}>
+                    <div style={{display: 'flex', marginRight: '50px' }}>
+                    <FontAwesomeIcon icon={faFacebook} size='3x' style={{ color: '#d49c04',  }} />
+                    <FontAwesomeIcon icon={faInstagram} size='3x' style={{ color: '#d49c04',  marginLeft: '20px'  }} />
+                    <FontAwesomeIcon icon={faYoutube} size='3x'style={{ color: '#d49c04',  marginLeft: '20px' }} />
+                    </div>
+                    <div className="elementor-button-wrapper">
                       <Button
                         className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
                         variant="warning"
-                        style={{ backgroundColor: '#d49c04', color: '#000', maxWidth:'180px' }}
+                        style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#d49c04', maxWidth:'180px', height: '40px', marginTop: '4px' }}
                         onClick={redirectToContactPage}
                       >
                         <span className="elementor-button-content-wrapper">
-                          <span className="elementor-button-text" style={{paddingLeft:'20px',paddingRight:'20px'}}>Plan your visit</span>
+                          <span className="elementor-button-text" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#d49c04', color: '#fff', height: '30px', textTransform: 'capitalize', fontSize: '16px', fontWeight: '600', border: 'none'}}>Plan your visit</span>
                         </span>
                       </Button>
                     </div>
@@ -86,15 +99,15 @@ const Gettouch = () => {
             <Col md={6}>
               {/* Your image goes here */}
               <img
-                src="sundays1.png"
+                src="gettoknow3.png"
                 alt="Opposite"
                 className="img-fluid"
-                style={{ borderRadius: '10px', margin: '20px 0' }}
+                style={{ borderRadius: '10px', marginTop: '80px', marginBottom: '-60px' }}
               />
             </Col>
           </Row>
           </div>
-        </Container>
+          </Container>
       </section>
     </>
   );
