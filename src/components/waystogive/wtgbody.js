@@ -19,7 +19,7 @@ function WtgBody() {
       <div className="container">
         <h1>Ways To Give</h1>
         <h4>GIVING GENEROUSLY AS TOGETHER WE ENGAGE IN MISSION</h4>
-        <p>
+        <p className="p-marg">
           Set up your one-time or recurring gifts quickly and easily by
           <ul>
             <li>Choosing the site you call home</li>
@@ -74,7 +74,7 @@ function WtgBody() {
 
           <div >
               {selectedFundSwitch === "tithe-offering" && (
-                <p>
+                <p className="p-marg">
                   <p>
                     Tithe & Offerings : Gifts to the General Fund go directly to meet the
                     organizational and congregational needs. It includes things
@@ -89,7 +89,7 @@ function WtgBody() {
                 </p>
               )}
               {selectedFundSwitch === "welfare" && (
-                <p>
+                <p className="p-marg">
                 <p>
                   Welfare : Gifts to the Vision Fund carry major projects necessary to
                   help reach The Father Church's vision to be a regional church of 10,000
@@ -104,7 +104,7 @@ function WtgBody() {
                 </p>
               )}
               {selectedFundSwitch === "church-projects" && (
-                <p>
+                <p className="p-marg">
                   <p>
                     Church Projects : Gifts to the General Fund go directly to meet the
                     organizational and congregational needs. It includes things
@@ -119,7 +119,7 @@ function WtgBody() {
                 </p>
               )}
               {selectedFundSwitch === "transportation" && (
-                <p>
+                <p className="p-marg">
                 <p>
                   Transportation : Gifts to the Vision Fund carry major projects necessary to
                   help reach The Father Church's vision to be a regional church of 10,000
@@ -246,7 +246,7 @@ function WtgBody() {
 
             <div >
               {selectedFundSwitch1 === "general" && (
-                <p>
+                <p className="p-marg">
                   <p>
                     Gifts to the General Fund go directly to meet the
                     organizational and congregational needs. It includes things
@@ -261,7 +261,7 @@ function WtgBody() {
                 </p>
               )}
               {selectedFundSwitch1 === "vision" && (
-                <p>
+                <p className="p-marg">
                 <p>
                   Gifts to the Vision Fund carry major projects necessary to
                   help reach The Father Church's vision to be a regional church of 10,000
