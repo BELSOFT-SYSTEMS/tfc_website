@@ -7,7 +7,7 @@ const TFCeden = () => {
   const [fontSize, setFontSize] = useState({ title: 130, span: 25 }); // Initial font size
 
   const textStyle = {
-    position: 'relative', 
+    // position: 'relative', 
     zIndex: 2, 
     textAlign: 'left',
     marginLeft: '20px',
@@ -40,10 +40,10 @@ const TFCeden = () => {
         <Container fluid style={{}}>
           {/* Text */}
           <div style={textStyle}>
-            <h2 style={{ fontSize: `${fontSize.title}px`, fontWeight: 'bolder', fontFamily: 'Sans-serif', paddingTop: '20px', paddingLeft: '30px', color: '#000' }}>
+            <h2 style={{ fontSize: `${fontSize.title}px`, fontWeight: 'bolder', fontFamily: 'Sans-serif', paddingTop: '20px', paddingLeft: '20px', color: '#000' }}>
               TFC  Eden.
             </h2>
-            <div style={{ flex: 1, marginRight: '20px', marginTop:'30px', marginBottom:'50px', paddingLeft:'30px' }}>
+            <div style={{ flex: 1, marginRight: '16px', marginTop:'30px', marginBottom:'50px', paddingLeft:'30px' }}>
               <p style={{ fontFamily:'Montserrat', fontSize: `${fontSize.span}px`, fontWeight:'100', lineHeight:'20px' }}>
                 <div style={{ paddingTop:'25px' }}>
                   <FontAwesomeIcon icon={faMapPin}  style={{color:'#d49c04'}}/>

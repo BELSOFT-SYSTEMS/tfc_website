@@ -72,7 +72,7 @@ function Footer() {
                     />
                     
                   </Col>
-                  <span style={{ marginLeft: "3.5rem", marginTop:'-2.5rem', textWrap:'wrap' }}>
+                  <span style={{ marginLeft: "2.5rem", marginTop:'-2.5rem', textWrap:'wrap' }}>
                       Eden Centre Along Banex/Gwarinpa Bypass, Near NEXT Cash & Carry,Abuja
                     </span>
                 </Row>
@@ -152,7 +152,7 @@ function Footer() {
           </Col>
           {/* Subscribe form container */}
           <Col xs={12} lg={6}>
-            <Container style={{ paddingRight: "15px", textAlign: "left", marginLeft:'8rem', }}>
+            <Container style={{ paddingRight: "10px", textAlign: "left", marginLeft:'1rem', }}>
               <h2 style={{ fontSize: "25px" }}>
                 Subscribe to receive updates from <br />
                 The Father's Church
@@ -208,7 +208,7 @@ function Footer() {
         </Row>
         <Row>
           <Col>
-            <p style={{ color: "white", margin:'-6rem 0 0 65rem' }}>
+            <p style={{ color: "white", margin:'-6rem 0 0 6rem' }}>
               © 2024 All rights Reserved. Design by Our Creative Media
             </p>
           </Col>

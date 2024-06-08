@@ -58,7 +58,7 @@ const TFCedenexpect = () => {
     <>
       {/* Section 1 */}
       <section className="your-section-class">
-        <Container fluid style={containerStyle}>
+        <Container fluid style={containerStyle} >
           <Row>
             <Col md={6}>
               {/* Your image goes here */}
