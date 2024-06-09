@@ -1,6 +1,6 @@
-
 import React, { useState,useEffect } from 'react';
 import { Tab, Tabs, Container, Row, Col, ButtonGroup, Button, ListGroup } from 'react-bootstrap';
+import Timeline from './Timeline';
 
 const Believe = () => {
   const [activeKey, setActiveKey] = useState('statement');
@@ -65,6 +65,12 @@ const Believe = () => {
     padding: '50px 80px',
     lineHeight: '30px',
   };
+
+  const items = Array.from({ length: 12 }, (_, i) => ({
+    image: 'https://via.placeholder.com/200x150',
+    title: `Event ${i + 1}`,
+    description: `Description for event ${i + 1}`,
+  }));
 
   useEffect(() => {
     const handleResize = () => {
@@ -194,6 +200,19 @@ const Believe = () => {
                       We believe also in only One, Universal, Apostolic, and Catholic Church; in one baptism in repentance, for the remission, and forgiveness of sins; 
                       and in the resurrection of the dead, in the everlasting judgement of souls and bodies, and the Kingdom of Heaven and in the everlasting life.
                     </p>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+        </Tab>
+        <Tab eventKey="history">
+          <Container fluid>
+            <Row>
+              <Col>
+                <Row style={{ marginBottom: '50px' }}>
+                  <Col>
+                    <Timeline items={items} />;
                   </Col>
                 </Row>
               </Col>
