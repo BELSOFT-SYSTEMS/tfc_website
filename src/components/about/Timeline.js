@@ -35,7 +35,7 @@ const Timeline = ({ items }) => {
       width: '4px',
       margin: '0 auto',
       padding: '20px 0',
-      height: '1050vh',
+      height: '750vh',
       background: getLineGradient(),
       transition: 'background 0.3s',
     },
