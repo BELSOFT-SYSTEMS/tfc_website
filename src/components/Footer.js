@@ -1,17 +1,9 @@
 import {React, useState} from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPhone,
-  faMapPin,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faMapPin, faEnvelope, } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelopeOpen as farEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
-import {
-  faInstagram,
-  faFacebook,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+import {faInstagram,faFacebook,faYoutube,} from "@fortawesome/free-brands-svg-icons";
 import { Button } from "./Button/Button";
 
 
@@ -24,16 +16,14 @@ function Footer() {
   setIsHovered(false);
 };
   return (
-    <footer
-      style={{ backgroundColor: "#051f04", paddingTop: "40px", color: "white" }}
-    >
+    <footer style={{ backgroundColor: "#051f04", paddingTop: "40px", color: "white" }}>
       <Container>
         {/* Use Bootstrap grid classes for responsive behavior */}
         <Row>
           {/* Get In Touch container */}
           <Col xs={12} lg={6}>
             <Container style={{ textAlign: "left", paddingBottom: "25px" }}>
-              <div style={{ width: "100%" }}>
+              <div  >
                 <h2 style={{ fontSize: "60px", marginTop: "-3rem" }}>
                   Get In Touch
                 </h2>
@@ -70,15 +60,17 @@ function Footer() {
                       className="elementor-icon-list-icon"
                       style={{ color: "#d49c04" }}
                     />
-                    
-                  </Col>
-                  <span style={{ marginLeft: "2.5rem", marginTop:'-2.5rem', textWrap:'wrap' }}>
+
+                    <span style={{ marginLeft: "3.5rem", marginTop:'-2.5rem', textWrap:'wrap' }}>
+
                       Eden Centre Along Banex/Gwarinpa Bypass, Near NEXT Cash & Carry,Abuja
                     </span>
+                  </Col>
+                  
                 </Row>
               </div>
               <div style={{marginTop: "11rem"  }}>
-                <span style={{ marginLeft: "0" }}>
+                <span style={{ marginLeft: "2rem" }}>
                   <a
                     href="https://facebook.com/TheFathersChurch"
                     target="_blank"
@@ -123,10 +115,7 @@ function Footer() {
                     />
                   </a>
                 </span>
-                <span
-                  className="elementor-grid-item"
-                  style={{ marginLeft: "2rem" }}
-                >
+                <span className="elementor-grid-item" style={{ marginLeft: "2rem" }}>
                   <a
                     href="https://www.youtube.com/"
                     target="_blank"
@@ -152,7 +141,9 @@ function Footer() {
           </Col>
           {/* Subscribe form container */}
           <Col xs={12} lg={6}>
-            <Container style={{ paddingRight: "10px", textAlign: "left", marginLeft:'1rem', }}>
+
+            <Container style={{ paddingRight: "15px", textAlign: "left", marginLeft:'2rem', }}>
+
               <h2 style={{ fontSize: "25px" }}>
                 Subscribe to receive updates from <br />
                 The Father's Church
@@ -192,7 +183,7 @@ function Footer() {
                   <Button
                     type="submit"
                     variant="warning"
-                    style={{ backgroundColor: "#d49c04", color: "#fff" }}
+                    style={{ backgroundColor: "#d49c04", color: "#fff", maxWidth: "350px" }}
                   >
                     <span>
                       <span>

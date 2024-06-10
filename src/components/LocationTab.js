@@ -38,7 +38,7 @@ const LocationTab = ({ eventKey }) => {
                         <p style={{ fontWeight: '300', fontSize: '18px' }}>Filled with warm and inviting people, Ajax acts as our largest in-person site with live teaching, worship and many events that help foster and build up our community.</p>
                     </div>
                     <div>
-                        <div className="text-center" style={{ width: '100%', displa: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', textAlign: 'start' }}>
+                        <div className="text-center" style={{ width: '100%', display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', textAlign: 'start' }}>
                             <button
                                 variant=""
                                 style={{ backgroundColor: '#d49c04', color: '#fff', maxWidth: '200px', marginLeft: '0', border: 'none', padding: '8px 16px', borderRadius: '5px', textTransform: 'uppercase', fontWeight: '500' }}
