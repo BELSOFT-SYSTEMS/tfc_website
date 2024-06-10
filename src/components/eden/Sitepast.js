@@ -38,7 +38,7 @@ const Sitepast = () => {
     <>
 
       {/* Section 1 */}
-      <section className="your-section-class">
+      <section className="your-section-class" style={{ marginTop: '10px' }}>
         <Container fluid style={containerStyle}>
           <div style={{justifyContent:'center'}}>
           <Row >
