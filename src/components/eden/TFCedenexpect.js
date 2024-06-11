@@ -21,7 +21,7 @@ const TFCedenexpect = () => {
     backgroundPosition: 'center center', // Adjust as needed
     backgroundRepeat: 'no-repeat', // Adjust as needed
     width: '100%', // Set the width to 100% of the viewport width
-    height: '100vh', // Set the desired height
+    // height: '100vh', // Set the desired height
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -84,7 +84,7 @@ const TFCedenexpect = () => {
                   </div>
                 </div>
                 <div>
-                  <div style={{ fontFamily: 'Montserrat', fontSize: `${fontSize.text}px` }}>
+                  <div style={{ fontFamily: 'Montserrat', fontSize: `${fontSize.text}px`, padding: '10px' }}>
                     <p style={{ color: '#000' }}>
                       Each week, with the help of volunteers, we provide an engaging worship
                       experience for our congregation, guests, and those interested in knowing

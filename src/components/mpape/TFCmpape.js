@@ -24,7 +24,7 @@ const TFCmpape = () => {
         
         {/* Text */}
         <div style={textStyle}>
-          <h2 style={{ fontSize: '130px', fontWeight: 'bolder', fontFamily: 'Sans-serif',paddingTop:'20px',paddingLeft:'30px',textAlign:'left', color: '#000' }}>
+          <h2 style={{ fontSize: '90px', fontWeight: 'bolder', fontFamily: 'Sans-serif',paddingTop:'20px',paddingLeft:'30px',textAlign:'left', color: '#000' }}>
           TFC Mpape.
           </h2>
           <div style={{ flex: 1, marginRight: '20px', marginTop:'30px', marginBottom:'50px', paddingLeft:'30px' }}>

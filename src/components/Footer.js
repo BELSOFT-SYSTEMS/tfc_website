@@ -60,9 +60,15 @@ function Footer() {
                       className="elementor-icon-list-icon"
                       style={{ color: "#d49c04" }}
                     />
+<<<<<<< Updated upstream
 
                     <span style={{ marginLeft: "3.5rem", marginTop:'-2.5rem', textWrap:'wrap' }}>
 
+=======
+                    
+                  </Col>
+                  <span style={{ marginLeft: "2.5rem", marginTop:'-2.5rem', }}>
+>>>>>>> Stashed changes
                       Eden Centre Along Banex/Gwarinpa Bypass, Near NEXT Cash & Carry,Abuja
                     </span>
                   </Col>
@@ -199,7 +205,7 @@ function Footer() {
         </Row>
         <Row>
           <Col>
-            <p style={{ color: "white", margin:'-6rem 0 0 6rem' }}>
+            <p style={{ color: "white", margin:'0 0 0 0 ' }}>
               © 2024 All rights Reserved. Design by Our Creative Media
             </p>
           </Col>

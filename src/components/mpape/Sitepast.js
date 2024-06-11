@@ -20,7 +20,7 @@ const Sitepast = () => {
     backgroundPosition: 'center center', // Adjust as needed
     backgroundRepeat: 'no-repeat', // Adjust as needed
     width: '100%', // Set the width to 100% of the viewport width
-    height: '100vh', // Set the desired height
+    // height: '100vh', // Set the desired height
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -42,6 +42,15 @@ const Sitepast = () => {
         <Container fluid style={containerStyle}>
           <div style={{justifyContent:'center'}}>
           <Row >
+              <Col md={6}>
+                {/* Your image goes here */}
+                <img
+                  src="pastor2.png"
+                  alt="Opposite"
+                  className="img-fluid"
+                  style={{ borderRadius: '10px', margin: '20px 0', paddingTop: '50px', paddingLeft: '70px' }}
+                />
+              </Col>
             <Col md={6} >
               <div style={{ marginLeft: '30px' }}>
                 <div>
@@ -73,15 +82,7 @@ In sit mollit velit cupidatat nostrud. Ullamco officia amet esse qui non. Veniam
                 </div>
               </div>
             </Col>
-            <Col md={6}>
-              {/* Your image goes here */}
-              <img
-                src="pastor2.png"
-                alt="Opposite"
-                className="img-fluid"
-                style={{ borderRadius: '10px', margin: '20px 0', paddingTop:'50px',paddingLeft:'70px' }}
-              />
-            </Col>
+
           </Row>
           </div>
         </Container>
