@@ -15,7 +15,7 @@ const TFCkidsevents = () => {
           </Col>
         </Row>
     </Container>
-    <Container fluid  style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
+    <Container fluid  style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '10px' }}>
     <EventComponent
       title="Pickering Kids Easter Presentation"
       date="MAR 31 2024"

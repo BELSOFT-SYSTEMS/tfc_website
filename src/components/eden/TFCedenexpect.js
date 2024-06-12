@@ -20,7 +20,7 @@ const TFCedenexpect = () => {
     backgroundSize: 'cover', // Adjust as needed
     backgroundPosition: 'center center', // Adjust as needed
     backgroundRepeat: 'no-repeat', // Adjust as needed
-    width: '100%', // Set the width to 100% of the viewport width
+    // width: '100%', // Set the width to 100% of the viewport width
     // height: '100vh', // Set the desired height
     display: 'flex',
     flexDirection: 'column',
@@ -29,7 +29,7 @@ const TFCedenexpect = () => {
     color: 'white', // Set text color
     margin: 0, // Reset margin
     padding: 0, // Reset padding
-    overflow: 'hidden',
+    // overflow: 'hidden',
     boxSizing: 'border-box',
     marginBottom: '40px',
   };
@@ -52,7 +52,7 @@ const TFCedenexpect = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [])
 
   return (
     <>
@@ -65,7 +65,7 @@ const TFCedenexpect = () => {
               <img src="sundays1.png" alt="Opposite" style={{ borderRadius: '10px', margin: '10px 0' }} />
             </Col>
             <Col md={6}>
-              <div style={{ marginLeft: '10px', paddingRight: '10px' }}>
+              <div style={{ marginLeft: '40px'}}>
                 <div>
                   <div style={{ justifyContent: 'center', textAlign: 'left' }}>
                     <h2
@@ -84,7 +84,7 @@ const TFCedenexpect = () => {
                   </div>
                 </div>
                 <div>
-                  <div style={{ fontFamily: 'Montserrat', fontSize: `${fontSize.text}px`, padding: '10px' }}>
+                  <div style={{ fontFamily: 'Montserrat', fontSize: `${fontSize.text}px`, padding: '30px' }}>
                     <p style={{ color: '#000' }}>
                       Each week, with the help of volunteers, we provide an engaging worship
                       experience for our congregation, guests, and those interested in knowing

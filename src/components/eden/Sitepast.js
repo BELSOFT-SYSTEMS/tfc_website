@@ -1,4 +1,5 @@
 import React from 'react';
+import Style from './eden.module.css';
 import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -22,7 +23,7 @@ const Sitepast = () => {
     width: '100%', // Set the width to 100% of the viewport width
     // height: '100vh', // Set the desired height
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'column-reverse',
     justifyContent: 'center',
     alignItems: 'center',
     color: 'white', // Set text color
@@ -41,7 +42,7 @@ const Sitepast = () => {
       <section className="your-section-class" style={{ marginTop: '10px' }}>
         <Container fluid style={containerStyle}>
           <div style={{justifyContent:'center'}}>
-          <Row >
+            <Row className={Style.Pastor}>
             <Col md={6} >
               <div style={{ marginLeft: '30px' }}>
                 <div>
@@ -73,7 +74,7 @@ In sit mollit velit cupidatat nostrud. Ullamco officia amet esse qui non. Veniam
                 </div>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={6} className={Style.Past_div}>
               {/* Your image goes here */}
               <img
                 src="pastor2.png"
