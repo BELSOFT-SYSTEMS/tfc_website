@@ -9,6 +9,7 @@ import {
   faFacebook,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const Locations = () => {
   const [activeKey, setActiveKey] = useState('eden');
@@ -32,6 +33,23 @@ const Locations = () => {
     { name: 'Enugu', value: 'enugu', icon: faChurch },
     { name: 'Online', value: 'online', icon: faChurch },
   ];
+
+  const navigate = useNavigate();
+
+  const redirectToEdenPage = () => {
+    console.log("Redirecting to events page");
+    navigate("/eden");
+  };
+
+  const redirectToMpapePage = () => {
+    console.log("Redirecting to events page");
+    navigate("/mpape");
+  };
+
+  const redirectToEnuguPage = () => {
+    console.log("Redirecting to events page");
+    navigate("/enugu");
+  };
 
   return (
     <div style={{ paddingTop: '20px', paddingBottom: '40px' }}>
@@ -88,7 +106,7 @@ const Locations = () => {
                   <ResponsiveButton
                     variant="success"
                     style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#d49c04', color: '#fff', height: '40px', textTransform: 'uppercase', fontSize: '16px', fontWeight: '600', border: 'none', }}
-                    href="#"
+                    href="/eden"
                   >
                     More Information
                   </ResponsiveButton>
@@ -108,12 +126,12 @@ const Locations = () => {
             <Row>
               <Col xs={12} md={5} className="text-center" style={{ marginTop: '40px' }}>
                 <img
-                  src="user.png"
+                  src="pastor-mpape.jpeg"
                   alt="Pastor Mudi"
                   className="img-fluid rounded-circle"
-                  style={{ maxWidth: '300px', height: '300px', objectFit: 'cover' }}
+                  style={{ maxWidth: '300px', width:'300px', height: '300px', objectFit: 'cover' }}
                 />
-                <h2 style={{ fontSize: '32px', fontWeight: '600' }}>Pastor Mudi</h2>
+                <h2 style={{ fontSize: '32px', fontWeight: '600' }}>Pastor Mudiaga Ifeta</h2>
                 <h2 style={{ fontSize: '16px', fontWeight: '500' }}>Site Pastor</h2>
               </Col>
               <Col xs={12} md={7} style={{ padding: '0 60px', }}>
@@ -123,7 +141,7 @@ const Locations = () => {
                       <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#d49c04' }} className="mr-2" />      Sunday services @ 9:00am | wednesdays @ 6:00pm
                     </span>
                     <span style={{ fontSize: '16px', fontWeight: '600', textTransform: 'uppercase' }}>
-                      <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#d49c04' }} className="mr-2" />      Mpape, Abuja.
+                      <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#d49c04' }} className="mr-2" /> Worldclass Hotel Mpape, Abuja.
                     </span>
                   </div>
                 </div>
@@ -137,7 +155,7 @@ const Locations = () => {
                   <ResponsiveButton
                     variant="success"
                     style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#d49c04', color: '#fff', height: '40px', textTransform: 'uppercase', fontSize: '16px', fontWeight: '600', border: 'none', }}
-                    href="#"
+                    href="mpape"
                   >
                     More Information
                   </ResponsiveButton>
@@ -162,17 +180,17 @@ const Locations = () => {
                   className="img-fluid rounded-circle"
                   style={{ maxWidth: '300px', height: '300px', objectFit: 'cover' }}
                 />
-                <h2 style={{ fontSize: '32px', fontWeight: '600' }}>???</h2>
-                <h2 style={{ fontSize: '16px', fontWeight: '500' }}>Site Pastor</h2>
+                <h2 style={{ fontSize: '32px', fontWeight: '600' }}>Pastor Jude .U. Okoye</h2>
+                <h2 style={{ fontSize: '16px', fontWeight: '500' }}>Acting Site pastor</h2>
               </Col>
               <Col xs={12} md={7} style={{ padding: '0 60px', }}>
                 <div>
                   <div style={{ display: 'flex', flexDirection: 'column', marginTop: '60px', padding: '0' }}>
                     <span style={{ fontSize: '16px', fontWeight: '600', textTransform: 'uppercase' }}>
-                      <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#d49c04' }} className="mr-2" />      Sunday services @ 9:00am | wednesdays @ 6:00pm
+                      <FontAwesomeIcon icon={faCalendarAlt} style={{ color: '#d49c04' }} className="mr-2" />      Sunday services @ 9:00am | wednesdays @ 5:30pm
                     </span>
                     <span style={{ fontSize: '16px', fontWeight: '600', textTransform: 'uppercase' }}>
-                      <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#d49c04' }} className="mr-2" />      Enugu, Nigeria.
+                      <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#d49c04' }} className="mr-2" />     Ic Presidential road Independence Layout beside Narco Filling Station Enugu, Nigeria.
                     </span>
                   </div>
                 </div>
@@ -186,7 +204,7 @@ const Locations = () => {
                   <ResponsiveButton
                     variant="success"
                     style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#d49c04', color: '#fff', height: '40px', textTransform: 'uppercase', fontSize: '16px', fontWeight: '600', border: 'none', }}
-                    href="#"
+                    href="/enugu"
                   >
                     More Information
                   </ResponsiveButton>
@@ -253,7 +271,7 @@ const Locations = () => {
                   
                   and 
 
-                    <a href="https://www.youtube.com/"
+                    <a href="https://www.youtube.com/@TheFathersChurch"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{marginLeft:'1rem', marginRight:'1rem'}}
@@ -315,7 +333,7 @@ const Locations = () => {
                   style={{ marginLeft: "2rem" }}
                 >
                   <a
-                    href="https://www.youtube.com/"
+                    href="https://www.youtube.com/@TheFathersChurch"
                     target="_blank"
                     rel="noopener noreferrer"
                     

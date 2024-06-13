@@ -119,9 +119,9 @@ const Landing = () => {
         
         {/* Add more Carousel.Item components for additional slides */}
       </Carousel>
-      <footer>
+      <footer >
 
-     <div style={{ width: '100%', display: 'flex', flexDirection:'column' , position: 'absolute', bottom: '8%' , alignItems: 'center', justifyContent: 'space-evenly'  }}>
+     <div style={{ width: '100%', display: 'flex', flexDirection:'column' , position: 'absolute', bottom: '8%' , alignItems: 'center', justifyContent: 'space-evenly', height:'10vh' }}>
           <ButtonGroup style={{ gap: '25px', display: 'flex', flexDirection: 'row', alignContent: 'center' }}>
             <Button variant="danger" onClick={downloadTheMonthlyBulletin} style={{color: '#fff', fontWeight:'600',  fontSize:'14px'}}> MONTHLY BULLETIN </Button>
             <Button variant="warning" onClick={redirectToPrayerRequest} style={{ color: '#fff', fontWeight:'600',  fontSize:'14px'}}>PRAYER REQUEST</Button>

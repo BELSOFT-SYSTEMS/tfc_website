@@ -9,7 +9,7 @@ const Upcomingevents = () => {
 
   const redirectToEventsPage = () => {
     console.log("Redirecting to events page");
-    navigate("/Eventcalendar");
+    navigate("/event-calendar");
   };
   return (
     <Container fluid style={{ margin: "0 2rem" }}>
@@ -74,7 +74,7 @@ const Upcomingevents = () => {
       >
         <Button
           variant="warning"
-          href="/Eventcalendar"
+          href="/event-calendar"
           onClick={redirectToEventsPage}
           style={{
             backgroundColor: "#d49c04",
