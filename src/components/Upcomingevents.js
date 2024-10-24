@@ -39,14 +39,14 @@ const Upcomingevents = () => {
         }}
       >
         <EventComponent
-          title="Virtue Confrence 2024"
-          date="08 MAY 2024"
+          title="MSG Confrence 2024"
+          date="13 NOV 2024"
           description="Celebrating women's empowerment, leadership, and integrity through inspirational talks, workshops, and community-building activities."
-          imageUrl="queens_event.jpeg"
+          imageUrl="slider-home.png"
           buttonText="Find Out More"
         />
         <EventComponent
-          title="Lightbearers Celebrate Children's Day"
+          title="Kingdom Keys"
           date="27 MAY 2024"
           description="TFC Lightbearers, grades 6 &#8211; 12 are invited to join us on this event"
           imageUrl="event2.jpg"

@@ -12,8 +12,8 @@ const Believe = () => {
 
   const buttonData = [
     { name: "STATEMENT OF FAITH", value: 'statement' },
-    { name: "APOSTLE'S CREED", value: 'apostle' },
-    { name: "NICENE'S CREED", value: 'nicene' },
+    { name: "TAB 2", value: 'apostle' },
+    { name: "TAB 3", value: 'nicene' },
     { name: "OUR HISTORY", value: 'history' },
   ];
 
@@ -155,13 +155,13 @@ const Believe = () => {
             </Row>
             <Row>
               <Col style={{ display: 'flex', justifyContent: 'center', margin: '20px 0 50px' }}>
-                <Button
+                {/* <Button
                   variant="warning"
                   style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#d49c04', color: '#fff', height: '40px', textTransform: 'uppercase', fontSize: '16px', fontWeight: '600', border: 'none', width: 'fit-content' }}
                   href="#"
                 >
                   READ OUR FULL STATEMENT OF FAITH
-                </Button>
+                </Button> */}
               </Col>
             </Row>
           </Container>

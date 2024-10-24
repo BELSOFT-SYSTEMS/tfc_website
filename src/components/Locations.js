@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Tab, Tabs, Container, Row, Col, ButtonGroup, Button, ListGroup } from 'react-bootstrap';
+import { Tab, Tabs, Container, Row, Col, ButtonGroup, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChurch, faCalendarAlt, faMapMarkerAlt,  } from '@fortawesome/free-solid-svg-icons';
 import { Button as ResponsiveButton } from './Button/Button';
@@ -9,7 +9,7 @@ import {
   faFacebook,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import { useNavigate } from "react-router-dom";
+
 
 const Locations = () => {
   const [activeKey, setActiveKey] = useState('eden');
@@ -34,22 +34,8 @@ const Locations = () => {
     { name: 'Online', value: 'online', icon: faChurch },
   ];
 
-  const navigate = useNavigate();
 
-  const redirectToEdenPage = () => {
-    console.log("Redirecting to events page");
-    navigate("/eden");
-  };
-
-  const redirectToMpapePage = () => {
-    console.log("Redirecting to events page");
-    navigate("/mpape");
-  };
-
-  const redirectToEnuguPage = () => {
-    console.log("Redirecting to events page");
-    navigate("/enugu");
-  };
+ 
 
   return (
     <div style={{ paddingTop: '20px', paddingBottom: '40px' }}>
@@ -155,7 +141,7 @@ const Locations = () => {
                   <ResponsiveButton
                     variant="success"
                     style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#d49c04', color: '#fff', height: '40px', textTransform: 'uppercase', fontSize: '16px', fontWeight: '600', border: 'none', }}
-                    href="mpape"
+                    href="/"
                   >
                     More Information
                   </ResponsiveButton>
@@ -204,7 +190,7 @@ const Locations = () => {
                   <ResponsiveButton
                     variant="success"
                     style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#d49c04', color: '#fff', height: '40px', textTransform: 'uppercase', fontSize: '16px', fontWeight: '600', border: 'none', }}
-                    href="/enugu"
+                    href="/"
                   >
                     More Information
                   </ResponsiveButton>
