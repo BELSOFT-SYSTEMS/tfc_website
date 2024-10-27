@@ -5,10 +5,6 @@ import SpecialDayButton from './Button/LiveButton';
 import { useNavigate } from 'react-router-dom';
 
 
-// var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-// var d = new Date(dateString);
-// var dayName = days[d.getDay()];
-
 const CurrentSermon = () => {
 
   const navigate = useNavigate();
@@ -104,19 +100,6 @@ const CurrentSermon = () => {
                       </span>
                     </span>
                   </Button>
-                  {/* <Button
-                    style={{ backgroundColor: '#FF0000', color: '#fff', maxWidth:'200px' }}
-                    className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
-                    variant="success"
-                    href="/sermons"
-                    disabled={true}
-                  >
-                    <span className="elementor-button-content-wrapper">
-                      <span className="elementor-button-text">
-                        Watch Live
-                      </span>
-                    </span>
-                  </Button> */}
                   <SpecialDayButton />
                 </div>
               </div>

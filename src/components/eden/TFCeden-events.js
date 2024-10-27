@@ -24,14 +24,14 @@ const TFCkidsevents = () => {
       buttonText="Find Out More"
     />
     <EventComponent
-      title="Sanctus Summer Camps: Multi Sports Camp (Ages 6-12)"
-      date="JUL 08 - 12 2024"
+      title="MSG Conference"
+      date="NOV 13 - 17 2024"
       description="This Sanctus Summer Camp is for kids ages 6-12 and is filled with fun multi-sports and engaging, deep-diving teaching!"
       imageUrl="ams-events2.jpeg"
       buttonText="Find Out More"
     />
     <EventComponent
-      title="Sanctus Summer Camps: Multi Sports Camp (Ages 6-12)"
+      title="TFC Summer Camps"
       date="JUL 09 - 12 2024"
       description="This Sanctus Summer Camp is for kids ages 6-12 and is filled with fun multi-sports and engaging, deep-diving teaching!"
       imageUrl="ams-events3.jpeg"
@@ -39,7 +39,7 @@ const TFCkidsevents = () => {
     />
   </Container>
   <Container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', marginTop: '20px', marginBottom: '20px', paddingBottom: '20px' }}>
-  <Button variant="warning" style={{backgroundColor: '#d49c04', color: '#000',}}>View all Events</Button>
+  <Button variant="warning" style={{backgroundColor: '#d49c04', color: '#fff',}}>View all Events</Button>
   </Container>
   </Container>
   )

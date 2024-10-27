@@ -71,10 +71,10 @@ const About = () => {
               <div className="elementor-element elementor-element-52ff6ed elementor-invisible elementor-widget elementor-widget-heading">
                 <div className="elementor-widget-container" style={{justifyContent:'center',textAlign: 'left',}} >
                   <div style={{ textAlign: 'center' }}>
-                    <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: `${fontSize.subtitle}px`, fontFamily: 'Sans-serif', color: '#000' }}>
+                    <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: `${fontSize.subtitle}px`, color: '#000' }}>
                       DISCOVER THE PRINCIPLES THAT GUIDE US
                     </h2>
-                    <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: `${fontSize.title}px`, fontWeight: 'bold', fontFamily: 'Sans-serif', color: '#000', marginBottom: '-35px' }}>
+                    <h2 className="elementor-heading-title elementor-size-default" style={{ fontSize: `${fontSize.title}px`, fontWeight: 'bold', color: '#000', marginBottom: '-35px' }}>
                       About Us.
                     </h2>
                   </div>

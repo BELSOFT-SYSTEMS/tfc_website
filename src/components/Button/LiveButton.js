@@ -14,7 +14,7 @@ const SpecialDayButton = () => {
       // Check if it's Wednesday (dayOfWeek === 3), Sunday (dayOfWeek === 0), or the first Friday of the month
       if (dayOfWeek === 3 || dayOfWeek === 0 || isFirstFriday) {
         const currentTime = currentDate.getHours();
-        // Check if it's between 12 PM (12) and 2 PM (14) on the active days
+        // Check if it's between service times 9 AM (9) and 11 PM (11) on sundays
         if (
           (dayOfWeek === 0) &&
           currentTime >= 9 &&

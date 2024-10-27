@@ -44,18 +44,18 @@ const TFCeden = () => {
               TFC  Eden.
             </h2>
             <div style={{ flex: 1, marginRight: '16px', marginTop:'30px', marginBottom:'50px', paddingLeft:'30px' }}>
-              <p style={{ fontFamily:'Montserrat', fontSize: `${fontSize.span}px`, fontWeight:'100', lineHeight:'20px' }}>
+              <p style={{ fontSize: `${fontSize.span}px`, fontWeight:'100', lineHeight:'20px' }}>
                 <div style={{ paddingTop:'25px' }}>
                   <FontAwesomeIcon icon={faMapPin}  style={{color:'#d49c04'}}/>
-                  <span style={{paddingLeft:'20px'}}>599 Bayly Street East, Ajax, Ontario </span>
+                  <span style={{paddingLeft:'20px'}}>Eden Centre Along Banex/Gwarinpa Bypass, Near NEXT Cash & Carry,Abuja</span>
                 </div>
                 <div style={{ paddingTop:'25px' }}>
                   <FontAwesomeIcon icon={faCalendarDays} style={{color:'#d49c04'}} />
-                  <span style={{paddingLeft:'20px'}}>Monday - Thursday : 10am - 3pm </span>
+                  <span style={{paddingLeft:'20px'}}>Sundays: 9am || Wednesdays: 6pm</span>
                 </div>
                 <div style={{ paddingTop:'25px' }}>
                   <FontAwesomeIcon icon={faPhone} style={{color:'#d49c04'}}/>
-                  <span style={{paddingLeft:'20px'}}>(905) 686-4450</span>
+                  <span style={{paddingLeft:'20px'}}>+234 703 158 8404 || (09) 290 9000</span>
                 </div>
               </p>
             </div>

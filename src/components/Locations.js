@@ -4,6 +4,7 @@ import { Tab, Tabs, Container, Row, Col, ButtonGroup, Button } from 'react-boots
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChurch, faCalendarAlt, faMapMarkerAlt,  } from '@fortawesome/free-solid-svg-icons';
 import { Button as ResponsiveButton } from './Button/Button';
+import { useNavigate } from 'react-router-dom';
 import {
   faInstagram,
   faFacebook,
@@ -33,6 +34,8 @@ const Locations = () => {
     { name: 'Enugu', value: 'enugu', icon: faChurch },
     { name: 'Online', value: 'online', icon: faChurch },
   ];
+
+  const navigate = useNavigate(); // Initialize navigate function
 
 
  
@@ -92,7 +95,7 @@ const Locations = () => {
                   <ResponsiveButton
                     variant="success"
                     style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#d49c04', color: '#fff', height: '40px', textTransform: 'uppercase', fontSize: '16px', fontWeight: '600', border: 'none', }}
-                    href="/eden"
+                    onClick={() => {navigate("/eden");}} // Navigate to the specified link
                   >
                     More Information
                   </ResponsiveButton>

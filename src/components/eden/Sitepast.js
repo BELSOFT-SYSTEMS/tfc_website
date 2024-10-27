@@ -39,30 +39,30 @@ const Sitepast = () => {
     <>
 
       {/* Section 1 */}
-      <section className="your-section-class" style={{ marginTop: '10px' }}>
+      <section className="your-section-class" style={{ marginTop: '-4rem' }}>
         <Container fluid style={containerStyle}>
           <div style={{justifyContent:'center'}}>
             <Row className={Style.Pastor}>
             <Col md={6} >
-              <div style={{ marginLeft: '30px' }}>
+              <div style={{ marginLeft: '5rem' }}>
                 <div>
                   <div style={{justifyContent:'center',textAlign: 'left',}} >
-                    <h2 style={{ fontSize: '60px', fontWeight: 'bolder', fontFamily: 'Sans-serif', justifyContent: 'center', textAlign: 'left', marginTop: '50px', color: '#000' }}>
+                    <h2 style={{ fontSize: '55px', fontWeight: 'bolder', justifyContent: 'center', textAlign: 'left', marginTop: '50px', color: '#000' }}>
                     Meet The Site Pastor
                     </h2>
                   </div>
                 </div>
                 <div>
                   <div>
-                    <p style={{ fontFamily: 'Sans-serif', fontSize:'30px', color: '#000' }}>
-                    ANGELA MASON
+                    <p style={{ fontSize:'30px', color: '#000' }}>
+                    Pastor Ikenna Okeke
                      </p>
                   </div>
                 </div>
                 <div>
                   <div>
                     <div style={{display: 'flex', marginRight: '20px' }}>
-                      <p style={{fontFamily: 'Sans-serif', fontSize:'15px', color: '#000'}}>
+                      <p style={{fontSize:'15px', color: '#000'}}>
                       Nostrud commodo mollit id excepteur tempor ullamco mollit cupidatat cupidatat. Deserunt sit fugiat irure esse ipsum exercitation non laboris et qui. Cupidatat enim quis magna ea.
 
 Proident enim elit in non minim ex veniam elit consectetur eiusmod. Aliquip voluptate aute eiusmod laborum ipsum proident adipisicing ullamco. Sint culpa commodo et mollit nisi incididunt dolore cillum. Culpa amet fugiat ex in. Deserunt est officia elit ad sunt ullamco do ut esse excepteur officia.

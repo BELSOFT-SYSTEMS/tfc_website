@@ -10,7 +10,7 @@ const EventComponent = ({ title, date, description, imageUrl, buttonText }) => {
       <Card.Body style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}>
         <Card.Title>{title}</Card.Title>
         <Card.Text >{description}</Card.Text>
-        <Button variant="warning" style={{ backgroundColor: '#d49c04', color: '#000', marginTop: '20px' }}>{buttonText}</Button>
+        <Button variant="warning" style={{ backgroundColor: '#d49c04', color: '#fff', marginTop: '20px' }}>{buttonText}</Button>
       </Card.Body>
     </Card>
   );

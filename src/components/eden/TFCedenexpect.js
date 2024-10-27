@@ -65,14 +65,13 @@ const TFCedenexpect = () => {
               <img src="sundays1.png" alt="Opposite" style={{ borderRadius: '10px', margin: '10px 0' }} />
             </Col>
             <Col md={6}>
-              <div style={{ marginLeft: '40px'}}>
+              <div style={{ margin: '0  20px  0 0'}}>
                 <div>
                   <div style={{ justifyContent: 'center', textAlign: 'left' }}>
                     <h2
                       style={{
                         fontSize: `${fontSize.title}px`,
                         fontWeight: 'bold',
-                        fontFamily: 'Sans-serif',
                         justifyContent: 'center',
                         textAlign: 'left',
                         marginTop: '50px',
@@ -84,7 +83,7 @@ const TFCedenexpect = () => {
                   </div>
                 </div>
                 <div>
-                  <div style={{ fontFamily: 'Montserrat', fontSize: `${fontSize.text}px`, padding: '30px' }}>
+                  <div style={{ fontSize: `${fontSize.text}px`, padding: '3px' }}>
                     <p style={{ color: '#000' }}>
                       Each week, with the help of volunteers, we provide an engaging worship
                       experience for our congregation, guests, and those interested in knowing
@@ -93,7 +92,7 @@ const TFCedenexpect = () => {
                       the building. Services are currently{' '}
                       <span style={{ fontWeight: 'bold' }}>operating at full capacity.</span>
                       <br />
-                      At Sanctus Church, we take a <span style={{ fontWeight: 'bold' }}>
+                      At The Father's Church, we take a <span style={{ fontWeight: 'bold' }}>
                         ‘come as you are’
                       </span>{' '}
                       approach. Some people dress in suits, others in jeans and a t-shirt.
