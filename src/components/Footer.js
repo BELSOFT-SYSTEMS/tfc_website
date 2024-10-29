@@ -1,207 +1,138 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faMapPin, faEnvelope, } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faMapPin, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelopeOpen as farEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
-import {faInstagram,faFacebook,faYoutube,} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faFacebook, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { Button } from "./Button/Button";
-
 
 function Footer() {
   const [isHovered, setIsHovered] = useState(false);
   const handleMouseEnter = () => {
-  setIsHovered(true);
-};
+    setIsHovered(true);
+  };
   const handleMouseLeave = () => {
-  setIsHovered(false);
-};
+    setIsHovered(false);
+  };
+
   return (
     <footer style={{ backgroundColor: "#051f04", paddingTop: "40px", color: "white" }}>
-      <Container>
-        {/* Use Bootstrap grid classes for responsive behavior */}
+      <Container fluid>
         <Row>
           {/* Get In Touch container */}
-          <Col xs={12} lg={6}>
+          <Col xs={12} md={6} className="mb-4">
             <Container style={{ textAlign: "left", paddingBottom: "25px" }}>
-              <div  >
-                <h2 style={{ fontSize: "60px", marginTop: "-3rem" }}>
-                  Get In Touch
-                </h2>
-              </div>
-              <div style={{ listStyleType: "none", paddingLeft: "0" }}>
-                <Row style={{ marginTop: "3.5rem" }}>
-                  <Col>
-                    <FontAwesomeIcon
-                      icon={faPhone}
-                      className="elementor-icon-list-icon"
-                      style={{ color: "#d49c04" }}
-                    />
-                    <span style={{ marginLeft: "2rem" }}>
-                      +234 703 158 8404 | (09) 290 9000
-                    </span>
-                  </Col>
-                </Row>
-                <Row style={{ marginTop: "2rem" }}>
-                  <Col>
-                    <FontAwesomeIcon
-                      icon={farEnvelopeOpen}
-                      className="elementor-icon-list-icon"
-                      style={{ color: "#d49c04" }}
-                    />
-                    <span style={{ marginLeft: "2rem", }}>
-                      info@thefatherschurchonline.org
-                    </span>
-                  </Col>
-                </Row>
-                <Row style={{ marginTop: "2rem" }}>
-                  <Col>
-                    <FontAwesomeIcon
-                      icon={faMapPin}
-                      className="elementor-icon-list-icon"
-                      style={{ color: "#d49c04" }}
-                    />
-
-                    <span style={{ marginLeft: "2.5rem", marginTop:'-2.5rem', textWrap:'wrap' }}>
-
-                      Eden Centre Along Banex/Gwarinpa Bypass, Near NEXT Cash & Carry,Abuja
-                    </span>
-                  </Col>
-                  
-                </Row>
-              </div>
-              <div style={{marginTop: "11rem"  }}>
-                <span style={{ marginLeft: "2rem" }}>
-                  <a
-                    href="https://facebook.com/TheFathersChurch"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    
-                  >
-                    <FontAwesomeIcon
-                      icon={faFacebook}
-                      onMouseEnter={handleMouseEnter}
-                      onMouseLeave={handleMouseLeave}
-                      size="3x"
-                      style={{ 
-                        color: isHovered ? '#d49c04' : "#edb61f", 
-                      transition:'all 0.3s ease', 
-                      transform: isHovered ? 'scale(1.1)' : 'none',
-                      
+              <h2 className="display-5" style={{ fontSize: "5rem", marginTop: "-1rem", fontWeight:"600" }}>
+                Get In Touch
+              </h2>
+              <ul style={{ listStyleType: "none", paddingLeft: "0", fontSize: "1.5rem" }}>
+                <li style={{ marginTop: "2rem" }}>
+                  <FontAwesomeIcon icon={faPhone} style={{ color: "#d49c04" }} />
+                  <span style={{ marginLeft: "1.5rem" }}>+234 703 158 8404 | (09) 290 9000</span>
+                </li>
+                <li style={{ marginTop: "1.5rem" }}>
+                  <FontAwesomeIcon icon={farEnvelopeOpen} style={{ color: "#d49c04" }} />
+                  <span style={{ marginLeft: "1.5rem" }}>info@thefatherschurchonline.org</span>
+                </li>
+                <li style={{ marginTop: "1.5rem" }}>
+                  <FontAwesomeIcon icon={faMapPin} style={{ color: "#d49c04" }} />
+                  <span style={{ marginLeft: "1.5rem" }}>
+                    Eden Centre, Along Banex/Gwarinpa Bypass, Near NEXT Cash & Carry, Abuja
+                  </span>
+                </li>
+              </ul>
+              <div className="mt-4">
+                <a href="https://facebook.com/TheFathersChurch" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    size="5x"
+                    style={{
+                      color: isHovered ? "#d49c04" : "#edb61f",
+                      transition: "all 0.3s ease",
+                      marginRight: "1rem",
                     }}
-                    />
-                  </a>
-                </span>
-                <span
-                  className="elementor-grid-item"
-                  style={{ marginLeft: "2rem" }}
-                >
-                  <a
-                    href="https://www.instagram.com/thefatherschurch/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    
-                  >
-                    <FontAwesomeIcon
-                      icon={faInstagram}
-                      onMouseEnter={handleMouseEnter}
-                      onMouseLeave={handleMouseLeave}
-                      size="3x"
-                      style={{ 
-                        color: isHovered ? '#d49c04' : "#edb61f", 
-                      transition:'all 0.3s ease', 
-                      transform: isHovered ? 'scale(1.1)' : 'none',
-                      
+                  />
+                </a>
+                <a href="https://www.instagram.com/thefatherschurch/" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    size="5x"
+                    style={{
+                      color: isHovered ? "#d49c04" : "#edb61f",
+                      transition: "all 0.3s ease",
+                      marginRight: "1rem",
                     }}
-                    />
-                  </a>
-                </span>
-                <span className="elementor-grid-item" style={{ marginLeft: "2rem" }}>
-                  <a
-                    href="https://www.youtube.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    
-                  >
-                    <FontAwesomeIcon
-                      icon={faYoutube}
-                      onMouseEnter={handleMouseEnter}
-                      onMouseLeave={handleMouseLeave}
-                      size="3x"
-                      style={{ 
-                        color: isHovered ? '#d49c04' : "#edb61f", 
-                      transition:'all 0.3s ease', 
-                      transform: isHovered ? 'scale(1.1)' : 'none',
-                      
+                  />
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon
+                    icon={faYoutube}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    size="5x"
+                    style={{
+                      color: isHovered ? "#d49c04" : "#edb61f",
+                      transition: "all 0.3s ease",
                     }}
-                    />
-                  </a>
-                </span>
+                  />
+                </a>
               </div>
             </Container>
           </Col>
+
           {/* Subscribe form container */}
-          <Col xs={12} lg={6}>
-
-            <Container style={{ paddingRight: "15px", textAlign: "left", marginLeft:'2rem', }}>
-
-              <h2 style={{ fontSize: "25px" }}>
-                Subscribe to receive updates from <br />
-                The Father's Church
+          <Col xs={12} md={6} className="mb-4">
+            <Container style={{ textAlign: "left" }}>
+              <h2 className="display-6" style={{ fontSize: "2rem" }}>
+                Subscribe to receive updates from <br /> The Father's Church
               </h2>
-              <Form
-                method="post"
-                id="newsletter_subscribe_form"
-                name="Newsletter Subscribe"
-                style={{ textAlign: "left" }}
-              >
-                {/* ... (your form code) ... */}
-                <Form.Group controlId="formEmail" style={{ marginTop: "10px" }}>
+              <Form method="post" id="newsletter_subscribe_form" name="Newsletter Subscribe">
+                <Form.Group controlId="formEmail" className="mt-3">
                   <Form.Control
                     type="email"
-                    name="form_fields[name]"
                     placeholder="Email"
                     style={{
-                      maxWidth: "350px",
+                      maxWidth: "60%",
                       height: "3.5rem",
-                      fontSize: "16px",
+                      fontSize: "1.7rem",
                     }}
                   />
                 </Form.Group>
-                <Form.Group controlId="formName" style={{ marginTop: "10px" }}>
+                <Form.Group controlId="formName" className="mt-3">
                   <Form.Control
                     type="text"
-                    name="form_fields[field_a7d8490]"
                     placeholder="Name"
                     style={{
-                      maxWidth: "350px",
+                      maxWidth: "60%",
                       height: "3.5rem",
-                      fontSize: "16px",
+                      fontSize: "1.7rem",
                     }}
                   />
                 </Form.Group>
-                <div style={{ marginTop: "10px" }}>
-                  <Button
-                    type="submit"
-                    variant="warning"
-                    style={{ backgroundColor: "#d49c04", color: "#fff", maxWidth: "350px" }}
-                  >
-                    <span>
-                      <span>
-                        <FontAwesomeIcon icon={faEnvelope} />
-                      </span>
-                      <span style={{ paddingLeft: "10px" }}>Send</span>
-                    </span>
-                  </Button>
-                </div>
+                <Button
+                  type="submit"
+                  variant="warning"
+                  style={{
+                    backgroundColor: "#d49c04",
+                    color: "#fff",
+                    width: "20%",
+                    marginTop: "10px",
+                  }}
+                >
+                  <FontAwesomeIcon icon={faEnvelope} />
+                  <span style={{ paddingLeft: "10px" }}>Send</span>
+                </Button>
               </Form>
             </Container>
           </Col>
         </Row>
-        <Row>
+        <Row className="text-center mt-4">
           <Col>
-            <p style={{ color: "white", margin:'0 0 0 0 ' }}>
-              © 2024 All rights Reserved. Design by Our Creative Media
-            </p>
+            <p className="small text-white mb-0">© 2024 All rights Reserved. Designed by Our Creative Media</p>
           </Col>
         </Row>
       </Container>

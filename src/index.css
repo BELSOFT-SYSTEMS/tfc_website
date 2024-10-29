@@ -5,6 +5,8 @@ body, html {
   font-family:sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Prevent horizontal scrolling */
+  overflow-x: hidden;
 }
 *{
   box-sizing: border-box;

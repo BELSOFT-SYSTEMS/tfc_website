@@ -1,0 +1,69 @@
+.sunday-section {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .sunday-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .text-content {
+    color: #000;
+    text-align: left;
+    margin: 0 5%;
+  }
+  
+  .sunday-title {
+    font-size: 10rem;
+    font-weight: bold;
+    font-family: Sans-serif;
+    color: #000;
+    /* margin-top: 1.5rem; */
+  }
+  
+  .sunday-description {
+    color: #000;
+    font-size: 1.7rem;
+    padding: 0 1rem;
+  }
+  
+  .visit-button {
+    background-color: #d49c04;
+    color: #fff;
+    max-width: 200px;
+    width: 100%;
+  }
+  
+  .image-content {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .sunday-image {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .sunday-title {
+      font-size: 5rem;
+    }
+  
+    .sunday-description {
+      font-size: 1rem;
+    }
+  
+    .visit-button {
+      font-size: 1.5rem;
+    }
+  }

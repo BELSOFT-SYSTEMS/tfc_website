@@ -5,10 +5,10 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px 20px; /* Adjust padding for better responsiveness */
     background-color: #d49c04;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px; /* Set default font size */
     font-weight: 700;
     border: none;
     border-radius: 5px;
@@ -22,11 +22,19 @@
     font-weight: bolder;
 }
 
-@media (max-width: 768px) {
-
+/* Responsive adjustments */
+@media (max-width: 992px) {
     .baptismButton {
-        width: 100%;
-        margin-top: 20px;
-        font-size: .8rem;
+        padding: 10px 15px;
+        font-size: 14px; /* Slightly reduce font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .baptismButton {
+        width: 58%; /* Full width on mobile */
+        font-size: 15px; /* Further reduce font size */
+        margin-top: 20px; /* Adds space between stacked buttons */
+        padding: 8px 10px; /* Adjust padding for smaller screens */
     }
 }
