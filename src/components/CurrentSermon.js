@@ -3,11 +3,11 @@ import { Button } from './Button/Button';
 import { Container, Row, Col } from 'react-bootstrap';
 import SpecialDayButton from './Button/LiveButton';
 import { useNavigate } from 'react-router-dom';
-import './currentSermon.css'; // Separate CSS file for better management
+import './currentSermon.css';
 
 const CurrentSermon = () => {
   const navigate = useNavigate();
-  const backgroundImageUrl = 'pastor-1-1.png'; 
+  const backgroundImageUrl = 'pastor-1-1.png';
 
   const redirectToSermonsPage = () => {
     console.log('Redirecting to sermons page');
@@ -18,7 +18,7 @@ const CurrentSermon = () => {
     <Container fluid className="sermon-container">
       <Row className="align-items-center justify-content-center sermon-content">
         <Col xs={12} md={6} className="image-col">
-          <img src={backgroundImageUrl} alt='Senior Pastor' className="sermon-image" />
+          <img src={backgroundImageUrl} alt="Senior Pastor" className="sermon-image" />
         </Col>
         <Col xs={12} md={6} className="text-col">
           <h2 className="sermon-title">Our Sermon Series</h2>

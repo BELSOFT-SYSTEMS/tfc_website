@@ -58,6 +58,7 @@ const Landing = () => {
             autoPlay
             muted
             playsInline
+            preload="auto"
             onEnded={handleVideoEnd}
             ref={videoRef}
           />
@@ -98,15 +99,28 @@ const Landing = () => {
 
       <style jsx>{`
         .landing-page {
-          position: relative;
-          max-width: 100vw;
-          max-height: 100vh;
+          position: absolute;
           overflow: hidden;
           display: flex;
+          width: 100%;
+          height: 100%;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
+        justify-content: center;
+        align-items: center;
+          
         }
+
+        // .landing-container{
+        // position: relative;
+        // width: 100%;
+        // height: 100%;
+        // overflow: hidden;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        
+        // }
 
         .home-button-container {
           display: flex;
@@ -129,30 +143,28 @@ const Landing = () => {
           width: 100%;
           height: 100%;
           overflow: hidden;
+          background-color: black;
         }
 
         .media {
           width: 100%;
-          height: 100vh;
-          object-fit: cover;
+          height: 100%;
+          object-fit: contain;
           max-width: 100vw;
-          max-height: 100vh;
+          // max-height: 100vh;
         }
 
         .footer-buttons {
           width: 100%;
           display: flex;
-          // justify-content: center;
           bottom: 5%;
           position: absolute;
-          // margin-right: 20%;
-          // align-items: center;
         }
 
         .footer-button-group {
           display: flex;
           gap: 15px;
-          margin-left: -20%;
+          margin-left: -25%;
           
         }
 
@@ -163,21 +175,24 @@ const Landing = () => {
 
         @media (max-width: 768px) {
           .media {
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 100vh; /* Use 100vh to ensure full height */
             max-height: 100vh;
+            object-fit: cover;
             
           }
 
           .home-button {
             font-size: 12px;
             height: 35px;
+            width: 100%;
           }
 
           .footer-button-group button {
             font-size: 12px;
             padding: 8px;
             margin-top: 0.5%; 
+            width: 100%;
           }
           .footer-button-group {
             flex-direction: column;
@@ -192,6 +207,26 @@ const Landing = () => {
             max-width: 100vw;
             max-height: 100vh;
           }
+        }
+        @media (min-width: 1440px) {
+          .media {
+            object-fit: contain;
+            width: 100%;
+            height: 100vh;
+            max-height: 100vh;
+            margin-top: -22%;
+          }
+
+          // .media-large{
+          //   width: 1440px;
+          //   height: 100vh;
+          
+          // }
+
+          .footer-buttons {
+          bottom: 10%;
+          margin-left: 5%;
+        }
         }
       `}</style>
     </div>

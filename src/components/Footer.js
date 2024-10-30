@@ -132,7 +132,13 @@ function Footer() {
         </Row>
         <Row className="text-center mt-4">
           <Col>
-            <p className="small text-white mb-0">© 2024 All rights Reserved. Designed by Our Creative Media</p>
+            <p 
+            className="small text-white mb-0"
+            style={{
+              fontSize: "1.7rem",
+            }}
+            
+            >© 2024 All rights Reserved. Designed by Our Creative Media</p>
           </Col>
         </Row>
       </Container>
