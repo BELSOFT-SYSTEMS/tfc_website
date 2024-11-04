@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '../Header';
-import Footer from '../Footer';
-import TFCjoyforce from '../joyforce/TFC-joyforce';
-import TFCjoyforceevents from '../joyforce/TFCjoyforce-events';
-import Knowusbetter from '../joyforce/Knowusbetter';
-import Ourvalues from '../joyforce/Ourvalues';
-import { Swipper } from '../Swiper/Swiper'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import TFCjoyforce from '../components/joyforce/TFC-joyforce';
+import TFCjoyforceevents from '../components/joyforce/TFCjoyforce-events';
+import Knowusbetter from '../components/joyforce/Knowusbetter';
+// import Ourvalues from '../joyforce/Ourvalues';
+import { Swipper } from '../components/Swiper/Swiper'
 
 
 const items = [

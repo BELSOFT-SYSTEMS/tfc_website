@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../Header';
-import Footer from '../Footer';
-import TFCsermon from '../sermon/TFCsermon';
-import Sermonseries from '../sermon/Sermon-series';
-import Sermonarchive from '../sermon/TFCsermon-archives';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import TFCsermon from '../components/sermon/TFCsermon';
+import Sermonseries from '../components/sermon/Sermon-series';
+import Sermonarchive from '../components/sermon/TFCsermon-archives';
 // import {RecentContent} from '../sermon/Recent';
 
 function Sermons () {

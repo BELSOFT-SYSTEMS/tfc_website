@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Carousel, ButtonGroup } from 'react-bootstrap';
-import { Button } from '../Button/Button';
+import { Button } from '../components/Button/Button';
 
 const Landing = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);

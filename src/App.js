@@ -2,64 +2,36 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './components/pages/Homepage'; // Your landing page component
-import ContactPage from './components/pages/Contactpage';
-import Landing from './components/pages/Landing';
-import Aboutus from './components/pages/Aboutus';
-import Ambassadors from './components/pages/Ambassadors';
-import Lightbearers from './components/pages/Lightbearer';
-import Sundays from './components/pages/Sundays';
-import Freedomfellowship from './components/pages/Freedomfellowship';
-import Governors from './components/pages/Governors';
-import Queens from './components/pages/Queens';
-import Evangelism from './components/pages/Evangelism';
-import Prayerministry from './components/pages/Prayerministry';
-import Eden from './components/pages/Eden';
-import Mpape from './components/pages/Mpape';
-import Enugu from './components/pages/Enugu';
-import Joyforceacademy from './components/pages/Joyforceacademy';
-import Sermons from './components/pages/Sermons';
-import Nextsteps from './components/pages/Nextsteps';
-import Believerfoundation from './components/pages/believersfoundation';
-import Baptism from './components/pages/Baptism';
-import Marriagecourse from './components/pages/Marriagecourse';
-import Prayerrequest from './components/pages/Prayerrequest';
-import Counseling from './components/pages/Counseling';
-import Eventcalendar from './components/pages/Eventcalendar';
-import Summercamp from './components/pages/Summercamp';
-import Waystogive from './components/pages/Waystogive';
+import HomePage from './pages/Homepage'; // Your landing page component
+import ContactPage from './pages/Contactpage';
+import Landing from './pages/Landing';
+import Aboutus from './pages/Aboutus';
+import Ambassadors from './pages/Ambassadors';
+import Lightbearers from './pages/Lightbearer';
+import Sundays from './pages/Sundays';
+import Freedomfellowship from './pages/Freedomfellowship';
+import Governors from './pages/Governors';
+import Queens from './pages/Queens';
+import Evangelism from './pages/Evangelism';
+import Prayerministry from './pages/Prayerministry';
+import Eden from './pages/Eden';
+import Mpape from './pages/Mpape';
+import Enugu from './pages/Enugu';
+import Joyforceacademy from './pages/Joyforceacademy';
+import Sermons from './pages/Sermons';
+import Nextsteps from './pages/Nextsteps';
+import Believerfoundation from './pages/believersfoundation';
+import Baptism from './pages/Baptism';
+import Marriagecourse from './pages/Marriagecourse';
+import Prayerrequest from './pages/Prayerrequest';
+import Counseling from './pages/Counseling';
+import Eventcalendar from './pages/Eventcalendar';
+import Summercamp from './pages/Summercamp';
+import Waystogive from './pages/Waystogive';
 import {RecentContent} from './components/sermon/Recent';
-import { TopicContent } from './components/sermon/Topic';
+import { TopicContent } from './/components/sermon/Topic';
 import { Speaker } from './components/sermon/Speaker';
-
 import './index.css';
-
-{/*
-import './css/frontend.min.css';
-import './css/frontend.css';
-import './css/frontend-lite.min.css';
-import './css/header-footer.min.css';
-import './css/all.css';
-import './css/eael-9361.css';
-import './css/eael-19128.css';
-import './css/ecs-style.css';
-import './css/elementor-icons.min.css';
-import './css/featherlight.css';
-import './css/general.min.css';
-import './css/lity.min.css';
-import './css/mec-general-calendar.css';
-import './css/post-6.css';
-import './css/select2.min.css';
-import './css/slick-carousal.css';
-import './css/style.min.css';
-import './css/swiper.min.css';
-import './css/theme.min.css';
-import './css/tooltip.css';
-import './css/tooltipster-sideTip-shadow.min.css';
-import './css/widget-icon-list.min.css';
-import './css/widget-nav-menu.min.css';
-
-*/}
 
 function App() {
   return (

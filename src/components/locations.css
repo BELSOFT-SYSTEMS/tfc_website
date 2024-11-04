@@ -1,0 +1,54 @@
+.locations {
+    padding: 20px 0 40px;
+    text-align: center;
+  }
+  
+  .location-button-group {
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .location-image {
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .location-pastor-name {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  
+  .location-pastor-title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .location-details {
+    padding: 0 60px;
+  }
+  
+  .location-info {
+    margin-top: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .location-icon {
+    color: #d49c04;
+    margin-right: 5px;
+  }
+  
+  .location-description {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .location-button {
+    background-color: #d49c04;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+  }

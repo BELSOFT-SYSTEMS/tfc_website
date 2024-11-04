@@ -1,7 +1,7 @@
 import React from 'react';
-import { Believersfoundationcontent } from '../believersfoundation/believersfoundation';
-import Header from '../Header';
-import Footer from '../Footer';
+import { Believersfoundationcontent } from '../components/believersfoundation/believersfoundation';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 function Believersfoundation() {

@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../Header';
-import { Baptismcontent } from '../baptism/baptism';
-import Footer from '../Footer';
+import Header from '../components/Header';
+import { Baptismcontent } from '../components/baptism/baptism';
+import Footer from '../components/Footer';
 
 function Baptism() {
   return (
