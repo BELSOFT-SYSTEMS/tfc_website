@@ -12,30 +12,31 @@ const Upcomingevents = () => {
     navigate("/event-calendar");
   };
   return (
-    <Container fluid style={{ margin: "0 2rem" }}>
+    <Container fluid>
       <Container
         style={{
           justifyContent: "center",
           textAlign: "center",
-          marginBottom: "30px",
           marginTop: "20px",
         }}
       >
         <Row>
           <Col>
-            <h2 style={{ fontSize: "20px" }}>
+            <h2 style={{ fontSize: "14px" }}>
               What's On At The Father's Church
             </h2>
-            <h2 style={{ fontSize: "55px" }}>Upcoming Events</h2>
+            <h2 style={{ fontSize: "5rem" }}>Upcoming Events</h2>
           </Col>
         </Row>
       </Container>
       <Container
         fluid
+        className="upcoming-events-cards"
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+          gridTemplateColumns: "repeat(3, minmax(200px, 1fr))",
           gap: "20px",
+          width: "95%",
         }}
       >
         <EventComponent
@@ -67,9 +68,7 @@ const Upcomingevents = () => {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
-          marginTop: "20px",
           marginBottom: "20px",
-          paddingBottom: "20px",
         }}
       >
         <Button
@@ -81,7 +80,6 @@ const Upcomingevents = () => {
             color: "#fff",
             maxWidth: "200px",
           }}
-          
         >
           View all Events
         </Button>

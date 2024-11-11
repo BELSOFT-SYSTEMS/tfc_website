@@ -1,19 +1,16 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  height: '100%'; /* Set body height to 100%*/
-  font-family:sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Prevent horizontal scrolling */
-  overflow-x: hidden;
-  
-}
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-
-
+body,
+html {
+  /* margin: 0;
+  padding: 0; */
+  /* height: '100%'; */
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}

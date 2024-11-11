@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import './home.css';
 
 const HomeSlider = () => {
-  const aspectRatio = 'calc(1438 / 2560 * 100%)'; // Aspect ratio for image
+  const aspectRatio = 'calc(1638 / 2560 * 100%)'; // Aspect ratio for image
 
   const [currentSlide, setCurrentSlide] = useState(0); // Track the current slide
   const [fade, setFade] = useState(true); // Control fade-in and fade-out effect

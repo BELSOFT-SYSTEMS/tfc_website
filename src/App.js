@@ -53,7 +53,7 @@ function App() {
         <Route path="/mpape" element={<Mpape />} />
         <Route path="/enugu" element={<Enugu />} />
         <Route path="/joyforce-academy" element={<Joyforceacademy />} />
-        <Route path="/sermons" element={<Sermons />} >
+        <Route path="#" element={<Sermons />} >
           <Route path='recent' element={<RecentContent />} />
           <Route path='topic' element={<TopicContent />} />
           <Route path='speaker' element={<Speaker/>} />

@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Carousel, ButtonGroup } from 'react-bootstrap';
-import { Button } from '../components/Button/Button';
+import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Carousel, ButtonGroup } from "react-bootstrap";
+import { Button } from "../components/Button/Button";
 
 const Landing = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -9,15 +9,15 @@ const Landing = () => {
   const carouselRef = useRef(null);
   const navigate = useNavigate();
 
-  const redirectToHomePage = () => navigate('/home');
-  const redirectToSundays = () => navigate('/sundays');
+  const redirectToHomePage = () => navigate("/home");
+  const redirectToSundays = () => navigate("/sundays");
   const downloadTheMonthlyBulletin = () => {
-    const link = document.createElement('a');
-    link.href = 'THE-FATHER_S-HEART-eBULLETIN-JUNE-2023.pdf';
-    link.download = 'THE-FATHER_S-HEART-eBULLETIN-JUNE-2023.pdf';
+    const link = document.createElement("a");
+    link.href = "THE-FATHER_S-HEART-eBULLETIN-JUNE-2023.pdf";
+    link.download = "THE-FATHER_S-HEART-eBULLETIN-JUNE-2023.pdf";
     link.click();
   };
-  const redirectToPrayerRequest = () => navigate('/Prayer-request');
+  const redirectToPrayerRequest = () => navigate("/Prayer-request");
 
   const handleVideoEnd = () => {
     setIsVideoPlaying(false);
@@ -37,8 +37,12 @@ const Landing = () => {
     <div className="landing-page">
       <header>
         <div className="home-button-container">
-          <Button variant="warning" onClick={redirectToHomePage} className="home-button">
-            Home
+          <Button
+            variant="warning"
+            onClick={redirectToHomePage}
+            // className="home-button"
+          >
+            HOME
           </Button>
         </div>
       </header>
@@ -81,7 +85,7 @@ const Landing = () => {
         </Carousel.Item>
       </Carousel>
 
-      <footer>
+      <footer className="landing-footer">
         <div className="footer-buttons">
           <ButtonGroup className="footer-button-group">
             <Button variant="danger" onClick={downloadTheMonthlyBulletin}>
@@ -105,9 +109,8 @@ const Landing = () => {
           width: 100%;
           height: 100%;
           flex-direction: column;
-        justify-content: center;
-        align-items: center;
-          
+          justify-content: center;
+          align-items: center;
         }
 
         // .landing-container{
@@ -119,7 +122,6 @@ const Landing = () => {
         // flex-direction: column;
         // justify-content: center;
         // align-items: center;
-        
         // }
 
         .home-button-container {
@@ -129,14 +131,6 @@ const Landing = () => {
           top: 10px;
           right: 20px;
           z-index: 10;
-        }
-
-        .home-button {
-          background-color: #d49c04;
-          color: #fff;
-          font-weight: 600;
-          font-size: 14px;
-          height: 40px;
         }
 
         .carousel {
@@ -149,85 +143,75 @@ const Landing = () => {
         .media {
           width: 100%;
           height: 100%;
-          object-fit: contain;
-          max-width: 100vw;
-          // max-height: 100vh;
+          object-fit: cover;
+        }
+
+        .landing-footer {
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          bottom: 15%;
         }
 
         .footer-buttons {
-          width: 100%;
           display: flex;
-          bottom: 5%;
           position: absolute;
         }
 
         .footer-button-group {
           display: flex;
           gap: 15px;
-          margin-left: -25%;
-          
+          padding: 0 10px;
         }
 
         .footer-button-group button {
           font-weight: 600;
-          font-size: 14px;
+        }
+
+        @media (max-width: 430px) {
+          .footer-button-group {
+            gap: 5px;
+          }
+
+          .footer-button-group button {
+            font-weight: 500;
+          }
         }
 
         @media (max-width: 768px) {
           .media {
-            width: 100%;
-            height: 100vh; /* Use 100vh to ensure full height */
+            width: unset;
+            height: 100vh;
             max-height: 100vh;
-            object-fit: cover;
-            
-          }
-
-          .home-button {
-            font-size: 12px;
-            height: 35px;
-            width: 100%;
+            object-fit: contain;
           }
 
           .footer-button-group button {
-            font-size: 12px;
-            padding: 8px;
-            margin-top: 0.5%; 
             width: 100%;
           }
-          .footer-button-group {
-            flex-direction: column;
-          }
-         
-        }
 
-        @media (min-width: 1200px) {
-          .media {
-            width: 100vw;
-            height: 100vh;
-            max-width: 100vw;
-            max-height: 100vh;
-          }
-        }
-        @media (min-width: 1440px) {
-          .media {
-            object-fit: contain;
-            width: 100%;
-            height: 100vh;
-            max-height: 100vh;
-            margin-top: -22%;
-          }
-
-          // .media-large{
-          //   width: 1440px;
-          //   height: 100vh;
-          
+          // .footer-button-group {
+          //   flex-direction: column;
           // }
+        }
 
-          .footer-buttons {
-          bottom: 10%;
-          margin-left: 5%;
-        }
-        }
+        // @media (min-width: 1200px) {
+        //   .media {
+        //     width: 100vw;
+        //     height: 100vh;
+        //     max-width: 100vw;
+        //     max-height: 100vh;
+        //   }
+        // }
+        // @media (min-width: 1440px) {
+        //   .media {
+        //     object-fit: cover;
+        //     width: 100%;
+        //     height: 100vh;
+        //     max-height: 100vh;
+        //   }
+        // }
       `}</style>
     </div>
   );

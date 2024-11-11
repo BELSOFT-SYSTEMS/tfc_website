@@ -16,8 +16,8 @@ const Sunday = () => {
   return (
     <section className="sunday-section">
       <Container fluid className="sunday-container" style={{ backgroundImage: `url(${backgroundImageUrl})` }}>
-        <Row className="align-items-center justify-content-center">
-          <Col xs={12} md={4} className="text-content">
+        <Row className="sunday-row">
+          <Col xs={12} md={6} className="text-content">
             <h2 className="sunday-title">
               Sundays @ TFC
             </h2>

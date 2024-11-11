@@ -15,16 +15,13 @@ const SpecialDayButton = () => {
       if (dayOfWeek === 3 || dayOfWeek === 0 || isFirstFriday) {
         const currentTime = currentDate.getHours();
         // Check if it's between service times 9 AM (9) and 11 PM (11) on sundays
-        if (
-          (dayOfWeek === 0) &&
-          currentTime >= 9 &&
-          currentTime < 11
-        ) {
+        if (dayOfWeek === 0 && currentTime >= 9 && currentTime < 11) {
           setIsActive(true);
         } else if (
-            (dayOfWeek ===3 || dayOfWeek === 0) &&
-            currentTime >= 18 &&
-            currentTime < 20) {
+          (dayOfWeek === 3 || dayOfWeek === 0) &&
+          currentTime >= 18 &&
+          currentTime < 20
+        ) {
           // Check if it's between 6 PM (18) and 8 PM (20) on wednesdays
           setIsActive(true);
         } else if (isFirstFriday && currentTime >= 18 && currentTime < 21) {
@@ -49,33 +46,34 @@ const SpecialDayButton = () => {
 
   return (
     <button
+      className="live-button"
       onClick={handleClick}
       style={{
         backgroundColor: isActive ? "#FF0000" : "#FF0000",
         opacity: isActive ? "1" : "0.4",
         cursor: isActive ? "pointer" : "not-allowed",
-        maxWidth: "200px",
-        height: "50px",
+        // maxWidth: "200px",
+        height: "30px",
         alignSelf: "flex-end",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         textDecoration: "none",
-        padding: "20px",
+        padding: "10px",
         color: "#fff",
-        fontSize: "16px",
-        fontWeight: "700",
+        fontSize: "12px",
+        fontWeight: "600",
         border: "none",
         borderRadius: "5px",
-        transition: "all 0.3s ease"
+        transition: "all 0.3s ease",
       }}
       disabled={!isActive}
     >
       {isActive ? "Watch Live" : "Watch Live"}
-      <FaWifi 
+      <FaWifi
         style={{
-            marginLeft: '1rem', 
-            fontSize:'20px',
+          marginLeft: "1rem",
+          fontSize: "16px",
         }}
       />
     </button>

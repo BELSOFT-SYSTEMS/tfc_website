@@ -1,40 +1,43 @@
 .baptismButton {
-    height: 50px;
-    align-self: flex-end;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 10px 20px; /* Adjust padding for better responsiveness */
-    background-color: #d49c04;
-    color: #fff;
-    font-size: 16px; /* Set default font size */
-    font-weight: 700;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  height: 40px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #d49c04;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .baptismButton:hover {
-    background-color: #edb61f;
-    transform: scale(1.1);
-    font-weight: bolder;
+  background-color: #edb61f;
+  transform: scale(1.1);
+  font-weight: bolder;
 }
 
 /* Responsive adjustments */
+@media (max-width: 1540px) {
+  .baptismButton {
+    height: 30px;
+    padding: 10px 10px;
+  }
+}
+
 @media (max-width: 992px) {
-    .baptismButton {
-        padding: 10px 15px;
-        font-size: 14px; /* Slightly reduce font size */
-    }
+  .baptismButton {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 768px) {
-    .baptismButton {
-        width: 58%; /* Full width on mobile */
-        font-size: 15px; /* Further reduce font size */
-        margin-top: 20px; /* Adds space between stacked buttons */
-        padding: 8px 10px; /* Adjust padding for smaller screens */
-    }
+  .baptismButton {
+    padding: 20px 15px;
+  }
 }

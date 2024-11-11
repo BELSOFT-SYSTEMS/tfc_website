@@ -1,45 +1,129 @@
-Copy code
-.home-slider-section {
+Copy code .home-slider-section {
   padding: 2rem 0;
+}
+
+.navbar > .container-fluid {
+  padding: 0 40px !important;
 }
 
 .hero-text {
   font-weight: bold;
   font-family: Sans-serif;
   text-align: left;
-  margin: 1.5rem 10%;
+  margin: 1.5rem 30px;
   /* Default font size for larger screens */
-  font-size: 90px;
+  font-size: 40px;
   line-height: 1.2;
 }
 
 .hero-text span {
   display: block;
-  font-size: 90px;
+  font-size: 60px;
+}
+
+.dropdown-menu[data-bs-popper] {
+  /* left: -20% !important; */
+  width: fit-content !important;
+}
+
+.dropdown-menu {
+  min-width: fit-content !important;
+}
+
+.location-button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 15px;
+  padding: 0 60px 20px;
+  height: 60px;
+}
+
+.location-row {
+  flex-wrap: nowrap !important;
+  width: 95%;
+}
+
+.footer-row-container {
+  flex-wrap: nowrap !important;
+  gap: 30px;
+}
+
+.footer-heading {
+  font-size: 18px;
+}
+
+.footer-input {
+  max-width: 70%;
+  height: 3rem;
+  font-size: 12px;
 }
 
 /* Adjust font size for mobile and tablet */
 @media (max-width: 992px) {
-  .hero-text {
-    font-size: 60px;
-  }
-
   .hero-text span {
-    font-size: 60px;
+    font-size: 45px;
   }
 }
 
 @media (max-width: 768px) {
   .hero-text {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .hero-text span {
-    font-size: 40px;
+    font-size: 45px;
   }
 
   .image-container img {
     max-height: 70%; /* Adjust image size for smaller screens */
+  }
+
+  .location-row {
+    gap: 30px;
+  }
+
+  .upcoming-events-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .footer-row-container {
+    gap: 10px;
+  }
+
+  .footer-heading {
+    font-size: 18px !important;
+  }
+
+  .footer-list,
+  .footer-input {
+    font-size: 14px !important;
+  }
+
+  .footer-input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .upcoming-events-cards {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .footer-row-container {
+    flex-wrap: wrap !important;
+    gap: 50px;
+  }
+
+  .location-button-group {
+    padding: 0 10px 20px;
+    gap: 5px;
+    height: 70px;
+  }
+
+  .location-row {
+    flex-wrap: wrap !important;
   }
 }
 
