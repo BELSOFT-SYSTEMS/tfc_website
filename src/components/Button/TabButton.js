@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const TabButton = ({ label, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,36 +9,37 @@ const TabButton = ({ label, children }) => {
 
   const tabStyles = {
     container: {
-      marginBottom: '10px',
+      marginBottom: "10px",
     },
     button: {
-      backgroundColor: '#d49c04',
-      color: '#fff',
-      width: '100%',
-      border: 'none',
-      borderRadius: '5px 5px 0 0',
-      boxShadow: '-3px 0px 10px 0px rgba(184.5, 182, 182, 0.5)',
-      padding: '10px 20px',
-      cursor: 'pointer',
-      fontSize: '18px',
-      fontWeight: '600',
-      display: 'flex',
-      alignItems: 'center',
+      backgroundColor: "#d49c04",
+      color: "#fff",
+      width: "100%",
+      border: "none",
+      borderRadius: "5px 5px 0 0",
+      boxShadow: "-3px 0px 10px 0px rgba(184.5, 182, 182, 0.5)",
+      padding: "10px 20px",
+      cursor: "pointer",
+      fontSize: "16px",
+      fontWeight: "600",
+      display: "flex",
+      alignItems: "center",
     },
     buttonHover: {
-      backgroundColor: '#051f04',
+      backgroundColor: "#051f04",
     },
     content: {
-      marginTop: '0px',
-      padding: '20px',
-      backgroundColor: '#fff',
-      borderRadius: '0 0 5px 5px',
-      boxShadow: '-3px 0px 10px 0px rgba(184.5, 182, 182, 0.5)',
+      marginTop: "0px",
+      padding: "20px",
+      fontSize: "14px",
+      backgroundColor: "#fff",
+      borderRadius: "0 0 5px 5px",
+      boxShadow: "-3px 0px 10px 0px rgba(184.5, 182, 182, 0.5)",
     },
     icon: {
-      marginRight: '10px',
-      transition: 'transform 0.3s',
-      transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)',
+      marginRight: "10px",
+      transition: "transform 0.3s",
+      transform: isOpen ? "rotate(90deg)" : "rotate(0deg)",
     },
   };
 
@@ -47,8 +48,14 @@ const TabButton = ({ label, children }) => {
       <button
         onClick={toggleDropdown}
         style={tabStyles.button}
-        onMouseOver={(e) => (e.currentTarget.style.backgroundColor = tabStyles.buttonHover.backgroundColor)}
-        onMouseOut={(e) => (e.currentTarget.style.backgroundColor = tabStyles.button.backgroundColor)}
+        onMouseOver={(e) =>
+          (e.currentTarget.style.backgroundColor =
+            tabStyles.buttonHover.backgroundColor)
+        }
+        onMouseOut={(e) =>
+          (e.currentTarget.style.backgroundColor =
+            tabStyles.button.backgroundColor)
+        }
       >
         <svg
           style={tabStyles.icon}
@@ -66,7 +73,11 @@ const TabButton = ({ label, children }) => {
         </svg>
         {label}
       </button>
-      {isOpen && <div style={tabStyles.content}>{children}</div>}
+      {isOpen && (
+        <div style={tabStyles.content} className="value-content">
+          {children}
+        </div>
+      )}
     </div>
   );
 };
