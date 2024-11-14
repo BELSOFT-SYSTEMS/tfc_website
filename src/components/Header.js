@@ -115,7 +115,7 @@ const Header = () => {
     >
       <Container fluid>
         <Navbar.Brand href="/home">
-          <img src="tfcLogo.png" alt="Logo" style={logoStyle} />
+          <img src="/tfcLogo.png" alt="Logo" style={logoStyle} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
