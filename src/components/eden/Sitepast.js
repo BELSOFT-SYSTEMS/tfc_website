@@ -48,7 +48,7 @@ const Sitepast = () => {
                 <div>
                   <div style={{justifyContent:'center',textAlign: 'left',}} >
                     <h2 style={{ fontSize: '55px', fontWeight: 'bolder', justifyContent: 'center', textAlign: 'left', marginTop: '50px', color: '#000' }}>
-                    Meet The Site Pastor
+                    Meet The Senior Pastor
                     </h2>
                   </div>
                 </div>
@@ -63,11 +63,15 @@ const Sitepast = () => {
                   <div>
                     <div style={{display: 'flex', marginRight: '20px' }}>
                       <p style={{fontSize:'15px', color: '#000'}}>
-                      Nostrud commodo mollit id excepteur tempor ullamco mollit cupidatat cupidatat. Deserunt sit fugiat irure esse ipsum exercitation non laboris et qui. Cupidatat enim quis magna ea.
-
-Proident enim elit in non minim ex veniam elit consectetur eiusmod. Aliquip voluptate aute eiusmod laborum ipsum proident adipisicing ullamco. Sint culpa commodo et mollit nisi incididunt dolore cillum. Culpa amet fugiat ex in. Deserunt est officia elit ad sunt ullamco do ut esse excepteur officia.
-
-In sit mollit velit cupidatat nostrud. Ullamco officia amet esse qui non. Veniam in eiusmod cupidatat pariatur proident cillum enim. Sit non incididunt eiusmod qui. Nostrud est occaecat velit laboris culpa duis ea reprehenderit veniam. Reprehenderit dolore occaecat mollit aliquip incididunt consequat sint aliqua. Est minim consectetur quis ullamco fugiat nisi nulla veniam.
+                      Pastor Ikenna Okeke is the Senior Pastor of The Father’s Church: a vibrant assembly of believers with Headquarters at Eden Centre, Abuja. 
+                      He is a remarkable, insightful and practical teacher of the Word of God whose message has enabled many people find hope and restoration through Jesus Christ. 
+                      His answer to God's Call in 1997 to “…go to Abuja and raise Me men that I can use” is born out of his unyielding passion, dedication and love of God. 
+                      Blessed with a unique teaching gift, Pastor Ikenna's insightful messages on the development of the total man are well received across various platforms such as Radio, 
+                      Television and online/Social Media.He began his early ministry as pioneer Pastor at the Desire of Nations Parish of The Redeemed Christian Church of God, Abuja. 
+                      He served in that capacity for a period of six years, before a proceeding Call of God led him to the establishment of The Father's Church, in November 2003.
+                      A Chartered Accountant by training, he obtained a Bachelor of Science Degree in Accounting from the University of Nigeria and served in various capacities in the 
+                      Banking Industry prior to this Call.Pastor Ikenna is a man with a proven heart for God, a tender heart for God’s people and a deep passion for righteous living.
+                      He is married to Pastor Chineze Okeke and they are blessed with two children, Uche Okeke and Tochukwu Okeke.
                       </p>
                        </div>
                   </div>
