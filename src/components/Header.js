@@ -6,7 +6,7 @@ const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   const headerStyle = {
-    fontSize: "12px",
+    fontSize: "16px",
     marginRight: "40px",
   };
 
@@ -71,8 +71,8 @@ const Header = () => {
       label: "Locations",
       items: [
         { label: "Eden", link: "/eden" },
-        { label: "Mpape", link: "/mpape" },
-        { label: "Enugu", link: "/enugu" },
+        // { label: "Mpape", link: "" },
+        // { label: "Enugu", link: "" },
       ],
     },
     {
@@ -88,21 +88,21 @@ const Header = () => {
       items: [
         { label: "Baptism", link: "/baptism" },
         { label: "Believer's Foundation", link: "/believers-foundation" },
-        { label: "Marriage Course", link: "#" },
-        { label: "Counseling", link: "#" },
+        // { label: "Marriage Course", link: "#" },
+        // { label: "Counseling", link: "#" },
       ],
     },
     {
       label: "Events",
       items: [
         { label: "Event Calendar", link: "/event-calendar" },
-        { label: "TFC Summer Camps", link: "/summer-camps" },
+        // { label: "TFC Summer Camps", link: "/summer-camps" },
       ],
     },
-    {
-      label: "Give",
-      items: [{ label: "Ways To Give", link: "/ways-to-give" }],
-    },
+    // {
+    //   label: "Give",
+    //   items: [{ label: "Ways To Give", link: "/ways-to-give" }],
+    // },
   ];
 
   return (
