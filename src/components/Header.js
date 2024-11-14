@@ -71,8 +71,8 @@ const Header = () => {
       label: "Locations",
       items: [
         { label: "Eden", link: "/eden" },
-        { label: "Mpape", link: "/mpape" },
-        { label: "Enugu", link: "/enugu" },
+        { label: "Mpape", link: "" },
+        { label: "Enugu", link: "" },
       ],
     },
     {
