@@ -8,6 +8,7 @@ import {
   faFacebook,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import "./contact.css";
 
 const Gettouch = () => {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ const Gettouch = () => {
   const containerbgStyle = {
     backgroundImage: `url(${backgroundImageUrl})`,
     // width: "100%",
-    height: "540px",
+    minHeight: "70vh",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -39,7 +40,7 @@ const Gettouch = () => {
     position: "relative",
     zIndex: "1",
     // width: "100%",
-    maxHeight: "540px",
+    minHeight: "70vh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -57,8 +58,10 @@ const Gettouch = () => {
       <section className="your-section-class">
         <Container fluid style={containerbgStyle}></Container>
         <Container fluid style={containerStyle}>
-          <div style={{ justifyContent: "center" }}>
-            <Row>
+          <div
+            style={{ width: "90%", display: "flex", justifyContent: "center" }}
+          >
+            <Row style={{ width: "90%" }}>
               <Col md={6}>
                 <div>
                   <div className="elementor-element elementor-element-52ff6ed elementor-invisible elementor-widget elementor-widget-heading">
@@ -69,14 +72,11 @@ const Gettouch = () => {
                       <h2
                         className="elementor-heading-title elementor-size-default"
                         style={{
-                          fontSize: "130px",
+                          fontSize: "8rem",
                           fontWeight: "bolder",
                           fontFamily: "Sans-serif",
-                          justifyContent: "center",
-                          textAlign: "left",
                           marginTop: "85px",
                           color: "#000",
-                          marginBottom: "-35px",
                         }}
                       >
                         Get In <br />
@@ -89,7 +89,7 @@ const Gettouch = () => {
                       <p
                         style={{
                           fontFamily: "Sans-serif",
-                          fontSize: "25px",
+                          fontSize: "16px",
                           fontWeight: "600",
                           color: "#000",
                         }}
@@ -101,9 +101,13 @@ const Gettouch = () => {
                   <div className="elementor-element elementor-element-72f4e51 elementor-mobile-align-center elementor-invisible elementor-widget elementor-widget-button">
                     <div
                       className="elementor-widget-container"
-                      style={{ display: "flex", marginTop: "-15px" }}
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "20px",
+                      }}
                     >
-                      <div style={{ display: "flex", marginRight: "50px" }}>
+                      <div style={{ display: "flex", gap: "20px" }}>
                         <FontAwesomeIcon
                           icon={faFacebook}
                           size="3x"
@@ -112,12 +116,12 @@ const Gettouch = () => {
                         <FontAwesomeIcon
                           icon={faInstagram}
                           size="3x"
-                          style={{ color: "#d49c04", marginLeft: "20px" }}
+                          style={{ color: "#d49c04" }}
                         />
                         <FontAwesomeIcon
                           icon={faYoutube}
                           size="3x"
-                          style={{ color: "#d49c04", marginLeft: "20px" }}
+                          style={{ color: "#d49c04" }}
                         />
                       </div>
                       <div className="elementor-button-wrapper">
@@ -160,7 +164,7 @@ const Gettouch = () => {
                   </div>
                 </div>
               </Col>
-              <Col md={6}>
+              <Col md={6} className="gtk-image-col">
                 {/* Your image goes here */}
                 <img
                   src="gettoknow3.png"
@@ -168,8 +172,8 @@ const Gettouch = () => {
                   className="img-fluid"
                   style={{
                     borderRadius: "10px",
-                    marginTop: "80px",
-                    marginBottom: "-60px",
+                    marginTop: "60px",
+                    marginBottom: "-20px",
                   }}
                 />
               </Col>
