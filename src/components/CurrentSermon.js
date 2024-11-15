@@ -10,8 +10,8 @@ const CurrentSermon = () => {
   const backgroundImageUrl = 'pastor-1-1.png';
 
   const redirectToSermonsPage = () => {
-    console.log('Redirecting to sermons page');
-    navigate('/Sermons');
+    console.log('Redirecting to youtube');
+    window.open("https://www.youtube.com/@TheFathersChurch/videos", "_blank");
   };
 
   return (

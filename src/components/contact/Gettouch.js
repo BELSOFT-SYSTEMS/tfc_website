@@ -13,9 +13,9 @@ import "./contact.css";
 const Gettouch = () => {
   const navigate = useNavigate();
 
-  const redirectToContactPage = () => {
+  const redirectToSundays = () => {
     console.log("Redirecting to contact page");
-    navigate("/contact");
+    navigate("/sundays");
   };
 
   const backgroundImageUrl = "gettoknow2.jpeg"; // Replace with your image URL
@@ -137,7 +137,7 @@ const Gettouch = () => {
                             height: "40px",
                             marginTop: "4px",
                           }}
-                          onClick={redirectToContactPage}
+                          onClick={redirectToSundays}
                         >
                           <span className="elementor-button-content-wrapper">
                             <span

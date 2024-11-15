@@ -41,7 +41,7 @@ const Connect = () => {
           <div style={{ flex: 1, marginTop: "50px", marginBottom: "50px" }}>
             <Row>
               <h2 style={{ fontSize: "4rem", fontWeight: "600" }}>
-                Need To Connect About Care?
+                Need More Information? Contact Us Today
               </h2>
               <p
                 style={{
@@ -77,7 +77,7 @@ const Connect = () => {
                     }}
                   >
                     {" "}
-                    (905) 686-4450{" "}
+                    +234 703 158 8404{" "}
                   </span>
                 </p>
               </Col>
@@ -152,7 +152,7 @@ const Connect = () => {
                           marginBottom: "0",
                         }}
                       >
-                        Needed Care
+                        Message
                       </Form.Label>
                       <Form.Control
                         as="textarea"
@@ -181,11 +181,11 @@ const Connect = () => {
                       style={{
                         maxWidth: "200px",
                         backgroundColor: "#d49c04",
-                        color: "#000",
+                        color: "#fff",
                         marginTop: "20px",
                       }}
                     >
-                      I NEED CARE FORM
+                      SEND
                     </Button>
                   </Form>
                 </div>

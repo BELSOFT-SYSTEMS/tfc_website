@@ -10,16 +10,16 @@ Copy code .home-slider-section {
   font-weight: bold;
   font-family: Sans-serif;
   text-align: left;
-  margin: 1.5rem 30px;
+  margin: 1.5rem 5rem;
   /* Default font size for larger screens */
-  font-size: 60px;
+  font-size: 80px;
   line-height: 1.2;
 }
 
-.hero-text span {
+/* .hero-text span {
   display: block;
   font-size: 80px;
-}
+} */
 
 .dropdown-menu[data-bs-popper] {
   /* left: -20% !important; */
@@ -62,7 +62,7 @@ Copy code .home-slider-section {
 
 /* Adjust font size for mobile and tablet */
 @media (max-width: 992px) {
-  .hero-text span {
+  .hero-text {
     font-size: 45px;
   }
 }
@@ -72,9 +72,9 @@ Copy code .home-slider-section {
     font-size: 35px;
   }
 
-  .hero-text span {
+  /* .hero-text span {
     font-size: 45px;
-  }
+  } */
 
   .image-container img {
     max-height: 70%; /* Adjust image size for smaller screens */

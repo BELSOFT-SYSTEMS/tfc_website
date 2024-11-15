@@ -26,9 +26,12 @@ const Mission = () => {
                 // marginTop: "25px",
               }}
             >
-              To glorify God by reaching and enabling
-              <br /> people of all ages and nations to become
-              <br /> fully devoted followers of Jesus Christ.
+              To raise a generation of quality, reliable, and consistent men 
+              
+              <br /> and women that God can use to accomplish His purpose 
+              <br /> on Earth. Through sound biblical teachings, a commitment to 
+              <br /> moral conduct, and the ministry of the Holy Spirit, we strive 
+              <br /> to reveal the fatherhood of Almighty God to this generation.
             </p>
           </div>
           <div
@@ -49,9 +52,10 @@ const Mission = () => {
                 // marginTop: "25px",
               }}
             >
-              To become a missionary church of 10,000
-              <br /> meeting the physical, emotional, and <br />
-              spiritual needs of people in Jesus’ name.
+              To be a multi-ethnic and multi-national church where everyone can encounter God, grow in the knowledge and 
+              understanding of Him as a loving Father, and manifest their gifts and callings in joyful, fruitful, and purposeful lives in Jesus Christ.
+              {/* <br /> meeting the physical, emotional, and <br />
+              spiritual needs of people in Jesus’ name. */}
             </p>
           </div>
         </Container>

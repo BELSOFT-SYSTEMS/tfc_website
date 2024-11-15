@@ -94,7 +94,7 @@ const About = () => {
           </Col>
           <Col xs={12} md={6}>
             <img
-              src="aboutus1.png"
+              src="event2.jpg"
               alt="Opposite"
               className="img-fluid"
               style={{
