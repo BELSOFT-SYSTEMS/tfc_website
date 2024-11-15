@@ -97,7 +97,7 @@ const Sitepast = () => {
               <Col md={6} className={Style.Past_div}>
                 {/* Your image goes here */}
                 <img
-                  src="pastor2.png"
+                  src="pastor-home-3.jpg"
                   alt="Opposite"
                   className="img-fluid"
                   style={{
@@ -110,11 +110,12 @@ const Sitepast = () => {
               <Col md={6} className={Style.Past_div}>
                 {/* Your image goes here */}
                 <img
-                  src="pastor2.png"
+                  src="co-pastor-2.jpg"
                   alt="Opposite"
                   className="img-fluid"
                   style={{
                     borderRadius: "10px",
+
                   }}
                 />
               </Col>

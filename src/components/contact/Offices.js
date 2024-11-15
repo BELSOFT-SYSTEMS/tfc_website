@@ -89,10 +89,10 @@ const Offices = () => {
                 padding: "20px",
               }}
             >
-              <h2 style={{ fontSize: "16px" }}>EDEN BRANCH</h2>
+              <h2 style={{ fontSize: "16px" }}>EDEN CENTER</h2>
               <p
                 style={{
-                  fontFamily: "Montserrat",
+                  fontFamily: "Sans-serif",
                   fontSize: "14px",
                   fontWeight: "40",
                   lineHeight: "30px",
@@ -124,14 +124,14 @@ const Offices = () => {
                     icon={faPhone}
                     style={{ color: "#d49c04", fontSize: "18px" }}
                   />
-                  <span style={textStyle}>(905) 686-4450</span>
+                  <span style={textStyle}>+234-703-158-8404</span>
                 </div>
                 <div style={{ paddingTop: "5px" }}>
                   <FontAwesomeIcon
                     icon={faEnvelopeOpenText}
                     style={{ color: "#d49c04", fontSize: "18px" }}
                   />
-                  <span style={textStyle}>hello@TheFathersChurch.com</span>
+                  <span style={textStyle}>info@thefatherschurchonline.org</span>
                 </div>
               </p>
             </div>
@@ -140,10 +140,10 @@ const Offices = () => {
                 padding: "20px",
               }}
             >
-              <h2 style={{ fontSize: "16px" }}>MPAPE BRANCH</h2>
+              <h2 style={{ fontSize: "16px" }}>MPAPE</h2>
               <p
                 style={{
-                  fontFamily: "Montserrat",
+                  fontFamily: "Sans-serif",
                   fontSize: "14px",
                   fontWeight: "40",
                   lineHeight: "30px",
@@ -170,7 +170,7 @@ const Offices = () => {
                     icon={faPhone}
                     style={{ color: "#d49c04", fontSize: "18px" }}
                   />
-                  <span style={textStyle}>(905) 686-4450</span>
+                  <span style={textStyle}>+234-703-158-8404</span>
                 </div>
                 <div style={{ paddingTop: "5px" }}>
                   <FontAwesomeIcon
@@ -194,10 +194,10 @@ const Offices = () => {
                 padding: "20px",
               }}
             >
-              <h2 style={{ fontSize: "16px" }}>ENUGU BRANCH</h2>
+              <h2 style={{ fontSize: "16px" }}>ENUGU</h2>
               <p
                 style={{
-                  fontFamily: "Montserrat",
+                  fontFamily: "Sans-serif",
                   fontSize: "14px",
                   fontWeight: "40",
                   lineHeight: "30px",
@@ -224,7 +224,7 @@ const Offices = () => {
                     icon={faPhone}
                     style={{ color: "#d49c04", fontSize: "18px" }}
                   />
-                  <span style={textStyle}>(905) 686-4450</span>
+                  <span style={textStyle}>234-703-158-8404</span>
                 </div>
                 <div style={{ paddingTop: "5px" }}>
                   <FontAwesomeIcon

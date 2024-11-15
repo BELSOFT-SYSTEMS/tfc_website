@@ -45,7 +45,7 @@ const Connect = () => {
               </h2>
               <p
                 style={{
-                  fontFamily: "Montserrat,Sans-serif",
+                  fontFamily: "Sans-serif",
                   paddingTop: "10px",
                   fontSize: "14px",
                   fontWeight: "500",
@@ -53,7 +53,7 @@ const Connect = () => {
                 }}
               >
                 FINANCIAL DIFFICULTY • FAMILY SITUATIONS • EMOTIONAL WELL-BEING
-                • PRAYER • SPIRITUAL DYNAMICS • HOSPITAL VISITS
+                • PRAYER • SPIRITUAL GUIDANCE • HOSPITAL VISITS
               </p>
               <Col xs={12} md={6}>
                 <p style={{ display: "flex" }}>

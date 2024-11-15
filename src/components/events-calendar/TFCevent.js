@@ -11,7 +11,7 @@ const TFCevent = () => {
           <div className="event-header">
             <h2
               style={{
-                fontFamily: "Coolvetica",
+                fontFamily: "Sans-serif",
               }}
             >
               Events At <br /> TFC Church.

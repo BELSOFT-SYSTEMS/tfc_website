@@ -83,15 +83,15 @@ const Header = () => {
     //   label: "Media",
     //   items: [{ label: "Sermons", link: "/sermons/recent" }],
     // },
-    {
-      label: "What’s Next?",
-      items: [
-        { label: "Baptism", link: "/baptism" },
-        { label: "Believer's Foundation", link: "/believers-foundation" },
-        // { label: "Marriage Course", link: "#" },
-        // { label: "Counseling", link: "#" },
-      ],
-    },
+    // {
+    //   label: "What’s Next?",
+    //   items: [
+    //     { label: "Baptism", link: "/baptism" },
+    //     { label: "Believer's Foundation", link: "/believers-foundation" },
+    //     { label: "Marriage Course", link: "#" },
+    //     { label: "Counseling", link: "#" },
+    //   ],
+    // },
     {
       label: "Events",
       items: [

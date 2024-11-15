@@ -6,6 +6,7 @@ import { Button } from "../components/Button/Button";
 const Landing = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
   const [showSmallImage, setShowSmallImage] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
   const videoRef = useRef(null);
   const carouselRef = useRef(null);
   const navigate = useNavigate();
@@ -29,28 +30,22 @@ const Landing = () => {
     }
   };
 
-  const handleSlideChange = (event) => {
-    if (event === 0 && videoRef.current) {
-      setIsVideoPlaying(true);
+  const handleSlideChange = (newIndex) => {
+    setActiveIndex(newIndex); // Track the current slide index
+    setShowSmallImage(false); // Reset small image visibility on slide change
+
+    if (newIndex === 0 && videoRef.current) {
+      setIsVideoPlaying(true); // Play video on the first slide
       videoRef.current.play();
-    } else if (event === 1) {
+    } else if (newIndex === 1 || newIndex === 2) {
+      // Show small image and delay transition for slide 2 and 3
       setShowSmallImage(true);
-      // Delay the next slide after 5 seconds
       setTimeout(() => {
         setShowSmallImage(false);
-        if (carouselRef.current) {
+        if (carouselRef.current && activeIndex === newIndex) {
           carouselRef.current.next();
         }
-      }, 5000); // 5000ms delay
-    }else if (event === 2) {
-      setShowSmallImage(true);
-      // Delay the next slide after 5 seconds
-      setTimeout(() => {
-        setShowSmallImage(false);
-        if (carouselRef.current) {
-          carouselRef.current.next();
-        }
-      }, 5000); // 5000ms delay
+      }, 5000); // 5-second delay
     }
   };
 
@@ -68,9 +63,10 @@ const Landing = () => {
         className="carousel"
         controls={false}
         indicators={false}
-        interval={isVideoPlaying ? null : 3000}
+        interval={isVideoPlaying ? null : 3000} // Disable auto-slide when video is playing
+        pause={false} // Prevent carousel from pausing on hover
         ref={carouselRef}
-        onSlide={(event) => handleSlideChange(event)}
+        onSelect={handleSlideChange} // Track slide changes
       >
         <Carousel.Item>
           <video
@@ -132,6 +128,7 @@ const Landing = () => {
         </div>
       </footer>
 
+      {/* Styles */}
       <style jsx>{`
         .landing-page {
           position: absolute;
@@ -176,11 +173,24 @@ const Landing = () => {
           animation: slideIn 2s forwards ease-in-out;
         }
 
-        .third{
+        .third {
           width: 90vh;
+          animation: slideInFixed 2s forwards ease-in-out;
         }
 
         @keyframes slideIn {
+          from {
+            right: -200px;
+            opacity: 0;
+          }
+          to {
+            right: 50%;
+            opacity: 1;
+            transform: translate(50%, -50%);
+          }
+        }
+
+        @keyframes slideInFixed {
           from {
             right: -200px;
             opacity: 0;

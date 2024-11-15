@@ -48,9 +48,8 @@ const Knowusbetter = () => {
               paddingBottom: "40px",
             }}
           >
-            At the light bearers Academy children ranges between 2 to 12 years
-            of age at 13 years they are sent to the teenage church which is
-            called the ambassadors.
+            The Joy Force is simply the work force of the church, comprising of men and women, old 
+            and young who are willing and joyfully giving themselves the service of the Lord through their various units in the church.
           </p>
 
           <div>
@@ -67,14 +66,7 @@ const Knowusbetter = () => {
                 </Accordion.Header>
                 <Accordion.Body>
                   <p style={{ fontSize: "14px" }}>
-                    The light bearers Academy is the children’s arm of the
-                    father’s church its aim is to educate and equip our children
-                    with the word of God in line with the vision of the main
-                    church which is to reveal the fatherhood of almighty God
-                    through sound biblical teaching and correspondent moral
-                    conduct. In line with this our children are filled with the
-                    knowledge of God’s will in all wisdom and spiritual
-                    understanding.
+                    The Joy Force Academy is set up for the training and retraining of the work force of the church.
                   </p>
                 </Accordion.Body>
               </Accordion.Item>
@@ -110,7 +102,7 @@ const Knowusbetter = () => {
               <Accordion.Item eventKey="2" style={{ marginBottom: "20px" }}>
                 <Accordion.Header>
                   <h1 style={{ fontSize: "18px", fontWeight: "700" }}>
-                    Our Service Times
+                    Our Intakes
                   </h1>
                 </Accordion.Header>
                 <Accordion.Body>

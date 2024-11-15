@@ -21,8 +21,8 @@ const Believe = () => {
 
   const buttonData = [
     { name: "STATEMENT OF FAITH", value: "statement" },
-    { name: "TAB 2", value: "apostle" },
-    { name: "TAB 3", value: "nicene" },
+    { name: "WHO WE ARE", value: "apostle" },
+    { name: "THERE IS ROOM FOR EVERYONE", value: "nicene" },
     // { name: "OUR HISTORY", value: "history" },
   ];
 
@@ -152,26 +152,31 @@ const Believe = () => {
                     className="believe-list"
                   >
                     <p>
-                      1. We believe the Bible to be the Inspired Word of God and
-                      that it is our standard for faith and conduct.
+                      1. Man is created in the image of God but separated from God by sin. Without Jesus, 
+                      we cannot have a relationship with God. (Genesis 1:26, 1 Timothy 2:3)
                     </p>
                     <p>
-                      2. We believe that there is one God, eternally existing in
-                      three persons: Father, Son, and Holy Spirit.
+                      2. God is love and He loves all people. It is His to reach out to those who are poor, oppressed, 
+                      widowed, or orphaned and to heal the broken hearted (Psalms 8:5-6, 1 John 4:16).
                     </p>
                     <p>
-                      3. We believe that human nature is sinful and deserving of
-                      the punishment of God.
+                      3. There is one God existing eternally in three persons. God the Father, 
+                      God the Son and God the Holy Spirit. (John 10:30, John 14:26, Phil;ippians 2:5-7).
                     </p>
                     <p>
-                      4. We believe that Jesus Christ was conceived by the Holy
-                      Spirit and born of the virgin Mary, and is true God and
-                      true man.
+                      4. We can have personal relationship with God through salvation. God's free gift to man. 
+                      It is not a result of what we do, but it is only available through God's unearned favor. 
+                      By admitting that we have sinned and believing in the death, burial and rewssurection of 
+                      Christ and accepting Him as Lord, we can spend eternity with God. (Ephesians 2:8-9, Romans 3:24).
                     </p>
                     <p>
-                      5. We believe that the death of Jesus Christ was for our
-                      sins and that all who trust in Him and His death for us
-                      are forgiven their sins and granted eternal life.
+                      5. God gives all believers spiritual gifts. They are for the strengthening of God's people (the Church) 
+                      and proof of God's existence and power to unbelievers. The gifts of the Spirit are active and relevant today.
+                      (1 Corinthians 12:4-11, 1 Peter 4:10).
+                    </p>
+                    <p>
+                      6. We believe in water baptism by immersion, as taught and demonstrated by Jesus as the way for believers 
+                      to identify with the death, burial and resurrection of Jesus. (Mathew 28:19, Romans 6:4, Mathew 3:13-17).
                     </p>
                   </ListGroup.Item>
                   <ListGroup.Item
@@ -179,23 +184,31 @@ const Believe = () => {
                     className="believe-list"
                   >
                     <p>
-                      6. We believe in the resurrection of Jesus Christ, His
-                      ascension into Heaven, and His ministry there as our High
-                      Priest.
+                      7. The baptism of the Holy Spirit with the evidence of speaking in tongues. The Holy Spirit is a gift from God, 
+                      He helps empower the believer to develop the character of Christ and live everyday in God's will. (Mathew 3:11, Acts 2:4, 1 Corinthians 14:2). 
+                      Sanctification is an on-going process of allowing God's character to be developed in us. (Romans 6:19, Galatians 5:22-25).
+
                     </p>
                     <p>
-                      7. We believe in the work of the Holy Spirit in convicting
-                      people of sin, the regeneration of those turning to Christ
-                      from sin, and His work of sanctification in the believer.
+                      8. The authority of a believer is in the name of Jesus. (Mark 16:17-18). 
                     </p>
-                    <p>8. We believe in the personal return of Jesus Christ.</p>
+                    <p>9. Faith is actually on the word of God (Hebrews 2:4, 2 Corinthians 5:7).</p>
                     <p>
-                      9. We believe in the bodily resurrection of the just and
-                      the unjust, the everlasting joy of the saved and the
-                      everlasting punishment of the unsaved.
+                      10. We further believe that Jesus is our healer and that by His stripes we are already healed. (Isaiah 53:5).
                     </p>
                     <p>
-                      10. We believe in the baptism, by immersion, of believers.
+                      11. Devine healing is active in the lives of people today through Jesus who is the healer. Healing includes 
+                      physical, mental, emotional and spiritual restoration. (Luke 9:11, Mathew 9:35, Acts 10:38, Mathew 10:1).
+
+                    </p>
+                    <p>
+                      12. Heaven is real. The bible describes heaven as the place of the throne of God, where those who accept Christ will spend eternity 
+                      with God after death (Psalms 11:4, Isaiah 66:1).
+                
+                    </p>
+                    <p>
+                      13. Hell is real. The  bible describes hell as a real place. It is a place of permanent separation from God for those who die without accepting Christ. 
+                      God's desire is that no be separated from Him for eternity, which is why He sent his son Jesus Christ to earth. (Hebrews 9:27, Revelation 20:12-15, John 3:16-18).
                     </p>
                   </ListGroup.Item>
                 </ListGroup>
@@ -227,19 +240,14 @@ const Believe = () => {
                 <Row style={{ marginBottom: "50px" }}>
                   <Col style={itemStyle} className="believe-list">
                     <p>
-                      I believe in God, the Father almighty, creator of heaven
-                      and earth. I believe in Jesus Christ, God’s only Son, our
-                      Lord, who was conceived by the Holy Spirit, born of the
-                      Virgin Mary, suffered under Pontius Pilate, was crucified,
-                      died, and was buried; he descended to the dead. On the
-                      third day he rose again; he ascended into heaven, he is
-                      seated at the right hand of the Father, and he will come
-                      to judge the living and the dead. I believe in the Holy
-                      Spirit, the holy catholic Church, the communion of saints,
-                      the forgiveness of sins, the resurrection of the body, and
-                      the life everlasting.
-                      <br />
-                      Amen.
+                    We are a vibrant, living, Bible Believing Church established in November 2003 in response to God’s 
+                    proceeding Word to His Servant Pastor Ikenna Okeke to “Go to Abuja and raise Me men I can use”. 
+                    An assembly of believers committed to revealing the fatherhood of Almighty God to this generation 
+                    through sound biblical teachings and corresponding moral conduct.TFC is a Peculiar, Multi-ethnic and 
+                    multi-national Church mandated To Raise Quality, Reliable And Consistent Men And Women God Can Use to 
+                    Accomplish His Purpose On Earth. We believe that the deepest desire of God is that we all come to the 
+                    knowledge and understanding essential for us to see Him not just as the Creator of all things, but as 
+                    father; who desires only good for us.
                     </p>
                   </Col>
                 </Row>
@@ -254,32 +262,10 @@ const Believe = () => {
                 <Row style={{ marginBottom: "50px" }}>
                   <Col style={itemStyle} className="believe-list">
                     <p>
-                      We believe in one God, the Father Almighty, the maker of
-                      heaven and earth, of things visible and invisible. And in
-                      one Lord Jesus Christ, the Son of God, the begotten of God
-                      the Father, the Only-begotten, that is of the essence of
-                      the Father. God of God, Light of Light, true God of true
-                      God, begotten and not made; of the very same nature of the
-                      Father, by Whom all things came into being, in heaven and
-                      on earth, visible and invisible. Who for us humanity and
-                      for our salvation came down from heaven, was incarnate,
-                      was made human, was born perfectly of the holy virgin Mary
-                      by the Holy Spirit. By whom He took body, soul, and mind,
-                      and everything that is in man, truly and not in semblance.
-                      He suffered, was crucified, was buried, rose again on the
-                      third day, ascended into heaven with the same body, [and]
-                      sat at the right hand of the Father. He is to come with
-                      the same body and with the glory of the Father, to judge
-                      the living and the dead; of His kingdom there is no end.
-                      We believe in the Holy Spirit, in the uncreated and the
-                      perfect; Who spoke through the Law, prophets, and Gospels;
-                      Who came down upon the Jordan, preached through the
-                      apostles, and lived in the saints. We believe also in only
-                      One, Universal, Apostolic, and Catholic Church; in one
-                      baptism in repentance, for the remission, and forgiveness
-                      of sins; and in the resurrection of the dead, in the
-                      everlasting judgement of souls and bodies, and the Kingdom
-                      of Heaven and in the everlasting life.
+                    In The Father’s Church, there is room enough for every one to manifest the gifts and callings of God, 
+                    through the Ministry of the Holy Spirit. We pray that you encounter God through the materials you find 
+                    on this website, and that this encounter guides you into a joyful, fruitful and purposeful life in our 
+                    Lord and Saviour, Jesus Christ.
                     </p>
                   </Col>
                 </Row>

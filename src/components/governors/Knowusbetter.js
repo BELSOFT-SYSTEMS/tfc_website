@@ -15,43 +15,63 @@ const Knowusbetter = () => {
           <h1 style={{ fontSize: '60px', justifyContent: 'center', fontWeight: 'bold', textAlign: 'center', paddingTop: '40px' }}>about us</h1>
           <p style={{ fontSize: '20px', justifyContent: 'center', fontWeight: '40', textAlign: 'center', paddingTop: '20px', paddingBottom: '40px' }}>
 
-          At the light bearers Academy children ranges between 2 to 12 years of age at 13 years they are sent to the teenage church which is called the ambassadors.
+          The Governors Fellowship comprises of all married men in the church.
           </p>
 
           <div style={{ paddingBottom: '30px' }}>
             <Accordion defaultActiveKey="0" alwaysOpen style={{ paddingBottom: '20px' }}>
               <Accordion.Item eventKey="0" style={{ paddingBottom: '5px', marginBottom: '20px' }}>
                 <Accordion.Header ><h1 style={{ fontSize: '24px', fontWeight: '700' }}>who we are</h1></Accordion.Header>
-                <Accordion.Body>
-                The light bearers Academy is the children’s arm of the father’s church its aim is to educate and equip our children 
-                with the word of God in line with the vision of the main church which is to reveal the fatherhood of almighty God 
-                through sound biblical teaching and correspondent moral conduct.  In line with this our children are filled with the 
-                knowledge of God’s will in all wisdom and spiritual understanding.
+                <Accordion.Body style={{ fontSize: '16px', fontWeight: '300'}}>
+                The Men’s Fellowship (a.k.a Governors Fellowship) is an assemblage of married men and fathers in the church. 
+                We acknowledge the critical role of men as the Priests, Protectors, Prophets and Providers in their families 
+                and the society in general so, we inspire them to take up these distinct leadership responsibilities assigned by God. 
+                We believe that the primary goal of our existence is to serve God by helping each other to connect relationally, grow 
+                spiritually and economically. Consequently, through sound biblical doctrines and high moral standards, we help to mould 
+                mighty men that will build lasting godly legacies in their communities. Most importantly, the fellowship strives for a total, 
+                committed and spirit-filled Christian men, especially in this end-times, by passionately taking the gospel to the world in line 
+                with the church’s mission to raise souls for Christ.  
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1" style={{ paddingBottom: '5px', marginBottom: '20px' }}>
-                <Accordion.Header><h1 style={{ fontSize: '24px', fontWeight: '700' }}>what we do</h1></Accordion.Header>
-                <Accordion.Body>
-                At the light bearers Academy children ranges between 2 to 12 years of age at 13 years they are sent to the teenage church which is called the ambassadors.
-                Our classes are sectioned into ages 2-3, 4 -5, 6, 7, 8- 9, 10, and 11- 12 years of age so we can teach same topic at the same time but at different levels with loads of visuals and physical activities to depict or portray each lesson. After each topic example obedience we have quiz, drama, movies ETC.
-                The games, songs, crafts and other activities that we use helps to reinforce an atmosphere that makes the children look forward to church because it’s fun packed.
-                we also have classes for special needs children and caregivers who can flow in the main church due to language barrier(we use the Nigerian language)
-                We are also particular about the safety of our children therefore tags are given to parents or guardians when they drop off and it's only such tags that admits them into the children's church.
-                We have Rest rooms that are exclusively for children.
-
+                <Accordion.Header><h1 style={{ fontSize: '24px', fontWeight: '700' }}>WE ARE RESOLVED TO</h1></Accordion.Header>
+                <Accordion.Body style={{ fontSize: '16px', fontWeight: '300'}}>
+                
+                WE ARE RESOLVED TO: <br />
+                1. Constantly seek God's counsel and direction in our daily activities.<br />
+                2. Provide the material needs of our respective families.<br />
+                3. Love our wives and children unconditionally.<br />
+                4. Protect our families and teach them about God.<br />
+                5. Be a role model for hard work, integrity and respect.<br />
+                6. Be a guide in making the children to become responsible citizens with the focus on eternity.<br />
+                7. Love and mentor other children with no father in their lives, but with the desire for help and direction.<br />
+                8. Pray and ask God to break the chain of destructive pattern, corruption and moral decadence in Nigeria.<br />
+                We are Men Under Authority!
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2" style={{ paddingBottom: '5px', marginBottom: '20px' }}>
-                <Accordion.Header><h1 style={{ fontSize: '24px', fontWeight: '700' }}>Our Service Times</h1></Accordion.Header>
-                <Accordion.Body>
-                Sunday school starts at 8:00am and ends at 8:45am that takes place in the main church. Registration starts at 8:45am and our service starts at 9:00 AM.
+                <Accordion.Header><h1 style={{ fontSize: '24px', fontWeight: '700' }}>Mode of Operation</h1></Accordion.Header>
+                <Accordion.Body style={{ fontSize: '16px', fontWeight: '300'}}>
+                Monthly Meetings:<br />
+                Every 3rd Sunday of the Month (except in January, June and December).<br />
+                Time: 4pm. Venue: Not fixed.<br /><br />
+                Activities:<br />
+                1. Governors Summit - Every Fathers' Day.<br />
+                2. Man-2-Man Seminars<br />
+                3. Couples Nite<br />
+                4. Governors Empowerment Programme<br /> 
+                5. Eden Cooperative Society;<br /> 
+                6. Governors Outreach<br /> 
+                7. Governors Fitness Hangout(GFH)
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="4" style={{ paddingBottom: '5px', marginBottom: '20px' }}>
-                <Accordion.Header><h1 style={{ fontSize: '24px', fontWeight: '700' }}>Wanna Join Us?</h1></Accordion.Header>
-                <Accordion.Body>
-                Pastor Ibironke Oka is the Head of the light bearers Academy she’s assisted by Deaconess Victoria Onuoha Deacon Ben Ekeyi and Ms Tare Atiyota. 
-                Ms Aniefon Sulaiman is in charge of the early years. Enquiry about the Academy can be directed to either of them.
+                <Accordion.Header><h1 style={{ fontSize: '24px', fontWeight: '700' }}>How to join</h1></Accordion.Header>
+                <Accordion.Body style={{ fontSize: '16px', fontWeight: '300'}}>
+                You are welcome to join any of our monthly meetings.<br />  
+                Contact:<br /> 
+                Gov. Dayo Kehinde<br /> 
+                Gov. Ben Ekeyi
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>

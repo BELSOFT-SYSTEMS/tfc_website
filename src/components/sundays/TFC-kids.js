@@ -9,15 +9,15 @@ const TFCkids = () => {
 
   const redirectToQueensPage = () => {
     console.log("Redirecting to queens page");
-    navigate("/Queens");
+    navigate("/the-queens");
   };
   const redirectToLightbearersPage = () => {
     console.log("Redirecting to lightbearers page");
-    navigate("/Lightbearer");
+    navigate("/lightbearers");
   };
   const redirectToAmbassadorsPage = () => {
     console.log("Redirecting to ambassadors page");
-    navigate("/Ambassadors");
+    navigate("/ambassadors");
   };
   return (
     <Container fluid style={{ margin: "0 2rem" }}>
@@ -49,7 +49,7 @@ const TFCkids = () => {
         <Cards
           title="The light bearers Academy"
           // date="27 MAY 2024"
-          description="The light bearers Academy is the children’s arm of the father’s church its aim is to educate and equip our children with the word of God in line with the vision of the main church which is to reveal..."
+          description="The Light Bearers Academy is the children's church comprising of all children from the ages of 2 to 12 in church..."
           imageUrl="lightbearers.jpeg"
           buttonText="Find Out More"
           onClick={redirectToLightbearersPage}
@@ -58,15 +58,14 @@ const TFCkids = () => {
           title="The Father's Church Queens Fellowship"
           // date="08 MAY 2024"
           description="The Queens of The Father's Church are married women and mothers in The Father's Church. The Queens Fellowship is a fellowship of mothers and married women in the Father's Church to build each...  "
-          imageUrl="queens_event.jpeg"
+          imageUrl="queens-1.jpg"
           buttonText="Find Out More"
           onClick={redirectToQueensPage}
         />
         <Cards
           title="The Ambassadors of the father's church"
           // date="26 MAY 2024"
-          description="Let's pause...reflect, and give thanks to God for the countless blessings that enrich our lives each day! 
-          Every blessing is a testament to God's unfailing love and faithfulness. Join us This Sunday;"
+          description="The Ambassadors church is the arm of the church designed to mold and equip our teenagers to become vessels of honor that God can use to impact their world and..."
           imageUrl="ambassadors.jpeg"
           buttonText="Find Out More"
           onClick={redirectToAmbassadorsPage}

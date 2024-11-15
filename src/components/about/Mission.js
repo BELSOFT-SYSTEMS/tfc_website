@@ -79,75 +79,61 @@ const Mission = () => {
                     Jesus in character and conduct.
                   </p>
                 </TabButton>
-                <TabButton label="WELCOMING EVERYONE">
+                <TabButton label="REVEALING GOD’S FATHERHOOD">
                   <p>
-                    Eph 4:12 <br /> We believe that in the church we are
-                    constantly addressing two audiences: those who have already
-                    crossed the line of faith and those who have not; we
-                    recognise the need to minister to both.
+                    Romans 8:15 <br /> We are committed to revealing the fatherhood of Almighty God to this generation, 
+                    helping believers experience His love, guidance, and care as a Father who desires only good for His children.
                   </p>
                 </TabButton>
-                <TabButton label="SHARED RESPONSIBILITY">
+                <TabButton label="DISCIPLESHIP">
                   <p>
-                    Matt 28:19, Acts 4:12 <br /> We believe that all followers
-                    of Jesus are called to be responsible witnesses in our
-                    speech and actions, together making a difference in the
-                    church and community.
+                  Matthew 28:19-20 <br /> We are dedicated to raising quality, 
+                  reliable, and consistent men and women God can use to accomplish 
+                  His purposes through sound teaching and mentoring in faith and practice.
                   </p>
                 </TabButton>
-                <TabButton label="AUTHENTIC RELATIONSHIPS">
+                <TabButton label="UNITY IN DIVERSITY">
                   <p>
-                    Eph 4:29-32 <br /> We believe that every Christ-follower is
-                    called to love, accept, and forgive one another; seeking to
-                    maintain unity and purity in our relationships.
+                  Galatians 3:28 <br /> As a multi-ethnic and multi-national church, 
+                  we celebrate our diversity while fostering unity as members of one body in Christ.
                   </p>
                 </TabButton>
-                <TabButton label="HOLISTIC MINISTRY">
+                <TabButton label="SPIRITUAL GROWTH">
                   <p>
-                    Matt 5:14-16, James 1:27 <br /> We believe in ministry that
-                    addresses the needs of the whole person – spiritual,
-                    emotional, and physical.
+                  Ephesians 4:15 <br /> We prioritize the spiritual growth of every believer, 
+                  nurturing them to maturity in Christ through the ministry of the Holy Spirit and sound biblical teachings.
                   </p>
                 </TabButton>
               </div>
               <div className="value-tabs">
-                <TabButton label="CHRISTIAN COMMUNITY">
+                <TabButton label="CHRISTLIKE CHARACTER">
                   <p>
-                    Acts 2:42-47 <br /> We believe that every Christ-follower is
-                    called to participate in Christian community through large
-                    and small expressions where worship, teaching, and
-                    fellowship are promoted.
+                  Galatians 5:22-23 <br /> We emphasize living out our faith through corresponding moral conduct, 
+                  reflecting the character of Jesus in our daily lives.
                   </p>
                 </TabButton>
-                <TabButton label="SHARED MINISTRY">
+                <TabButton label="PURPOSEFUL LIVING">
                   <p>
-                    1 Cor 12:7-14 <br /> We believe that every Christ-follower
-                    is called to impact those around them through loving,
-                    joyful, gift-based service.
+                  Jeremiah 29:11 <br /> We encourage believers to discover and walk in their God-given purpose, 
+                  using their gifts and callings to fulfill His will on Earth.
                   </p>
                 </TabButton>
-                <TabButton label="CHRIST-LIKE LEADERSHIP">
+                <TabButton label="HOLY SPIRIT MINISTRY">
                   <p>
-                    John 1:14, Num 11:16-17 <br /> We believe in building
-                    servant leadership and maintaining relationships between
-                    leadership and the congregation that are characterized by
-                    grace and truth. Together, we will listen for God’s
-                    direction for Sanctus and provide space where testing and
-                    affirmation takes place.
+                  Verse: Acts 1:8 <br /> We believe in the active ministry of the Holy Spirit, 
+                  empowering believers to manifest their gifts and callings for God’s glory.
                   </p>
                 </TabButton>
-                <TabButton label="GOD'S PROMPTING">
+                <TabButton label="COMMUNITY AND FELLOWSHIP">
                   <p>
-                    1 Cor 14:40 <br /> We believe God will show up in our
-                    individual lives and when we meet together. We want to leave
-                    room for God to speak to us personally and corporately,
-                    striving to hear God clearly.
+                  Acts 2:42 <br /> We value genuine community and fellowship, 
+                  building relationships that encourage mutual love, support, and spiritual growth.
                   </p>
                 </TabButton>
-                <TabButton label="LEVERAGING TECHNOLOGY">
+                <TabButton label="JOYFUL AND FRUITFUL LIVING">
                   <p>
-                    Acts 17:16-34 <br /> We believe in maximizing the use of
-                    technology as a means of communicating and connecting.
+                  John 15:11 <br /> We are committed to helping believers encounter God and 
+                  live joyful, fruitful, and purposeful lives through faith in Jesus Christ.
                   </p>
                 </TabButton>
               </div>
