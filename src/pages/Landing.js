@@ -30,22 +30,28 @@ const Landing = () => {
     }
   };
 
-  const handleSlideChange = (newIndex) => {
-    setActiveIndex(newIndex); // Track the current slide index
-    setShowSmallImage(false); // Reset small image visibility on slide change
-
-    if (newIndex === 0 && videoRef.current) {
-      setIsVideoPlaying(true); // Play video on the first slide
+  const handleSlideChange = (event) => {
+    if (event === 0 && videoRef.current) {
+      setIsVideoPlaying(true);
       videoRef.current.play();
-    } else if (newIndex === 1 || newIndex === 2) {
-      // Show small image and delay transition for slide 2 and 3
+    } else if (event === 1) {
       setShowSmallImage(true);
+      // Delay the next slide after 5 seconds
       setTimeout(() => {
         setShowSmallImage(false);
-        if (carouselRef.current && activeIndex === newIndex) {
+        if (carouselRef.current) {
           carouselRef.current.next();
         }
-      }, 5000); // 5-second delay
+      }, 5000); // 5000ms delay
+    }else if (event === 2) {
+      setShowSmallImage(true);
+      // Delay the next slide after 5 seconds
+      setTimeout(() => {
+        setShowSmallImage(false);
+        if (carouselRef.current) {
+          carouselRef.current.next();
+        }
+      }, 7000); // 5000ms delay
     }
   };
 
@@ -63,10 +69,9 @@ const Landing = () => {
         className="carousel"
         controls={false}
         indicators={false}
-        interval={isVideoPlaying ? null : 3000} // Disable auto-slide when video is playing
-        pause={false} // Prevent carousel from pausing on hover
+        interval={isVideoPlaying ? null : 3000}
         ref={carouselRef}
-        onSelect={handleSlideChange} // Track slide changes
+        onSlide={(event) => handleSlideChange(event)}
       >
         <Carousel.Item>
           <video
@@ -128,7 +133,6 @@ const Landing = () => {
         </div>
       </footer>
 
-      {/* Styles */}
       <style jsx>{`
         .landing-page {
           position: absolute;
@@ -173,24 +177,11 @@ const Landing = () => {
           animation: slideIn 2s forwards ease-in-out;
         }
 
-        .third {
+        .third{
           width: 90vh;
-          animation: slideInFixed 2s forwards ease-in-out;
         }
 
         @keyframes slideIn {
-          from {
-            right: -200px;
-            opacity: 0;
-          }
-          to {
-            right: 50%;
-            opacity: 1;
-            transform: translate(50%, -50%);
-          }
-        }
-
-        @keyframes slideInFixed {
           from {
             right: -200px;
             opacity: 0;
