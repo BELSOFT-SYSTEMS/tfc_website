@@ -56,64 +56,70 @@ export const Swipper = ({ items }) => {
     setCurrentIndex(newIndex);
   };
 
-  return (
-    <div className="container">
-      <h1 className="heading">Gallery</h1>
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
-        }}
-        autoplay={{
-          delay: 3000, // Adjust the delay as needed (in milliseconds)
-          disableOnInteraction: false, // Allow user interaction to pause autoplay
-        }}
-        pagination={{ el: ".swiper-pagination", clickable: true }}
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-          clickable: true,
-        }}
-        modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-        className="swiper_container"
-      >
-        {items.map((item, index) => (
-          <SwiperSlide key={index}>
-            <img
-              src={item.url}
-              onClick={() => handleClick(item, index)}
-              alt=""
-            />
-          </SwiperSlide>
-        ))}
-        <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-          </div>
-          <div className="swiper-button-next slider-arrow">
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </div>
-          {/* <div className="swiper-pagination"></div> */}
+    return (
+        <div className="container">
+            {/* <h1 className="heading">Gallery</h1> */}
+            <Swiper
+                effect={'coverflow'}
+                grabCursor={true}
+                centeredSlides={true}
+                loop={true}
+                slidesPerView={'auto'}
+                coverflowEffect={{
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2.5,
+                }}
+                autoplay={{
+                    delay: 3000, // Adjust the delay as needed (in milliseconds)
+                    disableOnInteraction: false, // Allow user interaction to pause autoplay
+                }}
+
+                pagination={{ el: '.swiper-pagination', clickable: true }}
+                navigation={{
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                    clickable: true,
+                }}
+                modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+                className="swiper_container"
+
+            >
+                {items.map((item, index) => (
+                    <SwiperSlide key={index}>
+                        <img
+                            src={item.url}
+                            onClick={() => handleClick(item, index)}
+                            alt=""
+                        />
+                    </SwiperSlide>
+                ))
+                }
+                <div className="slider-controler">
+                    <div className="swiper-button-prev slider-arrow">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div className="swiper-button-next slider-arrow">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    {/* <div className="swiper-pagination"></div> */}
+                </div>
+
+
+            </Swiper> <div>
+                {clickedImg && (
+                    <Modal
+                        clickedImg={clickedImg.url}
+                        description={clickedImg.description}
+                        handelRotationRight={handelRotationRight}
+                        setClickedImg={setClickedImg}
+                        handelRotationLeft={handelRotationLeft}
+                    />
+                )}
+            </div>
+
         </div>
-      </Swiper>{" "}
-      <div>
-        {clickedImg && (
-          <Modal
-            clickedImg={clickedImg.url}
-            description={clickedImg.description}
-            handelRotationRight={handelRotationRight}
-            setClickedImg={setClickedImg}
-            handelRotationLeft={handelRotationLeft}
-          />
-        )}
-      </div>
-    </div>
-  );
-};
+    );
+}
+

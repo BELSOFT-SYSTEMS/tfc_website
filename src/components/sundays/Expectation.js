@@ -37,7 +37,7 @@ const Expectation = () => {
             Join us on Sundays at any of our locations for teaching,
             worship, and community
           </h3>
-          <div
+          {/* <div
             style={{
               margin:'0 2rem 0 2rem'
             }}
@@ -249,7 +249,7 @@ const Expectation = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </Container>
       </section>
     </>

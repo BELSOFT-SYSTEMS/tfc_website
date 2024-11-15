@@ -5,12 +5,13 @@ import { Button } from "../components/Button/Button";
 
 const Landing = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
+  const [showSmallImage, setShowSmallImage] = useState(false);
   const videoRef = useRef(null);
   const carouselRef = useRef(null);
   const navigate = useNavigate();
 
   const redirectToHomePage = () => navigate("/home");
-  const redirectToJoyforce = () => navigate("/joyforce-academy");
+  const redirectToSundays = () => navigate("/sundays");
   const downloadTheMonthlyBulletin = () => {
     const link = document.createElement("a");
     link.href = "THE-FATHER_S-HEART-eBULLETIN-JUNE-2023.pdf";
@@ -32,6 +33,24 @@ const Landing = () => {
     if (event === 0 && videoRef.current) {
       setIsVideoPlaying(true);
       videoRef.current.play();
+    } else if (event === 1) {
+      setShowSmallImage(true);
+      // Delay the next slide after 5 seconds
+      setTimeout(() => {
+        setShowSmallImage(false);
+        if (carouselRef.current) {
+          carouselRef.current.next();
+        }
+      }, 5000); // 5000ms delay
+    }else if (event === 2) {
+      setShowSmallImage(true);
+      // Delay the next slide after 5 seconds
+      setTimeout(() => {
+        setShowSmallImage(false);
+        if (carouselRef.current) {
+          carouselRef.current.next();
+        }
+      }, 5000); // 5000ms delay
     }
   };
 
@@ -39,11 +58,7 @@ const Landing = () => {
     <div className="landing-page">
       <header>
         <div className="home-button-container">
-          <Button
-            variant="warning"
-            onClick={redirectToHomePage}
-            // className="home-button"
-          >
+          <Button variant="warning" onClick={redirectToHomePage}>
             HOME
           </Button>
         </div>
@@ -76,6 +91,13 @@ const Landing = () => {
             src="bg-2.jpg"
             alt="Background scenery with landscape"
           />
+          {showSmallImage && (
+            <img
+              className="small-image"
+              src="text-1.png"
+              alt="Small overlay image"
+            />
+          )}
         </Carousel.Item>
 
         <Carousel.Item>
@@ -84,6 +106,13 @@ const Landing = () => {
             src="bg-6.jpg"
             alt="Background scenery with landscape"
           />
+          {showSmallImage && (
+            <img
+              className="small-image third"
+              src="text-2.png"
+              alt="Small overlay image"
+            />
+          )}
         </Carousel.Item>
       </Carousel>
 
@@ -96,8 +125,8 @@ const Landing = () => {
             <Button variant="warning" onClick={redirectToPrayerRequest}>
               PRAYER REQUEST
             </Button>
-            <Button variant="warning" onClick={redirectToJoyforce}>
-              JOIN US
+            <Button variant="warning" onClick={redirectToSundays}>
+              PLAN A VISIT
             </Button>
           </ButtonGroup>
         </div>
@@ -114,17 +143,6 @@ const Landing = () => {
           justify-content: center;
           align-items: center;
         }
-
-        // .landing-container{
-        // position: relative;
-        // width: 100%;
-        // height: 100%;
-        // overflow: hidden;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // }
 
         .home-button-container {
           display: flex;
@@ -146,6 +164,32 @@ const Landing = () => {
           width: 100%;
           height: 100%;
           object-fit: cover;
+        }
+
+        .small-image {
+          position: absolute;
+          top: 50%;
+          right: -200px;
+          width: 60vw;
+          height: auto;
+          transform: translateY(-50%);
+          animation: slideIn 2s forwards ease-in-out;
+        }
+
+        .third{
+          width: 90vh;
+        }
+
+        @keyframes slideIn {
+          from {
+            right: -200px;
+            opacity: 0;
+          }
+          to {
+            right: 50%;
+            opacity: 1;
+            transform: translate(50%, -50%);
+          }
         }
 
         .landing-footer {
@@ -192,28 +236,7 @@ const Landing = () => {
           .footer-button-group button {
             width: 100%;
           }
-
-          // .footer-button-group {
-          //   flex-direction: column;
-          // }
         }
-
-        // @media (min-width: 1200px) {
-        //   .media {
-        //     width: 100vw;
-        //     height: 100vh;
-        //     max-width: 100vw;
-        //     max-height: 100vh;
-        //   }
-        // }
-        // @media (min-width: 1440px) {
-        //   .media {
-        //     object-fit: cover;
-        //     width: 100%;
-        //     height: 100vh;
-        //     max-height: 100vh;
-        //   }
-        // }
       `}</style>
     </div>
   );
