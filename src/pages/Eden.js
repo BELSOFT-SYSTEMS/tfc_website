@@ -1,10 +1,10 @@
-import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import TFCeden from '../components/eden/TFCeden';
-import TFCedenexpect from '../components/eden/TFCedenexpect';
-import Sitepast from '../components/eden/Sitepast';
-import Edenevents from '../components/eden/TFCeden-events';
+import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import TFCeden from "../components/eden/TFCeden";
+import TFCedenexpect from "../components/eden/TFCedenexpect";
+import Sitepast from "../components/eden/Sitepast";
+import Edenevents from "../components/eden/TFCeden-events";
 
 function Eden() {
   return (
@@ -15,9 +15,8 @@ function Eden() {
       <Sitepast />
       <Edenevents />
       <Footer />
-      
     </div>
-  )
+  );
 }
 
-export default Eden
+export default Eden;

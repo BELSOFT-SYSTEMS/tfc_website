@@ -10,14 +10,16 @@ const Landing = () => {
   const navigate = useNavigate();
 
   const redirectToHomePage = () => navigate("/home");
-  const redirectToSundays = () => navigate("/sundays");
+  const redirectToJoyforce = () => navigate("/joyforce-academy");
   const downloadTheMonthlyBulletin = () => {
     const link = document.createElement("a");
     link.href = "THE-FATHER_S-HEART-eBULLETIN-JUNE-2023.pdf";
     link.download = "THE-FATHER_S-HEART-eBULLETIN-JUNE-2023.pdf";
     link.click();
   };
-  const redirectToPrayerRequest = () => navigate("/Prayer-request");
+
+  const redirectToPrayerRequest = () =>
+    window.open("https://nkyoergtwq2.typeform.com/to/nASHAAir", "_blank");
 
   const handleVideoEnd = () => {
     setIsVideoPlaying(false);
@@ -94,8 +96,8 @@ const Landing = () => {
             <Button variant="warning" onClick={redirectToPrayerRequest}>
               PRAYER REQUEST
             </Button>
-            <Button variant="warning" onClick={redirectToSundays}>
-              PLAN TO VISIT
+            <Button variant="warning" onClick={redirectToJoyforce}>
+              JOIN US
             </Button>
           </ButtonGroup>
         </div>

@@ -6,7 +6,7 @@ const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   const headerStyle = {
-    fontSize: "16px",
+    fontSize: "14px",
     marginRight: "40px",
   };
 

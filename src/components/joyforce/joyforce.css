@@ -1,0 +1,23 @@
+.joyforce-header {
+  font-size: 35px;
+  font-weight: bolder;
+  color: black;
+}
+
+@media (min-width: 430px) {
+  .joyforce-header {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 770px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1540px) {
+  .joyforce-header {
+    font-size: 100px;
+  }
+}
