@@ -15,7 +15,7 @@ const EventComponent = ({
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/event-calendar/${id}`, {
+    navigate(`/event-calendar/${title}`, {
       state: { id, title, date, description, imageUrl, longText },
     });
   };

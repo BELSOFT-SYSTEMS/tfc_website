@@ -93,7 +93,7 @@ function Footer() {
                     icon={faFacebook}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
-                    size="3x"
+                    size="2x"
                     style={{
                       color: isHovered ? "#d49c04" : "#edb61f",
                       transition: "all 0.3s ease",
@@ -110,7 +110,7 @@ function Footer() {
                     icon={faInstagram}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
-                    size="3x"
+                    size="2x"
                     style={{
                       color: isHovered ? "#d49c04" : "#edb61f",
                       transition: "all 0.3s ease",
@@ -127,7 +127,7 @@ function Footer() {
                     icon={faYoutube}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
-                    size="3x"
+                    size="2x"
                     style={{
                       color: isHovered ? "#d49c04" : "#edb61f",
                       transition: "all 0.3s ease",

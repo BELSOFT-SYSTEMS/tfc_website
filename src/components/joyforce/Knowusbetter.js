@@ -42,9 +42,7 @@ const Knowusbetter = () => {
           <p
             style={{
               fontSize: "16px",
-              fontWeight: "40",
               textAlign: "center",
-              // paddingTop: "20px",
               paddingBottom: "40px",
             }}
           >

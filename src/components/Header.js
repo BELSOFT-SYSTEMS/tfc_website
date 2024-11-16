@@ -31,16 +31,21 @@ const Header = () => {
 
   const renderDropdown = (index, items) => (
     <NavDropdown
+      key={`dropdown-${index}`} // Add a unique key for the dropdown
       id={`nav-dropdown-${index}`}
       title={items.label}
       show={activeDropdown === index}
       onMouseEnter={() => handleMouseEnter(index)}
       onMouseLeave={handleMouseLeave}
       onClick={() => handleDropdownClick(index)}
-      className="mx-2" // Adds horizontal spacing between menu items on large screens
+      className="mx-2"
     >
       {items.items.map((item, subIndex) => (
-        <NavDropdown.Item key={subIndex} href={item.link} style={headerStyle}>
+        <NavDropdown.Item
+          key={`dropdown-item-${index}-${subIndex}`} // Add unique key for dropdown items
+          href={item.link}
+          style={headerStyle}
+        >
           {item.label}
         </NavDropdown.Item>
       ))}
@@ -64,55 +69,24 @@ const Header = () => {
         { label: "Freedom Fellowship", link: "/freedom-fellowship" },
         { label: "The Governors", link: "/the-governors" },
         { label: "The Queens", link: "/the-queens" },
-        { label: "Evangelism", link: "" },
       ],
     },
     {
       label: "Locations",
-      items: [
-        { label: "Eden", link: "/eden" },
-        // { label: "Mpape", link: "" },
-        // { label: "Enugu", link: "" },
-      ],
+      items: [{ label: "Eden", link: "/eden" }],
     },
     {
       label: "Joyforce",
       items: [{ label: "JoyForce Academy", link: "/joyforce-academy" }],
     },
-    // {
-    //   label: "Media",
-    //   items: [{ label: "Sermons", link: "/sermons/recent" }],
-    // },
-    // {
-    //   label: "What’s Next?",
-    //   items: [
-    //     { label: "Baptism", link: "/baptism" },
-    //     { label: "Believer's Foundation", link: "/believers-foundation" },
-    //     { label: "Marriage Course", link: "#" },
-    //     { label: "Counseling", link: "#" },
-    //   ],
-    // },
     {
       label: "Events",
-      items: [
-        { label: "Event Calendar", link: "/event-calendar" },
-        // { label: "TFC Summer Camps", link: "/summer-camps" },
-      ],
+      items: [{ label: "Event Calendar", link: "/event-calendar" }],
     },
-    // {
-    //   label: "Give",
-    //   items: [{ label: "Ways To Give", link: "/ways-to-give" }],
-    // },
   ];
 
   return (
-    <Navbar
-      variant="light"
-      bg="light"
-      expand="lg"
-      // style={headerStyle}
-      collapseOnSelect
-    >
+    <Navbar variant="light" bg="light" expand="lg" collapseOnSelect>
       <Container fluid>
         <Navbar.Brand href="/home">
           <img src="/tfcLogo.png" alt="Logo" style={logoStyle} />
@@ -124,7 +98,11 @@ const Header = () => {
               menuItem.items ? (
                 renderDropdown(index, menuItem)
               ) : (
-                <Nav.Link key={index} href={menuItem.link} className="mx-1">
+                <Nav.Link
+                  key={`menu-item-${index}`} // Add unique key for direct Nav.Link items
+                  href={menuItem.link}
+                  className="mx-1"
+                >
                   {menuItem.label}
                 </Nav.Link>
               )

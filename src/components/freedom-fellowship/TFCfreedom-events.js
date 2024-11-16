@@ -10,8 +10,8 @@ const TFCfreedomevents = () => {
         style={{
           justifyContent: "center",
           textAlign: "center",
-          marginBottom: "30px",
-          marginTop: "20px",
+          width: "90%",
+          padding: "0",
         }}
       >
         <Row>
@@ -23,32 +23,32 @@ const TFCfreedomevents = () => {
           </Col>
         </Row>
       </Container>
-      <Container
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-          gap: "20px",
-        }}
-      >
+      <Container className="events-grid">
         <EventComponent
+          id={1}
           title="Pickering Kids Easter Presentation"
           date="MAR 31 2024"
           description="Our kids will be putting on a special Easter presentation for the congregation!"
-          imageUrl="ams-events1.jpeg"
+          longText="Lorem"
+          imageUrl="/ams-events1.jpeg"
           buttonText="Find Out More"
         />
         <EventComponent
+          id={2}
           title="Sanctus Summer Camps: Multi Sports Camp (Ages 6-12)"
           date="JUL 08 - 12 2024"
           description="This Sanctus Summer Camp is for kids ages 6-12 and is filled with fun multi-sports and engaging, deep-diving teaching!"
-          imageUrl="ams-events2.jpeg"
+          longText="Lorem"
+          imageUrl="/ams-events2.jpeg"
           buttonText="Find Out More"
         />
         <EventComponent
+          id={3}
           title="Sanctus Summer Camps: Multi Sports Camp (Ages 6-12)"
           date="JUL 09 - 12 2024"
           description="This Sanctus Summer Camp is for kids ages 6-12 and is filled with fun multi-sports and engaging, deep-diving teaching!"
-          imageUrl="ams-events3.jpeg"
+          longText="Lorem"
+          imageUrl="/ams-events3.jpeg"
           buttonText="Find Out More"
         />
       </Container>
@@ -58,18 +58,12 @@ const TFCfreedomevents = () => {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
-          marginTop: "20px",
-          marginBottom: "20px",
-          paddingBottom: "20px",
+          padding: "0",
         }}
       >
         <Button
           variant="warning"
-          style={{
-            backgroundColor: "#d49c04",
-            color: "#fff",
-            maxWidth: "200px",
-          }}
+          style={{ backgroundColor: "#d49c04", color: "#fff" }}
         >
           View all Events
         </Button>

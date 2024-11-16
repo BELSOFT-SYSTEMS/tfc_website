@@ -1,22 +1,22 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import './ImageScroll.css';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import React, { useState, useRef, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "../joyforce/ImageScroll.css";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 
-import Lightbox from "yet-another-react-lightbox";
+// import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 function ImageScroll() {
   const images = [
-    '/joy/joy1.jpeg',
-    '/joy/joy2.jpeg',
-    '/joy/joy3.jpg',
-    '/joy/joy4.jpg',
-    '/joy/joy5.jpg',
-    '/joy/joy6.jpg',
+    "/joy/joy1.jpeg",
+    "/joy/joy2.jpeg",
+    "/joy/joy3.jpg",
+    "/joy/joy4.jpg",
+    "/joy/joy5.jpg",
+    "/joy/joy6.jpg",
   ];
 
   const [open, setOpen] = useState(false);
@@ -47,10 +47,10 @@ function ImageScroll() {
     <div>
       <Swiper
         ref={swiperRef}
-        effect={'coverflow'}
+        effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={'auto'}
+        slidesPerView={"auto"}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -65,7 +65,11 @@ function ImageScroll() {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <img src={image} alt="slide_image" onClick={() => handleImageClick(index)} />
+            <img
+              src={image}
+              alt="slide_image"
+              onClick={() => handleImageClick(index)}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

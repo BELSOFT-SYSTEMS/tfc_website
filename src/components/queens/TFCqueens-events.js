@@ -10,8 +10,8 @@ const TFCqueenevents = () => {
         style={{
           justifyContent: "center",
           textAlign: "center",
-          marginBottom: "30px",
-          marginTop: "20px",
+          width: "90%",
+          padding: "0",
         }}
       >
         <Row>
@@ -23,32 +23,32 @@ const TFCqueenevents = () => {
           </Col>
         </Row>
       </Container>
-      <Container
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-          gap: "20px",
-        }}
-      >
+      <Container className="events-grid">
         <EventComponent
-          title="Pickering Kids Easter Presentation"
-          date="MAR 31 2024"
-          description="Our kids will be putting on a special Easter presentation for the congregation!"
-          imageUrl="ams-events1.jpeg"
+          id={1}
+          title="Children's Day"
+          date="MAY 27 2024"
+          description="Our kids will be putting on a special presentation for the congregation!"
+          longText="Lorem"
+          imageUrl="/ams-events1.jpeg"
           buttonText="Find Out More"
         />
         <EventComponent
-          title="Sanctus Summer Camps: Multi Sports Camp (Ages 6-12)"
+          id={2}
+          title="Sanctus Summer Camps"
           date="JUL 08 - 12 2024"
-          description="This Sanctus Summer Camp is for kids ages 6-12 and is filled with fun multi-sports and engaging, deep-diving teaching!"
-          imageUrl="ams-events2.jpeg"
+          description="This TFC Summer Camp is for kids ages 6-12 and is filled with fun multi-sports and engaging, deep-diving teaching!"
+          longText="Lorem"
+          imageUrl="/ams-events2.jpeg"
           buttonText="Find Out More"
         />
         <EventComponent
-          title="Sanctus Summer Camps: Multi Sports Camp (Ages 6-12)"
+          id={3}
+          title="Sanctus Summer Camps"
           date="JUL 09 - 12 2024"
-          description="This Sanctus Summer Camp is for kids ages 6-12 and is filled with fun multi-sports and engaging, deep-diving teaching!"
-          imageUrl="ams-events3.jpeg"
+          description="This TFC Summer Camp is for kids ages 6-12 and is filled with fun multi-sports and engaging, deep-diving teaching!"
+          longText="Lorem"
+          imageUrl="/ams-events3.jpeg"
           buttonText="Find Out More"
         />
       </Container>
@@ -58,9 +58,7 @@ const TFCqueenevents = () => {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
-          marginTop: "20px",
-          marginBottom: "20px",
-          paddingBottom: "20px",
+          padding: "0",
         }}
       >
         <Button

@@ -6,7 +6,7 @@ import { Button } from "../components/Button/Button";
 const Landing = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
   const [showSmallImage, setShowSmallImage] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(0);
+  // const [activeIndex, setActiveIndex] = useState(0);
   const videoRef = useRef(null);
   const carouselRef = useRef(null);
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ const Landing = () => {
           carouselRef.current.next();
         }
       }, 5000); // 5000ms delay
-    }else if (event === 2) {
+    } else if (event === 2) {
       setShowSmallImage(true);
       // Delay the next slide after 5 seconds
       setTimeout(() => {
@@ -96,7 +96,7 @@ const Landing = () => {
             <img
               className="small-image"
               src="text-1.png"
-              alt="Small overlay image"
+              alt=""
             />
           )}
         </Carousel.Item>
@@ -111,7 +111,7 @@ const Landing = () => {
             <img
               className="small-image third"
               src="text-2.png"
-              alt="Small overlay image"
+              alt=""
             />
           )}
         </Carousel.Item>
@@ -177,7 +177,7 @@ const Landing = () => {
           animation: slideIn 2s forwards ease-in-out;
         }
 
-        .third{
+        .third {
           width: 90vh;
         }
 

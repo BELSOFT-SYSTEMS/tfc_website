@@ -10,8 +10,8 @@ const SectionFour = () => {
         style={{
           justifyContent: "center",
           textAlign: "center",
-          marginBottom: "30px",
-          marginTop: "20px",
+          width: "90%",
+          padding: "0",
         }}
       >
         <Row>
@@ -23,13 +23,7 @@ const SectionFour = () => {
           </Col>
         </Row>
       </Container>
-      <Container
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-          gap: "20px",
-        }}
-      >
+      <Container className="events-grid">
         <EventComponent
           title="Pickering Kids Easter Presentation"
           date="MAR 31 2024"
@@ -58,9 +52,7 @@ const SectionFour = () => {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
-          marginTop: "20px",
-          marginBottom: "20px",
-          paddingBottom: "20px",
+          padding: "0",
         }}
       >
         <Button
