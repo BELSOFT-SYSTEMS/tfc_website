@@ -9,20 +9,18 @@ const Expectation = () => {
         <Container
           fluid
           style={{
-            paddingLeft: "60px",
-            paddingRight: "60px",
+            width: "90%",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            padding: "0",
           }}
         >
           <h1
+            className="sundaystfc-header"
             style={{
               fontFamily: "Montserrat,Sans-serif",
-              fontSize: "50px",
               textAlign: "center",
-              fontWeight: "bolder",
-              // marginBottom: "30px",
             }}
           >
             What To Expect At All Locations
@@ -30,12 +28,12 @@ const Expectation = () => {
           <h3
             style={{
               fontFamily: "Montserrat,Sans-serif",
-              fontSize: "23px",
+              fontSize: "18px",
               textAlign: "center",
             }}
           >
-            Join us on Sundays at any of our locations for teaching,
-            worship, and community
+            Join us on Sundays at any of our locations for teaching, worship,
+            and community
           </h3>
           {/* <div
             style={{

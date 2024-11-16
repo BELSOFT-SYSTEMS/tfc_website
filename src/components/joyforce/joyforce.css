@@ -1,11 +1,13 @@
-.joyforce-header {
-  font-size: 35px;
+.joyforce-header,
+.sundaystfc-header {
+  font-size: 40px;
   font-weight: bolder;
   color: black;
 }
 
 @media (min-width: 430px) {
-  .joyforce-header {
+  .joyforce-header,
+  .sundaystfc-header {
     font-size: 60px;
   }
 }
