@@ -15,8 +15,8 @@ const Landing = () => {
   const redirectToSundays = () => navigate("/sundays");
   const downloadTheMonthlyBulletin = () => {
     const link = document.createElement("a");
-    link.href = "THE-FATHER_S-HEART-eBULLETIN-JUNE-2023.pdf";
-    link.download = "THE-FATHER_S-HEART-eBULLETIN-JUNE-2023.pdf";
+    link.href = "THE-FATHER'S-HEART-eBULLETIN-NOVEMBER-2024.pdf";
+    link.download = "THE-FATHER'S-HEART-eBULLETIN-NOVEMBER-2024.pdf";
     link.click();
   };
 

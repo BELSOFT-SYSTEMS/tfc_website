@@ -357,7 +357,7 @@ const Locations = () => {
                   }}
                 />
                 <h2 style={{ fontSize: "26px", fontWeight: "600" }}>
-                  Pastor Jude .U. Okoye
+                  Deacon Jude .U. Okoye
                 </h2>
                 <h2 style={{ fontSize: "14px", fontWeight: "500" }}>
                   Acting Site pastor

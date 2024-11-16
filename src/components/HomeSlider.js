@@ -9,7 +9,7 @@ const HomeSlider = () => {
   const [fade, setFade] = useState(true); // Control fade-in and fade-out effect
 
   const images = [
-    "slider-home.png",
+    "home-slider-msg.png",
     "pastor-home-3.jpg",
     "freedom-2.jpg",
   ];
