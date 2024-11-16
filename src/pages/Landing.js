@@ -48,9 +48,7 @@ const Landing = () => {
       // Delay the next slide after 5 seconds
       setTimeout(() => {
         setShowSmallImage(false);
-        if (carouselRef.current) {
-          carouselRef.current.next();
-        }
+     
       }, 7000); // 5000ms delay
     }
   };

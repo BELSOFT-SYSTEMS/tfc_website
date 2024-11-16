@@ -26,38 +26,33 @@ const Mission = () => {
                 // marginTop: "25px",
               }}
             >
-              To raise a generation of quality, reliable, and consistent men 
-              
-              <br /> and women that God can use to accomplish His purpose 
-              <br /> on Earth. Through sound biblical teachings, a commitment to 
-              <br /> moral conduct, and the ministry of the Holy Spirit, we strive 
-              <br /> to reveal the fatherhood of Almighty God to this generation.
+              The Father's Church Is An Assembly Of Believers Committed To Revealing The Fatherhood Of Almighty God To This Generation Through Sound Biblical Teachings And Corresponding Moral Conduct.
             </p>
           </div>
-          <div
-            style={{
-              flex: "1 1 50%",
-              // maxWidth: "570px",
-              // padding: "40px 10px",
-              textAlign: "start",
-            }}
-          >
-            <h2 style={{ fontSize: "4rem" }}>Vision.</h2>
-            <p
-              style={{
-                fontFamily: "Montserrat, Sans-serif",
-                fontSize: "16px",
-                // fontWeight: "400",
-                // lineHeight: "20px",
-                // marginTop: "25px",
-              }}
-            >
-              To be a multi-ethnic and multi-national church where everyone can encounter God, grow in the knowledge and 
-              understanding of Him as a loving Father, and manifest their gifts and callings in joyful, fruitful, and purposeful lives in Jesus Christ.
+          {/* <div */}
+            {/* // style={{ */}
+              {/* // flex: "1 1 50%", */}
+              {/* // maxWidth: "570px", */}
+              {/* // padding: "40px 10px", */}
+              {/* // textAlign: "start", */}
+            {/* // }} */}
+          {/* // > */}
+            {/* <h2 style={{ fontSize: "4rem" }}>Vision.</h2> */}
+            {/* <p */}
+              {/* // style={{ */}
+                {/* // fontFamily: "Montserrat, Sans-serif", */}
+                {/* // fontSize: "16px", */}
+                {/* // fontWeight: "400", */}
+                {/* // lineHeight: "20px", */}
+                {/* // marginTop: "25px", */}
+              {/* // }} */}
+            {/* // > */}
+              {/* To be a multi-ethnic and multi-national church where everyone can encounter God, grow in the knowledge and 
+              understanding of Him as a loving Father, and manifest their gifts and callings in joyful, fruitful, and purposeful lives in Jesus Christ. */}
               {/* <br /> meeting the physical, emotional, and <br />
               spiritual needs of people in Jesus’ name. */}
-            </p>
-          </div>
+            {/* </p> */}
+          {/* </div> */}
         </Container>
         <Container fluid className="value-row">
           <div
