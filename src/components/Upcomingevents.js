@@ -41,17 +41,17 @@ const Upcomingevents = () => {
       >
         <EventComponent
           id={1}
-          title="MSG Confrence 2024"
-          date="13 NOV 2024"
+          title="Friendship Sunday"
+          date="2 February 2025"
           description="Celebrating women's empowerment, leadership, and integrity through inspirational talks, workshops, and community-building activities."
           longText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut neque venenatis, porttitor mauris id, facilisis velit. Cras a elit et mauris vulputate dictum. Nunc ut feugiat risus. Sed sed odio eget felis tincidunt feugiat id ultricies dui. Sed blandit neque eu diam tincidunt, a cursus nunc tempor. Etiam commodo ligula sit amet nisl placerat, nec rhoncus sapien tincidunt. Vestibulum vitae sollicitudin sapien. Vivamus sapien arcu, sodales id mauris eget, pharetra porttitor nulla."
-          imageUrl="/slider-home.png"
+          imageUrl="/friendship.png"
           buttonText="Find Out More"
         />
         <EventComponent
           id={2}
           title="Kingdom Keys"
-          date="27 MAY 2024"
+          date="5 February 2025"
           description="TFC Lightbearers, grades 6 &#8211; 12 are invited to join us on this event"
           longText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut neque venenatis, porttitor mauris id, facilisis velit. Cras a elit et mauris vulputate dictum. Nunc ut feugiat risus. Sed sed odio eget felis tincidunt feugiat id ultricies dui. Sed blandit neque eu diam tincidunt, a cursus nunc tempor. Etiam commodo ligula sit amet nisl placerat, nec rhoncus sapien tincidunt. Vestibulum vitae sollicitudin sapien. Vivamus sapien arcu, sodales id mauris eget, pharetra porttitor nulla."
           imageUrl="/event2.jpg"
@@ -60,11 +60,11 @@ const Upcomingevents = () => {
         <EventComponent
           id={3}
           title="Thanksgiving Service"
-          date="26 MAY 2024"
+          date="23 February 2025"
           description="Let's pause...reflect, and give thanks to God for the countless blessings that enrich our lives each day! 
           Every blessing is a testament to God's unfailing love and faithfulness. Join us This Sunday;"
           longText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut neque venenatis, porttitor mauris id, facilisis velit. Cras a elit et mauris vulputate dictum. Nunc ut feugiat risus. Sed sed odio eget felis tincidunt feugiat id ultricies dui. Sed blandit neque eu diam tincidunt, a cursus nunc tempor. Etiam commodo ligula sit amet nisl placerat, nec rhoncus sapien tincidunt. Vestibulum vitae sollicitudin sapien. Vivamus sapien arcu, sodales id mauris eget, pharetra porttitor nulla."
-          imageUrl="/event3.jpeg"
+          imageUrl="/thanksgiving.png"
           buttonText="Find Out More"
         />
       </Container>
