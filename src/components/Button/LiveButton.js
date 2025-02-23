@@ -8,18 +8,17 @@ const SpecialDayButton = () => {
     const interval = setInterval(() => {
       const currentDate = new Date();
       const dayOfWeek = currentDate.getDay(); // 0 (Sunday) to 6 (Saturday)
-      const isFirstFriday =
-        currentDate.getDate() <= 7 && currentDate.getDay() === 5; // Check if it's the first Friday of the month
+      const isFirstFriday = currentDate.getDate() <= 7 && currentDate.getDay() === 5; // Check if it's the first Friday of the month
 
       // Check if it's Wednesday (dayOfWeek === 3), Sunday (dayOfWeek === 0), or the first Friday of the month
       if (dayOfWeek === 3 || dayOfWeek === 0 || isFirstFriday) {
         const currentTime = currentDate.getHours();
         // Check if it's between service times 9 AM (9) and 11 PM (11) on sundays
-        if (dayOfWeek === 0 && currentTime >= 9 && currentTime < 11) {
+      if (dayOfWeek === 0 && currentTime >= 9 && currentTime < 11) {
           setIsActive(true);
         } else if (
-          (dayOfWeek === 3 || dayOfWeek === 0) &&
-          currentTime >= 18 &&
+          (dayOfWeek === 3) &&
+          currentTime >= 16 &&
           currentTime < 20
         ) {
           // Check if it's between 6 PM (18) and 8 PM (20) on wednesdays
@@ -40,7 +39,7 @@ const SpecialDayButton = () => {
 
   const handleClick = () => {
     if (isActive) {
-      window.location.href = "https://www.youtube.com/watch?v=EKGZ-FbS1_Q"; // Redirect to YouTube link
+      window.location.href = "https://www.youtube.com/watch?v=zU8J9smzkOM"; // Redirect to YouTube link
     }
   };
 

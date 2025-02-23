@@ -167,7 +167,7 @@ const Gettouch = () => {
               <Col md={6} className="gtk-image-col">
                 {/* Your image goes here */}
                 <img
-                  src="gettoknow3.png"
+                  src="pastor-new.png"
                   alt="Opposite"
                   className="img-fluid"
                   style={{

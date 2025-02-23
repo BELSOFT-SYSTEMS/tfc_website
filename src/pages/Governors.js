@@ -5,6 +5,7 @@ import TFCGov from '../components/governors/TFCGov';
 import TFCGovevents from '../components/governors/TFCGov-events';
 import Knowusbetter from '../components/governors/Knowusbetter';
 // import Ourvalues from '../governors/Ourvalues';
+import Upcomingevents from '../components/Upcomingevents';
 import { Swipper } from '../components/Swiper/Swiper'
 import { governors_data } from '../components/data/PhotoData';
 
@@ -18,7 +19,8 @@ function Governors() {
       <Swipper items={governors_data} />
       {/* <Ourvalues /> */}
       <Knowusbetter />
-      <TFCGovevents />
+      {/* <TFCGovevents /> */}
+      <Upcomingevents />
       <Footer />
       
     </div>

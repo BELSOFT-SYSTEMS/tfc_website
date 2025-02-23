@@ -12,6 +12,7 @@ import Sundays from "./pages/Sundays";
 import Freedomfellowship from "./pages/Freedomfellowship";
 import Governors from "./pages/Governors";
 import Queens from "./pages/Queens";
+import KingdomLadies from "./pages/KingdomLadies";
 import Evangelism from "./pages/Evangelism";
 import Prayerministry from "./pages/Prayerministry";
 import Eden from "./pages/Eden";
@@ -48,6 +49,7 @@ function App() {
         <Route path="/sundays" element={<Sundays />} />
         <Route path="/the-governors" element={<Governors />} />
         <Route path="/the-queens" element={<Queens />} />
+        <Route path="/kingdom-ladies" element={<KingdomLadies />} />
         <Route path="/evangelism" element={<Evangelism />} />
         <Route path="/prayer-ministry" element={<Prayerministry />} />
         <Route path="/eden" element={<Eden />} />

@@ -69,6 +69,7 @@ const Header = () => {
         { label: "Freedom Fellowship", link: "/freedom-fellowship" },
         { label: "The Governors", link: "/the-governors" },
         { label: "The Queens", link: "/the-queens" },
+        { label: "Kingdom Ladies", link: "" },
       ],
     },
     {

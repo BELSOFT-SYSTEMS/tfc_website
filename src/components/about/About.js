@@ -94,12 +94,14 @@ const About = () => {
           </Col>
           <Col xs={12} md={6}>
             <img
-              src="event2.jpg"
+              src="pastor-new.png"
               alt="Opposite"
               className="img-fluid"
               style={{
                 borderRadius: "10px",
                 margin: "20px 0px -60px 0px",
+                // height: "500px",
+                // width: "500px",
               }}
             />
           </Col>

@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import TFCeden from "../components/eden/TFCeden";
 import TFCedenexpect from "../components/eden/TFCedenexpect";
 import Sitepast from "../components/eden/Sitepast";
+import Upcomingevents from '../components/Upcomingevents';
 import Edenevents from "../components/eden/TFCeden-events";
 
 function Eden() {
@@ -13,7 +14,8 @@ function Eden() {
       <TFCeden />
       <TFCedenexpect />
       <Sitepast />
-      <Edenevents />
+      {/* <Edenevents /> */}
+      <Upcomingevents />
       <Footer />
     </div>
   );

@@ -12,7 +12,7 @@ import { queens_data } from '../components/data/PhotoData';
 
 
 
-function Queens() {
+function KingdomLadies() {
   return (
     <div>
       <Header />
@@ -28,4 +28,4 @@ function Queens() {
   )
 }
 
-export default Queens
+export default KingdomLadies

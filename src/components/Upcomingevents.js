@@ -39,32 +39,33 @@ const Upcomingevents = () => {
           width: "95%",
         }}
       >
+        
         <EventComponent
           id={1}
-          title="Friendship Sunday"
-          date="2 February 2025"
-          description="Celebrating women's empowerment, leadership, and integrity through inspirational talks, workshops, and community-building activities."
-          longText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut neque venenatis, porttitor mauris id, facilisis velit. Cras a elit et mauris vulputate dictum. Nunc ut feugiat risus. Sed sed odio eget felis tincidunt feugiat id ultricies dui. Sed blandit neque eu diam tincidunt, a cursus nunc tempor. Etiam commodo ligula sit amet nisl placerat, nec rhoncus sapien tincidunt. Vestibulum vitae sollicitudin sapien. Vivamus sapien arcu, sodales id mauris eget, pharetra porttitor nulla."
-          imageUrl="/friendship.png"
+          title="Kingdom Keys"
+          date="Every Wednesdays"
+          description="Kingdom Keys is a midweek gathering at The Father’s Church every Wednesday, where we share lessons learned and dive deeper into God’s Word. It’s a time of reflection, revelation, and practical insights to strengthen our faith and walk with God."
+          longText="Kingdom Keys is a midweek gathering at The Father’s Church every Wednesday, where we share lessons learned and dive deeper into God’s Word. It’s a time of reflection, revelation, and practical insights to strengthen our faith and walk with God."
+          imageUrl="/kingdom-keys.png"
           buttonText="Find Out More"
         />
         <EventComponent
           id={2}
-          title="Kingdom Keys"
-          date="5 February 2025"
-          description="TFC Lightbearers, grades 6 &#8211; 12 are invited to join us on this event"
-          longText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut neque venenatis, porttitor mauris id, facilisis velit. Cras a elit et mauris vulputate dictum. Nunc ut feugiat risus. Sed sed odio eget felis tincidunt feugiat id ultricies dui. Sed blandit neque eu diam tincidunt, a cursus nunc tempor. Etiam commodo ligula sit amet nisl placerat, nec rhoncus sapien tincidunt. Vestibulum vitae sollicitudin sapien. Vivamus sapien arcu, sodales id mauris eget, pharetra porttitor nulla."
-          imageUrl="/event2.jpg"
+          title="Thanksgiving Service"
+          date="25 February 2025"
+          description="Let's pause...reflect, and give thanks to God for the countless blessings that enrich our lives each day! 
+          Every blessing is a testament to God's unfailing love and faithfulness. Join us This Sunday;"
+          longText="Let's pause...reflect, and give thanks to God for the countless blessings that enrich our lives each day! Every blessing is a testament to God's unfailing love and faithfulness. Join us This Sunday;"
+          imageUrl="/thanksgiving.png"
           buttonText="Find Out More"
         />
         <EventComponent
           id={3}
-          title="Thanksgiving Service"
-          date="23 February 2025"
-          description="Let's pause...reflect, and give thanks to God for the countless blessings that enrich our lives each day! 
-          Every blessing is a testament to God's unfailing love and faithfulness. Join us This Sunday;"
-          longText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut neque venenatis, porttitor mauris id, facilisis velit. Cras a elit et mauris vulputate dictum. Nunc ut feugiat risus. Sed sed odio eget felis tincidunt feugiat id ultricies dui. Sed blandit neque eu diam tincidunt, a cursus nunc tempor. Etiam commodo ligula sit amet nisl placerat, nec rhoncus sapien tincidunt. Vestibulum vitae sollicitudin sapien. Vivamus sapien arcu, sodales id mauris eget, pharetra porttitor nulla."
-          imageUrl="/thanksgiving.png"
+          title="Get Connected"
+          date="Tuesdays, Wednesdays and Fridays"
+          description="Get Connected is a refreshing lunch-hour fellowship at The Father’s Church, held every Tuesday, Wednesday, and Friday from 1:00 PM to 1:30 PM. It’s a time to pause, recharge, and connect with God through prayer, worship, and the Word in a short yet powerful session."
+          longText="Get Connected is a refreshing lunch-hour fellowship at The Father’s Church, held every Tuesday, Wednesday, and Friday from 1:00 PM to 1:30 PM. It’s a time to pause, recharge, and connect with God through prayer, worship, and the Word in a short yet powerful session."
+          imageUrl="/Get-Connected.png"
           buttonText="Find Out More"
         />
       </Container>

@@ -167,7 +167,7 @@ const Landing = () => {
 
         .small-image {
           position: absolute;
-          top: 50%;
+          top: 45%;
           right: -200px;
           width: 60vw;
           height: auto;
@@ -196,7 +196,7 @@ const Landing = () => {
           width: 100%;
           display: flex;
           justify-content: center;
-          bottom: 15%;
+          bottom: 10%;
         }
 
         .footer-buttons {

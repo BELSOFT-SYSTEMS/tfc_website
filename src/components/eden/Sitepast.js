@@ -97,7 +97,7 @@ const Sitepast = () => {
               <Col md={6} className={Style.Past_div}>
                 {/* Your image goes here */}
                 <img
-                  src="pastor-home-3.jpg"
+                  src="pastor-home-3.png"
                   alt="Opposite"
                   className="img-fluid"
                   style={{
@@ -110,7 +110,7 @@ const Sitepast = () => {
               <Col md={6} className={Style.Past_div}>
                 {/* Your image goes here */}
                 <img
-                  src="co-pastor-2.jpg"
+                  src="co-pastor-2.png"
                   alt="Opposite"
                   className="img-fluid"
                   style={{
@@ -141,23 +141,11 @@ const Sitepast = () => {
                     <div>
                       <div style={{ display: "flex" }}>
                         <p style={{ fontSize: "14px", color: "#000" }}>
-                          Nostrud commodo mollit id excepteur tempor ullamco
-                          mollit cupidatat cupidatat. Deserunt sit fugiat irure
-                          esse ipsum exercitation non laboris et qui. Cupidatat
-                          enim quis magna ea. Proident enim elit in non minim ex
-                          veniam elit consectetur eiusmod. Aliquip voluptate
-                          aute eiusmod laborum ipsum proident adipisicing
-                          ullamco. Sint culpa commodo et mollit nisi incididunt
-                          dolore cillum. Culpa amet fugiat ex in. Deserunt est
-                          officia elit ad sunt ullamco do ut esse excepteur
-                          officia. In sit mollit velit cupidatat nostrud.
-                          Ullamco officia amet esse qui non. Veniam in eiusmod
-                          cupidatat pariatur proident cillum enim. Sit non
-                          incididunt eiusmod qui. Nostrud est occaecat velit
-                          laboris culpa duis ea reprehenderit veniam.
-                          Reprehenderit dolore occaecat mollit aliquip
-                          incididunt consequat sint aliqua. Est minim
-                          consectetur quis ullamco fugiat nisi nulla veniam.
+                        Pastor Juliette Okeke is the Co-Pastor of The Father’s Church, a dedicated minister, mentor, and transformational leader with a deep passion for helping people grow in their faith and purpose. With her extensive experience in leadership, coaching, and personal development, she is committed to guiding individuals toward spiritual maturity and excellence in every area of life.
+
+                        A dynamic speaker and mentor, Pastor Juliette brings wisdom, grace, and insight to her ministry, equipping believers with biblical principles that inspire growth, character development, and a Christ-centered life. Her heart for people and her ability to connect across cultures make her a beacon of encouragement and transformation within the church community.
+
+                        Beyond ministry, she has a background in banking, image consulting, and personal development, which enriches her pastoral approach, blending faith with practical wisdom. Her passion for seeing individuals and organizations transformed aligns with her mission to raise a people of purpose, integrity, and spiritual depth.
                         </p>
                       </div>
                     </div>

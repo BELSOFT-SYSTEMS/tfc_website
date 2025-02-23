@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TFCjoyforce from "../components/joyforce/TFC-joyforce";
-import TFCjoyforceevents from "../components/joyforce/TFCjoyforce-events";
+// import TFCjoyforceevents from "../components/joyforce/TFCjoyforce-events";
+import Upcomingevents from '../components/Upcomingevents';
 import Knowusbetter from "../components/joyforce/Knowusbetter";
 // import Ourvalues from '../joyforce/Ourvalues';
 import { Swipper } from "../components/Swiper/Swiper";
@@ -43,7 +44,7 @@ function Joyforceacademy() {
       <Swipper items={items} />
       {/* <Ourvalues /> */}
       <Knowusbetter />
-      <TFCjoyforceevents />
+      <Upcomingevents />
       <Footer />
     </div>
   );
