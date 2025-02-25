@@ -2,12 +2,15 @@ import React from "react";
 import { Button } from "./Button/Button";
 import { Container, Row, Col } from "react-bootstrap";
 import SpecialDayButton from "./Button/LiveButton";
+import MixlrButton from "./Button/MixlrButton";
+import SoundcloudButton from "./Button/SoundcloudButton";
 // import { useNavigate } from 'react-router-dom';
 import "./currentSermon.css";
 
 const CurrentSermon = () => {
   // const navigate = useNavigate();
   const backgroundImageUrl = "pastor-1-1.png";
+  
 
   const redirectToSermonsPage = () => {
     console.log("Redirecting to youtube");
@@ -45,6 +48,8 @@ const CurrentSermon = () => {
               Watch Series
             </Button>
             <SpecialDayButton />
+            <MixlrButton />
+            <SoundcloudButton />
           </div>
         </Col>
       </Row>
