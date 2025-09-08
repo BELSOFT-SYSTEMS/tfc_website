@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import TFCqueens from '../components/queens/TFCqueens';
+import TFCqueens from '../components/kingdom-ladies/TFCqueens';
 import TFCqueensevents from '../components/queens/TFCqueens-events';
-import Knowusbetter from '../components/queens/Knowusbetter';
+import Knowusbetter from '../components/kingdom-ladies/Knowusbetter';
 // import Ourvalues from '../queens/Ourvalues';
 import Upcomingevents from '../components/Upcomingevents';
 import { Swipper } from '../components/Swiper/Swiper'

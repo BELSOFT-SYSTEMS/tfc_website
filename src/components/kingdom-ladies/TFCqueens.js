@@ -57,7 +57,7 @@ const TFCqueens = () => {
                 fontFamily: "Sans-serif",
               }}
             >
-              TFC <br /> Queens <br /> Fellowship.
+              TFC <br /> Kingdom <br /> Ladies.
             </h2>
           </div>
         </Container>

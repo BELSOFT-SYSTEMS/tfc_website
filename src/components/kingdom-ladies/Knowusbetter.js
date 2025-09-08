@@ -43,7 +43,7 @@ const Knowusbetter = () => {
               paddingBottom: "40px",
             }}
           >
-            The Queens Fellowship comprises of all the married women in the
+            The Kingdom Ladies comprises of all the married women in the
             Church.
           </p>
 
@@ -61,7 +61,7 @@ const Knowusbetter = () => {
                 </Accordion.Header>
                 <Accordion.Body>
                   <p style={{ fontSize: "14px" }}>
-                    The Queens Fellowship is a fellowship of mothers and married
+                    The Kingdom Ladies is a fellowship of mothers and married
                     women in the Father's Church to build each other up as
                     sisters in Christ and also support each other to fulfill our
                     purposes and callings.
