@@ -1,73 +1,122 @@
-import React from 'react';
-import { Container,Row, Col  } from 'react-bootstrap';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 const TFCsermon = () => {
+  // keep simple public paths
+  const backgroundImageUrl = "/sermon-bg.jpeg";
 
-  const backgroundImageUrl = 'sermon-bg.jpeg'; // Replace with your image URL
-
+  // ===== HERO WRAPPER =====
   const containerStyle = {
-    position: 'relative',
+    position: "relative",
     backgroundImage: `url(${backgroundImageUrl})`,
-    backgroundSize: 'cover', // Adjust as needed
-    backgroundPosition: 'center center', // Adjust as needed
-    backgroundRepeat: 'no-repeat', // Adjust as needed
-    width: '100%', // Set the width to 100% of the viewport width
-    height: '100vh', // Set the desired height
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: 'white', // Set text color
-    margin: 0, // Reset margin
-    padding: 0, // Reset padding
-    overflow: 'hidden',
-    boxSizing:'border-box',
-    marginBottom: '40px',
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    width: "100%",
+
+    /* Key: medium band, not full screen */
+    minHeight: "clamp(320px, 32vh, 640px)",
+
+    display: "flex",
+    alignItems: "center",
+    margin: 0,
+    padding: 0,
+
+    /* Let the ellipse bleed below like Sanctus */
+    overflow: "visible",
+    boxSizing: "border-box",
+    marginBottom: "40px",
   };
 
+  // white veil like Sanctus
   const overlayStyle = {
-    position: 'absolute',
-    top: 0,
-    width: '100%', // Adjust to position the overlay to the left
-    height: '100%',
-    backgroundColor: 'rgba(255, 255, 255, 0.8)', // Adjust overlay color and opacity
+    position: "absolute",
+    inset: 0,
+    backgroundColor: "rgba(255, 255, 255, 0.86)",
     zIndex: 1,
   };
 
-  const textStyle = {
-    position: 'relative', // Ensure text is above the overlay
-    zIndex: 2, // Higher z-index than overlay
-    textAlign: 'left',
-    marginLeft: '20px',
+  // ===== LEFT/TEXT =====
+  const textWrapStyle = {
+    position: "relative",
+    zIndex: 2,
+    textAlign: "left",
+    padding: "clamp(16px, 4vw, 56px)",
+    maxWidth: "48rem",
   };
 
+  const titleStyle = {
+    fontSize: "clamp(42px, 5vw, 132px)",
+    fontWeight: 900,
+    fontFamily:
+      'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans"',
+    color: "#000",
+    margin: 0,
+    lineHeight: 0.9,
+  };
+
+  const subtitleStyle = {
+    marginTop: "14px",
+    marginBottom: 0,
+    fontFamily:
+      'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans"',
+    textTransform: "uppercase",
+    fontWeight: 500,
+    color: "#000",
+    fontSize: "12px",
+    whiteSpace: "normal",
+  };
+
+  // ===== RIGHT/IMAGE =====
+  const imageColStyle = {
+    position: "relative",
+    zIndex: 2,
+    paddingLeft: "clamp(0px, 6vw, 80px)",
+    paddingRight: "clamp(0px, 3vw, 24px)",
+    display: "flex",
+    justifyContent: "center",
+  };
+
+  const imageStyle = {
+    width: "100%",
+    maxWidth: "640px",
+    height: "auto",
+    display: "block",
+    marginTop: "clamp(16px, 3vw, 48px)",
+    marginBottom: "-60px",  
+    borderRadius: "12px", 
+  };
 
   return (
     <>
-
-      {/* Section 1 */}
+      {/* HERO */}
       <section className="your-section-class">
-      <Container fluid style={containerStyle} >
-      <Row>
-        {/* Overlay */}
-        <div style={overlayStyle}></div>
-        {/* Text */}
-       <Col> <div style={textStyle}>
-          <h2 style={{ fontSize: '130px', fontWeight: 'bolder', fontFamily: 'Sans-serif', color: '#000' }}>
-          Sermons.
-          </h2>
-          <p style={{fontSize:'40px', fontWeight:'60',color: '#000', fontFamily: 'monospace'}}>MAIN TEACHING FROM PASTOR JON THOMPSON</p>
-        </div></Col>
-        <Col style={{zIndex:3, paddingLeft:'80px'}}>
-              {/* Your image goes here */}
+        <Container fluid style={containerStyle}>
+          {/* Overlay */}
+          <div style={overlayStyle} />
+
+          <Row className="align-items-center g-0">
+            {/* LEFT: TEXT */}
+            <Col xs={12} md={6}>
+              <div style={textWrapStyle}>
+                <h2 style={titleStyle}>Sermons.</h2>
+                <p style={subtitleStyle}>
+                  MAIN TEACHING FROM PASTOR JON THOMPSON
+                </p>
+              </div>
+            </Col>
+
+            {/* RIGHT: IMAGE (structure unchanged) */}
+            <Col xs={12} md={6} style={imageColStyle}>
               <img
-                src="pastor2.png"
-                alt="Opposite"
+                src="/pastor2.png"
+                alt="Pastor on stage"
                 className="img-fluid"
-                style={{ borderRadius: '10px', margin: '70px 0',  }}
+                style={imageStyle}
               />
-            </Col></Row>
-      </Container>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </>
   );

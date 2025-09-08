@@ -3,72 +3,81 @@ import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 const Sermonseries = () => {
-
   const navigate = useNavigate();
 
   const redirectToSundaysPage = () => {
-    console.log('Redirecting to sundays page');
     navigate('/sundays');
   };
 
- 
-
-
   return (
     <>
-
       {/* Section 1 */}
       <section className="your-section-class">
-        <Container fluid style={{}}>
-          <div style={{justifyContent:'center'}}>
-          <h2 style={{fontSize:'100px', fontWeight:'bold',fontFamily:'montserrat', color:'#000'}}>Our Current Series</h2>
-          <Row >
-            <Col >
-              <div style={{ marginLeft: '30px' }}>
-                <div>
-                  <div  style={{justifyContent:'center',textAlign: 'left',}} >
-                    <h2  style={{ fontSize: '30px', fontWeight: 'bold', fontFamily: 'Sans-serif', justifyContent: 'center', textAlign: 'left', marginTop: '50px', color: '#000' }}>
-                    FIRM FAITH: DISCIPLESHIP IN EVERY AGE AND STAGE
-                    </h2>
-                  </div>
-                </div>
-                <div>
-                  <div >
-                    <p style={{ color: '#000' }}>
-                    The Christian walk is an everchanging journey taken with God and steeped in community. But what does that actually look like? Well — there’s no one answer; it can look different depending on the age and stage of a Christian’s life.
+        <Container fluid style={{ marginTop: '70px' }}>
+          <div style={{ justifyContent: 'center' }}>
+            <h2
+              style={{
+                fontSize: 'clamp(28px, 5vw, 48px)',
+                marginLeft: '20px',
+                fontWeight: 'bold',
+                fontFamily: 'montserrat',
+                color: '#000',
+              }}
+            >
+              Our Current Series
+            </h2>
+            <Row className="align-items-center">
+              {/* Text Column */}
+              <Col xs={12} md={6} style={{ padding: '20px' }}>
+                <h2
+                  style={{
+                    fontSize: '18px',
+                    fontWeight: 'bold',
+                    fontFamily: 'Sans-serif',
+                    marginTop: '20px',
+                    marginBottom: '20px',
+                    color: '#000',
+                  }}
+                >
+                  FIRM FAITH: DISCIPLESHIP IN EVERY AGE AND STAGE
+                </h2>
 
-                    <br/> Learning from other’s spiritual walks can play an essential role in adjusting expectations and extending grace to ourselves, and those around us, when our walk looks different.
-                    </p>
-                  </div>
-                </div>
-                <div >
-                  <div >
-                    <div >
-                      <Button
-                        variant="warning"
-                        style={{ backgroundColor: '#d49c04', color: '#000' }}
-                        onClick={redirectToSundaysPage}
-                      >
-                        <span >
-                          <span >view the Sermons</span>
-                        </span>
-                      </Button>
-                    </div>
-                  </div>
-                </div>
+                <p style={{ color: '#000', fontSize: '14px', lineHeight: '1.6' }}>
+                  The Christian walk is an everchanging journey taken with God and
+                  steeped in community. But what does that actually look like? Well —
+                  there’s no one answer; it can look different depending on the age and
+                  stage of a Christian’s life.
+                  <br />
+                  <br />
+                  Learning from other’s spiritual walks can play an essential role in
+                  adjusting expectations and extending grace to ourselves, and those
+                  around us, when our walk looks different.
+                </p>
 
-              </div>
-            </Col>
-            <Col>
-              {/* Your image goes here */}
-              <img
-                src="Firmsermon.png"
-                alt="Opposite"
-                className="img-fluid"
-                style={{ borderRadius: '10px', margin: '20px 0', paddingRight:'30px' }}
-              />
-            </Col>
-          </Row>
+                <Button
+                  variant="warning"
+                  style={{ backgroundColor: '#d49c04', color: '#000', marginTop: '10px' }}
+                  onClick={redirectToSundaysPage}
+                >
+                  view the Sermons
+                </Button>
+              </Col>
+
+              {/* Image Column */}
+              <Col xs={12} md={6} className="text-center">
+                <img
+                  src="Firmsermon.png"
+                  alt="Firm Faith Series"
+                  className="img-fluid"
+                  style={{
+                    borderRadius: '10px',
+                    margin: '20px 0',
+                    maxWidth: '100%',
+                    height: 'auto',
+                  }}
+                />
+              </Col>
+            </Row>
           </div>
         </Container>
       </section>

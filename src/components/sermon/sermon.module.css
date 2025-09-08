@@ -98,6 +98,20 @@ h4 {
     margin: 0;
 }
 
+.TopicWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.Pill {
+  background: #f3f3f3;
+  border-radius: 9999px;
+  padding: 10px 16px;
+  font-weight: 600;
+  color: #111;
+}
+
 .recentPoint>.pointText {
     width: 70%;
 }
@@ -130,10 +144,212 @@ h4 {
     width: 50%;
 }
 
+.Archives {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(24px, 6vw, 72px) clamp(16px, 4vw, 24px);
+}
+
+.ArchivesTitle {
+  margin: 0 0 clamp(12px, 3vw, 24px);
+  font-weight: 800;
+  color: #111;
+  line-height: 1.05;
+  font-size: clamp(36px, 3vw, 80px);
+}
+
+.ArchivesContent {
+  margin-top: clamp(16px, 3vw, 28px);
+}
+
+.TabsRow {
+  display: grid;
+  grid-template-columns: 1fr minmax(260px, 360px);
+  align-items: end;
+  gap: 50px;
+  margin-bottom: clamp(16px, 3vw, 28px);
+}
+
+.Grid12 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr)); 
+  gap: clamp(12px, 2.4vw, 28px);
+}
+
+.Tabs {
+  position: relative;
+  display: inline-flex;
+  gap: clamp(28px, 6vw, 80px);    
+  padding-bottom: 10px;          
+
+  --tabs-offset: clamp(16px, 5vw, 72px);  
+  --baseline-bleed: clamp(16px, 3vw, 48px);
+  margin-left: var(--tabs-offset);
+  --tab-underline-offset: 12px;    
+  --active-underline-bleed: 47.8px;
+  padding-bottom: var(--tab-underline-offset);
+}
+
+
+/* Baseline (light gray rule under the whole tab group) */
+.TabsBaseline {
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  background: #e5e5e5;
+  pointer-events: none;
+
+  /* center it */
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* make it a bit wider than the tab group */
+  width: calc(100% + 2 * var(--baseline-bleed)); /* uses your existing var */
+  z-index: 0;
+}
+
+.Card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+  overflow: hidden;
+}
+
+.CardImg {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background: linear-gradient(180deg, #f2f2f2, #e9e9e9);
+}
+
+.CardBody {
+  padding: 12px 16px 16px;
+}
+
+.CardTitle {
+  font-weight: 700;
+  color: #111;
+}
+
+.CardSub {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* Tab link */
+.TabLink {
+  position: relative;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  font-size: 12px;
+  padding-bottom: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Active state: darker text + short black underline */
+.TabActive {
+  color: #111;
+}
+
+.TabActive::after {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--active-underline-bleed));
+  right: calc(-1 * var(--active-underline-bleed));
+  bottom: calc(-1 * var(--tab-underline-offset));
+  height: 2px;
+  background: #111;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+/* Search */
+.SearchWrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.SearchInput {
+  width: 90%;
+  height: 34px;
+  border: none;
+  border-radius: 12px;
+  background: #f2f2f2;
+  padding: 0 16px;
+  font-size: 12px;
+  color: #111;
+  outline: none;
+}
+
+.Chevron {
+  width: 8px; height: 8px;
+  border-right: 2px solid #9ca3af;
+  border-bottom: 2px solid #9ca3af;
+  transform: rotate(-45deg);
+}
+
+.List {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #efefef;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.ItemLeft { display: flex; align-items: center; gap: 12px; }
+.ItemTitle { color: #111; font-weight: 600; }
+
+.Avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: #e5e7eb; color: #111; font-weight: 700;
+  display: grid; place-items: center;
+  font-size: 12px;
+}
+
+.ItemRight { display: flex; align-items: center; gap: 10px; }
+.AvatarBook { background: #eef2ff; }
+
+.Badge {
+  min-width: 28px; 
+  height: 30px; 
+  padding: 0 8px;
+  background: #f3f4f6; 
+  border-radius: 100px;
+  display: grid; 
+  place-items: center;
+  font-weight: 700; 
+  color: #374151; 
+  font-size: 12px;
+}
+
 
 @media (max-width:900px) {
     .button {
         width: 100%;
+    }
+    .TabsRow {
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
+    .SearchWrap {
+        justify-content: stretch;
+    }
+    .Tabs {
+        --tabs-offset: 0;
+        --baseline-bleed: 0;
+        margin-left: 0;
     }
 }
 
@@ -203,5 +419,25 @@ h4 {
         justify-content: space-between;
     }
 
+    @media (min-width: 414px) {
+    .Grid12 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+    }
 
+    @media (min-width: 576px) {
+    .Grid12 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (min-width: 992px) {
+    .Grid12 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+
+}
+
+@media (max-width: 767px) {
+  .TabActive::after {
+    left: 10%;      
+    width: 80%;     
+    right: auto;     
+  }
 }

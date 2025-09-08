@@ -70,6 +70,7 @@ const Header = () => {
         { label: "The Governors", link: "/the-governors" },
         { label: "The Queens", link: "/the-queens" },
         { label: "Kingdom Ladies", link: "" },
+        { label: "Sermon", link: "/sermon" },
       ],
     },
     {
