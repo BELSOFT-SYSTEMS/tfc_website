@@ -49,6 +49,32 @@ export default {
       hidden: ({document}) => !document?.isRecurring
     },
     {
+      name: 'targetAudience',
+      title: 'Target Audience / Ministry',
+      type: 'string',
+      description: 'Select which ministry or audience this event is for',
+      options: {
+        list: [
+          { title: 'General / All Ministries', value: 'general' },
+          { title: 'Ambassadors (Youth)', value: 'ambassadors' },
+          { title: 'Eden (Kids)', value: 'eden' },
+          { title: 'Enugu Campus', value: 'enugu' },
+          { title: 'Evangelism', value: 'evangelism' },
+          { title: 'Freedom Fellowship', value: 'freedom-fellowship' },
+          { title: 'Governors (Young Adults)', value: 'governors' },
+          { title: 'Joyforce Academy', value: 'joyforce' },
+          { title: 'Kingdom Ladies', value: 'kingdom-ladies' },
+          { title: 'Lightbearer', value: 'lightbearer' },
+          { title: 'Mpape Campus', value: 'mpape' },
+          { title: 'Prayer Ministry', value: 'prayer-ministry' },
+          { title: 'Queens (Ladies)', value: 'queens' }
+        ],
+        layout: 'dropdown'
+      },
+      initialValue: 'general',
+      validation: (Rule) => Rule.required()
+    },
+    {
       name: 'venue',
       title: 'Venue',
       type: 'reference',
@@ -135,13 +161,33 @@ export default {
       title: 'title',
       date: 'date',
       venue: 'venue.name',
+      targetAudience: 'targetAudience',
       media: 'image'
     },
     prepare(selection) {
-      const {venue, date} = selection
+      const {venue, date, targetAudience} = selection
       const dateStr = date ? new Date(date).toLocaleDateString() : 'No date'
+      const audienceMap = {
+        'general': 'General',
+        'eden': 'Eden (Kids)',
+        'joyforce': 'Joyforce',
+        'ambassadors': 'Ambassadors',
+        'governors': 'Governors',
+        'queens': 'Queens',
+        'kingdom-ladies': 'Kingdom Ladies',
+        'lightbearers': 'Lightbearers',
+        'prayer-ministry': 'Prayer Ministry',
+        'evangelism': 'Evangelism',
+        'marriage-course': 'Marriage Course',
+        'believers-foundation': 'Believers Foundation',
+        'freedom-fellowship': 'Freedom Fellowship',
+        'mpape': 'Mpape Campus',
+        'enugu': 'Enugu Campus'
+      }
+      const audienceLabel = audienceMap[targetAudience] || targetAudience || 'General'
+
       return Object.assign({}, selection, {
-        subtitle: venue && date ? `${venue} • ${dateStr}` : 'No venue or date'
+        subtitle: `${audienceLabel} • ${venue || 'No venue'} • ${dateStr}`
       })
     }
   }
