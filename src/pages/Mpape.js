@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import TFCmpape from '../components/mpape/TFCmpape';
 import TFCmpapeexpect from '../components/mpape/TFCmpapeexpect';
 import Sitepast from '../components/mpape/Sitepast';
-import Mpapeevents from '../components/mpape/TFCmpape-events';
+import MinistryEvents from '../components/events-calendar/MinistryEvents';
 
 function Mpape() {
   return (
@@ -13,7 +13,11 @@ function Mpape() {
       <TFCmpape />
       <TFCmpapeexpect />
       <Sitepast />
-      <Mpapeevents />
+      <MinistryEvents
+        targetAudience="mpape"
+        title="Mpape Campus Events"
+        emptyMessage="No Mpape Campus events scheduled at this time. Check back later!"
+      />
       <Footer />
       
     </div>

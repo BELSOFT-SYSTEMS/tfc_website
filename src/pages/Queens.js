@@ -5,7 +5,7 @@ import TFCqueens from '../components/queens/TFCqueens';
 import TFCqueensevents from '../components/queens/TFCqueens-events';
 import Knowusbetter from '../components/queens/Knowusbetter';
 // import Ourvalues from '../queens/Ourvalues';
-import Upcomingevents from '../components/Upcomingevents';
+import MinistryEvents from '../components/events-calendar/MinistryEvents';
 import { Swipper } from '../components/Swiper/Swiper'
 import { queens_data } from '../components/data/PhotoData';
 
@@ -20,8 +20,11 @@ function Queens() {
       <Swipper items={queens_data} />
       {/* <Ourvalues /> */}
       <Knowusbetter />
-      {/* <TFCqueensevents /> */}
-      <Upcomingevents />
+      <MinistryEvents
+        targetAudience="queens"
+        title="Queens Events"
+        emptyMessage="No Queens events scheduled at this time. Check back later!"
+      />
       <Footer />
       
     </div>

@@ -4,17 +4,17 @@ import { Container, Row, Col } from "react-bootstrap";
 import SpecialDayButton from "./Button/LiveButton";
 import MixlrButton from "./Button/MixlrButton";
 import SoundcloudButton from "./Button/SoundcloudButton";
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import "./currentSermon.css";
 
 const CurrentSermon = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const backgroundImageUrl = "pastor-1-1.png";
-  
+
 
   const redirectToSermonsPage = () => {
-    console.log("Redirecting to youtube");
-    window.open("https://www.youtube.com/@TheFathersChurch/videos", "_blank");
+    console.log("Redirecting to sermons page");
+    navigate('/sermon');
   };
 
   return (

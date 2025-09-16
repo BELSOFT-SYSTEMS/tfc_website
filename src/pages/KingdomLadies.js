@@ -5,7 +5,7 @@ import TFCqueens from '../components/kingdom-ladies/TFCqueens';
 import TFCqueensevents from '../components/queens/TFCqueens-events';
 import Knowusbetter from '../components/kingdom-ladies/Knowusbetter';
 // import Ourvalues from '../queens/Ourvalues';
-import Upcomingevents from '../components/Upcomingevents';
+import MinistryEvents from '../components/events-calendar/MinistryEvents';
 import { Swipper } from '../components/Swiper/Swiper'
 import { queens_data } from '../components/data/PhotoData';
 
@@ -21,7 +21,11 @@ function KingdomLadies() {
       {/* <Ourvalues /> */}
       <Knowusbetter />
       {/* <TFCqueensevents /> */}
-      <Upcomingevents />
+      <MinistryEvents
+        targetAudience="kingdom-ladies"
+        title="Kingdom Ladies Events"
+        emptyMessage="No Kingdom Ladies events scheduled at this time. Check back later!"
+      />
       <Footer />
       
     </div>

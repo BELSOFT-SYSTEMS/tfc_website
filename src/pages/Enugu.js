@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import TFCenugu from '../components/enugu/TFCenugu';
 import TFCenuguexpect from '../components/enugu/TFCenuguexpect';
 import Sitepast from '../components/enugu/Sitepast';
-import Enuguevents from '../components/enugu/TFCenugu-events';
+import MinistryEvents from '../components/events-calendar/MinistryEvents';
 
 function Enugu() {
   return (
@@ -13,7 +13,11 @@ function Enugu() {
       <TFCenugu />
       <TFCenuguexpect />
       <Sitepast />
-      <Enuguevents />
+      <MinistryEvents
+        targetAudience="enugu"
+        title="Enugu Campus Events"
+        emptyMessage="No Enugu Campus events scheduled at this time. Check back later!"
+      />
       <Footer />
       
     </div>

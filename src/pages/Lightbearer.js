@@ -5,7 +5,7 @@ import TFCkids from '../components/lightbearer/TFC-kids';
 import Kidsevents from '../components/lightbearer/TFCkids-events';
 import Knowusbetter from '../components/lightbearer/Knowusbetter';
 // import Ourvalues from '../lightbearer/Ourvalues';
-import Upcomingevents from '../components/Upcomingevents';
+import MinistryEvents from '../components/events-calendar/MinistryEvents';
 import { Swipper } from '../components/Swiper/Swiper';
 import { lightbearers_data } from '../components/data/PhotoData';
 
@@ -20,7 +20,11 @@ function Lightbearer() {
       {/* <Ourvalues /> */}
       <Knowusbetter />
       {/* <Kidsevents /> */}
-      <Upcomingevents />
+      <MinistryEvents
+        targetAudience="lightbearer"
+        title="Lightbearer Events"
+        emptyMessage="No Lightbearer events scheduled at this time. Check back later!"
+      />
       <Footer />
       
     </div>

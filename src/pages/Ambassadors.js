@@ -6,7 +6,7 @@ import SectionOne from '../components/ambassadors/SectionOne';
 import SectionFour from '../components/ambassadors/SectionFour';
 import SectionThree from '../components/ambassadors/SectionThree';
 import { Swipper } from '../components/Swiper/Swiper'
-import Upcomingevents from '../components/Upcomingevents';
+import MinistryEvents from '../components/events-calendar/MinistryEvents';
 import { ambassadors_data } from '../components/data/PhotoData';
 
 
@@ -21,7 +21,11 @@ function Ambassadors() {
       {/* <SectionTwo /> */}
       <SectionThree />
       {/* <SectionFour /> */}
-      <Upcomingevents />
+      <MinistryEvents
+        targetAudience="ambassadors"
+        title="Ambassadors Events"
+        emptyMessage="No Ambassadors events scheduled at this time. Check back later!"
+      />
       <Footer />
 
     </div>

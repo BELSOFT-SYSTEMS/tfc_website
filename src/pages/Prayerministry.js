@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import TFCprayer from '../components/Prayer-ministry/TFCprayer';
-import TFCprayerevents from '../components/Prayer-ministry/TFCprayer-events';
+import MinistryEvents from '../components/events-calendar/MinistryEvents';
 import Knowusbetter from '../components/Prayer-ministry/Knowusbetter';
 import Ourvalues from '../components/Prayer-ministry/Ourvalues';
 
@@ -13,7 +13,11 @@ function Prayerministry() {
       <TFCprayer />
       <Ourvalues />
       <Knowusbetter />
-      <TFCprayerevents />
+      <MinistryEvents
+        targetAudience="prayer-ministry"
+        title="Prayer Ministry Events"
+        emptyMessage="No Prayer Ministry events scheduled at this time. Check back later!"
+      />
       <Footer />
       
     </div>
