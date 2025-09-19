@@ -83,6 +83,8 @@ const SanityEventComponent = ({ event }) => {
           borderBottomRightRadius: "10px",
           border: "none",
           boxShadow: "-2px 6px 17px 0px rgba(0,0,0,0.1)",
+          maxWidth: "280px",
+          margin: "0 auto",
         }}
       >
         <div
@@ -100,7 +102,7 @@ const SanityEventComponent = ({ event }) => {
           variant="top"
           src={imageUrl}
           alt={event.title}
-          style={{ height: "160px", objectFit: "cover" }}
+          style={{ height: "220px", objectFit: "cover" }}
         />
         <Card.Body
           style={{

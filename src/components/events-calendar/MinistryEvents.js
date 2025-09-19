@@ -80,9 +80,9 @@ const MinistryEvents = ({ targetAudience, title, emptyMessage }) => {
         </Col>
       </Row>
 
-      <Row className="g-4">
+      <Row className="g-2">
         {events.map((event) => (
-          <Col key={event._id} md={6} lg={4}>
+          <Col key={event._id} sm={6} md={4} lg={3}>
             <SanityEventComponent event={event} />
           </Col>
         ))}
