@@ -7,16 +7,18 @@ import Knowusbetter from '../components/lightbearer/Knowusbetter';
 // import Ourvalues from '../lightbearer/Ourvalues';
 import MinistryEvents from '../components/events-calendar/MinistryEvents';
 import { Swipper } from '../components/Swiper/Swiper';
-import { lightbearers_data } from '../components/data/PhotoData';
+import { useMinistryGallery } from '../hooks/useMinistryGallery';
 
 
 
 function Lightbearer() {
+  const { data: galleryItems, loading, error } = useMinistryGallery('lightbearer');
+
   return (
     <div>
       <Header />
       <TFCkids />
-      <Swipper items={lightbearers_data} />
+      {galleryItems && galleryItems.length > 0 && <Swipper items={galleryItems} />}
       {/* <Ourvalues /> */}
       <Knowusbetter />
       {/* <Kidsevents /> */}

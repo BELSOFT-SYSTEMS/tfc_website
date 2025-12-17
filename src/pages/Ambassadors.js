@@ -7,17 +7,18 @@ import SectionFour from '../components/ambassadors/SectionFour';
 import SectionThree from '../components/ambassadors/SectionThree';
 import { Swipper } from '../components/Swiper/Swiper'
 import MinistryEvents from '../components/events-calendar/MinistryEvents';
-import { ambassadors_data } from '../components/data/PhotoData';
-
+import { useMinistryGallery } from '../hooks/useMinistryGallery';
 
 
 
 function Ambassadors() {
+  const { data: galleryItems, loading, error } = useMinistryGallery('ambassadors');
+
   return (
     <div>
       <Header />
       <SectionOne />
-      <Swipper items={ambassadors_data} />
+      {galleryItems && galleryItems.length > 0 && <Swipper items={galleryItems} />}
       {/* <SectionTwo /> */}
       <SectionThree />
       {/* <SectionFour /> */}

@@ -221,3 +221,36 @@ export function urlFor(source) {
 
   return `https://cdn.sanity.io/images/${client.config().projectId}/${client.config().dataset}/${id}-${dimensions}.${format}`
 }
+
+// Fetch ministry gallery from Sanity
+export async function getMinistryGallery(ministryName) {
+  try {
+    console.log(`🔍 Fetching ministry gallery: ${ministryName}`)
+    
+    const query = `*[_type == "ministryGallery" && ministryName == $ministryName][0]{
+      ministryName,
+      images[]{
+        image{
+          asset->{
+            url
+          }
+        },
+        description,
+        order
+      }
+    }`;
+    
+    const result = await client.fetch(query, { ministryName });
+    console.log(`✅ Ministry gallery fetched:`, result);
+    
+    if (result && result.images && result.images.length > 0) {
+      return result;
+    } else {
+      console.log(`⚠️ No gallery found for ${ministryName}`);
+      return null;
+    }
+  } catch (error) {
+    console.error(`❌ Error fetching ministry gallery:`, error);
+    throw error;
+  }
+}

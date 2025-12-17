@@ -6,17 +6,19 @@ import TFCGovevents from '../components/governors/TFCGov-events';
 import Knowusbetter from '../components/governors/Knowusbetter';
 // import Ourvalues from '../governors/Ourvalues';
 import MinistryEvents from '../components/events-calendar/MinistryEvents';
-import { Swipper } from '../components/Swiper/Swiper'
-import { governors_data } from '../components/data/PhotoData';
+import { Swipper } from '../components/Swiper/Swiper';
+import { useMinistryGallery } from '../hooks/useMinistryGallery';
 
 
 
 function Governors() {
+  const { data: galleryItems, loading, error } = useMinistryGallery('governors');
+
   return (
     <div>
       <Header />
       <TFCGov />
-      <Swipper items={governors_data} />
+      {galleryItems && galleryItems.length > 0 && <Swipper items={galleryItems} />}
       {/* <Ourvalues /> */}
       <Knowusbetter />
       {/* <TFCGovevents /> */}

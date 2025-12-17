@@ -6,18 +6,19 @@ import TFCqueensevents from '../components/queens/TFCqueens-events';
 import Knowusbetter from '../components/queens/Knowusbetter';
 // import Ourvalues from '../queens/Ourvalues';
 import MinistryEvents from '../components/events-calendar/MinistryEvents';
-import { Swipper } from '../components/Swiper/Swiper'
-import { queens_data } from '../components/data/PhotoData';
-
+import { Swipper } from '../components/Swiper/Swiper';
+import { useMinistryGallery } from '../hooks/useMinistryGallery';
 
 
 
 function Queens() {
+  const { data: galleryItems, loading, error } = useMinistryGallery('queens');
+
   return (
     <div>
       <Header />
       <TFCqueens />
-      <Swipper items={queens_data} />
+      {galleryItems && galleryItems.length > 0 && <Swipper items={galleryItems} />}
       {/* <Ourvalues /> */}
       <Knowusbetter />
       <MinistryEvents

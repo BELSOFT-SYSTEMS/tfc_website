@@ -6,18 +6,19 @@ import Freedomevents from '../components/freedom-fellowship/TFCfreedom-events';
 import Knowusbetter from '../components/freedom-fellowship/Knowusbetter';
 // import Ourvalues from '../components/freedom-fellowship/Ourvalues';
 import MinistryEvents from '../components/events-calendar/MinistryEvents';
-import { freedom_fellowship_data } from '../components/data/PhotoData';
-
-import { Swipper } from '../components/Swiper/Swiper'
+import { Swipper } from '../components/Swiper/Swiper';
+import { useMinistryGallery } from '../hooks/useMinistryGallery';
 
 
 
 function Freedomfellowship() {
+  const { data: galleryItems, loading, error } = useMinistryGallery('freedom-fellowship');
+
   return (
     <div>
       <Header />
       <TFCfreedom />
-      <Swipper items={freedom_fellowship_data} />
+      {galleryItems && galleryItems.length > 0 && <Swipper items={galleryItems} />}
       {/* <Ourvalues /> */}
       <Knowusbetter />
       {/* <Freedomevents /> */}
